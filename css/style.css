@@ -1,0 +1,1383 @@
+html {
+}
+body {
+
+}
+a {
+
+}
+
+  .main__header {
+
+
+  }
+  
+  .main__header__logo {
+
+    
+
+  }
+  .main__header nav {
+
+  }
+  ul {
+
+
+  }
+  ul li {
+
+  }
+
+
+  .principal {}
+  .fold {
+
+  }
+  .fold__imagen{}
+  .fold__titulo{}
+  .fold__subtitulo{}
+  .fold__boton{}
+
+  .serviciosHome{
+  }
+  .serviciosHome__obrasEnYeso{
+
+  }
+  .obrasEnYeso__titulo{}
+  .obrasEnYeso__imagen{}
+  .obrasEnYeso__info{}
+
+  .serviciosHome__mantenimiento{
+    display: grid;
+  }
+  .mantenimiento__titulo{}
+  .mantenimiento__imagen{}
+  .mantenimiento__info{}
+  
+  .serviciosHome__demoliciones{
+    display: grid;
+  }
+  .demoliciones__titulo{}
+  .demoliciones__imagen{}
+  .demoliciones__info{}
+
+  .serviciosHome__albanileria{
+    display: grid;
+  }
+  .albanileria__titulo{}
+  .albanileria__imagen{}
+  .albanileria__info{}
+
+  .serviciosHome__pintura{
+    display: grid;
+  }
+  .pintura__titulo{}
+  .pintura__imagen{}
+  .pintura__info{}
+
+  .serviciosHome__electricidad{
+    display: grid;
+  }
+  .electricidad__titulo{}
+  .electricidad__imagen{}
+  .electricidad__info{}
+
+  .informacionHome{}
+  .informacionHome__asesoramiento{}
+
+  .asesoramiento__titulo{}
+  .asesoramiento__parrafo1{}
+  .asesoramiento__parrafo2{}
+
+  .informacionHome__amarillo{
+    display: grid;
+  }
+  .eco{}
+  .eco__imagen1{}
+  .eco__titulo1{}
+  .eco__parrafo1{}
+
+  .newest {}
+  .newest__imagen2{}
+  .newest__titulo2{}
+  .newest__parrafo2{}
+
+  .high{}
+  .high__imagen3{}
+  .high__titulo3{}
+  .high__parrafo3{}
+
+  .informacionHome__banner{
+    display: grid;
+  }
+  .banner__titulo{}
+  .banner__boton{}
+
+  .fold2{}
+  .fold2__imagen{}
+  .fold2__titulo2{}
+  .fold2__subtitulo{}
+  .fold2__boton{}
+
+  .experiencia{
+    display: grid;
+  }
+  .experiencia__valoraciones{}
+  .valoraciones__titulo{}
+
+  .experiencia__card1{}
+  .card1__imagen{}
+  .card1__info{}
+  .card1__nombre{}
+
+  .experiencia__card2{}
+  .card2__imagen{}
+  .card2__info{}
+  .card2__nombre{}
+
+  .experiencia__card3{}
+  .card3__imagen{}
+  .card3__info{}
+  .card3__nombre{}
+
+  .footer{
+    display: grid;
+  }
+  .footer__formulario{}
+  .formulario__titulo{}
+  .formulario__caja{}
+
+  .caja__nombre{}
+  .caja__email{}
+  .caja__comentario{}
+  .caja__boton{}
+
+  .footer__redes{}
+  .iconoDeRedes{}
+  .iconoDeRedes_facebook{}
+  .iconoDeRedes_twitter{}
+  .iconoDeRedes_linkedin{}
+
+  .footer__info{}
+  .info__ubicacion{}
+  .ubicacion__icono{}
+  .ubicacion__direccion{}
+
+  .info__telefono{}
+  .telefono__icono{}
+  .telefono__numero{}
+  .info__correo{}
+  .correo__icono{}
+  .correo__direccion{}
+
+ 
+@media screen and (min-width: 992px) {
+  html {
+    font-family: "Poppins", "Open+Sans", "Rubik";
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  /*------------- principio del header ----------------------*/
+  .main__header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    width: 100vw;
+    height: 50px;
+  }
+  .main__header__logo img {
+    background-image: url(/image/logoHeader.jpg);
+    border-radius: 15px 15px;
+    width: 135px;
+    height: 38px;
+    margin-left: 25%;
+  }
+  .main__header nav {
+    background-color: white;
+    width: 40vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 10%;
+  }
+  .main__header ul {
+    
+  }
+  
+  .main__header ul li {
+    background-color: white;
+    display: inline-flex;
+    margin-right: 5px;
+
+    font-family: "Poppins";
+    font-weight: 700;
+
+  }
+  /* -----------------fin del header -----------------------------*/
+  /* -----------------inicio del fold -----------------------------*/
+  .principal {
+    position: relative;
+  }
+  
+  .fold {
+    position: relative;
+    width: 100%;
+    height: 628px;
+    padding-top: 1px;
+  }
+  .fold__imagen {
+    display: block;
+    width: 1440px;
+    height: 730px;
+  }
+  .fold__titulo h1 {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    display: inline-block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    position: absolute;
+  }
+  .fold__titulo2 h2 {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 64px;
+    width: 1300px;
+    text-align: center;
+    display: inline-block;
+    left: 5%;
+    right: 5%;
+    top: 10%;
+    position: absolute;
+  }
+  
+  .fold__subtitulo {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 20px;
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    left: 25%;
+  }
+  .fold__boton a {
+    background-color: #ffb400;
+    color: white;
+    font-size: medium;
+    right: 43%;
+    display: inline-block;
+    padding: 15px 90px 15px 90px;
+    bottom: 30%;
+    position: absolute;
+  }
+  /* -----------------fin del fold principal -----------------------------*/
+  .serviciosHome {
+    position: relative;
+    width: 1440px;
+    height: 370px;
+    background-color: rgb(249, 244, 244);
+    color: black;
+  }
+  .serviciosHome__obrasEnYeso {
+    width: 345px;
+    height: 101px;
+    position: absolute;
+    display: block;
+    background-color: white;
+    top: 15%;
+    left: 5%;
+  }
+  .obrasEnYeso__titulo {
+    font-size: 15px;
+    font-family: "Rubik";
+    position: absolute;
+    display: inline;
+    text-align: end;
+    right: 3px;
+    top: 1%;
+  }
+  .obrasEnYeso__imagen {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+  }
+  .obrasEnYeso__info {
+    position: absolute;
+    font-size: 12px;
+    font-family: "Open Sans";
+    text-align: center;
+    right: 1%;
+    bottom: 10%;
+  }
+  
+  .serviciosHome__mantenimiento {
+    width: 345px;
+    height: 101px;
+    position: absolute;
+    display: block;
+    background-color: white;
+    left: 35%;
+    top: 15%;
+  }
+  .mantenimiento__titulo {
+    font-size: 11px;
+    position: absolute;
+    font-family: "Rubik";
+    display: inline;
+    text-align: end;
+    padding-bottom: 25%;
+    right: 3px;
+    top: 0;
+  }
+  .mantenimiento__imagen {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+  }
+  .mantenimiento__info {
+    position: absolute;
+    font-size: 12px;
+    font-family: "Open Sans";
+    text-align: center;
+    right: 1%;
+    bottom: 10%;
+  }
+  
+  .serviciosHome__demoliciones {
+    width: 345px;
+    height: 101px;
+    position: absolute;
+    display: block;
+    background-color: white;
+  
+    right: 10%;
+    top: 15%;
+  }
+  .demoliciones__titulo {
+    font-size: 15px;
+    font-family: "Rubik";
+    position: absolute;
+    display: inline;
+    text-align: end;
+    right: 2%;
+    top: 1%;
+  }
+  .demoliciones__imagen {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+  }
+  .demoliciones__info {
+    position: absolute;
+    font-size: 12px;
+    font-family: "Open Sans";
+    text-align: center;
+    right: 1%;
+    bottom: 10%;
+  }
+  
+  .serviciosHome__albanileria {
+    width: 345px;
+    height: 101px;
+    position: absolute;
+    margin-top: 5%;
+    display: block;
+    background-color: white;
+    margin-right: 10%;
+    left: 5%;
+    bottom: 15%;
+  }
+  .albanileria__titulo {
+    font-size: 15px;
+    font-family: "Rubik";
+    position: absolute;
+    display: inline;
+    text-align: end;
+    right: 2%;
+    top: 1%;
+  }
+  .albanileria__imagen {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+  }
+  
+  .albanileria__info {
+    position: absolute;
+    font-size: 12px;
+    font-family: "Open Sans";
+    text-align: center;
+    right: 1%;
+    bottom: 10%;
+  }
+  
+  .serviciosHome__pintura {
+    width: 345px;
+    height: 101px;
+    position: absolute;
+    display: block;
+    background-color: white;
+    left: 35%;
+    bottom: 15%;
+  }
+  .pintura__titulo {
+    font-size: 15px;
+    font-family: "Rubik";
+    position: absolute;
+    display: inline;
+    text-align: end;
+    right: 2%;
+    top: 1%;
+  }
+  .pintura__imagen {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+  }
+  .pintura__info {
+    position: absolute;
+    font-size: 12px;
+    font-family: "Open Sans";
+    text-align: center;
+    right: 1%;
+    bottom: 10%;
+  }
+  
+  .serviciosHome__electricidad {
+    width: 345px;
+    height: 101px;
+    position: absolute;
+    margin-top: 5%;
+    display: block;
+    background-color: white;
+    margin-right: 10%;
+    left: 66%;
+    bottom: 15%;
+  }
+  .electricidad__titulo {
+    font-size: 15px;
+    font-family: "Rubik";
+    position: absolute;
+    display: inline;
+    text-align: end;
+    right: 2%;
+    top: 1%;
+  }
+  
+  .electricidad__imagen {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+  }
+  
+  .electricidad__info {
+    position: absolute;
+    font-size: 12px;
+    font-family: "Open Sans";
+    text-align: center;
+    right: 1%;
+    bottom: 10%;
+  }
+  
+  .informacionHome {
+    position: relative;
+    width: 100%;
+    height: 730px;
+  }
+  
+  .informacionHome__asesoramiento {
+    background-color: grey;
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    top: 0;
+    right: 0;
+  }
+  .asesoramiento__titulo {
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    top: 15%;
+    left: 10%;
+  }
+  .asesoramiento__parrafo1 {
+    position: absolute;
+    display: inline;
+    width: 349px;
+    height: 216;
+    top: 35%;
+    right: 5%;
+  }
+  .asesoramiento__parrafo2 {
+    position: absolute;
+    bottom: 0;
+    width: 349px;
+    height: 216;
+    top: 35%;
+    left: 10%;
+  }
+  
+  .informacionHome__amarillo {
+    background-color: #ffb400;
+    position: absolute;
+    width: 540px;
+    height: 730px;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  .eco {
+    position: relative;
+    display: block;
+    width: 440px;
+    height: 200px;
+    top: 20%;
+    left: 0;
+    text-align: end;
+  }
+  .eco__imagen1 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  .eco__titulo1 {
+    position: absolute;
+    display: inline;
+    font-family: "Rubik";
+    top: 0;
+    right: 12%;
+    text-align: start;
+  }
+  .eco__parrafo1 {
+    position: absolute;
+    display: inline;
+    font-size: 15px;
+    width: 370px;
+    height: 30px;
+    top: 45px;
+    right: 0;
+    text-align: start;
+  }
+  
+  .newest {
+    position: relative;
+    display: block;
+    width: 480px;
+    height: 200px;
+    top: 15%;
+    left: 0;
+  }
+  .newest__imagen2 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 0%;
+    margin: 0;
+  }
+  
+  .newest__titulo2 h2 {
+    position: absolute;
+    display: inline;
+    font-family: "Rubik";
+    font-size: 22px;
+    width: 440px;
+    height: 30px;
+    top: 0;
+    left: 15%;
+    text-align: start;
+  }
+  .newest__parrafo2 {
+    position: absolute;
+    display: inline;
+    font-size: 15px;
+    width: 370px;
+    height: 30px;
+    top: 45px;
+    left: 15%;
+    text-align: start;
+  }
+  
+  .high {
+    position: absolute;
+    width: 440px;
+    height: 200px;
+    bottom: 5%;
+    left: 0;
+    display: block;
+  }
+  .high__imagen3 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 0%;
+    margin: 0;
+  }
+  
+  .high__titulo3 h2 {
+    position: absolute;
+    display: inline;
+    font-family: "Rubik";
+    font-size: 22px;
+    width: 440px;
+    height: 30px;
+    top: 0;
+    left: 15%;
+    text-align: end;
+  }
+  .high__parrafo3 {
+    position: absolute;
+    display: inline;
+    font-size: 15px;
+    width: 370px;
+    height: 30px;
+    top: 20%;
+    right: 0;
+    text-align: start;
+  }
+  
+  .informacionHome__banner {
+    background-color: black;
+    position: absolute;
+    width: 900px;
+    height: 130px;
+    bottom: 0;
+    right: 0;
+  }
+  .banner__titulo {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    display: inline;
+    text-align: start;
+    top: 20%;
+    left: 10%;
+  }
+  .banner__boton a {
+    background-color: black;
+    color: white;
+    border-color: #ffb400;
+    border-style: solid;
+    font-size: medium;
+    right: 13%;
+    display: block;
+    padding: 15px 90px 15px 90px;
+    bottom: 30%;
+    position: absolute;
+  }
+  
+  .experiencia {
+    background-color: lightslategrey;
+    position: relative;
+    width: 1440px;
+    height: 600px;
+  }
+  .experiencia__valoraciones h2 {
+  }
+  .valoraciones__titulo {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 10%;
+    right: 33%;
+  }
+  
+  .experiencia__card1 {
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 311px;
+    height: 300px;
+    left: 5%;
+    bottom: 15%;
+  }
+  .card1__imagen {
+    position: absolute;
+    top: 10%;
+    right: 25%;
+  }
+  .card1__info {
+    position: absolute;
+    text-align: start;
+    bottom: 30%;
+    left: 15%;
+  }
+  .card1__nombre {
+    position: absolute;
+    font-family: "Rubik", "bold";
+    font-weight: 700;
+    text-align: center;
+    display: inline;
+    bottom: 10%;
+    left: 15%;
+  }
+  
+  .experiencia__card2 {
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 311px;
+    height: 300px;
+    right: 40%;
+    bottom: 15%;
+  }
+  .card2__imagen {
+    position: absolute;
+    top: 10%;
+    right: 25%;
+  }
+  .card2__info {
+    position: absolute;
+    text-align: start;
+    bottom: 30%;
+    left: 15%;
+  }
+  .card2__nombre {
+    position: absolute;
+    font-family: "Rubik", "bold";
+    font-weight: 700;
+    text-align: center;
+    display: inline;
+    bottom: 10%;
+    left: 15%;
+  }
+  
+  .experiencia__card3 {
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 311px;
+    height: 300px;
+    right: 5%;
+    bottom: 15%;
+  }
+  .card3__imagen {
+    position: absolute;
+    top: 10%;
+    right: 25%;
+  }
+  .card3__info {
+    position: absolute;
+    text-align: start;
+    bottom: 30%;
+    left: 15%;
+  }
+  .card3__nombre {
+    position: absolute;
+    font-family: "Rubik", "bold";
+    font-weight: 700;
+    text-align: center;
+    display: inline;
+    bottom: 10%;
+    left: 15%;
+  }
+  
+  .footer {
+    position: relative;
+    width: 1440px;
+    height: 500px;
+  }
+  
+  .footer__formulario {
+    position: absolute;
+    background-color: #ffb400;
+    width: 720px;
+    height: 500px;
+    left: 0;
+  }
+  .formulario__titulo h2 {
+    position: absolute;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    top: 10%;
+    left: 5%;
+  }
+  .footer__formulario__caja {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 45%;
+    left: 15%;
+  }
+  .caja__nombre input {
+    position: absolute;
+    border: 0;
+    top: 45%;
+    left: 5%;
+    width: 270px;
+    height: 55px;
+  }
+  .caja__email input {
+    position: absolute;
+    border: 0;
+    top: 45%;
+    right: 11%;
+    width: 300px;
+    height: 55px;
+  }
+  .caja__comentario textarea {
+    position: absolute;
+    display: block;
+    border: 0;
+    bottom: 14%;
+    width: 600px;
+    height: 120px;
+    left: 5%;
+  }
+  .caja__boton input {
+    background-color: white;
+    border: 0;
+    position: absolute;
+    display: block;
+    bottom: 3%;
+    right: 11%;
+    width: 200px;
+    height: 40px;
+  }
+  
+  .footer__redes {
+    position: absolute;
+    background-color: black;
+    width: 720px;
+    height: 115px;
+    top: 0;
+    right: 0;
+  }
+  .iconoDeRedes {
+    background-color: black;
+    position: absolute;
+    width: 720px;
+    height: 130px;
+    display: block;
+  }
+  .iconoDeRedes_facebook {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+  }
+  .iconoDeRedes_twitter {
+    position: absolute;
+    right: 48%;
+    top: 30%;
+  }
+  .iconoDeRedes_linkedin {
+    position: absolute;
+    right: 30%;
+    top: 30%;
+  }
+  .footer__info {
+    position: absolute;
+    background-color: grey;
+    width: 720px;
+    height: 385px;
+    bottom: 0%;
+    right: 0;
+  }
+  .info__ubicacion {
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 300px;
+    top: 0;
+    left: 0;
+  }
+  .ubicacion__icono {
+    position: absolute;
+    display: block;
+    left: 22%;
+    top: 25%;
+  }
+  .ubicacion__direccion {
+    position: absolute;
+    display: inline-block;
+    top: 20%;
+    left: 30%;
+  }
+  
+  .info__telefono {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 40px;
+    top: 30%;
+    left: 15%;
+  }
+  .telefono__icono {
+    position: absolute;
+    display: block;
+    top: 35%;
+    left: 0;
+  }
+  .telefono__numero {
+    position: absolute;
+    text-align: end;
+    left: 14%;
+  }
+  
+  .info__correo {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 50px;
+    top: 43%;
+    left: 15%;
+  }
+  .correo__icono {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 35%;
+  }
+  .correo__direccion {
+    position: absolute;
+    display: inline-block;
+    left: 14%;
+  }
+  
+  /* ------------PAGINA NOSOTROS INICIO--------------- */
+  .fold__nosotros {
+  }
+  .fold__nosotros__imagen {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+  }
+  .fold__nosotros__titulo {
+    font-family: "Rubik";
+    width: 500px;
+    height: 220px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: start;
+    display: inline-block;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+  }
+  .fold__nosotros__subtitulo {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 20px;
+    width: 650px;
+    height: 65px;
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    left: 10%;
+  }
+  .fold__nosotros__boton a {
+    background-color: #ffb400;
+    color: white;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 90px 15px 90px;
+    display: block;
+    left: 10%;
+    bottom: 30%;
+    position: absolute;
+  }
+  fold
+    parte
+    amarilla----------------------------------------------
+    .caracteristicas__only {
+    background-color: #ffb400;
+    position: absolute;
+    width: 540px;
+    height: 773px;
+    top: 0;
+    left: 0;
+  }
+  
+  .caracteristicas__only__titulo {
+    position: absolute;
+    font-size: larger;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    top: 5%;
+  }
+  
+  .only {
+    position: absolute;
+    display: block;
+    width: 440px;
+    height: 200px;
+    top: 20%;
+    left: 0;
+    text-align: end;
+  }
+  .only__imagen1 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  .only__titulo1 {
+    position: absolute;
+    display: inline;
+    top: 0;
+    right: 12%;
+    text-align: start;
+  }
+  .only__parrafo1 {
+    position: absolute;
+    display: inline;
+    font-size: 15px;
+    width: 370px;
+    height: 30px;
+    top: 45px;
+    right: 0;
+    text-align: start;
+  }
+  
+  .the {
+    position: relative;
+    display: block;
+    width: 480px;
+    height: 200px;
+    top: 42%;
+    left: 0;
+  }
+  .the__imagen2 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 0%;
+    margin: 0;
+  }
+  
+  .the__titulo2 h2 {
+    position: absolute;
+    display: inline;
+    font-size: 22px;
+    width: 440px;
+    height: 30px;
+    top: 0;
+    left: 15%;
+    text-align: start;
+  }
+  .the__parrafo2 {
+    position: absolute;
+    display: inline;
+    font-size: 15px;
+    width: 370px;
+    height: 30px;
+    top: 45px;
+    left: 15%;
+    text-align: start;
+  }
+  
+  .quality {
+    position: absolute;
+    width: 440px;
+    height: 200px;
+    bottom: 5%;
+    left: 0;
+    display: block;
+  }
+  .quality__imagen3 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 0%;
+    margin: 0;
+  }
+  
+  .quality__titulo3 h2 {
+    position: absolute;
+    display: inline;
+    font-size: 18px;
+    width: 440px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    text-align: end;
+  }
+  .quality__parrafo3 {
+    position: absolute;
+    display: inline;
+    font-size: 15px;
+    width: 370px;
+    height: 30px;
+    top: 20%;
+    right: 0;
+    text-align: start;
+  }
+  
+  .caracteristicas__banner {
+  }
+  .caracteristicas__banner__cajaAmarilla {
+  }
+  .cajaAmarilla__titulo {
+  }
+  .cajaAmarilla__subtitulo {
+  }
+  
+  .caracteristicas__banner__cajaNegra {
+  }
+  .cajaNegra__titulo {
+  }
+  .cajaNegra__subtitulo {
+  }
+  
+  .nosotros__historia {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .nosotros__historia__asesoramiento {
+    background-color: grey;
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    top: 0;
+    right: 0;
+  }
+  .nosotros__historia__titulo {
+    position: absolute;
+    text-align: center;
+    display: inline;
+    font-size: 22px;
+    top: 15%;
+    left: 33%;
+  }
+  .nosotros__historia__parrafo1 {
+    position: absolute;
+    display: inline;
+    width: 550px;
+    height: 216;
+    top: 35%;
+    right: 5%;
+  }
+  .nosotros__historia__parrafo2 {
+    position: absolute;
+    bottom: 0;
+    width: 550px;
+    height: 216;
+    top: 35%;
+    left: 10%;
+  }
+  
+  .caracteristicas {
+    position: relative;
+    width: 1440px;
+    height: 1050px;
+  }
+  .caracteristicas__imagen {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .caracteristicas__only {
+    background-color: grey;
+    position: absolute;
+    width: 520px;
+    height: 730px;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  
+  .caracteristicas__banner {
+    background-color: black;
+    position: relative;
+    width: 920px;
+    height: 130px;
+    bottom: 320px;
+    right: 0;
+  }
+  
+  .caracteristicas__banner {
+    position: absolute;
+  }
+  .caracteristicas__banner__cajaAmarilla {
+    position: absolute;
+    display: block;
+    color: white;
+    background-color: #ffb400;
+    width: 450px;
+    height: 130px;
+    left: 0;
+    top: 0;
+  }
+  .cajaAmarilla__titulo {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 22%;
+  }
+  .cajaAmarilla__subtitulo {
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+  }
+  
+  .caracteristicas__banner__cajaNegra {
+    position: absolute;
+    display: block;
+    background-color: black;
+  }
+  .cajaNegra__titulo {
+    text-align: center;
+    position: absolute;
+    right: 23%;
+    top: 10%;
+    color: white;
+  }
+  .cajaNegra__subtitulo {
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    color: white;
+  }
+  
+  /* ------------PAGINA NOSOTROS FINAL--------------- */
+  
+  /* ------------PAGINA SERVICIOS INICIO--------------- */
+  .foldServicios {
+  }
+  .foldServicios__imagen {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+  }
+  .foldServicios__titulo {
+    font-family: "Rubik";
+    width: 500px;
+    height: 220px;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: start;
+    display: inline-block;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+  }
+  .foldServicios__subtitulo {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 20px;
+    width: 650px;
+    height: 65px;
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    left: 10%;
+  }
+  .foldServicios__boton a {
+    background-color: #ffb400;
+    color: white;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 90px 15px 90px;
+    display: block;
+    left: 10%;
+    bottom: 30%;
+    position: absolute;
+  }
+  
+  .cardWhat {
+    width: 300px;
+    height: 500px;
+    right: 0;
+    top: 0;
+  }
+  .what {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    color: #ffb400;
+    font-size: large;
+  }
+  
+  .serviciosYeso {
+    width: 345px;
+    height: 101px;
+    position: absolute;
+    display: block;
+    background-color: none;
+    left: 35%;
+    top: 15%;
+  }
+  
+  yourProyect
+  /* ------------PAGINA SERVICIOS FINAL--------------- */
+  
+  /* ------------PAGINA PROYECTOS INICIO--------------- */
+  /* ------------PAGINA PROYECTOS FINAL--------------- */
+  
+  /* ------------PAGINA CONTACTO INICIO--------------- */
+  
+  .foldContacto {
+    position: absolute;
+    width: 1400px;
+    height: 628px;
+    padding-top: 1px;
+  }
+  .imagenFoldContacto {
+    display: block;
+    width: 1440px;
+    height: 500px;
+  }
+  .tituloFoldContacto h2 {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 86px;
+    color: #ffb400;
+    text-align: center;
+    display: inline-block;
+    bottom: 40%;
+    left: 5%;
+    position: absolute;
+  }
+  
+  .botonContacto a {
+    background-color: #ffb400;
+    color: white;
+    font-size: medium;
+    left: 15%;
+    display: inline-block;
+    padding: 15px 90px 15px 90px;
+    bottom: 40%;
+    position: absolute;
+  }
+  
+  .mapaGoogle {
+    display: block;
+    position: relative;
+  }
+  
+  /* ------------PAGINA CONTACTO FINAL--------------- */
+}
