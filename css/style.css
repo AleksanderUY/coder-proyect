@@ -178,39 +178,45 @@ a {
   
   body {
     width: 100vw;
-    height: 100vh;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   a {
     text-decoration: none;
     color: black;
   }
   /*------------- principio del header ----------------------*/
+  .principal {
+    display: flex;
+  }
   .main__header {
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
+    position: sticky;
     color: black;
     width: 100vw;
     height: 50px;
+    padding-top: 0;
+    margin-top: 0;
   }
   .main__header__logo img {
     background-image: url(/image/logoHeader.jpg);
     border-radius: 15px 15px;
-    width: 135px;
-    height: 38px;
-    margin-left: 25%;
+    width: 130px;
+    height: 35px;
+    margin-left: 5rem;
   }
   .main__header nav {
     background-color: white;
     width: 40vw;
     height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right: 10%;
   }
   .main__header ul {
     
@@ -228,128 +234,116 @@ a {
   /* -----------------fin del header -----------------------------*/
   /* -----------------inicio del fold -----------------------------*/
   .principal {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
   .fold {
-    position: relative;
-    width: 100%;
-    height: 628px;
-    padding-top: 1px;
+    display: flex;
+    background: url(../image/imagen_fold_inicio3.jpg);
+    flex-direction: column;
+    background-attachment: contain;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    width: 100vw;
+    height: 100vh;
   }
-  .fold__imagen {
-    display: block;
-    width: 1440px;
-    height: 730px;
+
   }
   .fold__titulo h1 {
     font-family: "Rubik";
     font-weight: 700;
     font-size: 64px;
-    text-align: center;
-    display: inline-block;
-    top: 10%;
-    left: 5%;
-    right: 5%;
-    position: absolute;
   }
   .fold__titulo2 h2 {
     font-family: "Rubik";
     font-weight: 700;
     font-size: 64px;
-    width: 1300px;
-    text-align: center;
-    display: inline-block;
-    left: 5%;
-    right: 5%;
-    top: 10%;
-    position: absolute;
+
   }
   
   .fold__subtitulo {
     font-family: "Rubik";
     font-weight: 400;
     font-size: 20px;
-    top: 50%;
-    position: absolute;
-    display: inline-block;
-    left: 25%;
   }
-  .fold__boton a {
+  .fold__boton a  {
     background-color: #ffb400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    font-size: medium;
-    right: 43%;
-    display: inline-block;
-    padding: 15px 90px 15px 90px;
-    bottom: 30%;
-    position: absolute;
+    font-size: large;
+    width: 13rem;
+    height: 3rem;
+
   }
   /* -----------------fin del fold principal -----------------------------*/
   .serviciosHome {
-    position: relative;
-    width: 1440px;
-    height: 370px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    width: 100vw;
+    height: 80vh;
     background-color: rgb(249, 244, 244);
     color: black;
   }
   .serviciosHome__obrasEnYeso {
     width: 345px;
-    height: 101px;
-    position: absolute;
+    height: 140px;
+    display: flex;
     display: block;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     background-color: white;
-    top: 15%;
-    left: 5%;
   }
   .obrasEnYeso__titulo {
     font-size: 15px;
+    width: 190px;
+    height: 30px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: flex-end;
     font-family: "Rubik";
-    position: absolute;
-    display: inline;
-    text-align: end;
-    right: 3px;
-    top: 1%;
+    margin: 0;
+
   }
   .obrasEnYeso__imagen {
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 2%;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90px;
+    height: 80px;
+
   }
-  .obrasEnYeso__info {
-    position: absolute;
+  .obrasEnYeso__info p{
     font-size: 12px;
     font-family: "Open Sans";
-    text-align: center;
-    right: 1%;
-    bottom: 10%;
+    display: inline-flex;
+    margin: 0;
+    width: 206px;
+    height: 20px;
   }
   
   .serviciosHome__mantenimiento {
     width: 345px;
     height: 101px;
-    position: absolute;
-    display: block;
     background-color: white;
-    left: 35%;
-    top: 15%;
   }
   .mantenimiento__titulo {
     font-size: 11px;
     position: absolute;
     font-family: "Rubik";
-    display: inline;
-    text-align: end;
-    padding-bottom: 25%;
-    right: 3px;
-    top: 0;
   }
   .mantenimiento__imagen {
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 2%;
+
   }
   .mantenimiento__info {
     position: absolute;
@@ -363,144 +357,84 @@ a {
   .serviciosHome__demoliciones {
     width: 345px;
     height: 101px;
-    position: absolute;
-    display: block;
+
     background-color: white;
-  
-    right: 10%;
-    top: 15%;
   }
   .demoliciones__titulo {
     font-size: 15px;
     font-family: "Rubik";
-    position: absolute;
-    display: inline;
-    text-align: end;
-    right: 2%;
-    top: 1%;
+
   }
   .demoliciones__imagen {
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 2%;
+
+
   }
   .demoliciones__info {
-    position: absolute;
     font-size: 12px;
     font-family: "Open Sans";
-    text-align: center;
-    right: 1%;
-    bottom: 10%;
   }
   
   .serviciosHome__albanileria {
     width: 345px;
     height: 101px;
-    position: absolute;
-    margin-top: 5%;
-    display: block;
     background-color: white;
-    margin-right: 10%;
-    left: 5%;
-    bottom: 15%;
   }
   .albanileria__titulo {
     font-size: 15px;
     font-family: "Rubik";
-    position: absolute;
-    display: inline;
-    text-align: end;
-    right: 2%;
-    top: 1%;
+
   }
   .albanileria__imagen {
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 2%;
+
   }
   
   .albanileria__info {
-    position: absolute;
     font-size: 12px;
     font-family: "Open Sans";
-    text-align: center;
-    right: 1%;
-    bottom: 10%;
+
   }
   
   .serviciosHome__pintura {
     width: 345px;
     height: 101px;
-    position: absolute;
-    display: block;
     background-color: white;
-    left: 35%;
-    bottom: 15%;
   }
   .pintura__titulo {
     font-size: 15px;
     font-family: "Rubik";
-    position: absolute;
-    display: inline;
-    text-align: end;
-    right: 2%;
-    top: 1%;
+ 
   }
   .pintura__imagen {
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 2%;
+
   }
   .pintura__info {
-    position: absolute;
     font-size: 12px;
     font-family: "Open Sans";
-    text-align: center;
-    right: 1%;
-    bottom: 10%;
   }
   
   .serviciosHome__electricidad {
     width: 345px;
     height: 101px;
-    position: absolute;
-    margin-top: 5%;
-    display: block;
     background-color: white;
-    margin-right: 10%;
-    left: 66%;
-    bottom: 15%;
   }
   .electricidad__titulo {
     font-size: 15px;
     font-family: "Rubik";
-    position: absolute;
-    display: inline;
-    text-align: end;
-    right: 2%;
-    top: 1%;
+
   }
   
   .electricidad__imagen {
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 2%;
+
   }
   
   .electricidad__info {
-    position: absolute;
     font-size: 12px;
     font-family: "Open Sans";
-    text-align: center;
-    right: 1%;
-    bottom: 10%;
+
   }
   
   .informacionHome {
+    display: flex;
     position: relative;
     width: 100%;
     height: 730px;
@@ -689,10 +623,24 @@ a {
     bottom: 30%;
     position: absolute;
   }
-  
+  .fold2 {
+  display: flex;
+  background: url(../image/imagen_fold_inicio.jpg);
+  flex-direction: column;
+  background-attachment: contain;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 100vw;
+  height: 100vh;
+}
   .experiencia {
     background-color: lightslategrey;
     position: relative;
+    display: block;
+    display: flex;
     width: 1440px;
     height: 600px;
   }
