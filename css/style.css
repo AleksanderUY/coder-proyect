@@ -104,7 +104,7 @@ ul li {
 }
 
 .informacionHome__amarillo {
-  display: grid;
+
 }
 .eco {
 }
@@ -471,14 +471,15 @@ display: inline-flex;
   .informacionHome {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     width: 100vw;
-    height: 900px;
+    height: 100vh;
   }
   
   .informacionHome__asesoramiento {
     background-color: grey;
-    width: 900px;
-    height: 720px;
+    width: 70vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -507,8 +508,8 @@ display: inline-flex;
   }
   .informacionHome__banner {
     background-color: black;
-    width: 900px;
-    height: 150px;
+    width: 70vw;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -539,19 +540,18 @@ display: inline-flex;
     justify-content: center;
     align-items: center;
     font-size: large;
-    border-color: #ffb400;
     color: black;
     width: 130px;
     height: 50px  ;
   }
   .informacionHome__amarillo {
     background-color: #ffb400;
-    width: 380px;
-    height: 900px;
+    width: 40vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 
   .eco {
@@ -655,9 +655,14 @@ display: inline-flex;
     width: 100vw;
     height: 100vh;
   }
-  .experiencia__valoraciones{
+  .experiencia__valoraciones h2{
     width: 100vw;
-    height: 60px;
+    height: 15vh;
+    font-size: 3rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
   .valoraciones__titulo {
     text-align: center;
@@ -666,6 +671,7 @@ display: inline-flex;
     display: grid;
     background-color: lightslategrey;
     width: 90vw;
+    height: 90vh;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 500px;
     justify-content: space-evenly;
@@ -675,8 +681,8 @@ display: inline-flex;
   }
   .experiencia__card1 {
     background-color: white;
-    width: 311px;
-    height: 300px;
+    width: 25vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -696,8 +702,8 @@ display: inline-flex;
   
   .experiencia__card2 {
     background-color: white;
-    width: 311px;
-    height: 300px;
+    width: 25vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -719,8 +725,8 @@ display: inline-flex;
   
   .experiencia__card3 {
     background-color: white;
-    width: 311px;
-    height: 300px;
+    width: 25vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -774,16 +780,23 @@ display: inline-flex;
     height: 200px;
 
   }
+  .nombreMail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .caja__nombre input {
-    border: 0;
+
     width: 270px;
     height: 55px;
   }
   .caja__email input {
+
     width: 300px;
     height: 55px;
   }
   .caja__comentario textarea {
+    margin-top: 2%;
     width: 600px;
     height: 120px;
 
@@ -797,7 +810,7 @@ display: inline-flex;
   
   .footer__redes {
     background-color: black;
-    width: 720px;
+    width: 50vw;
     height: 200px;
     display: flex;
     flex-direction: row;
@@ -829,12 +842,10 @@ display: inline-flex;
   }
   .footer__info {
     background-color: grey;
-    width: 720px;
+    width: 50vw;
     height: 500px;
     display: flex;
     flex-direction: column;
-
-
   }
   .info__ubicacion {
     width: 450px;
@@ -845,11 +856,11 @@ display: inline-flex;
     justify-content: flex-start;
   }
   .datos {
-    width: 600px;
-    height: 200px;
+    width: 40vw;
+    height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: flex-start;
     margin-left: 15%;
   }
