@@ -134,7 +134,6 @@ ul li {
 }
 
 .informacionHome__banner {
-  display: grid;
 }
 .banner__titulo {
 }
@@ -264,32 +263,47 @@ ul li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    position: sticky;
+    align-items: center;
     color: black;
     width: 100vw;
     height: 50px;
-    padding-top: 0;
-    margin-top: 0;
-  }
-  .main__header__logo img {
+ }
+  .main__header__logo {
     background-image: url(/image/logoHeader.jpg);
     border-radius: 15px 15px;
-    width: 130px;
-    height: 35px;
-    margin-left: 5rem;
+    width: 135px;
+    height: 40px;
+    display: inline-flex;
+    margin-left: 10%;
   }
   .main__header nav {
     background-color: white;
-    width: 40vw;
-    height: 50px;
+    width: 550px;
+    height: 30px;
+  }
+  .main__header ul {
+width: 450px;
+height: 30px;
+margin: 0;
+display: inline-flex;
+
   }
   .main__header ul li {
     background-color: white;
-    display: inline-flex;
     margin-right: 5px;
     font-family: "Poppins";
     font-weight: 700;
+    display: inline-flex;
+  }
+
+  .main__header ul li a{
+    background-color: white;
+    margin-right: 5px;
+    width: 80px;
+    height: 25px;
+    font-family: "Poppins";
+    font-weight: 700;
+    display: inline-flex;
   }
   /* -----------------fin del header -----------------------------*/
   /* -----------------inicio del fold -----------------------------*/
@@ -467,31 +481,88 @@ ul li {
     height: 720px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
-  .asesoramiento__titulo {
-    text-align: center;
-    font-size: 22px;
+  .asesoramiento__titulo h2{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+  }
+  .parrafos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   .asesoramiento__parrafo1 {
     width: 349px;
-    height: 216;
+    height: 216px;
   }
   .asesoramiento__parrafo2 {
     width: 349px;
-    height: 216;
+    height: 216px;
+
   }
-  
+  .informacionHome__banner {
+    background-color: black;
+    width: 900px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner__titulo {
+    color: white;
+    width: 300px;
+    height: 70px;
+    font-size: 15px;
+    margin-left: 10%;
+  }
+
+  .banner__boton{
+    border: 5px;
+    border-color: #ffb400;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15% 5px 10px;
+  }
+  .banner__boton a{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    border-color: #ffb400;
+    color: black;
+    width: 130px;
+    height: 50px  ;
+  }
   .informacionHome__amarillo {
     background-color: #ffb400;
-    width: 35rem;
-    height: 45rem;
+    width: 380px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
+
   .eco {
-    width: 440px;
-    height: 200px;
-    text-align: end;
+    width: 370px;
+    height: 25%;
   }
-  .eco__imagen1 {
+  .eco__imagen1 img{
+    width: 50px;
+    height: 50px;
+    align-self: flex-start;
+    
   }
   .eco__titulo1 {
     font-family: "Rubik";
@@ -499,78 +570,50 @@ ul li {
   .eco__parrafo1 {
     font-size: 15px;
     width: 370px;
-    height: 30px;
-    text-align: start;
+    height: 90px;
   }
   
   .newest {
-    width: 480px;
-    height: 200px;
+    width: 370px;
+    height: 25%;
   }
-  .newest__imagen2 {
-    padding: 0%;
-    margin: 0;
+  .newest__imagen2 img{
+    width: 50px;
+    height: 50px;
+    align-self: flex-start;
   }
   
   .newest__titulo2 h2 {
     font-family: "Rubik";
     font-size: 22px;
-    width: 440px;
+    width: 350px;
     height: 30px;
-    text-align: start;
   }
   .newest__parrafo2 {
     font-size: 15px;
     width: 370px;
-    height: 30px;
-    text-align: start;
+    height: 150px;
   }
   .high {
-    width: 440px;
-    height: 200px;
+    width: 370px;
+    height: 25%;
   }
-  .high__imagen3 {
-    padding: 0%;
-    margin: 0;
+  .high__imagen3 img{
   }
   
   .high__titulo3 h2 {
     font-family: "Rubik";
     font-size: 22px;
-    width: 440px;
-    height: 30px;
+    width: 370px;
+    height: 50px;
   }
   .high__parrafo3 {
     font-size: 15px;
-    width: 370px;
-    height: 30px;
-    text-align: start;
+    width: 350px;
+    height: 150px;
   }
   
-  .informacionHome__banner {
-    background-color: black;
-    width: 900px;
-    height: 720px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .banner__titulo {
-    color: white;
-    font-size: 15px;
-    margin-left: 10%;
-  }
-  .banner__boton a {
-    background-color: black;
-    border: 5px;
-    border-color: #ffb400;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: large;
-    width: 13rem;
-    height: 3rem;
-  }
+
   .fold2 {
     display: flex;
     background: url(../image/imagen_fold_inicio.jpg);
@@ -609,26 +652,26 @@ ul li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
   }
   .experiencia__valoraciones{
     width: 100vw;
-    height: 100px;
+    height: 60px;
   }
   .valoraciones__titulo {
     text-align: center;
   }
   .experiencias {
     display: grid;
-    width: 100vw;
-    height: 500px;
+    background-color: lightslategrey;
+    width: 90vw;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 500px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    align-content: center;
+    gap: 10%;
   }
   .experiencia__card1 {
     background-color: white;
@@ -699,167 +742,150 @@ ul li {
   }
   
   .footer {
-    position: relative;
-    width: 1440px;
-    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
   }
-  
+  .informacion {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+
+  }
   .footer__formulario {
-    position: absolute;
     background-color: #ffb400;
-    width: 720px;
-    height: 500px;
-    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: 50vw;
+    height: 50vh;
   }
   .formulario__titulo h2 {
-    position: absolute;
-    display: inline-block;
     font-weight: 700;
     font-size: 36px;
-    text-align: center;
-    top: 10%;
-    left: 5%;
   }
   .footer__formulario__caja {
-    position: absolute;
     width: 500px;
     height: 200px;
-    top: 45%;
-    left: 15%;
+
   }
   .caja__nombre input {
-    position: absolute;
     border: 0;
-    top: 45%;
-    left: 5%;
     width: 270px;
     height: 55px;
   }
   .caja__email input {
-    position: absolute;
-    border: 0;
-    top: 45%;
-    right: 11%;
     width: 300px;
     height: 55px;
   }
   .caja__comentario textarea {
-    position: absolute;
-    display: block;
-    border: 0;
-    bottom: 14%;
     width: 600px;
     height: 120px;
-    left: 5%;
+
   }
   .caja__boton input {
     background-color: white;
     border: 0;
-    position: absolute;
-    display: block;
-    bottom: 3%;
-    right: 11%;
     width: 200px;
     height: 40px;
   }
   
   .footer__redes {
-    position: absolute;
     background-color: black;
     width: 720px;
-    height: 115px;
-    top: 0;
-    right: 0;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .iconoDeRedes {
-    background-color: black;
-    position: absolute;
-    width: 720px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
     height: 130px;
-    display: block;
+
+ 
   }
-  .iconoDeRedes_facebook {
-    position: absolute;
-    left: 30%;
-    top: 30%;
+  .iconoDeRedes_facebook a{
+    width: 30px;
+    height: 30px;
+
   }
-  .iconoDeRedes_twitter {
-    position: absolute;
-    right: 48%;
-    top: 30%;
+  .iconoDeRedes_twitter a{
+    width: 30px;
+    height: 30px;
   }
-  .iconoDeRedes_linkedin {
-    position: absolute;
-    right: 30%;
-    top: 30%;
+  .iconoDeRedes_linkedin a{
+    width: 30px;
+    height: 30px;
   }
   .footer__info {
-    position: absolute;
     background-color: grey;
     width: 720px;
-    height: 385px;
-    bottom: 0%;
-    right: 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+
   }
   .info__ubicacion {
-    position: absolute;
-    display: block;
-    width: 500px;
-    height: 300px;
-    top: 0;
-    left: 0;
+    width: 450px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .datos {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 15%;
   }
   .ubicacion__icono {
-    position: absolute;
-    display: block;
-    left: 22%;
-    top: 25%;
+
   }
   .ubicacion__direccion {
-    position: absolute;
-    display: inline-block;
-    top: 20%;
-    left: 30%;
+
   }
   
   .info__telefono {
-    position: absolute;
-    display: block;
-    width: 300px;
-    height: 40px;
-    top: 30%;
-    left: 15%;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
   }
   .telefono__icono {
-    position: absolute;
-    display: block;
-    top: 35%;
-    left: 0;
+
   }
   .telefono__numero {
-    position: absolute;
-    text-align: end;
-    left: 14%;
+
   }
   
   .info__correo {
-    position: absolute;
-    display: block;
-    width: 300px;
-    height: 50px;
-    top: 43%;
-    left: 15%;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
   }
   .correo__icono {
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 35%;
   }
   .correo__direccion {
-    position: absolute;
-    display: inline-block;
-    left: 14%;
   }
   
   /* ------------PAGINA NOSOTROS INICIO--------------- */
@@ -1111,26 +1137,14 @@ ul li {
   }
   
   .caracteristicas__banner {
-    background-color: black;
-    position: relative;
-    width: 920px;
-    height: 130px;
-    bottom: 320px;
-    right: 0;
+ 
   }
   
   .caracteristicas__banner {
-    position: absolute;
+
   }
   .caracteristicas__banner__cajaAmarilla {
-    position: absolute;
-    display: block;
-    color: white;
-    background-color: #ffb400;
-    width: 450px;
-    height: 130px;
-    left: 0;
-    top: 0;
+
   }
   .cajaAmarilla__titulo {
     text-align: center;
@@ -1146,23 +1160,13 @@ ul li {
   }
   
   .caracteristicas__banner__cajaNegra {
-    position: absolute;
-    display: block;
-    background-color: black;
+
   }
   .cajaNegra__titulo {
-    text-align: center;
-    position: absolute;
-    right: 23%;
-    top: 10%;
-    color: white;
+
   }
   .cajaNegra__subtitulo {
-    text-align: center;
-    position: absolute;
-    bottom: 10%;
-    right: 15%;
-    color: white;
+ 
   }
   
   /* ------------PAGINA NOSOTROS FINAL--------------- */
