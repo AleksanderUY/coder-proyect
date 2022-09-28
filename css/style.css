@@ -1,97 +1,252 @@
 html {
+  font-family: "Poppins", "Open+Sans", "Rubik";
 }
 body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: darkgrey;
+  padding: 0;
+  margin: 0;
 }
 a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 30vh;
 }
 
 .main__header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  width: 100vw;
+  height: 10vh;
 }
 
 .main__header__logo {
+  background-image: url(../image/logoHeader.jpg);
+  border-radius: 15px 15px;
+  width: 33vw;
+  height: 5vh;
+  display: inline-flex;
+  margin-left: %;
 }
 .main__header nav {
+  width: 67vw;
+  height: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 }
-ul {
+.main__header ul {
+  width: 60vw;
+  height: 5vh;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
-ul li {
+.main__header ul li {
+  background-color: white;
+  margin-right: 5px;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-flex;
+
 }
 
 .principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .fold {
+  display: flex;
+  background: url(../image/imagen_fold_inicio3.jpg);
+  flex-direction: column;
+  background-size: cover;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5vh;
+  width: 100vw;
+  height: 60vh;
 }
 .fold__imagen {
 }
-.fold__titulo {
+.fold__titulo  h1{
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100vw;
+  height: 20vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .fold__subtitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 20vh;
+}
+.fold__subtitulo{
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: large
+  width: 100vw;
+  height: 30vh;
+
+
 }
 .fold__boton {
+  background-color: #ffb400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: large;
+  width: 13rem;
+  height: 3rem;
 }
 
 .serviciosHome {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100vw;
+  height: 80vh;
+  background-color: rgb(249, 244, 244);
+  color: black;
 }
-.serviciosHome__obrasEnYeso {
+.serviciosdata {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.obrasEnYeso__titulo {
+.serviciosHome__obrasEnYeso{
+}
+.obrasEnYeso__titulo h2 {
+  font-size: 22px;
+  width: 260px;
+  font-family: "Rubik";
 }
 .obrasEnYeso__imagen {
 }
 .obrasEnYeso__info {
+  font-size: 12px;
+  font-family: "Open Sans";
 }
 
 .serviciosHome__mantenimiento {
-  display: grid;
+  width: 345px;
+  height: 101px;
+  background-color: white;
 }
 .mantenimiento__titulo {
+  font-size: 11px;
+  font-family: "Rubik";
 }
 .mantenimiento__imagen {
 }
 .mantenimiento__info {
+  font-size: 12px;
+  font-family: "Open Sans";
 }
 
 .serviciosHome__demoliciones {
-  display: grid;
+  width: 345px;
+  height: 101px;
+  background-color: white;
 }
 .demoliciones__titulo {
+  font-size: 15px;
+  font-family: "Rubik";
 }
 .demoliciones__imagen {
 }
 .demoliciones__info {
+  font-size: 12px;
+  font-family: "Open Sans";
 }
 
 .serviciosHome__albanileria {
-  display: grid;
+  width: 345px;
+  height: 101px;
+  background-color: white;
 }
 .albanileria__titulo {
+  font-size: 15px;
+  font-family: "Rubik";
 }
 .albanileria__imagen {
 }
 .albanileria__info {
+  font-size: 12px;
+  font-family: "Open Sans";
 }
 
 .serviciosHome__pintura {
-  display: grid;
+  width: 345px;
+  height: 101px;
+  background-color: white;
 }
 .pintura__titulo {
+  font-size: 15px;
+  font-family: "Rubik";
 }
 .pintura__imagen {
 }
 .pintura__info {
+  font-size: 12px;
+  font-family: "Open Sans";
 }
 
 .serviciosHome__electricidad {
-  display: grid;
+  width: 345px;
+  height: 101px;
+  background-color: white;
 }
 .electricidad__titulo {
+  font-size: 15px;
+  font-family: "Rubik";
 }
 .electricidad__imagen {
 }
 .electricidad__info {
+  font-size: 12px;
+  font-family: "Open Sans";
 }
 
 .informacionHome {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
 }
 .informacionHome__asesoramiento {
 }
