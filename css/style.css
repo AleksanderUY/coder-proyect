@@ -339,7 +339,11 @@ display: inline-flex;
     font-weight: 700;
     font-size: 45px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .fold__subtitulo {
     font-family: "Rubik";
     font-weight: 400;
@@ -389,12 +393,20 @@ display: inline-flex;
     width: 260px;
     font-family: "Rubik";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .obrasEnYeso__info {
     font-size: 12px;
     font-family: "Open Sans";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .serviciosHome__mantenimiento {
     width: 345px;
     height: 101px;
@@ -404,12 +416,20 @@ display: inline-flex;
     font-size: 11px;
     font-family: "Rubik";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .mantenimiento__info {
     font-size: 12px;
     font-family: "Open Sans";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .serviciosHome__demoliciones {
     width: 345px;
     height: 101px;
@@ -419,12 +439,20 @@ display: inline-flex;
     font-size: 15px;
     font-family: "Rubik";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .demoliciones__info {
     font-size: 12px;
     font-family: "Open Sans";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .serviciosHome__albanileria {
     width: 345px;
     height: 101px;
@@ -434,12 +462,20 @@ display: inline-flex;
     font-size: 15px;
     font-family: "Rubik";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .albanileria__info {
     font-size: 12px;
     font-family: "Open Sans";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .serviciosHome__pintura {
     width: 345px;
     height: 101px;
@@ -453,7 +489,11 @@ display: inline-flex;
     font-size: 12px;
     font-family: "Open Sans";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .serviciosHome__electricidad {
     width: 345px;
     height: 101px;
@@ -463,12 +503,20 @@ display: inline-flex;
     font-size: 15px;
     font-family: "Rubik";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .electricidad__info {
     font-size: 12px;
     font-family: "Open Sans";
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .informacionHome {
     display: flex;
     flex-direction: row-reverse;
@@ -476,7 +524,11 @@ display: inline-flex;
     width: 100vw;
     height: 100vh;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .informacionHome__asesoramiento {
     background-color: grey;
     width: 70vw;
@@ -563,7 +615,11 @@ display: inline-flex;
     width: 50px;
     height: 50px;
     align-self: flex-start;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   }
   .eco__titulo1 {
     font-family: "Rubik";
@@ -573,7 +629,11 @@ display: inline-flex;
     width: 370px;
     height: 90px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .newest {
     width: 370px;
     height: 25%;
@@ -583,7 +643,11 @@ display: inline-flex;
     height: 50px;
     align-self: flex-start;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .newest__titulo2 h2 {
     font-family: "Rubik";
     font-size: 22px;
@@ -601,7 +665,11 @@ display: inline-flex;
   }
   .high__imagen3 img{
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .high__titulo3 h2 {
     font-family: "Rubik";
     font-size: 22px;
@@ -613,7 +681,11 @@ display: inline-flex;
     width: 350px;
     height: 150px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
 
   .fold2 {
     display: flex;
@@ -711,7 +783,11 @@ display: inline-flex;
     font-size: 24px;
     margin-left: 10%;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .experiencia__card2 {
     background-color: white;
     width: 25vw;
@@ -743,7 +819,11 @@ display: inline-flex;
     margin-left: 10%;
 
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .experiencia__card3 {
     background-color: white;
     width: 25vw;
@@ -774,7 +854,11 @@ display: inline-flex;
     align-self: flex-start;
     margin-left: 10%;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .footer {
     display: flex;
     flex-direction: row;
@@ -835,7 +919,11 @@ display: inline-flex;
     width: 200px;
     height: 40px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .footer__redes {
     background-color: black;
     width: 50vw;
@@ -853,7 +941,11 @@ display: inline-flex;
     width: 300px;
     height: 130px;
 
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   }
   .iconoDeRedes_facebook a{
     width: 30px;
@@ -898,7 +990,11 @@ display: inline-flex;
   .ubicacion__direccion {
 
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .info__telefono {
     width: 200px;
     height: 60px;
@@ -913,7 +1009,11 @@ display: inline-flex;
   .telefono__numero {
 
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .info__correo {
     width: 200px;
     height: 60px;
@@ -926,7 +1026,11 @@ display: inline-flex;
   }
   .correo__direccion {
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   /* ------------PAGINA NOSOTROS INICIO--------------- */
   .fold__nosotros {
   }
@@ -980,7 +1084,11 @@ display: inline-flex;
     top: 0;
     left: 0;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .caracteristicas__only__titulo {
     position: absolute;
     font-size: larger;
@@ -989,7 +1097,11 @@ display: inline-flex;
     text-align: center;
     top: 5%;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .only {
     position: absolute;
     display: block;
@@ -1023,7 +1135,11 @@ display: inline-flex;
     right: 0;
     text-align: start;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .the {
     position: relative;
     display: block;
@@ -1040,7 +1156,11 @@ display: inline-flex;
     padding: 0%;
     margin: 0;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .the__titulo2 h2 {
     position: absolute;
     display: inline;
@@ -1061,7 +1181,11 @@ display: inline-flex;
     left: 15%;
     text-align: start;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .quality {
     position: absolute;
     width: 440px;
@@ -1078,7 +1202,11 @@ display: inline-flex;
     padding: 0%;
     margin: 0;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .quality__titulo3 h2 {
     position: absolute;
     display: inline;
@@ -1099,7 +1227,11 @@ display: inline-flex;
     right: 0;
     text-align: start;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .caracteristicas__banner {
   }
   .caracteristicas__banner__cajaAmarilla {
@@ -1108,20 +1240,32 @@ display: inline-flex;
   }
   .cajaAmarilla__subtitulo {
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .caracteristicas__banner__cajaNegra {
   }
   .cajaNegra__titulo {
   }
   .cajaNegra__subtitulo {
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .nosotros__historia {
     position: relative;
     width: 100%;
     height: 600px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .nosotros__historia__asesoramiento {
     background-color: grey;
     position: absolute;
@@ -1154,7 +1298,11 @@ display: inline-flex;
     top: 35%;
     left: 10%;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .caracteristicas {
     position: relative;
     width: 1440px;
@@ -1174,11 +1322,19 @@ display: inline-flex;
     left: 0;
     margin: 0;
   }
+<<<<<<< HEAD
 
   .caracteristicas__banner {
 
   }
 
+=======
+  
+  .caracteristicas__banner {
+ 
+  }
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .caracteristicas__banner {
 
   }
@@ -1197,7 +1353,11 @@ display: inline-flex;
     bottom: 10%;
     left: 15%;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .caracteristicas__banner__cajaNegra {
 
   }
@@ -1205,6 +1365,7 @@ display: inline-flex;
 
   }
   .cajaNegra__subtitulo {
+<<<<<<< HEAD
 
   }
 
@@ -1212,6 +1373,15 @@ display: inline-flex;
 
   /* ------------PAGINA SERVICIOS INICIO--------------- */
 
+=======
+ 
+  }
+  
+  /* ------------PAGINA NOSOTROS FINAL--------------- */
+  
+  /* ------------PAGINA SERVICIOS INICIO--------------- */
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .mainServicios {
     width: 100vw;
     height: 100vh;
@@ -1222,7 +1392,11 @@ display: inline-flex;
 
 
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .bloqueFoldServicios {
     width: 70vw;
     height: 100vh;
@@ -1252,7 +1426,11 @@ display: inline-flex;
   .serviciosDemodata{}
   .serviciosDemo__titulo{}
   .serviciosDemo__info{}
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .foldServicios {
     width: 100vw;
     height: 100vh;
@@ -1289,7 +1467,11 @@ display: inline-flex;
     width: 15rem;
     height: 3rem;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .cardWhat {
     width: 300px;
     height: 500px;
@@ -1299,15 +1481,26 @@ display: inline-flex;
     color: #ffb400;
     font-size: large;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .serviciosYeso {
     width: 345px;
     height: 101px;
   }
+<<<<<<< HEAD
 
 
     /* ------------PAGINA SERVICIOS FINAL--------------- */
 
+=======
+  
+  
+    /* ------------PAGINA SERVICIOS FINAL--------------- */
+    
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
     /* ------------PAGINA PROYECTOS INICIO--------------- */
 
     .principalProyectos{
@@ -1331,7 +1524,6 @@ display: inline-flex;
     }
 
 
-
  }
 
 
@@ -1350,7 +1542,11 @@ display: inline-flex;
       height: 80vh;
       padding-top: 1%;
     }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
     .foldContacto {
       display: flex;
       flex-direction: row;
@@ -1361,7 +1557,11 @@ display: inline-flex;
       width: 100vw;
       height: 80vh;
 
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
 
   }
 
@@ -1449,7 +1649,11 @@ display: inline-flex;
   .ubicacion__direccion__contacto {
 
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .info__telefono__contacto {
     width: 200px;
     height: 60px;
@@ -1464,7 +1668,11 @@ display: inline-flex;
   .telefono__numero__contacto {
 
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   .info__correo__contacto {
     width: 200px;
     height: 60px;
@@ -1477,7 +1685,11 @@ display: inline-flex;
   }
   .correo__direccion__contacto {
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
 
   .mapaGoogle {
     width: 100vw;
@@ -1560,7 +1772,11 @@ background-color: #dad6d6;
     background-color: white;
     border: 5px;
     border-color: black;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
   }
 
 
@@ -1576,4 +1792,9 @@ background-color: #dad6d6;
   }
 
   /* ------------PAGINA CONTACTO FINAL--------------- */
+<<<<<<< HEAD
 
+=======
+  
+}
+>>>>>>> d50e611d2cbf09ad91afe2baccf62bdb2db060bd
