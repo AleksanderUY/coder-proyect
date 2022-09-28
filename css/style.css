@@ -256,8 +256,7 @@ ul li {
     color: black;
   }
   /*------------- principio del header ----------------------*/
-  .principal {
-  }
+
   .main__header {
     background-color: white;
     display: flex;
@@ -269,7 +268,7 @@ ul li {
     height: 50px;
  }
   .main__header__logo {
-    background-image: url(/image/logoHeader.jpg);
+    background-image: url(../image/logoHeader.jpg);
     border-radius: 15px 15px;
     width: 135px;
     height: 40px;
@@ -335,10 +334,12 @@ display: inline-flex;
   }
   .fold__titulo2 h2 {
     font-family: "Rubik";
+    width: 500px;
+    height: 220px;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 45px;
   }
-  
+
   .fold__subtitulo {
     font-family: "Rubik";
     font-weight: 400;
@@ -388,12 +389,12 @@ display: inline-flex;
     width: 260px;
     font-family: "Rubik";
   }
-  
+
   .obrasEnYeso__info {
     font-size: 12px;
     font-family: "Open Sans";
   }
-  
+
   .serviciosHome__mantenimiento {
     width: 345px;
     height: 101px;
@@ -403,12 +404,12 @@ display: inline-flex;
     font-size: 11px;
     font-family: "Rubik";
   }
-  
+
   .mantenimiento__info {
     font-size: 12px;
     font-family: "Open Sans";
   }
-  
+
   .serviciosHome__demoliciones {
     width: 345px;
     height: 101px;
@@ -418,12 +419,12 @@ display: inline-flex;
     font-size: 15px;
     font-family: "Rubik";
   }
-  
+
   .demoliciones__info {
     font-size: 12px;
     font-family: "Open Sans";
   }
-  
+
   .serviciosHome__albanileria {
     width: 345px;
     height: 101px;
@@ -433,12 +434,12 @@ display: inline-flex;
     font-size: 15px;
     font-family: "Rubik";
   }
-  
+
   .albanileria__info {
     font-size: 12px;
     font-family: "Open Sans";
   }
-  
+
   .serviciosHome__pintura {
     width: 345px;
     height: 101px;
@@ -452,7 +453,7 @@ display: inline-flex;
     font-size: 12px;
     font-family: "Open Sans";
   }
-  
+
   .serviciosHome__electricidad {
     width: 345px;
     height: 101px;
@@ -462,12 +463,12 @@ display: inline-flex;
     font-size: 15px;
     font-family: "Rubik";
   }
-  
+
   .electricidad__info {
     font-size: 12px;
     font-family: "Open Sans";
   }
-  
+
   .informacionHome {
     display: flex;
     flex-direction: row-reverse;
@@ -475,7 +476,7 @@ display: inline-flex;
     width: 100vw;
     height: 100vh;
   }
-  
+
   .informacionHome__asesoramiento {
     background-color: grey;
     width: 70vw;
@@ -562,7 +563,7 @@ display: inline-flex;
     width: 50px;
     height: 50px;
     align-self: flex-start;
-    
+
   }
   .eco__titulo1 {
     font-family: "Rubik";
@@ -572,7 +573,7 @@ display: inline-flex;
     width: 370px;
     height: 90px;
   }
-  
+
   .newest {
     width: 370px;
     height: 25%;
@@ -582,7 +583,7 @@ display: inline-flex;
     height: 50px;
     align-self: flex-start;
   }
-  
+
   .newest__titulo2 h2 {
     font-family: "Rubik";
     font-size: 22px;
@@ -600,7 +601,7 @@ display: inline-flex;
   }
   .high__imagen3 img{
   }
-  
+
   .high__titulo3 h2 {
     font-family: "Rubik";
     font-size: 22px;
@@ -612,7 +613,7 @@ display: inline-flex;
     width: 350px;
     height: 150px;
   }
-  
+
 
   .fold2 {
     display: flex;
@@ -689,17 +690,28 @@ display: inline-flex;
     justify-content: space-around;
   }
   .card1__imagen {
-
+    font-size: 22px;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .card1__info {
+    font-size: 22px;
+    width: 20vw;
+    height: 20vh;
+    justify-content: center;
 
   }
   .card1__nombre {
     font-family: "Rubik", "bold";
     font-weight: 700;
     align-self: flex-start;
+    font-size: 24px;
+    margin-left: 10%;
   }
-  
+
   .experiencia__card2 {
     background-color: white;
     width: 25vw;
@@ -710,19 +722,28 @@ display: inline-flex;
     justify-content: space-around;
   }
   .card2__imagen {
-
+    font-size: 22px;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .card2__info {
-
+    font-size: 22px;
+    width: 20vw;
+    height: 20vh;
 
   }
   .card2__nombre {
     font-family: "Rubik", "bold";
     font-weight: 700;
     align-self: flex-start;
+    font-size: 24px;
+    margin-left: 10%;
 
   }
-  
+
   .experiencia__card3 {
     background-color: white;
     width: 25vw;
@@ -733,20 +754,27 @@ display: inline-flex;
     justify-content: space-around;
   }
   .card3__imagen {
-
+    font-size: 22px;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .card3__info {
-    width: 300px;
-    height: 75px;
-    align-self: start;
+    font-size: 22px;
+    width: 20vw;
+    height: 20vh;
 
   }
   .card3__nombre {
     font-family: "Rubik", "bold";
     font-weight: 700;
+    font-size: 24px;
     align-self: flex-start;
+    margin-left: 10%;
   }
-  
+
   .footer {
     display: flex;
     flex-direction: row;
@@ -807,7 +835,7 @@ display: inline-flex;
     width: 200px;
     height: 40px;
   }
-  
+
   .footer__redes {
     background-color: black;
     width: 50vw;
@@ -825,7 +853,7 @@ display: inline-flex;
     width: 300px;
     height: 130px;
 
- 
+
   }
   .iconoDeRedes_facebook a{
     width: 30px;
@@ -870,7 +898,7 @@ display: inline-flex;
   .ubicacion__direccion {
 
   }
-  
+
   .info__telefono {
     width: 200px;
     height: 60px;
@@ -885,7 +913,7 @@ display: inline-flex;
   .telefono__numero {
 
   }
-  
+
   .info__correo {
     width: 200px;
     height: 60px;
@@ -898,7 +926,7 @@ display: inline-flex;
   }
   .correo__direccion {
   }
-  
+
   /* ------------PAGINA NOSOTROS INICIO--------------- */
   .fold__nosotros {
   }
@@ -952,7 +980,7 @@ display: inline-flex;
     top: 0;
     left: 0;
   }
-  
+
   .caracteristicas__only__titulo {
     position: absolute;
     font-size: larger;
@@ -961,7 +989,7 @@ display: inline-flex;
     text-align: center;
     top: 5%;
   }
-  
+
   .only {
     position: absolute;
     display: block;
@@ -995,7 +1023,7 @@ display: inline-flex;
     right: 0;
     text-align: start;
   }
-  
+
   .the {
     position: relative;
     display: block;
@@ -1012,7 +1040,7 @@ display: inline-flex;
     padding: 0%;
     margin: 0;
   }
-  
+
   .the__titulo2 h2 {
     position: absolute;
     display: inline;
@@ -1033,7 +1061,7 @@ display: inline-flex;
     left: 15%;
     text-align: start;
   }
-  
+
   .quality {
     position: absolute;
     width: 440px;
@@ -1050,7 +1078,7 @@ display: inline-flex;
     padding: 0%;
     margin: 0;
   }
-  
+
   .quality__titulo3 h2 {
     position: absolute;
     display: inline;
@@ -1071,7 +1099,7 @@ display: inline-flex;
     right: 0;
     text-align: start;
   }
-  
+
   .caracteristicas__banner {
   }
   .caracteristicas__banner__cajaAmarilla {
@@ -1080,20 +1108,20 @@ display: inline-flex;
   }
   .cajaAmarilla__subtitulo {
   }
-  
+
   .caracteristicas__banner__cajaNegra {
   }
   .cajaNegra__titulo {
   }
   .cajaNegra__subtitulo {
   }
-  
+
   .nosotros__historia {
     position: relative;
     width: 100%;
     height: 600px;
   }
-  
+
   .nosotros__historia__asesoramiento {
     background-color: grey;
     position: absolute;
@@ -1126,7 +1154,7 @@ display: inline-flex;
     top: 35%;
     left: 10%;
   }
-  
+
   .caracteristicas {
     position: relative;
     width: 1440px;
@@ -1146,11 +1174,11 @@ display: inline-flex;
     left: 0;
     margin: 0;
   }
-  
+
   .caracteristicas__banner {
- 
+
   }
-  
+
   .caracteristicas__banner {
 
   }
@@ -1169,7 +1197,7 @@ display: inline-flex;
     bottom: 10%;
     left: 15%;
   }
-  
+
   .caracteristicas__banner__cajaNegra {
 
   }
@@ -1177,144 +1205,375 @@ display: inline-flex;
 
   }
   .cajaNegra__subtitulo {
- 
+
   }
-  
+
   /* ------------PAGINA NOSOTROS FINAL--------------- */
-  
+
   /* ------------PAGINA SERVICIOS INICIO--------------- */
-  .foldServicios {
-  }
-  .foldServicios__imagen {
-    display: inline-block;
+
+  .mainServicios {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
   }
-  .foldServicios__titulo {
+
+  .bloqueFoldServicios {
+    width: 70vw;
+    height: 100vh;
+
+  }
+  .bloqueWhat{
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .serviciosYeso {}
+  .serviciosYeso__imagen{}
+  .serviciosdataYeso{}
+  .serviciosYeso__info {}
+
+  .serviciosMant{}
+  .serviciosMant__imagen{}
+  .serviciosMantdata{}
+  .serviciosMant__titulo{}
+  .serviciosMant__info{}
+
+  .serviciosDemo{}
+  .serviciosDemo__imagen{}
+  .serviciosDemodata{}
+  .serviciosDemo__titulo{}
+  .serviciosDemo__info{}
+
+  .foldServicios {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../image/imagen_fold_inicio3.jpg);
+  }
+
+  .servicios__titulo {
     font-family: "Rubik";
     width: 500px;
     height: 220px;
     font-weight: 700;
     font-size: 45px;
-    text-align: start;
-    display: inline-block;
-    top: 10%;
-    left: 10%;
-    position: absolute;
+
   }
-  .foldServicios__subtitulo {
+  .servicios__subtitulo {
     font-family: "Rubik";
     font-weight: 400;
     font-size: 20px;
-    width: 650px;
-    height: 65px;
-    top: 50%;
-    position: absolute;
-    display: inline-block;
-    left: 10%;
-  }
-  .foldServicios__boton a {
-    background-color: #ffb400;
-    color: white;
-    font-size: medium;
-    text-align: center;
-    padding: 15px 90px 15px 90px;
-    display: block;
-    left: 10%;
-    bottom: 30%;
-    position: absolute;
-  }
-  
-  .cardWhat {
+    width: 40vw;
+    height: 10vh;
 
   }
-  
+  .servicios__boton a {
+    background-color: #ffb400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: large;
+    width: 15rem;
+    height: 3rem;
+  }
+
+  .cardWhat {
+    width: 300px;
+    height: 500px;
+
+  }
+  .what {
+    color: #ffb400;
+    font-size: large;
+  }
+
+  .serviciosYeso {
+    width: 345px;
+    height: 101px;
+  }
 
 
     /* ------------PAGINA SERVICIOS FINAL--------------- */
-    
-   
+
     /* ------------PAGINA PROYECTOS INICIO--------------- */
-  
-  
-    .principalProyectos main{
-      width: 100vw;
-      height: 100vh;
+
+    .principalProyectos{
       display: flex;
       flex-direction: column;
-    }
-    .foldProyectos{
-      background-image: url(../image/imagen_fold_inicio.jpg);
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
       width: 100vw;
-      height: 100vh;
+      height: 80vh;
+}
+    .foldProyectos {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
+      justify-content: center;
+      align-items: flex-start;
+      background: url(../image/imagen_fold_inicio3.jpg);
+      background-size: cover;
+      width: 100vw;
+      height: 80vh;
     }
-    .foldProyectos__titulo h1{
-      font-family: "Rubik";
-      font-weight: 700;
-      font-size: 64px;
-      display: flex;
-    }
-    .foldProyectos__subtitulo p{
-      font-family: "Rubik";
-      font-weight: 400;
-      font-size: 20px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-  
-  
-  
-  
-  
-  
+
+
+
+ }
+
+
     /* ------------PAGINA PROYECTOS FINAL--------------- */
-    
+
     /* ------------PAGINA CONTACTO INICIO--------------- */
-    
+
+
+    .principalContacto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 80vh;
+      padding-top: 1%;
+    }
+
     .foldContacto {
-    position: absolute;
-    width: 1400px;
-    height: 628px;
-    padding-top: 1px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: url(../image/imagen_fold_inicio3.jpg);
+      background-size: cover;
+      padding-bottom: 30px;
+      width: 100vw;
+      height: 80vh;
+
+
+
   }
-  .imagenFoldContacto {
-    display: block;
-    width: 1440px;
-    height: 500px;
-  }
-  .tituloFoldContacto h2 {
+
+  .tituloFoldContacto {
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
     font-family: "Rubik";
     font-weight: 700;
-    font-size: 86px;
-    color: #ffb400;
-    text-align: center;
-    display: inline-block;
-    bottom: 40%;
-    left: 5%;
-    position: absolute;
+    font-size: 44px;
+    color: white;
+    margin-left: 10%;
+    margin-top: 10%;
+
   }
-  
+  .fold__subtitulo {
+    width: 30vw;
+    height: 20vh;
+    margin-left: 10%;
+  }
+  .botonContacto {
+    width: 10vw;
+    height: 3vh;
+    margin-left: 10%;
+  }
   .botonContacto a {
     background-color: #ffb400;
     color: white;
+    width: 10vw;
+    height: 3vh;
     font-size: medium;
-    left: 15%;
-    display: inline-block;
-    padding: 15px 90px 15px 90px;
-    bottom: 40%;
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px 20px 15px 20px;
   }
-  
+  .fold__info {
+    background-color: #ffb400;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .fold__info__contacto {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .tituloInfo {
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    margin-left: 10%;
+
+  }
+  .datosContacto {
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 15%;
+  }
+
+  .info__ubicacion__contacto {
+    width: 450px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .ubicacion__icono__contacto {
+
+  }
+  .ubicacion__direccion__contacto {
+
+  }
+
+  .info__telefono__contacto {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .telefono__icono__contacto {
+
+  }
+  .telefono__numero__contacto {
+
+  }
+
+  .info__correo__contacto {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .correo__icono__contacto {
+  }
+  .correo__direccion__contacto {
+  }
+
+
   .mapaGoogle {
-    display: block;
-    position: relative;
+    width: 100vw;
+    height: 70vh;
+    border-color: black;
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
-  
+  .preguntas {
+width: 100vw;
+height: 80vh;
+display: flex;
+flex-direction: row;
+background-color: #dad6d6;
+  }
+  .preguntasBloque{
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+  .pregunta1 summary {
+   font-weight: 700;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 45vw;
+   height: 6vh;
+   background-color: white;
+   border: 5px;
+   border-color: black;
+  }
+  .pregunta2 summary{
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45vw;
+    height: 6vh;
+    background-color: white;
+    border: 5px;
+    border-color: black;
+  }
+  .pregunta3 summary{
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45vw;
+    height: 6vh;
+    background-color: white;
+    border: 5px;
+    border-color: black;
+  }
+  .pregunta4 summary{
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45vw;
+    height: 6vh;
+    background-color: white;
+    border: 5px;
+    border-color: black;
+  }
+  .pregunta5 summary{
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45vw;
+    height: 6vh;
+    background-color: white;
+    border: 5px;
+    border-color: black;
+
+  }
+
+
+  .tituloPreguntas{}
+  .respuestas{}
+  .imagenPreguntas{}
+
+
+  .bloqueImagen{
+    width: 50vw;
+    background: url(../image/preguntasimg.svg);
+    background-size: cover;
+  }
+
   /* ------------PAGINA CONTACTO FINAL--------------- */
-  
-}
+
