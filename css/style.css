@@ -14,14 +14,7 @@ a {
   text-decoration: none;
 }
 p {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 30vh;
+
 }
 
 .main__header {
@@ -131,55 +124,80 @@ p {
 
 .serviciosHome {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   width: 100vw;
-  height: 80vh;
+  height: 130vh;
   background-color: rgb(249, 244, 244);
   color: black;
 }
 .serviciosdata {
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.serviciosHome__obrasEnYeso{
+.serviciosHome__obrasEnYeso {
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
 }
 .obrasEnYeso__titulo h2 {
-  font-size: 22px;
-  width: 260px;
+  font-size: large;
+  width: 40vw;
   font-family: "Rubik";
 }
 .obrasEnYeso__imagen {
+  width: 50px;
+  height: 50px;
 }
 .obrasEnYeso__info {
-  font-size: 12px;
+  font-size: 1rem;
   font-family: "Open Sans";
+  width: 50vw;
+  height: 10vh;
+  padding-left: 10%;
 }
 
 .serviciosHome__mantenimiento {
-  width: 345px;
-  height: 101px;
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
 }
-.mantenimiento__titulo {
-  font-size: 11px;
+.mantenimiento__titulo h2{
+  font-size: large;
+  width: 40vw;
   font-family: "Rubik";
 }
 .mantenimiento__imagen {
+  
 }
 .mantenimiento__info {
-  font-size: 12px;
+  font-size: 1rem;
   font-family: "Open Sans";
+  width: 50vw;
+  height: 10vh;
+  padding-left: 10%;
 }
 
 .serviciosHome__demoliciones {
-  width: 345px;
-  height: 101px;
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
 }
 .demoliciones__titulo {
@@ -189,13 +207,21 @@ p {
 .demoliciones__imagen {
 }
 .demoliciones__info {
-  font-size: 12px;
+  font-size: 1rem;
   font-family: "Open Sans";
+  padding-left: 10%;
+  width: 50vw;
+  height: 10vh;
+
 }
 
 .serviciosHome__albanileria {
-  width: 345px;
-  height: 101px;
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
 }
 .albanileria__titulo {
@@ -205,13 +231,20 @@ p {
 .albanileria__imagen {
 }
 .albanileria__info {
-  font-size: 12px;
+  font-size: 1rem;
   font-family: "Open Sans";
+  width: 50vw;
+  height: 10vh;
+  padding-left: 10%;
 }
 
 .serviciosHome__pintura {
-  width: 345px;
-  height: 101px;
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
 }
 .pintura__titulo {
@@ -221,13 +254,20 @@ p {
 .pintura__imagen {
 }
 .pintura__info {
-  font-size: 12px;
+  font-size: 1rem;
   font-family: "Open Sans";
+  width: 50vw;
+  height: 10vh;
+  padding-left: 10%;
 }
 
 .serviciosHome__electricidad {
-  width: 345px;
-  height: 101px;
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
 }
 .electricidad__titulo {
@@ -237,8 +277,11 @@ p {
 .electricidad__imagen {
 }
 .electricidad__info {
-  font-size: 12px;
+  font-size: 1rem;
   font-family: "Open Sans";
+  width: 50vw;
+  height: 10vh;
+  padding-left: 10%;
 }
 
 .informacionHome {
