@@ -12,6 +12,7 @@ body {
 }
 a {
   text-decoration: none;
+
 }
 p {
 
@@ -67,6 +68,8 @@ p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100vw;
+  height: 60vh;
 }
 .fold {
   display: flex;
@@ -81,45 +84,38 @@ p {
 }
 .fold__imagen {
 }
-.fold__titulo  h1{
+.fold__titulo {
   font-family: "Rubik";
   font-weight: 700;
-  font-size: 2rem;
-  width: 100vw;
-  height: 20vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.fold__subtitulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: 20vh;
-}
-.fold__subtitulo{
-  font-family: "Rubik";
-  font-weight: 400;
-  font-size: large
+  font-size: 22px;
   width: 100vw;
   height: 30vh;
-
+  margin: 0;
 
 }
-.fold__boton {
-  background-color: #ffb400;
+.fold__subtitulo {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 48px;
+}
+.fold__subtitulo p{
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 15px;
+
+}
+.fold__boton a{
+  border: 15px;
+  background-color:#ffb400;
+  border-color: #ffb400;
+  color: black;
+  margin-left: 15%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  color: white;
-  font-size: large;
-  width: 13rem;
-  height: 3rem;
+  align-items: center;
+  margin: 0;
+  padding: 4px 20px;
 }
 
 .serviciosHome {
@@ -286,102 +282,290 @@ p {
 
 .informacionHome {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 180vh;
 }
 .informacionHome__asesoramiento {
+
+  width: 70vw;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .asesoramiento__titulo {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15%;
+}
+.parrafos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .asesoramiento__parrafo1 {
+  width: 349px;
+  height: 30vh;
 }
 .asesoramiento__parrafo2 {
+  width: 349px;
+  height: 30vh;
 }
 
 .informacionHome__amarillo {
+  background-color: #ffb400;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 
 }
 .eco {
+  width: 100vw;
+  height: 25%;
 }
 .eco__imagen1 {
+  width: 50px;
+  height: 50px;
+  align-self: flex-start;
 }
 .eco__titulo1 {
+  font-family: "Rubik";
+  font-size: large;
 }
 .eco__parrafo1 {
+  font-size: 15px;
+  width: 370px;
+  height: 20vh;
 }
 
 .newest {
+  width: 100vw;
+  height: 25%;
 }
 .newest__imagen2 {
+  width: 50px;
+  height: 50px;
+  align-self: flex-start;
 }
 .newest__titulo2 {
+  font-family: "Rubik";
+  font-size: large;
 }
 .newest__parrafo2 {
+  font-size: 15px;
+  width: 370px;
+  height: 20vh;
 }
 
 .high {
+  width: 100vw;
+  height: 25%;
 }
 .high__imagen3 {
+  width: 50px;
+  height: 50px;
+  align-self: flex-start;
 }
 .high__titulo3 {
+  font-family: "Rubik";
+  font-size: large;
 }
 .high__parrafo3 {
+  font-size: 15px;
+  width: 100vw;
+  height: 20vh;
 }
 
 .informacionHome__banner {
+  background-color: black;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .banner__titulo {
+  color: white;
+  width: 300px;
+  height: 70px;
+  font-size: 15px;
+  margin-left: 10%;
 }
-.banner__boton {
+.banner__boton a{
+  border: 15px;
+  background-color:#ffb400;
+  border-color: #ffb400;
+  color: black;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 4px 15px;
+
 }
 
 .fold2 {
+  display: flex;
+  background: url(../image/imagen_fold_inicio.jpg);
+  flex-direction: column;
+  background-attachment: contain;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 100vw;
+  height: 50vh;
 }
-.fold2__imagen {
-}
+
 .fold2__titulo2 {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 20px;
 }
 .fold2__subtitulo {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 15px;
 }
-.fold2__boton {
+.fold2__boton a{
+  border: 15px;
+  background-color:#ffb400;
+  border-color: #ffb400;
+  color: black;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 4px 15px;
 }
 
 .experiencia {
-  display: grid;
+  background-color: lightslategrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80vh;
 }
-.experiencia__valoraciones {
+.experiencia__valoraciones h2{
+  width: 100vw;
+  height: 15vh;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .valoraciones__titulo {
+  text-align: center;
 }
-
+.experiencias {
+  display: grid;
+  justify-items: center;
+  background-color: lightslategrey;
+  width: 100vw;
+  height: 65vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-content: center;
+  gap: 5px;
+}
 .experiencia__card1 {
-}
+  background-color: white;
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  }
+
 .card1__imagen {
+  margin-left: 5%;
+  
 }
 .card1__info {
+  font-size: 12px;
+  width: 80vw;
+  height: 5vh;
+  margin-left: 5%;
 }
 .card1__nombre {
+  font-family: "Rubik", "bold";
+  font-weight: 700;
+  align-self: flex-start;
+  font-size: 20px;
+  margin-left: 5%;
 }
 
 .experiencia__card2 {
+  background-color: white;
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .card2__imagen {
+  margin-left: 5%;
 }
 .card2__info {
+  font-size: 12px;
+  width: 80vw;
+  height: 5vh;
+  margin-left: 5%;
 }
 .card2__nombre {
+  font-family: "Rubik", "bold";
+  font-weight: 700;
+  align-self: flex-start;
+  font-size: 20px;
+  margin-left: 5%;
 }
 
 .experiencia__card3 {
+  background-color: white;
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .card3__imagen {
+  margin-left: 5%;
 }
 .card3__info {
+  font-size: 12px;
+  width: 80vw;
+  height: 5vh;
+  margin-left: 5%;
 }
 .card3__nombre {
+  font-family: "Rubik", "bold";
+  font-weight: 700;
+  align-self: flex-start;
+  font-size: 20px;
+  margin-left: 5%;
 }
 
 .footer {
@@ -857,7 +1041,7 @@ display: inline-flex;
   .experiencia__valoraciones h2{
     width: 100vw;
     height: 15vh;
-    font-size: 3rem;
+    font-size: 1rem;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -869,12 +1053,10 @@ display: inline-flex;
   .experiencias {
     display: grid;
     background-color: lightslategrey;
-    width: 90vw;
-    height: 90vh;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 500px;
-    justify-content: space-evenly;
-    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     align-content: center;
     gap: 10%;
   }
