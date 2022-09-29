@@ -84,28 +84,43 @@ p {
 }
 .fold__imagen {
 }
-.fold__titulo {
+.fold__titulo h1{
   font-family: "Rubik";
   font-weight: 700;
-  font-size: 22px;
+  font-size: 30px;
   width: 100vw;
-  height: 30vh;
+  height: 20vh;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
 }
 .fold__subtitulo {
   font-family: "Rubik";
   font-weight: 700;
   font-size: 48px;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .fold__subtitulo p{
   font-family: "Rubik";
   font-weight: 400;
   font-size: 15px;
+  width: 100vw;
+  height: 5vh;
+
 
 }
 .fold__boton a{
   border: 15px;
+  font-size: large;
   background-color:#ffb400;
   border-color: #ffb400;
   color: black;
@@ -298,8 +313,8 @@ p {
   justify-content: space-between;
 }
 
-.asesoramiento__titulo {
-  font-size: 30px;
+.asesoramiento__titulo h2{
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -572,27 +587,28 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100vw;
-  height: 200vh;
+  height: 90vh;
 }
 .informacion {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
 
 }
 .footer__formulario {
   background-color: #ffb400;
   display: flex;
+  margin-top: 10%;
   flex-direction: column;
   align-items: center;
-  width: 90vw;
-  height: 80vh;
+  width: 100vw;
+  height: 40vh;
 }
 .formulario__titulo h2{
   font-weight: 700;
@@ -600,41 +616,42 @@ p {
   width: auto;
 }
 .formulario__caja {
-  width: 500px;
-  height: 200px;
+  width: 90vw;
+  height: 40vh;
+  display: flex;
+
 }
 .nombreMail {
+  width: 30vw;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .caja__nombre input {
-
-  width: 270px;
-  height: 55px;
+  width: 40vw;
+  height: 5vh;
 }
 .caja__email input {
-
-  width: 300px;
-  height: 55px;
+  width: 47vw;
+  height: 5vh;
 }
 .caja__comentario textarea {
-  margin-top: 2%;
-  width: 600px;
-  height: 120px;
+  width: 90vw;
+  height: 15vh;
 
 }
 .caja__boton input {
   background-color: white;
   border: 0;
-  width: 200px;
+  width: 30vw;
   height: 40px;
 }
 
 .footer__redes {
   background-color: black;
-  width: 50vw;
-  height: 200px;
+  width: 100vw;
+  height: 15vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -664,13 +681,20 @@ p {
 
 .footer__info {
   background-color: grey;
-  width: 50vw;
-  height: 500px;
+  width: 100vw;
+  height: 1vh;
   display: flex;
   flex-direction: column;
 }
+.informacion {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+
+}
 .info__ubicacion {
-  width: 450px;
+  width: 100vw;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -682,9 +706,9 @@ p {
   height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
-  margin-left: 15%;
+
 }
 .ubicacion__icono {
 }
@@ -715,6 +739,16 @@ p {
 }
 .correo__direccion {
 }
+  /* ------------PAGINA INDEX FIN--------------- */
+
+  /* ------------PAGINA NOSOTROS INICIO--------------- */
+  /* ------------PAGINA NOSOTROS FIN--------------- */
+  /* ------------PAGINA PROYECTOS INICIO--------------- */
+  /* ------------PAGINA PROYECTOS FIN--------------- */
+  /* ------------PAGINA SERVICIOS INICIO--------------- */
+  /* ------------PAGINA SERVICIOS FIN--------------- */
+  /* ------------PAGINA CONTE INICIO--------------- */
+  /* ------------PAGINA SERVICIOS FIN--------------- */
 
 @media screen and (min-width: 992px) {
   html {
@@ -790,6 +824,8 @@ display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100vw;
+    height: 90vh;
   }
 
   .fold {
@@ -855,22 +891,31 @@ display: inline-flex;
     align-items: flex-start;
     background-color: white;
   }
+  .serviciosHome__obrasEnYeso:hover {
+    transform: scale(1.5,1.5);
+    transition: all 1.5s;
+  }
   .serviciosdata {
     margin: 0;
+    width: 345px;
+    height: 101px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .obrasEnYeso__titulo h2 {
+  .obrasEnYeso__titulo {
     font-size: 22px;
-    width: 260px;
+    width: 345px;
+    height: 101px;
     font-family: "Rubik";
   }
 
   .obrasEnYeso__info {
     font-size: 12px;
     font-family: "Open Sans";
+    width: 345px;
+    height: 101px;
   }
 
   .serviciosHome__mantenimiento {
@@ -878,20 +923,32 @@ display: inline-flex;
     height: 101px;
     background-color: white;
   }
+  .serviciosHome__mantenimiento:hover {
+    transform: scale(1.5,1.5);
+    transition: all 1.5s;
+  }
   .mantenimiento__titulo {
     font-size: 11px;
-    font-family: "Rubik";
+    font-family: "Rubik";  
+    width: 345px;
+    height: 101px;
   }
 
   .mantenimiento__info {
     font-size: 12px;
     font-family: "Open Sans";
+    width: 345px;
+    height: 101px;
   }
 
   .serviciosHome__demoliciones {
     width: 345px;
     height: 101px;
     background-color: white;
+  }
+  .serviciosHome__demoliciones:hover {
+    transform: scale(1.5,1.5);
+    transition: all 1.5s;
   }
   .demoliciones__titulo {
     font-size: 15px;
@@ -901,12 +958,18 @@ display: inline-flex;
   .demoliciones__info {
     font-size: 12px;
     font-family: "Open Sans";
+    width: 345px;
+    height: 101px;
   }
 
   .serviciosHome__albanileria {
     width: 345px;
     height: 101px;
     background-color: white;
+  }
+  .serviciosHome__albanileria:hover {
+    transform: scale(1.5,1.5);
+    transition: all 1.5s;
   }
   .albanileria__titulo {
     font-size: 15px;
@@ -916,12 +979,18 @@ display: inline-flex;
   .albanileria__info {
     font-size: 12px;
     font-family: "Open Sans";
+    width: 345px;
+    height: 101px;
   }
 
   .serviciosHome__pintura {
     width: 345px;
     height: 101px;
     background-color: white;
+  }
+  .serviciosHome__pintura:hover {
+    transform: scale(1.5,1.5);
+    transition: all 1.5s;
   }
   .pintura__titulo {
     font-size: 15px;
@@ -930,12 +999,18 @@ display: inline-flex;
   .pintura__info {
     font-size: 12px;
     font-family: "Open Sans";
+    width: 345px;
+    height: 101px;
   }
 
   .serviciosHome__electricidad {
     width: 345px;
     height: 101px;
     background-color: white;
+  }
+  .serviciosHome__electricidad:hover {
+    transform: scale(1.5,1.5);
+    transition: all 1.5s;
   }
   .electricidad__titulo {
     font-size: 15px;
@@ -945,6 +1020,8 @@ display: inline-flex;
   .electricidad__info {
     font-size: 12px;
     font-family: "Open Sans";
+    width: 345px;
+    height: 101px;
   }
 
   .informacionHome {
@@ -1151,10 +1228,10 @@ display: inline-flex;
     background-color: lightslategrey;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     align-content: center;
-    gap: 10%;
+    gap: 5%;
   }
   .experiencia__card1 {
     background-color: white;
@@ -1164,6 +1241,17 @@ display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    
+
+  }
+  .experiencia__card1:hover {
+    transform: scale(1.2,1.2);
+  }
+  .experiencia__card2:hover {
+    transform: scale(1.2,1.2);
+  }
+  .experiencia__card3:hover {
+    transform: scale(1.2,1.2);
   }
   .card1__imagen {
     font-size: 22px;
@@ -1254,7 +1342,7 @@ display: inline-flex;
   .footer {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     width: 100vw;
     height: 50vh;
@@ -1262,8 +1350,9 @@ display: inline-flex;
   .informacion {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     width: 50vw;
-    height: 50vh;
+    height: 60vh;
 
   }
   .footer__formulario {
@@ -1273,42 +1362,44 @@ display: inline-flex;
     align-items: center;
     justify-content: baseline;
     width: 50vw;
-    height: 50vh;
+    height: 60vh;
   }
   .formulario__titulo h2 {
     font-weight: 700;
     font-size: 36px;
+    width: 50vw;
+    height: 10vh;
   }
-  .footer__formulario__caja {
-    width: 500px;
-    height: 200px;
+  .footer__formulario__caja{
+    width: 50vw;
+    height: 60vh;
 
   }
   .nombreMail {
     display: flex;
+    width: 100vw;
+    height: 10vh;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
   .caja__nombre input {
-
-    width: 270px;
-    height: 55px;
+    width: 20vw;
+    height: 5vh;
   }
   .caja__email input {
-
-    width: 300px;
-    height: 55px;
+    width: 47vw;
+    height: 5vh;
   }
   .caja__comentario textarea {
-    margin-top: 2%;
-    width: 600px;
-    height: 120px;
+    width: 90vw;
+    height: 15vh;
 
   }
   .caja__boton input {
+    color: black;
     background-color: white;
     border: 0;
-    width: 200px;
+    width: 30vw;
     height: 40px;
   }
 
@@ -1785,6 +1876,7 @@ display: inline-flex;
     /* ------------PAGINA PROYECTOS INICIO--------------- */
 
     .principalProyectos{
+      background-image: url(/image/);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1805,12 +1897,6 @@ display: inline-flex;
     }
 
 
-
- }
-
-
-    /* ------------PAGINA PROYECTOS FINAL--------------- */
-
     /* ------------PAGINA CONTACTO INICIO--------------- */
 
 
@@ -1822,57 +1908,56 @@ display: inline-flex;
       flex-wrap: wrap;
       width: 100vw;
       height: 80vh;
-      padding-top: 1%;
     }
 
     .foldContacto {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       background: url(../image/imagen_fold_inicio3.jpg);
       background-size: cover;
       padding-bottom: 30px;
       width: 100vw;
       height: 80vh;
-
-
-
   }
 
   .tituloFoldContacto {
-    width: 40vw;
-    height: 20vh;
+    width: 100vw;
+    height: 10vh;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
     font-family: "Rubik";
     font-weight: 700;
     font-size: 44px;
     color: white;
     margin-left: 10%;
-    margin-top: 10%;
 
   }
-  .fold__subtitulo {
-    width: 30vw;
-    height: 20vh;
-    margin-left: 10%;
+  .foldContactoSubtitulo p{
+    width: 50vw;
+    height: 5vh;
+    margin-left: 5%;
+
+
   }
   .botonContacto {
-    width: 10vw;
+    width: 100vw;
     height: 3vh;
     margin-left: 10%;
   }
   .botonContacto a {
     background-color: #ffb400;
     color: white;
-    width: 10vw;
-    height: 3vh;
+    width: 100vw;
+    height: 5vh;
     font-size: medium;
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 15px 20px 15px 20px;
+    align-self: flex-start;
   }
   .fold__info {
     background-color: #ffb400;
@@ -2030,6 +2115,256 @@ background-color: #dad6d6;
     justify-content: flex-start;
     align-items: center;
     width: 45vw;
+    height: 6vh;
+    background-color: white;
+    border: 5px;
+    border-color: black;
+
+  }
+
+
+  .tituloPreguntas{}
+  .respuestas{}
+  .imagenPreguntas{}
+
+
+  .bloqueImagen{
+    width: 50vw;
+    background: url(../image/preguntasimg.svg);
+    background-size: cover;
+  }
+
+  /* ------------PAGINA CONTACTO FINAL--------------- */
+
+
+ }
+
+
+    /* ------------PAGINA PROYECTOS FINAL--------------- */
+
+    /* ------------PAGINA CONTACTO INICIO--------------- */
+
+
+    .principalContacto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 60vh;
+    }
+
+    .foldContacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: url(../image/imagen_fold_inicio3.jpg);
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+  }
+  .contactanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+  }
+  .tituloFoldContacto {
+    width: 100vw;
+    height: 40vh;
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    width: 100vw;
+    height: 10vh;
+
+
+  }
+  .foldContactoSubtitulo {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 20px;
+    width: 100vw;
+    height: 20vh;
+  }
+  .botonContacto a{
+    width: 10vw;
+    height: 60px;
+  }
+  .botonContacto a{
+    width: 150px;
+    height: 40px;
+    border: 15px;
+    background-color:#ffb400;
+    border-color: #ffb400;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 4px 20px;
+  }
+  .fold__info {
+    background-color: #ffb400;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .fold__info__contacto {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .tituloInfo {
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    margin-left: 10%;
+
+  }
+  .datosContacto {
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 15%;
+  }
+
+  .info__ubicacion__contacto {
+    width: 450px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .ubicacion__icono__contacto {
+
+  }
+  .ubicacion__direccion__contacto {
+
+  }
+
+  .info__telefono__contacto {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .telefono__icono__contacto {
+
+  }
+  .telefono__numero__contacto {
+
+  }
+
+  .info__correo__contacto {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .correo__icono__contacto {
+  }
+  .correo__direccion__contacto {
+  }
+
+
+  .mapaGoogle {
+    width: 100vw;
+    height: 70vh;
+    border-color: black;
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .preguntas {
+width: 100vw;
+height: 80vh;
+display: flex;
+flex-direction: row;
+background-color: #dad6d6;
+  }
+  .preguntasBloque{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  .pregunta1 summary {
+   font-weight: 700;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 90vw;
+   height: 6vh;
+   background-color: white;
+   border: 5px;
+   border-color: black;
+  }
+  .pregunta2 summary{
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90vw;
+    height: 6vh;
+    background-color: white;
+    border: 5px;
+    border-color: black;
+  }
+  .pregunta3 summary{
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90vw;
+    height: 6vh;
+    background-color: white;
+    border: 5px;
+    border-color: black;
+  }
+  .pregunta4 summary{
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90vw;
+    height: 6vh;
+    background-color: white;
+    border: 5px;
+    border-color: black;
+  }
+  .pregunta5 summary{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
     height: 6vh;
     background-color: white;
     border: 5px;
