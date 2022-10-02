@@ -1845,6 +1845,119 @@ form {
     height: 101px;
   }
 
+
+  .serviciosTarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200vh;
+  }
+  .informacionHome__asesoramiento1 {
+    width: 70vw;
+    background-color: #ffb400;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 28%;
+  }
+  
+  .asesoramientoServiciosTitulo h2 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .parrafosservicios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .asesoramiento__parrafo1 {
+    width: 349px;
+    height: 30vh;
+  }
+  .asesoramiento__parrafo2 {
+    width: 349px;
+    height: 30vh;
+  }
+  
+  .informacionHome__asesoramiento2 {
+    background-color: cadetblue;
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 28%;
+  }
+  
+  .asesoramiento__titulo h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .parrafos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .asesoramiento__parrafo1 {
+    width: 349px;
+    height: 30vh;
+  }
+  .asesoramiento__parrafo2 {
+    width: 349px;
+    height: 30vh;
+  }
+
+  .informacionHome__asesoramiento3 {
+    background-color: aliceblue;
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 28%;
+  }
+  
+  .asesoramiento__titulo h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .parrafos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .asesoramiento__parrafo1 {
+    width: 349px;
+    height: 30vh;
+  }
+  .asesoramiento__parrafo2 {
+    width: 349px;
+    height: 30vh;
+  }
+
+
+
+
+
+
+
+  
   .proyectosfinalizados {
     background-color: lightslategrey;
     display: flex;
