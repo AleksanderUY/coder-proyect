@@ -733,7 +733,7 @@ p {
 
 @media screen and (min-width: 992px) {
   html {
-    font-family: "Poppins", "Open+Sans", "Rubik";
+    font-family: "Poppins", "Open+Sans", "Rubik" !important;
   }
   body {
     width: 100vw;
@@ -750,7 +750,7 @@ p {
   }
   /*------------- principio del header ----------------------*/
 
-  .main__header {
+  .main__header  {
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -759,6 +759,7 @@ p {
     color: black;
     width: 100vw;
     height: 50px;
+  
   }
   .main__header__logo {
     background-image: url(../image/logoHeader.jpg);
@@ -774,7 +775,7 @@ p {
     height: 30px;
   }
   .main__header ul {
-    width: 450px;
+    width: 550px;
     height: 30px;
     margin: 0;
     display: inline-flex;
@@ -2040,7 +2041,7 @@ p {
   /* ------------PAGINA PROYECTOS INICIO--------------- */
 
   .principalProyectos {
-    background-image: url(/image/);
+    background-image: url(./image/image/fold_proyectos.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
