@@ -1322,53 +1322,63 @@ p {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 50vw;
+    width: 100vw;
     height: 60vh;
   }
   .footer__formulario {
     background-color: #ffb400;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: baseline;
     width: 50vw;
     height: 60vh;
   }
+form {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-start;
+ flex-wrap: wrap;
+ width: 70vw;
+ height: 40vh;
+}
   .formulario__titulo h2 {
     font-weight: 700;
     font-size: 36px;
     width: 50vw;
     height: 10vh;
   }
-  .footer__formulario__caja {
+  .formulario__caja {
     width: 50vw;
     height: 60vh;
   }
   .nombreMail {
     display: flex;
-    width: 100vw;
+    width: 20vw;
     height: 10vh;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .caja__nombre input {
     width: 20vw;
     height: 5vh;
   }
   .caja__email input {
-    width: 47vw;
+    width: 30vw;
     height: 5vh;
   }
   .caja__comentario textarea {
-    width: 90vw;
+    width: 50vw;
     height: 15vh;
   }
-  .caja__boton input {
+  .caja__boton input{
     color: black;
     background-color: white;
     border: 0;
-    width: 30vw;
+    width: 100px;
     height: 40px;
+
   }
 
   .footer__redes {
@@ -1835,6 +1845,135 @@ p {
     height: 101px;
   }
 
+  .proyectosfinalizados {
+    background-color: lightslategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+  }
+  .proyectosEncurso h2 {
+    width: 100vw;
+    height: 15vh;
+    font-size: 1rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .proyectosEncurso__titulo {
+    text-align: center;
+  }
+  .enCurso {
+    display: grid;
+    background-color: lightslategrey;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    gap: 5%;
+  }
+  .enCurso__tarjeta1 {
+    background-color: white;
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .enCurso__tarjeta1:hover {
+    transform: scale(1.2, 1.2);
+  }
+  .enCurso__tarjeta2:hover {
+    transform: scale(1.2, 1.2);
+  }
+  .enCurso__tarjeta3:hover {
+    transform: scale(1.2, 1.2);
+  }
+  .tarjeta1__imagen {
+    font-size: 22px;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tarjeta1__info {
+    font-size: 22px;
+    width: 20vw;
+    height: 20vh;
+    justify-content: center;
+  }
+  .tarjeta1__nombre {
+    font-family: "Rubik", "bold";
+    font-weight: 700;
+    align-self: flex-start;
+    font-size: 24px;
+    margin-left: 10%;
+  }
+
+  .enCurso__tarjeta2 {
+    background-color: white;
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .tarjeta2__imagen {
+    font-size: 22px;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tarjeta2__info {
+    font-size: 22px;
+    width: 20vw;
+    height: 20vh;
+  }
+  .tarjeta2__nombre {
+    font-family: "Rubik", "bold";
+    font-weight: 700;
+    align-self: flex-start;
+    font-size: 24px;
+    margin-left: 10%;
+  }
+
+  .enCurso__tarjeta3 {
+    background-color: white;
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .tarjeta3__imagen {
+    font-size: 22px;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tarjeta3__info {
+    font-size: 22px;
+    width: 20vw;
+    height: 20vh;
+  }
+  .tarjeta3__nombre {
+    font-family: "Rubik", "bold";
+    font-weight: 700;
+    font-size: 24px;
+    align-self: flex-start;
+    margin-left: 10%;
+  }
   /* ------------PAGINA SERVICIOS FINAL--------------- */
 
   /* ------------PAGINA PROYECTOS INICIO--------------- */
