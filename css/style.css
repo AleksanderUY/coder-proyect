@@ -839,6 +839,8 @@ p {
     font-family: "Rubik";
     font-weight: 400;
     font-size: 20px;
+    width: 80vw;
+    height: 15vh;
   }
   .fold__boton a {
     background-color: #ffb400;
@@ -1029,7 +1031,12 @@ p {
     justify-content: center;
     padding-top: 15%;
   }
-
+  .parrafos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
   .asesoramiento__parrafo1 {
     width: 349px;
     height: 216px;
