@@ -42,17 +42,16 @@
         </nav>
       </header>
 <body>
-  <main class="principalProyectos">
-<section class="foldProyectos">
+  <main class="principal">
+<section class="fold">
 
-<div class="fold__titulo"><h1>Our Construction Projects</div>
-<div class="fold__subtitulo"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis egestas pellentesque libero dolor in diam consequat ut. </p></div>
-
+  <h1 class="fold__titulo">Our Construction Projects</h1>
+  <p class="foldProyecto__subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis egestas pellentesque libero dolor in diam consequat ut. </p>
 </section>
 </main> 
 
-<section class="proyectos">
-<div class="container" style="width: 100vw;height:250vh;justify-content: space-around;">
+<section class="container" style="width: 100vw;height:200vh;justify-content: space-around;">
+
 
   <div class="row">
     
@@ -117,7 +116,7 @@
 </div>
 
 <div class="col">
-  <div class="card" style="width: 18rem;">
+  <div class="card" style="width: 18rem; height: 25rem;">
     <img src="./image/image/ciudad vieja.jpg"class="card-img-top" alt="imagen barrio">
     <div class="card-body">
       <h5 class="card-title">Obra barrio Ciudad Vieja</h5>
@@ -166,18 +165,18 @@
 </section>
 
 <footer class="footer">
-  <div class="footer">
   <div class="footer__formulario">
-    <div class="formulario__titulo"> <h2>Contactanos</h2></div>
+    <h2 class="formulario__titulo">Contactanos</h2>
     <div class="formulario__caja"><form>
       <div class="nombreMail">
-      <div class="caja__nombre"><input type="text" value="Nombre"/></div>
-      <div class="caja__email"><input type="email" value="Correo electronico"/></div>
+      <input class="caja__nombre" type="text" value="Nombre"/>
+      <input class="caja__email" type="email" value="Correo electronico"/>
     </div>
-      <div class="caja__comentario"><textarea name="comentario aquí" id="" cols="50" rows="10"></textarea></div>
-      <div class="caja__boton"><input type="submit" value="Enviar"/></div>
+      <textarea class="caja__comentario" name="comentario aquí" id="" cols="50" rows="10"></textarea>
+      <input class="caja__boton" type="submit" value="Enviar"/>
   </form></div>
 </div>
+
 
 <div class="informacion">
   <div class="footer__redes">
@@ -192,28 +191,32 @@
         <a href="https://uy.linkedin.com/"><img src="./image/linkedinIcon.svg" width="30px" height="30px" alt=""></a>
       </div>
 
+
     </div>
   </div>
+
 
   <div class="footer__info">
       <div class="datos">
     <div class="info__ubicacion">
-        <div class="ubicacion__icono"><img src="./image/ubi_icono.svg" alt="Icono de ubicacion"></div>
-        <div class="ubicacion__direccion"><p>Domingo Arena 12345, esquina Jose Belloni.</p></div>
+        <img class="ubicacion__icono" src="./image/ubi_icono.svg" alt="Icono de ubicacion">
+        <p class="ubicacion__direccion">Domingo Arena 12345, esquina Jose Belloni.</p>
       </div>
       <div class="info__telefono">
-        <div class="telefono__icono"><img src="./image/tel_icono.svg" alt="Icono de telefono"></div>
-        <div class="telefono__numero"><p>+098 123 456 78</p></div>
+        <img class="telefono__icono" src="./image/tel_icono.svg" alt="Icono de telefono">
+        <p class="telefono__numero">+098 123 456 78</p>
       </div>
       <div class="info__correo">
-        <div class="correo__icono"><img src="./image/mail_icono.svg" alt="Icono de mail"></div>
-        <div class="correo__direccion"><p>contacto@alebis.com</p></div>
+        <img class="correo__icono" src="./image/mail_icono.svg" alt="Icono de mail">
+        <p class="correo__direccion">contacto@alebis.com</p>
       </div>
       </div>
 
+
     </div>
+  
   </div>
-  </div>
+
 </footer>
 </body>
 </html>

@@ -413,7 +413,7 @@ a {
   width: 100vw;
   height: 100vh;
 }
-.experiencia__valoraciones h2 {
+.experiencia__valoraciones {
   width: 100vw;
   height: 15vh;
   font-size: 20px;
@@ -664,8 +664,8 @@ a {
 /* ------------PAGINA PROYECTOS FIN--------------- */
 /* ------------PAGINA SERVICIOS INICIO--------------- */
 /* ------------PAGINA SERVICIOS FIN--------------- */
-/* ------------PAGINA CONTE INICIO--------------- */
-/* ------------PAGINA SERVICIOS FIN--------------- */
+/* ------------PAGINA CONTACTO INICIO--------------- */
+/* ------------PAGINA CONTACTO FIN--------------- */
 
 
   .the__titulo2 h2 {
@@ -1273,7 +1273,8 @@ a {
 
   /* ------------PAGINA CONTACTO FINAL--------------- */
 
-
+/* ------------PAGINA PROYECTOS INICIO--------------- */
+.foldProyecto__subtitulo {}
 /* ------------PAGINA PROYECTOS FINAL--------------- */
 
 /* ------------PAGINA CONTACTO INICIO--------------- */
@@ -1486,15 +1487,16 @@ a {
 @media screen and (min-width: 992px) {
   html {
     font-family: "Poppins", "Open+Sans", "Rubik" !important;
-
-    width: 80vw;
+    
   }
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:100vw;
+    overflow-x: hidden;
+
+
   }
   a {
     text-decoration: none;
@@ -1525,6 +1527,7 @@ a {
     background-color: white;
     width: 550px;
     height: 30px;
+    margin-right: 5%;
   }
   .main__header ul {
     width: 550px;
@@ -1574,6 +1577,8 @@ a {
     height: 100vh;
   }
   .fold__titulo  {
+    display: inline-flex;
+    width: 95vw;
     font-family: "Rubik";
     font-weight: 700;
     font-size: 64px;
@@ -1624,7 +1629,7 @@ a {
     background-color: white;
   }
   .serviciosHome__obrasEnYeso:hover {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.1, 1.1);
     transition: all 1.5s;
   }
   .serviciosdata {
@@ -1641,7 +1646,7 @@ a {
     height: 100px;
   }
   .obrasEnYeso__titulo{
-    font-size: 15px;
+    font-size: 20px;
     width: 180px;
     height: 60px;
     font-family: "Rubik";
@@ -1781,8 +1786,9 @@ a {
     justify-content: space-between; 
    }
   .asesoramiento__titulo{
+    width: 30vw;
     font-size: 30px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     padding-top: 15%;
@@ -1795,13 +1801,15 @@ a {
     justify-content: space-around;
   }
   .asesoramiento__parrafo1 {
+    display: inline-flex;
     width: 30vw;
-    height: 216px;
+    height: 250px;
     padding-right: 5%;
   }
   .asesoramiento__parrafo2 {
+    display: inline-flex;
     width: 30vw;
-    height: 216px;
+    height: 250px;
     padding-left: 5%;
   }
   .informacionHome__banner {
@@ -1959,7 +1967,7 @@ a {
     align-items: center;
   }
   .valoraciones__titulo {
-    width: 100vw;
+    display: inline-flex;
     font-family: "Rubik";
     text-align: center;
   }
@@ -1971,7 +1979,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-    gap: 5%;
+    gap: 2%;
   }
   .experiencia__card1 {
     background-color: white;
@@ -1980,7 +1988,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .experiencia__card1:hover {
     transform: scale(1.2, 1.2);
@@ -2096,12 +2104,13 @@ a {
     align-items: center;
     width: 50vw;
     height: 60vh;
+    margin:0;
   }
   form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     width: 70vw;
     height: 40vh;
@@ -2118,7 +2127,7 @@ a {
   }
   .nombreMail {
     display: flex;
-    width: 20vw;
+    width: 49vw;
     height: 10vh;
     flex-direction: row;
     justify-content: flex-start;
@@ -2132,7 +2141,7 @@ a {
     height: 5vh;
   }
   .caja__comentario{
-    width: 50vw;
+    width: 49vw;
     height: 15vh;
   }
   .caja__boton{
@@ -2141,6 +2150,9 @@ a {
     border: 0;
     width: 100px;
     height: 40px;
+    align-self: flex-start;
+    margin-left: 1%;
+    margin-top: 2%;
   }
 
   .footer__redes {
@@ -2236,78 +2248,136 @@ a {
   }
 
   .fold__nosotros__titulo {
+    display: flex;
     font-family: "Rubik";
     width: 60vw;
-    height: 40vh;
+    height: 10vh;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 60px;
   }
   .fold__nosotros__subtitulo {
     font-family: "Rubik";
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     width: 50vw;
-    height: 15vh;
+    height: 10vh;
   }
-  .fold__nosotros__boton a {
+  .fold__nosotros__boton{
     background-color: #ffb400;
     color: white;
-    width: 10vw;
-    height: 3vh;
+    width: 12vw;
+    height: 6vh;
     font-size: medium;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 20px 15px 20px;
     align-self: flex-start;
-    margin-left: 10%;
+    margin-left: 2%;
   }
-
+  .nosotros__historia1 {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .parrafosNosotros {
+    background-color: bisque;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nosotros__historia__parrafo1 {
+    width: 40vw;
+    height: 10vh;
+  }
+  .nosotros__historia__parrafo2 {
+    width: 40vw;
+    height: 10vh;
+  }
   /* amarilla---------------------------------------------- */
 
   .caracteristicas {
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
   }
+  .caracteristicas__imagen {
+    width: 70vw;
+    height: 80vh;
+  }
   .caracteristicas__only {
     background-color: #ffb400;
-    width: 40vw;
+    width: 30vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .caracteristicas__only__titulo {
-    font-size: larger;
-    width: 400px;
-    height: 50px;
+  
+  .caracteristicas__banner {
+    width: 70vw;
+    height: 20vh;
   }
-  .only {
-    width: 370px;
-    height: 25%;
+  .caracteristicas__banner__cajaAmarilla {
+    background-color: ;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .only__imagen1 img {
-    width: 50px;
-    height: 50px;
-    align-self: flex-start;
-  }
-  .only__titulo1 {
-    font-family: "Rubik";
-    font-size: large;
-  }
-  .only__parrafo1 {
-    font-size: 15px;
-    width: 370px;
-    height: 90px;
-  }
-  .the {
-    width: 370px;
-    height: 25%;
+  .caracteristicas__banner__cajaNegra {
+    background-color: grey;
+    display: flex;
+    width: 35vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   }
 
+  /* ------------PAGINA PROYECTOS INICIO--------------- */
+
+/* ------------PAGINA PROYECTOS FIN--------------- */
+
+
+
+
+/* ------------PAGINA SERVICIOS INICIO--------------- */
+
+/* ------------PAGINA SERVICIOS FIN--------------- */
+/* ------------PAGINA CONTACTO INICIO--------------- */
+.preguntas {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+}
+.preguntasBloque {
+  width: 50%;
+  height: 100vh;
+}
+.pregunta1 {
+  width: 200px;
+}
+
+.bloqueImagen {
+  width: 50vw;
+  height: 100vh;
+}
+
+
+/* ------------PAGINA CONTACTO FIN--------------- */
   }

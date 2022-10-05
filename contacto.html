@@ -36,9 +36,9 @@
     <main class="principalContacto">
     <section class="foldContacto">
       <div class="contactanos">
-      <div class="tituloFoldContacto"><h1>Contactanos!</h1></div>
-      <div class="foldContactoSubtitulo"><p>Bienvenidos a la pagina de contacto, si llegaste hasta aqui es porque estas interesado en nuestros servicios. dejanos un mensaje y te respondemos a la brevedad.</p></div>
-      <div class="botonContacto"><a href="#footer">Enviar mensaje</a></div>
+      <h1 class="tituloFoldContacto">Contactanos!</h1>
+      <p class="fold2__subtitulo">Bienvenidos a la pagina de contacto, si llegaste hasta aqui es porque estas interesado en nuestros servicios. dejanos un mensaje y te respondemos a la brevedad.</p>
+      <a class="fold__nosotros__boton" href="#footer">Enviar mensaje</a>
       </div>
 
     </section>
@@ -49,8 +49,9 @@
 </section>
 <section class="preguntas">
   <div class="preguntasBloque">
+    <h2 class="tituloPreguntas"> Preguntas Frecuentes de nuestros clientes</h2>
     <details class="pregunta1">
-      <summary>Que tipo de materiales usan para la construccion?</summary>
+      <summary class="pregunta">Que tipo de materiales usan para la construccion?</summary>
       <h4>Respuesta</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veniam voluptatibus cumque delectus dolorem eveniet architecto repudiandae et pariatur. Maiores fugit aliquam neque sit ratione sunt laudantium in at fugiat incidunt animi enim aut, laborum error beatae culpa provident officia quisquam autem suscipit sequi architecto! Qui reiciendis tempora repellat quas.</p>
     </details>
@@ -69,67 +70,71 @@
       <h4>Respuesta</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veniam voluptatibus cumque delectus dolorem eveniet architecto repudiandae et pariatur. Maiores fugit aliquam neque sit ratione sunt laudantium in at fugiat incidunt animi enim aut, laborum error beatae culpa provident officia quisquam autem suscipit sequi architecto! Qui reiciendis tempora repellat quas.</p>
     </details>
-    <details class="pregunta5">
+    <details class="pregunta4">
       <summary>Tienen garantia del trabajo realizado?</summary>
       <h4>Respuesta</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veniam voluptatibus cumque delectus dolorem eveniet architecto repudiandae et pariatur. Maiores fugit aliquam neque sit ratione sunt laudantium in at fugiat incidunt animi enim aut, laborum error beatae culpa provident officia quisquam autem suscipit sequi architecto! Qui reiciendis tempora repellat quas.</p>
     </details>
+    
   <div class="tituloPreguntas"></div>
-  <div class="respuestas"></div>
-  <div class="imagenPreguntas"></div>
-</div>
-<div class="bloqueImagen"></div>
+  
+<div class="bloqueImagen"> <img src="/image/image/laTeja.jpg" alt=""></div>
 </section>
-    <footer class="footer" id="footer">
-      <div class="footer">
-      <div class="footer__formulario">
-        <div class="formulario__titulo"> <h2>Contactanos</h2></div>
-        <div class="formulario__caja"><form>
-          <div class="nombreMail">
-          <div class="caja__nombre"><input type="text" value="Nombre"/></div>
-          <div class="caja__email"><input type="email" value="Correo electronico"/></div>
-        </div>
-          <div class="caja__comentario"><textarea name="comentario aquí" id="" cols="50" rows="10"></textarea></div>
-          <div class="caja__boton"><input type="submit" value="Enviar"/></div>
-      </form></div>
+
+<footer class="footer" id="footer">
+  <div class="footer__formulario">
+    <h2 class="formulario__titulo">Contactanos</h2>
+    <div class="formulario__caja"><form>
+      <div class="nombreMail">
+      <input class="caja__nombre" type="text" value="Nombre"/>
+      <input class="caja__email" type="email" value="Correo electronico"/>
     </div>
+      <textarea class="caja__comentario" name="comentario aquí" id="" cols="50" rows="10"></textarea>
+      <input class="caja__boton" type="submit" value="Enviar"/>
+  </form></div>
+</div>
 
-    <div class="informacion">
-      <div class="footer__redes">
-        <div class="iconoDeRedes">
-          <div class="iconoDeRedes_facebook">
-            <a href="https://es-la.facebook.com/"><img src="./image/facebookIcon.svg" width="30px" height="30px" alt=""></a>
-          </div>
-          <div class="iconoDeRedes_twitter">
-            <a href="https://twitter.com/login?lang=es"><img src="./image/twitterIcon.svg" width="30px" height="30px" alt=""></a>
-          </div>
-          <div class="iconoDeRedes_linkedin">
-            <a href="https://uy.linkedin.com/"><img src="./image/linkedinIcon.svg" width="30px" height="30px" alt=""></a>
-          </div>
 
-        </div>
+<div class="informacion">
+  <div class="footer__redes">
+    <div class="iconoDeRedes">
+      <div class="iconoDeRedes_facebook">
+        <a href="https://es-la.facebook.com/"><img src="./image/facebookIcon.svg" width="30px" height="30px" alt=""></a>
+      </div>
+      <div class="iconoDeRedes_twitter">
+        <a href="https://twitter.com/login?lang=es"><img src="./image/twitterIcon.svg" width="30px" height="30px" alt=""></a>
+      </div>
+      <div class="iconoDeRedes_linkedin">
+        <a href="https://uy.linkedin.com/"><img src="./image/linkedinIcon.svg" width="30px" height="30px" alt=""></a>
       </div>
 
-      <div class="footer__info">
-          <div class="datos">
-        <div class="info__ubicacion">
-            <div class="ubicacion__icono"><img src="./image/ubi_icono.svg" alt="Icono de ubicacion"></div>
-            <div class="ubicacion__direccion"><p>Domingo Arena 12345, esquina Jose Belloni.</p></div>
-          </div>
-          <div class="info__telefono">
-            <div class="telefono__icono"><img src="./image/tel_icono.svg" alt="Icono de telefono"></div>
-            <div class="telefono__numero"><p>+098 123 456 78</p></div>
-          </div>
-          <div class="info__correo">
-            <div class="correo__icono"><img src="./image/mail_icono.svg" alt="Icono de mail"></div>
-            <div class="correo__direccion"><p>contacto@alebis.com</p></div>
-          </div>
-          </div>
 
-        </div>
+    </div>
+  </div>
+
+
+  <div class="footer__info">
+      <div class="datos">
+    <div class="info__ubicacion">
+        <img class="ubicacion__icono" src="./image/ubi_icono.svg" alt="Icono de ubicacion">
+        <p class="ubicacion__direccion">Domingo Arena 12345, esquina Jose Belloni.</p>
+      </div>
+      <div class="info__telefono">
+        <img class="telefono__icono" src="./image/tel_icono.svg" alt="Icono de telefono">
+        <p class="telefono__numero">+098 123 456 78</p>
+      </div>
+      <div class="info__correo">
+        <img class="correo__icono" src="./image/mail_icono.svg" alt="Icono de mail">
+        <p class="correo__direccion">contacto@alebis.com</p>
       </div>
       </div>
-    </footer>
+
+
+    </div>
+  
+  </div>
+
+</footer>
 
     </body>
 
