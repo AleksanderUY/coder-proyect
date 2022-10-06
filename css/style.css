@@ -776,38 +776,33 @@ a {
   width: 70vw;
   height: 100vh;
 }
-.bloqueWhat {
-  width: 30vw;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  display: none;
-}
+
 .foldServicios {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  background-image: url(../image/imagen_fold_inicio3.jpg);
+  background-image: url(../image/image/imagen_fold_servicios.jpg);
 }
 .servicios__titulo {
   font-family: "Rubik";
-  width: 500px;
-  height: 220px;
+  color: black;
+  width: 80vw;
+  height: 20vh;
   font-weight: 700;
   font-size: 45px;
 }
 .servicios__subtitulo {
   font-family: "Rubik";
+  color: black;
   font-weight: 400;
   font-size: 20px;
-  width: 40vw;
-  height: 10vh;
+  width: 80vw;
+  height: 20vh;
 }
-.servicios__boton a {
+.servicios__boton{
   background-color: #ffb400;
   display: flex;
   align-items: center;
@@ -817,123 +812,87 @@ a {
   width: 15rem;
   height: 3rem;
 }
-.cardWhat {
-  width: 300px;
-  height: 500px;
-}
-.what {
-  color: #ffb400;
-  font-size: large;
-}
-.serviciosYeso {
-  width: 345px;
-  height: 101px;
-}
+
+
 .serviciosTarjetas {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 200vh;
+  height: 300vh;
 }
 .informacionHome__asesoramiento1 {
-  width: 70vw;
+  width: 100vw;
   background-color: #ffb400;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-left: 28%;
 }
 
 .asesoramientoServiciosTitulo{
   font-size: 2rem;
+  font-family: "Rubik";
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .parrafosservicios {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-.asesoramiento__parrafo1 {
-  width: 349px;
-  height: 30vh;
-}
-.asesoramiento__parrafo2 {
-  width: 349px;
-  height: 30vh;
-}
-
 .informacionHome__asesoramiento2 {
   background-color: cadetblue;
-  width: 70vw;
-  height: 70vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-right: 28%;
 }
 
-.asesoramiento__titulo h2 {
+.asesoramientoServiciosTitulo{
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.asesoramiento__parrafo1 {
-  width: 349px;
-  height: 30vh;
-}
-.asesoramiento__parrafo2 {
-  width: 349px;
-  height: 30vh;
-}
-
 .informacionHome__asesoramiento3 {
   background-color: aliceblue;
-  width: 70vw;
-  height: 70vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-left: 28%;
+
 }
 
-.asesoramiento__titulo h2 {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.asesoramiento__parrafo1 {
-  width: 349px;
+.asesoramiento__parrafo1{
+  width: 90vw;
   height: 30vh;
 }
 .asesoramiento__parrafo2 {
-  width: 349px;
+  width: 90vw;
   height: 30vh;
 }
 
 .proyectosfinalizados {
   background-color: lightslategrey;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
+  align-items: center;
 }
-.proyectosEncurso h2 {
+.proyectosEncurso{
   width: 100vw;
-  height: 15vh;
+  height: 200vh;
   font-size: 1rem;
   display: flex;
   align-content: center;
@@ -946,16 +905,16 @@ a {
 .enCurso {
   display: grid;
   background-color: lightslategrey;
-  width: 100vw;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  width: 90vw;
+  height: 200vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   align-content: center;
   gap: 5%;
 }
 .enCurso__tarjeta1 {
   background-color: white;
-  width: 25vw;
+  width: 90vw;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -972,18 +931,17 @@ a {
   transform: scale(1.2, 1.2);
 }
 .tarjeta1__imagen {
-  font-size: 22px;
-  width: 20vw;
-  height: 10vh;
+  width: 90vw;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .tarjeta1__info {
+  font-family: "Rubik";
   font-size: 22px;
-  width: 20vw;
+  width: 70vw;
   height: 20vh;
-  justify-content: center;
 }
 .tarjeta1__nombre {
   font-family: "Rubik", "bold";
@@ -995,7 +953,7 @@ a {
 
 .enCurso__tarjeta2 {
   background-color: white;
-  width: 25vw;
+  width: 90vw;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -1003,16 +961,16 @@ a {
   justify-content: space-around;
 }
 .tarjeta2__imagen {
-  font-size: 22px;
-  width: 20vw;
-  height: 10vh;
+  width: 90vw;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .tarjeta2__info {
+  font-family: "Rubik";
   font-size: 22px;
-  width: 20vw;
+  width: 70vw;
   height: 20vh;
 }
 .tarjeta2__nombre {
@@ -1025,7 +983,7 @@ a {
 
 .enCurso__tarjeta3 {
   background-color: white;
-  width: 25vw;
+  width: 90vw;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -1033,16 +991,16 @@ a {
   justify-content: space-around;
 }
 .tarjeta3__imagen {
-  font-size: 22px;
-  width: 20vw;
-  height: 10vh;
+  width: 90vw;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .tarjeta3__info {
+  font-family: "Rubik";
   font-size: 22px;
-  width: 20vw;
+  width: 70vw;
   height: 20vh;
 }
 .tarjeta3__nombre {
@@ -1284,7 +1242,6 @@ a {
 .bloqueImagen {
   width: 50vw;
   background-size: cover;
-  display: none;
 }
 
 /* ------------PAGINA CONTACTO FINAL--------------- */
@@ -1918,6 +1875,8 @@ summary {
     display: inline-flex;
     font-family: "Rubik";
     text-align: center;
+    justify-content: center;
+    font-size: 30px;
   }
   .experiencias {
     display: grid;
@@ -2224,7 +2183,7 @@ summary {
   }
   .nosotros__historia1 {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2323,7 +2282,7 @@ summary {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../image/imagen_fold_inicio3.jpg);
+    background-image: url(/image/imagen_fold_servicios.jpg);
   }
   .servicios__titulo {
     font-family: "Rubik";
@@ -2349,14 +2308,7 @@ summary {
     width: 15rem;
     height: 3rem;
   }
-  .cardWhat {
-    width: 300px;
-    height: 500px;
-  }
-  .what {
-    color: #ffb400;
-    font-size: large;
-  }
+
   .serviciosYeso {
     width: 345px;
     height: 101px;
@@ -2392,15 +2344,6 @@ summary {
     align-items: center;
     justify-content: space-around;
   }
-  .asesoramiento__parrafo1 {
-    width: 349px;
-    height: 30vh;
-  }
-  .asesoramiento__parrafo2 {
-    width: 349px;
-    height: 30vh;
-  }
-  
   .informacionHome__asesoramiento2 {
     background-color: cadetblue;
     width: 70vw;
@@ -2417,15 +2360,6 @@ summary {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .asesoramiento__parrafo1 {
-    width: 349px;
-    height: 30vh;
-  }
-  .asesoramiento__parrafo2 {
-    width: 349px;
-    height: 30vh;
   }
   
   .informacionHome__asesoramiento3 {
@@ -2458,12 +2392,12 @@ summary {
   .proyectosfinalizados {
     background-color: lightslategrey;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 100vw;
     height: 100vh;
   }
-  .proyectosEncurso h2 {
+  .proyectosEncurso{
     width: 100vw;
     height: 15vh;
     font-size: 1rem;
@@ -2473,9 +2407,10 @@ summary {
     align-items: center;
   }
   .proyectosEncurso__titulo {
-    font-family: "Rubik"
+    font-family: "Rubik";
     text-align: center;
-
+    width: 80vw;
+    height: 20vh;
   }
   .enCurso {
     display: grid;
@@ -2506,9 +2441,8 @@ summary {
     transform: scale(1.2, 1.2);
   }
   .tarjeta1__imagen {
-    font-size: 22px;
-    width: 20vw;
-    height: 10vh;
+    width: 25vw;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2538,8 +2472,8 @@ summary {
   }
   .tarjeta2__imagen {
     font-size: 22px;
-    width: 20vw;
-    height: 10vh;
+    width: 25vw;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2568,8 +2502,8 @@ summary {
   }
   .tarjeta3__imagen {
     font-size: 22px;
-    width: 20vw;
-    height: 10vh;
+    width: 25vw;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2585,6 +2519,7 @@ summary {
     font-size: 24px;
     align-self: flex-start;
     margin-left: 10%;
+  }
   /* ------------PAGINA SERVICIOS FIN--------------- */
   /* ------------PAGINA CONTACTO INICIO--------------- */
   .foldContacto {
