@@ -1,4 +1,5 @@
 html {
+  overflow-x: hidden;
   font-family: "Poppins", "Open+Sans", "Rubik";
 }
 body {
@@ -9,18 +10,17 @@ body {
   background-color: darkgrey;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
+  color: black;
 }
-p {
-}
-
 .main__header {
   background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   color: black;
   width: 100vw;
@@ -30,14 +30,14 @@ p {
 .main__header__logo {
   background-image: url(../image/logoHeader.jpg);
   border-radius: 15px 15px;
-  width: 33vw;
-  height: 5vh;
+  width: 135px;
+  height: 38px;
   display: inline-flex;
-  margin-left: 5%;
+  margin-left: 1%;
 }
 .main__header nav {
-  width: 67vw;
-  height: 2vh;
+  width: 60vw;
+  height: 6vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -53,11 +53,10 @@ p {
   background-color: white;
   margin-right: 5px;
   font-family: "Poppins";
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 700;
   display: inline-flex;
 }
-
 .principal {
   display: flex;
   flex-direction: column;
@@ -73,14 +72,11 @@ p {
   flex-direction: column;
   background-size: cover;
   align-items: center;
-  justify-content: space-around;
   padding-bottom: 5vh;
   width: 100vw;
   height: 60vh;
 }
-.fold__imagen {
-}
-.fold__titulo h1 {
+.fold__titulo {
   font-family: "Rubik";
   font-weight: 700;
   font-size: 30px;
@@ -93,37 +89,29 @@ p {
   text-align: center;
 }
 .fold__subtitulo {
-  font-family: "Rubik";
-  font-weight: 700;
-  font-size: 48px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: larger;
   width: 100vw;
-  height: 5vh;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
 }
-.fold__subtitulo p {
-  font-family: "Rubik";
-  font-weight: 400;
-  font-size: 15px;
-  width: 100vw;
-  height: 5vh;
-}
-.fold__boton a {
+
+.fold__boton {
   border: 15px;
   font-size: large;
   background-color: #ffb400;
   border-color: #ffb400;
+  font-family: "Rubik";
   color: black;
-  margin-left: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 4px 20px;
+  padding: 10px 30px;
 }
 
 .serviciosHome {
@@ -133,11 +121,12 @@ p {
   align-items: center;
   justify-items: center;
   width: 100vw;
-  height: 130vh;
+  height: 200vh;
   background-color: rgb(249, 244, 244);
   color: black;
 }
 .serviciosdata {
+  width: 90vw;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -146,11 +135,11 @@ p {
 }
 .serviciosHome__obrasEnYeso {
   width: 90vw;
-  height: 20vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background-color: white;
 }
 .obrasEnYeso__titulo h2 {
@@ -176,15 +165,13 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background-color: white;
 }
 .mantenimiento__titulo h2 {
   font-size: large;
   width: 40vw;
   font-family: "Rubik";
-}
-.mantenimiento__imagen {
 }
 .mantenimiento__info {
   font-size: 1rem;
@@ -193,21 +180,18 @@ p {
   height: 10vh;
   padding-left: 10%;
 }
-
 .serviciosHome__demoliciones {
   width: 90vw;
   height: 20vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background-color: white;
 }
 .demoliciones__titulo {
   font-size: 15px;
   font-family: "Rubik";
-}
-.demoliciones__imagen {
 }
 .demoliciones__info {
   font-size: 1rem;
@@ -216,21 +200,18 @@ p {
   width: 50vw;
   height: 10vh;
 }
-
 .serviciosHome__albanileria {
   width: 90vw;
   height: 20vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background-color: white;
 }
 .albanileria__titulo {
   font-size: 15px;
   font-family: "Rubik";
-}
-.albanileria__imagen {
 }
 .albanileria__info {
   font-size: 1rem;
@@ -239,21 +220,18 @@ p {
   height: 10vh;
   padding-left: 10%;
 }
-
 .serviciosHome__pintura {
   width: 90vw;
   height: 20vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background-color: white;
 }
 .pintura__titulo {
   font-size: 15px;
   font-family: "Rubik";
-}
-.pintura__imagen {
 }
 .pintura__info {
   font-size: 1rem;
@@ -262,21 +240,18 @@ p {
   height: 10vh;
   padding-left: 10%;
 }
-
 .serviciosHome__electricidad {
   width: 90vw;
   height: 20vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background-color: white;
 }
 .electricidad__titulo {
   font-size: 15px;
   font-family: "Rubik";
-}
-.electricidad__imagen {
 }
 .electricidad__info {
   font-size: 1rem;
@@ -286,57 +261,54 @@ p {
   padding-left: 10%;
 }
 
-.informacionHome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 180vh;
-}
 .informacionHome__asesoramiento {
   width: 70vw;
-  height: 200vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-
-.asesoramiento__titulo h2 {
+.asesoramiento__titulo {
   font-size: 20px;
-  display: flex;
+  width: 100vw;
+  height: 10vh;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding-top: 15%;
+  padding-top: 1%;
 }
 .parrafos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 100vw;
 }
 .asesoramiento__parrafo1 {
   width: 349px;
-  height: 30vh;
+  height: 50vh;
 }
 .asesoramiento__parrafo2 {
   width: 349px;
-  height: 30vh;
+  height: 50vh;
 }
-
 .informacionHome__amarillo {
   background-color: #ffb400;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 .eco {
   width: 100vw;
-  height: 25%;
+  height: 25vh;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .eco__imagen1 {
   width: 50px;
@@ -355,7 +327,11 @@ p {
 
 .newest {
   width: 100vw;
-  height: 25%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .newest__imagen2 {
   width: 50px;
@@ -371,10 +347,10 @@ p {
   width: 370px;
   height: 20vh;
 }
-
 .high {
+  background-color: #ffb400;
   width: 100vw;
-  height: 25%;
+  height: 25vh;
 }
 .high__imagen3 {
   width: 50px;
@@ -390,11 +366,10 @@ p {
   width: 100vw;
   height: 20vh;
 }
-
 .informacionHome__banner {
   background-color: black;
   width: 100vw;
-  height: 15vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -402,25 +377,23 @@ p {
 }
 .banner__titulo {
   color: white;
+  text-align: center;
   width: 300px;
   height: 70px;
-  font-size: 15px;
-  margin-left: 10%;
+  font-size: 18px;
 }
-.banner__boton a {
+.banner__boton {
   border: 15px;
-  background-color: #ffb400;
+  background-color: white;
   border-color: #ffb400;
   color: black;
-  margin-left: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
   padding: 4px 15px;
+  margin-bottom: 5%;
 }
-
 .fold2 {
   display: flex;
   background: url(../image/imagen_fold_inicio.jpg);
@@ -434,42 +407,18 @@ p {
   width: 100vw;
   height: 50vh;
 }
-
-.fold2__titulo2 {
-  font-family: "Rubik";
-  font-weight: 700;
-  font-size: 20px;
-}
-.fold2__subtitulo {
-  font-family: "Rubik";
-  font-weight: 400;
-  font-size: 15px;
-}
-.fold2__boton a {
-  border: 15px;
-  background-color: #ffb400;
-  border-color: #ffb400;
-  color: black;
-  margin-left: 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 4px 15px;
-}
-
 .experiencia {
   background-color: lightslategrey;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
 }
-.experiencia__valoraciones h2 {
+.experiencia__valoraciones {
+  background-color: lightslategrey;
   width: 100vw;
-  height: 15vh;
+  height: 105vh;
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -478,14 +427,19 @@ p {
   align-items: center;
 }
 .valoraciones__titulo {
+  background-color: lightslategrey;
+  width: 100vw;
+  font-family: "Rubik";
+  height: 10vh;
   text-align: center;
+  margin-top: 15%;
 }
 .experiencias {
   display: grid;
   justify-items: center;
   background-color: lightslategrey;
   width: 100vw;
-  height: 65vh;
+  height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   align-content: center;
@@ -494,7 +448,7 @@ p {
 .experiencia__card1 {
   background-color: white;
   width: 90vw;
-  height: 20vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -521,7 +475,7 @@ p {
 .experiencia__card2 {
   background-color: white;
   width: 90vw;
-  height: 20vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -547,7 +501,7 @@ p {
 .experiencia__card3 {
   background-color: white;
   width: 90vw;
-  height: 20vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -594,9 +548,9 @@ p {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
 }
-.formulario__titulo h2 {
+.formulario__titulo {
   font-weight: 700;
   font-size: 20px;
   width: auto;
@@ -613,19 +567,19 @@ p {
   flex-direction: row;
   justify-content: space-between;
 }
-.caja__nombre input {
+.caja__nombre {
   width: 40vw;
   height: 5vh;
 }
-.caja__email input {
+.caja__email {
   width: 47vw;
   height: 5vh;
 }
-.caja__comentario textarea {
+.caja__comentario {
   width: 90vw;
   height: 15vh;
 }
-.caja__boton input {
+.caja__boton {
   background-color: white;
   border: 0;
   width: 30vw;
@@ -691,10 +645,6 @@ p {
   justify-content: center;
   align-items: flex-start;
 }
-.ubicacion__icono {
-}
-.ubicacion__direccion {
-}
 
 .info__telefono {
   width: 200px;
@@ -704,10 +654,6 @@ p {
   align-items: center;
   justify-content: flex-start;
 }
-.telefono__icono {
-}
-.telefono__numero {
-}
 .info__correo {
   width: 200px;
   height: 60px;
@@ -716,10 +662,7 @@ p {
   align-items: center;
   justify-content: flex-start;
 }
-.correo__icono {
-}
-.correo__direccion {
-}
+
 /* ------------PAGINA INDEX FIN--------------- */
 
 /* ------------PAGINA NOSOTROS INICIO--------------- */
@@ -728,21 +671,737 @@ p {
 /* ------------PAGINA PROYECTOS FIN--------------- */
 /* ------------PAGINA SERVICIOS INICIO--------------- */
 /* ------------PAGINA SERVICIOS FIN--------------- */
-/* ------------PAGINA CONTE INICIO--------------- */
-/* ------------PAGINA SERVICIOS FIN--------------- */
+/* ------------PAGINA CONTACTO INICIO--------------- */
+/* ------------PAGINA CONTACTO FIN--------------- */
 
+.the__titulo2 h2 {
+  font-family: "Rubik";
+  font-size: 22px;
+  width: 350px;
+  height: 30px;
+}
+.the__parrafo2 {
+  font-size: 15px;
+  width: 370px;
+  height: 150px;
+}
+.quality {
+  width: 370px;
+  height: 25%;
+}
+.quality__titulo3 h2 {
+  font-family: "Rubik";
+  font-size: 22px;
+  width: 370px;
+  height: 50px;
+}
+.quality__parrafo3 {
+  font-size: 15px;
+  width: 350px;
+  height: 150px;
+}
+.nosotros__historia1 {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+}
+.nosotros__historia__asesoramiento {
+  background-color: grey;
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+}
+.nosotros__historia__titulo {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.parrafosNosotros {
+  background-color: bisque;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nosotros__historia__parrafo1 {
+  width: 50vw;
+  height: 10vh;
+}
+.nosotros__historia__parrafo2 {
+  width: 50vw;
+  height: 10vh;
+}
+.caracteristicas__imagen img {
+  width: 70vw;
+  height: 100vh;
+}
+.caracteristicas__only {
+  background-color: grey;
+  width: 30vw;
+  height: 120vh;
+}
+.caracteristicas__banner {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  height: 20vh;
+  justify-content: space-around;
+}
+.caracteristicas__banner {
+  display: flex;
+  flex-direction: row;
+}
+/* ------------PAGINA NOSOTROS FINAL--------------- */
+
+/* ------------PAGINA SERVICIOS INICIO--------------- */
+
+.mainServicios {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bloqueFoldServicios {
+  width: 70vw;
+  height: 100vh;
+}
+
+.foldServicios {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../image/image/imagen_fold_servicios.jpg);
+}
+.servicios__titulo {
+  font-family: "Rubik";
+  color: black;
+  width: 80vw;
+  height: 20vh;
+  font-weight: 700;
+  font-size: 45px;
+}
+.servicios__subtitulo {
+  font-family: "Rubik";
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+  width: 80vw;
+  height: 20vh;
+}
+.servicios__boton{
+  background-color: #ffb400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: large;
+  width: 15rem;
+  height: 3rem;
+}
+
+
+.serviciosTarjetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 300vh;
+}
+.informacionHome__asesoramiento1 {
+  width: 100vw;
+  background-color: #ffb400;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.asesoramientoServiciosTitulo{
+  font-size: 2rem;
+  font-family: "Rubik";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parrafosservicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.informacionHome__asesoramiento2 {
+  background-color: cadetblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.asesoramientoServiciosTitulo{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.informacionHome__asesoramiento3 {
+  background-color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.asesoramiento__parrafo1{
+  width: 90vw;
+  height: 30vh;
+}
+.asesoramiento__parrafo2 {
+  width: 90vw;
+  height: 30vh;
+}
+
+.proyectosfinalizados {
+  background-color: lightslategrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 200vh;
+  align-items: center;
+}
+.proyectosEncurso{
+  width: 100vw;
+  height: 200vh;
+  font-size: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.proyectosEncurso__titulo {
+  text-align: center;
+}
+.enCurso {
+  display: grid;
+  background-color: lightslategrey;
+  width: 90vw;
+  height: 200vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-content: center;
+  gap: 5%;
+}
+.enCurso__tarjeta1 {
+  background-color: white;
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.enCurso__tarjeta1:hover {
+  transform: scale(1.2, 1.2);
+}
+.enCurso__tarjeta2:hover {
+  transform: scale(1.2, 1.2);
+}
+.enCurso__tarjeta3:hover {
+  transform: scale(1.2, 1.2);
+}
+.tarjeta1__imagen {
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tarjeta1__info {
+  font-family: "Rubik";
+  font-size: 22px;
+  width: 70vw;
+  height: 20vh;
+}
+.tarjeta1__nombre {
+  font-family: "Rubik", "bold";
+  font-weight: 700;
+  align-self: flex-start;
+  font-size: 24px;
+  margin-left: 10%;
+}
+
+.enCurso__tarjeta2 {
+  background-color: white;
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.tarjeta2__imagen {
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tarjeta2__info {
+  font-family: "Rubik";
+  font-size: 22px;
+  width: 70vw;
+  height: 20vh;
+}
+.tarjeta2__nombre {
+  font-family: "Rubik", "bold";
+  font-weight: 700;
+  align-self: flex-start;
+  font-size: 24px;
+  margin-left: 10%;
+}
+
+.enCurso__tarjeta3 {
+  background-color: white;
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.tarjeta3__imagen {
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tarjeta3__info {
+  font-family: "Rubik";
+  font-size: 22px;
+  width: 70vw;
+  height: 20vh;
+}
+.tarjeta3__nombre {
+  font-family: "Rubik", "bold";
+  font-weight: 700;
+  font-size: 24px;
+  align-self: flex-start;
+  margin-left: 10%;
+}
+/* ------------PAGINA SERVICIOS FINAL--------------- */
+
+/* ------------PAGINA PROYECTOS INICIO--------------- */
+
+.principalProyectos {
+  background-image: url(./image/image/fold_proyectos.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 80vh;
+}
+.foldProyectos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: url(../image/imagen_fold_inicio3.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+}
+/* ------------PAGINA CONTACTO INICIO--------------- */
+
+.principalContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 80vh;
+}
+.foldContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(../image/imagen_fold_inicio3.jpg);
+  background-size: cover;
+  padding-bottom: 30px;
+  width: 100vw;
+  height: 80vh;
+}
+.tituloFoldContacto {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 44px;
+  color: white;
+  margin-left: 10%;
+}
+.foldContactoSubtitulo p {
+  width: 50vw;
+  height: 5vh;
+  margin-left: 5%;
+}
+.botonContacto {
+  width: 100vw;
+  height: 3vh;
+  margin-left: 10%;
+}
+.botonContacto a {
+  background-color: #ffb400;
+  color: white;
+  width: 100vw;
+  height: 5vh;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px 15px 20px;
+  align-self: flex-start;
+}
+.fold__info {
+  background-color: #ffb400;
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.fold__info__contacto {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.tituloInfo {
+  width: 40vw;
+  height: 20vh;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+  margin-left: 10%;
+}
+.datosContacto {
+  width: 40vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-left: 15%;
+}
+.info__ubicacion__contacto {
+  width: 450px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.info__telefono__contacto {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.info__correo__contacto {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mapaGoogle {
+  width: 100vw;
+  height: 70vh;
+  border-color: black;
+  border-width: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preguntas {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #dad6d6;
+}
+.pregunta {
+  display: flex;
+  font-family: "Rubik";
+  font-weight: 400;
+  justify-content:center;
+  align-items: center;
+  width: 90vw;
+
+  background-color: white;
+}
+.preguntasBloque {
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.pregunta1 summary {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45vw;
+  height: 6vh;
+  background-color: white;
+  border: 5px;
+  border-color: black;
+}
+.pregunta2 summary {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45vw;
+  height: 6vh;
+  background-color: white;
+  border: 5px;
+  border-color: black;
+}
+.pregunta3 summary {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45vw;
+  height: 6vh;
+  background-color: white;
+  border: 5px;
+  border-color: black;
+}
+.pregunta4 summary {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45vw;
+  height: 6vh;
+  background-color: white;
+  border: 5px;
+  border-color: black;
+}
+.pregunta5 summary {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45vw;
+  height: 6vh;
+  background-color: white;
+  border: 5px;
+  border-color: black;
+}
+
+.bloqueImagen {
+  width: 50vw;
+  background-size: cover;
+}
+
+/* ------------PAGINA CONTACTO FINAL--------------- */
+
+/* ------------PAGINA PROYECTOS INICIO--------------- */
+
+/* ------------PAGINA PROYECTOS FINAL--------------- */
+
+/* ------------PAGINA CONTACTO INICIO--------------- */
+
+.principalContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 60vh;
+}
+.foldContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: url(../image/imagen_fold_inicio3.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.foldContactoSubtitulo {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 20px;
+  width: 100vw;
+  height: 20vh;
+}
+
+.fold__contacto__boton {
+  background-color: #ffb400;
+  color: white;
+  width: 40vw;
+  height: 6vh;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  margin-left: 2%;
+}
+
+.fold__info {
+  background-color: #ffb400;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.fold__info__contacto {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.tituloInfo {
+  width: 40vw;
+  height: 20vh;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+  margin-left: 10%;
+}
+.datosContacto {
+  width: 40vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-left: 15%;
+}
+.info__ubicacion__contacto {
+  width: 450px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.info__telefono__contacto {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.info__correo__contacto {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mapaGoogle {
+  width: 100vw;
+  height: 70vh;
+  border-color: black;
+  border-width: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preguntas {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.preguntasBloque {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+summary {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 6vh;
+  background-color: white;
+  border: 5px;
+  border-color: black;
+}
+.bloqueImagen {
+  width: 50vw;
+  background: url(../image/preguntasimg.svg);
+  background-size: cover;
+}
+/* ------------PAGINA CONTACTO FINAL--------------- */
 @media screen and (min-width: 992px) {
   html {
     font-family: "Poppins", "Open+Sans", "Rubik" !important;
   }
   body {
-    width: 100vw;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
   }
   a {
     text-decoration: none;
@@ -750,7 +1409,7 @@ p {
   }
   /*------------- principio del header ----------------------*/
 
-  .main__header  {
+  .main__header {
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -759,8 +1418,8 @@ p {
     color: black;
     width: 100vw;
     height: 50px;
-  
   }
+
   .main__header__logo {
     background-image: url(../image/logoHeader.jpg);
     border-radius: 15px 15px;
@@ -773,6 +1432,7 @@ p {
     background-color: white;
     width: 550px;
     height: 30px;
+    margin-right: 5%;
   }
   .main__header ul {
     width: 550px;
@@ -808,7 +1468,6 @@ p {
     width: 100vw;
     height: 90vh;
   }
-
   .fold {
     display: flex;
     background: url(../image/imagen_fold_inicio3.jpg);
@@ -822,25 +1481,28 @@ p {
     width: 100vw;
     height: 100vh;
   }
-  .fold__titulo h1 {
+  .fold__titulo {
+    display: inline-flex;
+    width: 95vw;
     font-family: "Rubik";
     font-weight: 700;
     font-size: 64px;
   }
-  .fold__titulo2 h2 {
+  .fold__titulo2 {
     font-family: "Rubik";
     width: 500px;
     height: 220px;
     font-weight: 700;
     font-size: 45px;
   }
-
   .fold__subtitulo {
     font-family: "Rubik";
     font-weight: 400;
     font-size: 20px;
+    width: 80vw;
+    height: 15vh;
   }
-  .fold__boton a {
+  .fold__boton {
     background-color: #ffb400;
     display: flex;
     align-items: center;
@@ -848,7 +1510,7 @@ p {
     color: white;
     font-size: large;
     width: 13rem;
-    height: 3rem;
+    height: 2rem;
   }
   /* -----------------fin del fold principal -----------------------------*/
   .serviciosHome {
@@ -864,8 +1526,8 @@ p {
   }
   .serviciosHome__obrasEnYeso,
   a {
-    width: 345px;
-    height: 101px;
+    width: 400px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -873,35 +1535,38 @@ p {
     background-color: white;
   }
   .serviciosHome__obrasEnYeso:hover {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.1, 1.1);
     transition: all 1.5s;
   }
   .serviciosdata {
     margin: 0;
-    width: 345px;
-    height: 101px;
+    width: 300px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  .obras__imagen {
+    width: 100px;
+    height: 100px;
+  }
   .obrasEnYeso__titulo {
-    font-size: 22px;
-    width: 345px;
-    height: 101px;
+    font-size: 20px;
+    width: 180px;
+    height: 60px;
     font-family: "Rubik";
   }
-
   .obrasEnYeso__info {
     font-size: 12px;
     font-family: "Open Sans";
-    width: 345px;
-    height: 101px;
+    width: 200px;
+    height: 100px;
   }
-
   .serviciosHome__mantenimiento {
-    width: 345px;
-    height: 101px;
+    width: 400px;
+    font-size: 22px;
+    height: 150px;
     background-color: white;
   }
   .serviciosHome__mantenimiento:hover {
@@ -909,22 +1574,20 @@ p {
     transition: all 1.5s;
   }
   .mantenimiento__titulo {
-    font-size: 11px;
+    font-size: 15px;
     font-family: "Rubik";
-    width: 345px;
-    height: 101px;
+    width: 280px;
+    height: 60px;
   }
-
   .mantenimiento__info {
     font-size: 12px;
     font-family: "Open Sans";
-    width: 345px;
-    height: 101px;
+    width: 200px;
+    height: 100px;
   }
-
   .serviciosHome__demoliciones {
-    width: 345px;
-    height: 101px;
+    width: 400px;
+    height: 150px;
     background-color: white;
   }
   .serviciosHome__demoliciones:hover {
@@ -933,19 +1596,19 @@ p {
   }
   .demoliciones__titulo {
     font-size: 15px;
+    width: 180px;
+    height: 60px;
     font-family: "Rubik";
   }
-
   .demoliciones__info {
     font-size: 12px;
     font-family: "Open Sans";
-    width: 345px;
-    height: 101px;
+    width: 200px;
+    height: 100px;
   }
-
   .serviciosHome__albanileria {
-    width: 345px;
-    height: 101px;
+    width: 400px;
+    height: 150px;
     background-color: white;
   }
   .serviciosHome__albanileria:hover {
@@ -954,19 +1617,20 @@ p {
   }
   .albanileria__titulo {
     font-size: 15px;
+    width: 180px;
+    height: 60px;
     font-family: "Rubik";
   }
 
   .albanileria__info {
     font-size: 12px;
     font-family: "Open Sans";
-    width: 345px;
-    height: 101px;
+    width: 200px;
+    height: 100px;
   }
-
   .serviciosHome__pintura {
-    width: 345px;
-    height: 101px;
+    width: 400px;
+    height: 150px;
     background-color: white;
   }
   .serviciosHome__pintura:hover {
@@ -980,13 +1644,12 @@ p {
   .pintura__info {
     font-size: 12px;
     font-family: "Open Sans";
-    width: 345px;
-    height: 101px;
+    width: 200px;
+    height: 100px;
   }
-
   .serviciosHome__electricidad {
-    width: 345px;
-    height: 101px;
+    width: 400px;
+    height: 150px;
     background-color: white;
   }
   .serviciosHome__electricidad:hover {
@@ -997,23 +1660,29 @@ p {
     font-size: 15px;
     font-family: "Rubik";
   }
-
   .electricidad__info {
     font-size: 12px;
     font-family: "Open Sans";
-    width: 345px;
-    height: 101px;
+    width: 200px;
+    height: 100px;
   }
-
   .informacionHome {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
   }
-
   .informacionHome__asesoramiento {
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .informacionHomeGris {
     background-color: grey;
     width: 70vw;
     height: 100vh;
@@ -1022,21 +1691,32 @@ p {
     align-items: center;
     justify-content: space-between;
   }
-  .asesoramiento__titulo h2 {
+  .asesoramiento__titulo {
+    width: 30vw;
     font-size: 30px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     padding-top: 15%;
   }
-
+  .parrafos {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
   .asesoramiento__parrafo1 {
-    width: 349px;
-    height: 216px;
+    display: inline-flex;
+    width: 30vw;
+    height: 250px;
+    padding-right: 5%;
   }
   .asesoramiento__parrafo2 {
-    width: 349px;
-    height: 216px;
+    display: inline-flex;
+    width: 30vw;
+    height: 250px;
+    padding-left: 5%;
   }
   .informacionHome__banner {
     background-color: black;
@@ -1044,28 +1724,28 @@ p {
     height: 15vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    align-content: center;
   }
   .banner__titulo {
     color: white;
     width: 300px;
     height: 70px;
-    font-size: 15px;
-    margin-left: 10%;
+    font-size: 22px;
+    margin-top: 5%;
   }
 
   .banner__boton {
     border: 5px;
     border-color: #ffb400;
-    margin-left: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px 15% 5px 10px;
+    margin-top: 5%;
   }
-  .banner__boton a {
+  .banner__boton {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -1078,7 +1758,7 @@ p {
   }
   .informacionHome__amarillo {
     background-color: #ffb400;
-    width: 40vw;
+    width: 30vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -1090,7 +1770,7 @@ p {
     width: 370px;
     height: 25%;
   }
-  .eco__imagen1 img {
+  .eco__imagen1 {
     width: 50px;
     height: 50px;
     align-self: flex-start;
@@ -1103,18 +1783,16 @@ p {
     width: 370px;
     height: 90px;
   }
-
   .newest {
     width: 370px;
     height: 25%;
   }
-  .newest__imagen2 img {
+  .newest__imagen2 {
     width: 50px;
     height: 50px;
     align-self: flex-start;
   }
-
-  .newest__titulo2 h2 {
+  .newest__titulo2 {
     font-family: "Rubik";
     font-size: 22px;
     width: 350px;
@@ -1128,11 +1806,9 @@ p {
   .high {
     width: 370px;
     height: 25%;
+    background-color: #ffb400;
   }
-  .high__imagen3 img {
-  }
-
-  .high__titulo3 h2 {
+  .high__titulo3 {
     font-family: "Rubik";
     font-size: 22px;
     width: 370px;
@@ -1162,12 +1838,12 @@ p {
     font-weight: 700;
     font-size: 48px;
   }
-  .fold2__subtitulo h2 {
+  .fold2__subtitulo {
     font-family: "Rubik";
     font-weight: 400;
     font-size: 22px;
   }
-  .fold2__boton a {
+  .fold2__boton {
     background-color: #ffb400;
     display: flex;
     align-items: center;
@@ -1185,17 +1861,22 @@ p {
     width: 100vw;
     height: 100vh;
   }
-  .experiencia__valoraciones h2 {
+  .experiencia__valoraciones {
     width: 100vw;
-    height: 15vh;
+    height: 100vh;
     font-size: 1rem;
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
   }
   .valoraciones__titulo {
+    display: inline-flex;
+    font-family: "Rubik";
     text-align: center;
+    justify-content: center;
+    font-size: 30px;
   }
   .experiencias {
     display: grid;
@@ -1204,8 +1885,8 @@ p {
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    align-content: center;
-    gap: 5%;
+    align-items: center;
+    gap: 2%;
   }
   .experiencia__card1 {
     background-color: white;
@@ -1214,7 +1895,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .experiencia__card1:hover {
     transform: scale(1.2, 1.2);
@@ -1227,7 +1908,7 @@ p {
   }
   .card1__imagen {
     font-size: 22px;
-    width: 20vw;
+    width: 10vw;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -1258,7 +1939,7 @@ p {
   }
   .card2__imagen {
     font-size: 22px;
-    width: 20vw;
+    width: 10vw;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -1288,7 +1969,7 @@ p {
   }
   .card3__imagen {
     font-size: 22px;
-    width: 20vw;
+    width: 10vw;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -1313,7 +1994,7 @@ p {
     align-items: flex-end;
     justify-content: center;
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
   }
   .informacion {
     display: flex;
@@ -1330,17 +2011,18 @@ p {
     align-items: center;
     width: 50vw;
     height: 60vh;
+    margin: 0;
   }
   form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     width: 70vw;
     height: 40vh;
   }
-  .formulario__titulo h2 {
+  .formulario__titulo {
     font-weight: 700;
     font-size: 36px;
     width: 50vw;
@@ -1352,29 +2034,32 @@ p {
   }
   .nombreMail {
     display: flex;
-    width: 20vw;
+    width: 49vw;
     height: 10vh;
     flex-direction: row;
     justify-content: flex-start;
   }
-  .caja__nombre input {
+  .caja__nombre {
     width: 20vw;
     height: 5vh;
   }
-  .caja__email input {
+  .caja__email {
     width: 30vw;
     height: 5vh;
   }
-  .caja__comentario textarea {
-    width: 50vw;
+  .caja__comentario {
+    width: 49vw;
     height: 15vh;
   }
-  .caja__boton input {
+  .caja__boton {
     color: black;
     background-color: white;
     border: 0;
     width: 100px;
     height: 40px;
+    align-self: flex-start;
+    margin-left: 1%;
+    margin-top: 2%;
   }
 
   .footer__redes {
@@ -1394,15 +2079,15 @@ p {
     width: 300px;
     height: 130px;
   }
-  .iconoDeRedes_facebook a {
+  .iconoDeRedes_facebook {
     width: 30px;
     height: 30px;
   }
-  .iconoDeRedes_twitter a {
+  .iconoDeRedes_twitter {
     width: 30px;
     height: 30px;
   }
-  .iconoDeRedes_linkedin a {
+  .iconoDeRedes_linkedin {
     width: 30px;
     height: 30px;
   }
@@ -1430,11 +2115,6 @@ p {
     align-items: flex-start;
     margin-left: 15%;
   }
-  .ubicacion__icono {
-  }
-  .ubicacion__direccion {
-  }
-
   .info__telefono {
     width: 200px;
     height: 60px;
@@ -1443,11 +2123,6 @@ p {
     align-items: center;
     justify-content: flex-start;
   }
-  .telefono__icono {
-  }
-  .telefono__numero {
-  }
-
   .info__correo {
     width: 200px;
     height: 60px;
@@ -1456,11 +2131,6 @@ p {
     align-items: center;
     justify-content: flex-start;
   }
-  .correo__icono {
-  }
-  .correo__direccion {
-  }
-
   /* ------------PAGINA NOSOTROS INICIO--------------- */
 
   .principalNosotros {
@@ -1485,156 +2155,39 @@ p {
   }
 
   .fold__nosotros__titulo {
+    display: flex;
     font-family: "Rubik";
-    width: 50vw;
+    width: 60vw;
     height: 10vh;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 60px;
   }
   .fold__nosotros__subtitulo {
     font-family: "Rubik";
     font-weight: 400;
-    font-size: 20px;
-    width: 650px;
-    height: 65px;
+    font-size: 18px;
+    width: 50vw;
+    height: 10vh;
   }
-  .fold__nosotros__boton a {
+  .fold__nosotros__boton {
     background-color: #ffb400;
     color: white;
-    width: 10vw;
-    height: 3vh;
+    width: 12vw;
+    height: 6vh;
     font-size: medium;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 20px 15px 20px;
     align-self: flex-start;
-    margin-left: 10%;
+    margin-left: 2%;
   }
-
-  /* amarilla---------------------------------------------- */
-
-  .caracteristicas {
+  .nosotros__historia1 {
     width: 100vw;
-    height: 130vh;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .caracteristicas__only {
-    background-color: #ffb400;
-    width: 40vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .caracteristicas__only__titulo {
-    font-size: larger;
-    width: 400px;
-    height: 50px;
-  }
-
-  .only {
-    width: 370px;
-    height: 25%;
-  }
-  .only__imagen1 img {
-    width: 50px;
-    height: 50px;
-    align-self: flex-start;
-  }
-  .only__titulo1 {
-    font-family: "Rubik";
-    font-size: large;
-  }
-  .only__parrafo1 {
-    font-size: 15px;
-    width: 370px;
-    height: 90px;
-  }
-
-  .the {
-    width: 370px;
-    height: 25%;
-  }
-  .the__imagen2 img {
-    width: 50px;
-    height: 50px;
-    align-self: flex-start;
-  }
-
-  .the__titulo2 h2 {
-    font-family: "Rubik";
-    font-size: 22px;
-    width: 350px;
-    height: 30px;
-  }
-  .the__parrafo2 {
-    font-size: 15px;
-    width: 370px;
-    height: 150px;
-  }
-
-  .quality {
-    width: 370px;
-    height: 25%;
-  }
-  .quality__imagen3 {
-  }
-
-  .quality__titulo3 h2 {
-    font-family: "Rubik";
-    font-size: 22px;
-    width: 370px;
-    height: 50px;
-  }
-  .quality__parrafo3 {
-    font-size: 15px;
-    width: 350px;
-    height: 150px;
-  }
-
-  .caracteristicas__banner {
-    background-color: black;
-  }
-  .caracteristicas__banner__cajaAmarilla {
-  }
-  .cajaAmarilla__titulo {
-  }
-  .cajaAmarilla__subtitulo {
-  }
-
-  .caracteristicas__banner__cajaNegra {
-  }
-  .cajaNegra__titulo {
-  }
-  .cajaNegra__subtitulo {
-  }
-
-  .nosotros__historia1 {
-    width: 100vw;
-    height: 60vh;
-    display: flex;
-  }
-
-  .nosotros__historia__asesoramiento {
-    background-color: grey;
-    display: flex;
-    width: 100vw;
-    height: 60vh;
-  }
-  .nosotros__historia__titulo {
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
   }
   .parrafosNosotros {
     background-color: bisque;
@@ -1642,59 +2195,66 @@ p {
     height: 60vh;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-evenly;
   }
   .nosotros__historia__parrafo1 {
-    width: 50vw;
+    width: 40vw;
     height: 10vh;
   }
   .nosotros__historia__parrafo2 {
-    width: 50vw;
+    width: 40vw;
     height: 10vh;
   }
+  /* amarilla---------------------------------------------- */
 
-  .caracteristicas__imagen img {
+  .caracteristicas {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .caracteristicas__imagen {
     width: 70vw;
     height: 80vh;
   }
   .caracteristicas__only {
-    background-color: grey;
+    background-color: #ffb400;
     width: 30vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .caracteristicas__banner {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
     width: 70vw;
-    height: 15vh;
-    justify-content: space-around;
-  }
-
-  .caracteristicas__banner {
-    display: flex;
-    flex-direction: row;
+    height: 20vh;
   }
   .caracteristicas__banner__cajaAmarilla {
-    background-color: #ffb400;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .cajaAmarilla__titulo {
-  }
-  .cajaAmarilla__subtitulo {
-  }
-
   .caracteristicas__banner__cajaNegra {
-    background-color: black;
-  }
-  .cajaNegra__titulo {
-  }
-  .cajaNegra__subtitulo {
+    background-color: grey;
+    display: flex;
+    width: 35vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  /* ------------PAGINA NOSOTROS FINAL--------------- */
+  /* ------------PAGINA PROYECTOS INICIO--------------- */
+  /* USA BOOTSTRAP UNICAMENTE NO HAY ESTILO */
+  /* ------------PAGINA PROYECTOS FIN--------------- */
 
   /* ------------PAGINA SERVICIOS INICIO--------------- */
 
@@ -1706,64 +2266,28 @@ p {
     align-items: center;
     justify-content: space-between;
   }
-
+  
   .bloqueFoldServicios {
-    width: 70vw;
+    width: 100vw;
     height: 100vh;
-  }
-  .bloqueWhat {
-    width: 30vw;
-    height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-left: 5%;
   }
-
-  .serviciosYeso {
-  }
-  .serviciosYeso__imagen {
-  }
-  .serviciosdataYeso {
-  }
-  .serviciosYeso__info {
-  }
-
-  .serviciosMant {
-  }
-  .serviciosMant__imagen {
-  }
-  .serviciosMantdata {
-  }
-  .serviciosMant__titulo {
-  }
-  .serviciosMant__info {
-  }
-
-  .serviciosDemo {
-  }
-  .serviciosDemo__imagen {
-  }
-  .serviciosDemodata {
-  }
-  .serviciosDemo__titulo {
-  }
-  .serviciosDemo__info {
-  }
-
   .foldServicios {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-image: url(../image/imagen_fold_inicio3.jpg);
+    background-image: url(/image/imagen_fold_servicios.jpg);
   }
-
   .servicios__titulo {
     font-family: "Rubik";
-    width: 500px;
-    height: 220px;
+    width: 40vw;
+    height: 20vh;
     font-weight: 700;
     font-size: 45px;
   }
@@ -1774,7 +2298,7 @@ p {
     width: 40vw;
     height: 10vh;
   }
-  .servicios__boton a {
+  .servicios__boton{
     background-color: #ffb400;
     display: flex;
     align-items: center;
@@ -1785,20 +2309,10 @@ p {
     height: 3rem;
   }
 
-  .cardWhat {
-    width: 300px;
-    height: 500px;
-  }
-  .what {
-    color: #ffb400;
-    font-size: large;
-  }
-
   .serviciosYeso {
     width: 345px;
     height: 101px;
   }
-
   .serviciosTarjetas {
     display: flex;
     flex-direction: column;
@@ -1817,8 +2331,8 @@ p {
     justify-content: space-between;
     margin-left: 28%;
   }
-
-  .asesoramientoServiciosTitulo h2 {
+  
+  .asesoramientoServiciosTitulo{
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -1830,15 +2344,6 @@ p {
     align-items: center;
     justify-content: space-around;
   }
-  .asesoramiento__parrafo1 {
-    width: 349px;
-    height: 30vh;
-  }
-  .asesoramiento__parrafo2 {
-    width: 349px;
-    height: 30vh;
-  }
-
   .informacionHome__asesoramiento2 {
     background-color: cadetblue;
     width: 70vw;
@@ -1849,23 +2354,14 @@ p {
     justify-content: space-between;
     margin-right: 28%;
   }
-
+  
   .asesoramiento__titulo h2 {
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
-  .asesoramiento__parrafo1 {
-    width: 349px;
-    height: 30vh;
-  }
-  .asesoramiento__parrafo2 {
-    width: 349px;
-    height: 30vh;
-  }
-
+  
   .informacionHome__asesoramiento3 {
     background-color: aliceblue;
     width: 70vw;
@@ -1876,14 +2372,14 @@ p {
     justify-content: space-between;
     margin-left: 28%;
   }
-
+  
   .asesoramiento__titulo h2 {
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
- 
+  
   .asesoramiento__parrafo1 {
     width: 349px;
     height: 30vh;
@@ -1892,16 +2388,16 @@ p {
     width: 349px;
     height: 30vh;
   }
-
+  
   .proyectosfinalizados {
     background-color: lightslategrey;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 100vw;
     height: 100vh;
   }
-  .proyectosEncurso h2 {
+  .proyectosEncurso{
     width: 100vw;
     height: 15vh;
     font-size: 1rem;
@@ -1911,7 +2407,10 @@ p {
     align-items: center;
   }
   .proyectosEncurso__titulo {
+    font-family: "Rubik";
     text-align: center;
+    width: 80vw;
+    height: 20vh;
   }
   .enCurso {
     display: grid;
@@ -1942,9 +2441,8 @@ p {
     transform: scale(1.2, 1.2);
   }
   .tarjeta1__imagen {
-    font-size: 22px;
-    width: 20vw;
-    height: 10vh;
+    width: 25vw;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1962,7 +2460,7 @@ p {
     font-size: 24px;
     margin-left: 10%;
   }
-
+  
   .enCurso__tarjeta2 {
     background-color: white;
     width: 25vw;
@@ -1974,8 +2472,8 @@ p {
   }
   .tarjeta2__imagen {
     font-size: 22px;
-    width: 20vw;
-    height: 10vh;
+    width: 25vw;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1992,7 +2490,7 @@ p {
     font-size: 24px;
     margin-left: 10%;
   }
-
+  
   .enCurso__tarjeta3 {
     background-color: white;
     width: 25vw;
@@ -2004,8 +2502,8 @@ p {
   }
   .tarjeta3__imagen {
     font-size: 22px;
-    width: 20vw;
-    height: 10vh;
+    width: 25vw;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2022,492 +2520,74 @@ p {
     align-self: flex-start;
     margin-left: 10%;
   }
-  /* ------------PAGINA SERVICIOS FINAL--------------- */
-
-  /* ------------PAGINA PROYECTOS INICIO--------------- */
-
-  .principalProyectos {
-    background-image: url(./image/image/fold_proyectos.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 80vh;
-  }
-  .foldProyectos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background: url(../image/imagen_fold_inicio3.jpg);
-    background-size: cover;
-    width: 100vw;
-    height: 80vh;
-  }
-
+  /* ------------PAGINA SERVICIOS FIN--------------- */
   /* ------------PAGINA CONTACTO INICIO--------------- */
-
-  .principalContacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 80vh;
-  }
-
   .foldContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: url(../image/imagen_fold_inicio3.jpg);
-    background-size: cover;
-    padding-bottom: 30px;
     width: 100vw;
     height: 80vh;
-  }
-
-  .tituloFoldContacto {
-    width: 100vw;
-    height: 10vh;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
+    align-items: flex-start;
+  }
+  .tituloFoldContacto {
+    width: 50vw;
+    height: 20vh;
     font-family: "Rubik";
     font-weight: 700;
-    font-size: 44px;
+    font-size: 3rem;
     color: white;
-    margin-left: 10%;
+    margin: 2%;
   }
-  .foldContactoSubtitulo p {
+  .contacto__subtitulo {
+    font-family: "Rubik";
+    font-size: 15px;
     width: 50vw;
-    height: 5vh;
-    margin-left: 5%;
+    height: 10vh;
+    margin-left: 2%;
   }
-  .botonContacto {
-    width: 100vw;
-    height: 3vh;
-    margin-left: 10%;
-  }
-  .botonContacto a {
+  .fold__contacto__boton {
     background-color: #ffb400;
     color: white;
-    width: 100vw;
-    height: 5vh;
+    width: 10vw;
+    height: 6vh;
     font-size: medium;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 20px 15px 20px;
     align-self: flex-start;
-  }
-  .fold__info {
-    background-color: #ffb400;
-    width: 40vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .fold__info__contacto {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .tituloInfo {
-    width: 40vw;
-    height: 20vh;
-    display: flex;
-    justify-content: flex-start;
-    font-family: "Rubik";
-    font-weight: 700;
-    font-size: 24px;
-    color: black;
-    margin-left: 10%;
-  }
-  .datosContacto {
-    width: 40vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-left: 15%;
+    margin-left: 2%;
   }
 
-  .info__ubicacion__contacto {
-    width: 450px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .ubicacion__icono__contacto {
-  }
-  .ubicacion__direccion__contacto {
-  }
-
-  .info__telefono__contacto {
-    width: 200px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .telefono__icono__contacto {
-  }
-  .telefono__numero__contacto {
-  }
-
-  .info__correo__contacto {
-    width: 200px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .correo__icono__contacto {
-  }
-  .correo__direccion__contacto {
-  }
-
-  .mapaGoogle {
-    width: 100vw;
-    height: 70vh;
-    border-color: black;
-    border-width: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .preguntas {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    background-color: #dad6d6;
+    justify-content: space-between;
   }
   .preguntasBloque {
     width: 50vw;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: 10%;
-    margin-top: 2%;
+    height: 100vh;
   }
-  .pregunta1 summary {
-    font-weight: 700;
+  summary {
+    width: 50vw;
+  }
+  .pregunta {
     display: flex;
+    font-family: "Rubik";
+    font-weight: 400;
     justify-content: flex-start;
-    align-items: center;
-    width: 45vw;
-    height: 6vh;
+    align-items: flex-start;
+    width: 40vw;
+    margin: 10px 0;
     background-color: white;
-    border: 5px;
-    border-color: black;
-  }
-  .pregunta2 summary {
-    font-weight: 700;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 45vw;
-    height: 6vh;
-    background-color: white;
-    border: 5px;
-    border-color: black;
-  }
-  .pregunta3 summary {
-    font-weight: 700;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 45vw;
-    height: 6vh;
-    background-color: white;
-    border: 5px;
-    border-color: black;
-  }
-  .pregunta4 summary {
-    font-weight: 700;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 45vw;
-    height: 6vh;
-    background-color: white;
-    border: 5px;
-    border-color: black;
-  }
-  .pregunta5 summary {
-    font-weight: 700;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 45vw;
-    height: 6vh;
-    background-color: white;
-    border: 5px;
-    border-color: black;
-  }
-
-  .tituloPreguntas {
-  }
-  .respuestas {
-  }
-  .imagenPreguntas {
   }
 
   .bloqueImagen {
     width: 50vw;
-    background: url(../image/preguntasimg.svg);
-    background-size: cover;
+    height: 100vh;
   }
 
-  /* ------------PAGINA CONTACTO FINAL--------------- */
+  /* ------------PAGINA CONTACTO FIN--------------- */
 }
-
-/* ------------PAGINA PROYECTOS FINAL--------------- */
-
-/* ------------PAGINA CONTACTO INICIO--------------- */
-
-.principalContacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: 60vh;
-}
-
-.foldContacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: url(../image/imagen_fold_inicio3.jpg);
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-}
-.contactanos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 50vh;
-}
-.tituloFoldContacto {
-  width: 100vw;
-  height: 40vh;
-  font-family: "Rubik";
-  font-weight: 700;
-  font-size: 2rem;
-  color: white;
-  width: 100vw;
-  height: 10vh;
-}
-.foldContactoSubtitulo {
-  font-family: "Rubik";
-  font-weight: 400;
-  font-size: 20px;
-  width: 100vw;
-  height: 20vh;
-}
-.botonContacto a {
-  width: 10vw;
-  height: 60px;
-}
-.botonContacto a {
-  width: 150px;
-  height: 40px;
-  border: 15px;
-  background-color: #ffb400;
-  border-color: #ffb400;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 4px 20px;
-}
-.fold__info {
-  background-color: #ffb400;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.fold__info__contacto {
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.tituloInfo {
-  width: 40vw;
-  height: 20vh;
-  display: flex;
-  justify-content: flex-start;
-  font-family: "Rubik";
-  font-weight: 700;
-  font-size: 24px;
-  color: black;
-  margin-left: 10%;
-}
-.datosContacto {
-  width: 40vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-left: 15%;
-}
-
-.info__ubicacion__contacto {
-  width: 450px;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-.ubicacion__icono__contacto {
-}
-.ubicacion__direccion__contacto {
-}
-
-.info__telefono__contacto {
-  width: 200px;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-.telefono__icono__contacto {
-}
-.telefono__numero__contacto {
-}
-
-.info__correo__contacto {
-  width: 200px;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-.correo__icono__contacto {
-}
-.correo__direccion__contacto {
-}
-
-.mapaGoogle {
-  width: 100vw;
-  height: 70vh;
-  border-color: black;
-  border-width: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.preguntas {
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  flex-direction: row;
-  background-color: #dad6d6;
-}
-.preguntasBloque {
-  width: 100vw;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 5%;
-  margin-top: 2%;
-}
-.pregunta1 summary {
-  font-weight: 700;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 90vw;
-  height: 6vh;
-  background-color: white;
-  border: 5px;
-  border-color: black;
-}
-.pregunta2 summary {
-  font-weight: 700;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 90vw;
-  height: 6vh;
-  background-color: white;
-  border: 5px;
-  border-color: black;
-}
-.pregunta3 summary {
-  font-weight: 700;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 90vw;
-  height: 6vh;
-  background-color: white;
-  border: 5px;
-  border-color: black;
-}
-.pregunta4 summary {
-  font-weight: 700;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 90vw;
-  height: 6vh;
-  background-color: white;
-  border: 5px;
-  border-color: black;
-}
-.pregunta5 summary {
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90vw;
-  height: 6vh;
-  background-color: white;
-  border: 5px;
-  border-color: black;
-}
-
-.tituloPreguntas {
-}
-.respuestas {
-}
-.imagenPreguntas {
-}
-
-.bloqueImagen {
-  width: 50vw;
-  background: url(../image/preguntasimg.svg);
-  background-size: cover;
-}
-
-/* ------------PAGINA CONTACTO FINAL--------------- */
