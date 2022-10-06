@@ -784,7 +784,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url(../image/image/imagen_fold_servicios.jpg);
+  background-image: url(./image/image/imagen_fold_servicios.jpg);
 }
 .servicios__titulo {
   font-family: "Rubik";
