@@ -1,0 +1,31 @@
+/* ------------PAGINA PROYECTOS INICIO--------------- */
+  
+.principalProyectos {
+    background-image: url(./image/image/fold_proyectos.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 80vh;
+  }
+  .foldProyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(../image/imagen_fold_inicio3.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+  }
+  
+  
+  /* ------------PAGINA PROYECTOS FINAL--------------- */
+
+@media screen and (min-width: 992px){
+        /* ------------PAGINA PROYECTOS INICIO--------------- */
+    /* USA BOOTSTRAP UNICAMENTE NO HAY ESTILO */
+    /* ------------PAGINA PROYECTOS FIN--------------- */
+}
