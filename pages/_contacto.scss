@@ -1,0 +1,215 @@
+  /* ------------PAGINA CONTACTO INICIO--------------- */
+  
+  .principalContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 60vh;
+  }
+  .foldContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: url(../image/imagen_fold_inicio3.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .foldContactoSubtitulo {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 20px;
+    width: 100vw;
+    height: 20vh;
+  }
+  
+  .fold__contacto__boton {
+    background-color: #ffb400;
+    color: white;
+    width: 40vw;
+    height: 6vh;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 2%;
+  }
+  
+  .fold__info {
+    background-color: #ffb400;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .fold__info__contacto {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .tituloInfo {
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    margin-left: 10%;
+  }
+  .datosContacto {
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 15%;
+  }
+  .info__ubicacion__contacto {
+    width: 450px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .info__telefono__contacto {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .info__correo__contacto {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .mapaGoogle {
+    width: 100vw;
+    height: 70vh;
+    border-color: black;
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .preguntas {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .preguntasBloque {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  summary {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 6vh;
+    background-color: white;
+    border: 5px;
+    border-color: black;
+  }
+  .bloqueImagen {
+    width: 50vw;
+    background: url(../image/preguntasimg.svg);
+    background-size: cover;
+  }
+  /* ------------PAGINA CONTACTO FINAL--------------- */
+
+
+@media screen and (min-width: 992px){
+    /* ------------PAGINA CONTACTO INICIO--------------- */
+    .foldContacto {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .tituloFoldContacto {
+        width: 50vw;
+        height: 20vh;
+        font-family: "Rubik";
+        font-weight: 700;
+        font-size: 3rem;
+        color: white;
+        margin: 2%;
+      }
+      .contacto__subtitulo {
+        font-family: "Rubik";
+        font-size: 15px;
+        width: 50vw;
+        height: 10vh;
+        margin-left: 2%;
+      }
+      .fold__contacto__boton {
+        background-color: #ffb400;
+        color: white;
+        width: 10vw;
+        height: 6vh;
+        font-size: medium;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        margin-left: 2%;
+      }
+    
+      .preguntas {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .preguntasBloque {
+        width: 50vw;
+        height: 100vh;
+      }
+      summary {
+        width: 50vw;
+      }
+      .pregunta {
+        display: flex;
+        font-family: "Rubik";
+        font-weight: 400;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 40vw;
+        margin: 10px 0;
+        background-color: white;
+      }
+    
+      .bloqueImagen {
+        width: 50vw;
+        height: 100vh;
+      }
+    
+      /* ------------PAGINA CONTACTO FIN--------------- */
+    }
