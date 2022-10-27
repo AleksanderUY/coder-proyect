@@ -24,9 +24,31 @@ html {
     align-items: center;
     color: black;
     width: 100vw;
-    height: 10vh; }
+    height: 10vh;
+    nav {
+      width: 60vw;
+      height: 6vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; 
+      ul {
+        width: 60vw;
+        height: 5vh;
+        display: inline-flex;
+        flex-wrap: wrap; 
+        li {
+          background-color: white;
+          margin-right: 5px;
+          font-family: "Poppins";
+          font-size: 12px;
+          font-weight: 700;
+          display: inline-flex; }
+        }
+    }
+  }
   
-  .main__header__logo {
+  .logo {
     background-image: url(../image/logoHeader.jpg);
     border-radius: 15px 15px;
     width: 135px;
@@ -34,27 +56,7 @@ html {
     display: inline-flex;
     margin-left: 1%; }
   
-  .main__header nav {
-    width: 60vw;
-    height: 6vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-  
-  .main__header ul {
-    width: 60vw;
-    height: 5vh;
-    display: inline-flex;
-    flex-wrap: wrap; }
-  
-  .main__header ul li {
-    background-color: white;
-    margin-right: 5px;
-    font-family: "Poppins";
-    font-size: 12px;
-    font-weight: 700;
-    display: inline-flex; }
+
   
   .principal {
     display: flex;
@@ -655,11 +657,12 @@ html {
 
 
 
-    @media screen and (min-width: 992px){
+@media screen and (min-width: 992px){
 
-    a {
+  a {
         text-decoration: none;
         color: black;
+        margin-top: 0;
       }
       /*------------- principio del header ----------------------*/
     
@@ -667,49 +670,51 @@ html {
         background-color: white;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         color: black;
         width: 100vw;
         height: 50px;
-      }
-    
-      .main__header__logo {
-        background-image: url(../image/logoHeader.jpg);
-        border-radius: 15px 15px;
-        width: 135px;
-        height: 40px;
-        display: inline-flex;
-        margin-left: 10%;
-      }
-      .main__header nav {
-        background-color: white;
-        width: 550px;
-        height: 30px;
-        margin-right: 5%;
-      }
-      .main__header ul {
-        width: 550px;
-        height: 30px;
-        margin: 0;
-        display: inline-flex;
-      }
-      .main__header ul li {
-        background-color: white;
-        margin-right: 5px;
-        font-family: "Poppins";
-        font-weight: 700;
-        display: inline-flex;
-      }
-    
-      .main__header ul li a {
-        background-color: white;
-        margin-right: 5px;
-        width: 80px;
-        height: 25px;
-        font-family: "Poppins";
-        font-weight: 700;
-        display: inline-flex;
+        nav {
+          background-color: white;
+          width: 550px;
+          height: 30px;
+          margin-right: 5%;
+          ul {
+            width: 550px;
+            height: 30px;
+            margin: 0;
+            display: inline-flex;
+
+            li {
+              background-color: white;
+              margin-right: 5px;
+              font-family: "Poppins";
+              font-weight: 700;
+              display: inline-flex;
+
+              a {
+                background-color: white;
+                margin-right: 5px;
+                width: 80px;
+                height: 25px;
+                font-family: "Poppins";
+                font-weight: 700;
+                display: inline-flex;
+
+              }
+            }
+        }
+
+        }
+        .logo {
+          background-image: url(../image/logoHeader.webp);
+          border-radius: 15px 15px;
+          width: 135px;
+          height: 40px;
+          display: inline-flex;
+          margin-left: 10%;
+        }
       }
       /* -----------------fin del header -----------------------------*/
       /* -----------------inicio del fold -----------------------------*/
@@ -724,7 +729,7 @@ html {
       }
       .fold {
         display: flex;
-        background: url(../image/imagen_fold_inicio3.jpg);
+        background: url(../image/imagen_fold_inicio3.webp);
         flex-direction: column;
         background-attachment: contain;
         background-size: cover;
@@ -734,38 +739,33 @@ html {
         padding-bottom: 30px;
         width: 100vw;
         height: 100vh;
+        .fold__titulo {
+          display: inline-flex;
+          width: 95vw;
+          font-family: "Rubik";
+          font-weight: 700;
+          font-size: 64px;
+        }
+        .fold__subtitulo {
+          font-family: "Rubik";
+          font-weight: 400;
+          font-size: 20px;
+          width: 80vw;
+          height: 15vh;
+        }
+        .fold__boton {
+          background-color: #ffb400;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: large;
+          width: 13rem;
+          height: 3rem;
+          
+        }
       }
-      .fold__titulo {
-        display: inline-flex;
-        width: 95vw;
-        font-family: "Rubik";
-        font-weight: 700;
-        font-size: 64px;
-      }
-      .fold__titulo2 {
-        font-family: "Rubik";
-        width: 500px;
-        height: 220px;
-        font-weight: 700;
-        font-size: 45px;
-      }
-      .fold__subtitulo {
-        font-family: "Rubik";
-        font-weight: 400;
-        font-size: 20px;
-        width: 80vw;
-        height: 15vh;
-      }
-      .fold__boton {
-        background-color: #ffb400;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: large;
-        width: 13rem;
-        height: 2rem;
-      }
+
       /* -----------------fin del fold principal -----------------------------*/
       .serviciosHome {
         display: grid;
@@ -777,200 +777,101 @@ html {
         height: 80vh;
         background-color: rgb(249, 244, 244);
         color: black;
+        .serviciosdata {
+          margin: 0;
+          width: 400px;
+          height: 150px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+        }
+        .serviciosHome__obrasEnYeso {
+          width: 400px;
+          height: 150px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: flex-start;
+          background-color: white;
+          box-shadow: 10px 10px 5px lightblue;
+          .serviciosHome__obrasEnYeso:hover {
+            transform: scale(1.1, 1.1);
+            transition: all 2s;
+          }
+          h2 {
+            font-family: "Rubik";
+            font-weight: 700;
+            font-size: 20px;
+            width: 250px;
+            height: 70px;
+            margin-top: 5px;
+
+          }
+        }
+        .obras__imagen {
+          width: 100px;
+          height: 100px;
+        }
+        .obrasEnYeso__info {
+          font-size: 13px;
+          font-family: "Open Sans";
+          width: 300px;
+          height: 180px;
+        }
       }
-      .serviciosHome__obrasEnYeso,
-      a {
-        width: 400px;
-        height: 150px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: flex-start;
-        background-color: white;
-      }
-      .serviciosHome__obrasEnYeso:hover {
-        transform: scale(1.1, 1.1);
-        transition: all 1.5s;
-      }
-      .serviciosdata {
-        margin: 0;
-        width: 300px;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .obras__imagen {
-        width: 100px;
-        height: 100px;
-      }
-      .obrasEnYeso__titulo {
-        font-size: 20px;
-        width: 180px;
-        height: 60px;
-        font-family: "Rubik";
-      }
-      .obrasEnYeso__info {
-        font-size: 12px;
-        font-family: "Open Sans";
-        width: 200px;
-        height: 100px;
-      }
-      .serviciosHome__mantenimiento {
-        width: 400px;
-        font-size: 22px;
-        height: 150px;
-        background-color: white;
-      }
-      .serviciosHome__mantenimiento:hover {
-        transform: scale(1.5, 1.5);
-        transition: all 1.5s;
-      }
-      .mantenimiento__titulo {
-        font-size: 15px;
-        font-family: "Rubik";
-        width: 280px;
-        height: 60px;
-      }
-      .mantenimiento__info {
-        font-size: 12px;
-        font-family: "Open Sans";
-        width: 200px;
-        height: 100px;
-      }
-      .serviciosHome__demoliciones {
-        width: 400px;
-        height: 150px;
-        background-color: white;
-      }
-      .serviciosHome__demoliciones:hover {
-        transform: scale(1.5, 1.5);
-        transition: all 1.5s;
-      }
-      .demoliciones__titulo {
-        font-size: 15px;
-        width: 180px;
-        height: 60px;
-        font-family: "Rubik";
-      }
-      .demoliciones__info {
-        font-size: 12px;
-        font-family: "Open Sans";
-        width: 200px;
-        height: 100px;
-      }
-      .serviciosHome__albanileria {
-        width: 400px;
-        height: 150px;
-        background-color: white;
-      }
-      .serviciosHome__albanileria:hover {
-        transform: scale(1.5, 1.5);
-        transition: all 1.5s;
-      }
-      .albanileria__titulo {
-        font-size: 15px;
-        width: 180px;
-        height: 60px;
-        font-family: "Rubik";
-      }
-    
-      .albanileria__info {
-        font-size: 12px;
-        font-family: "Open Sans";
-        width: 200px;
-        height: 100px;
-      }
-      .serviciosHome__pintura {
-        width: 400px;
-        height: 150px;
-        background-color: white;
-      }
-      .serviciosHome__pintura:hover {
-        transform: scale(1.5, 1.5);
-        transition: all 1.5s;
-      }
-      .pintura__titulo {
-        font-size: 15px;
-        font-family: "Rubik";
-      }
-      .pintura__info {
-        font-size: 12px;
-        font-family: "Open Sans";
-        width: 200px;
-        height: 100px;
-      }
-      .serviciosHome__electricidad {
-        width: 400px;
-        height: 150px;
-        background-color: white;
-      }
-      .serviciosHome__electricidad:hover {
-        transform: scale(1.5, 1.5);
-        transition: all 1.5s;
-      }
-      .electricidad__titulo {
-        font-size: 15px;
-        font-family: "Rubik";
-      }
-      .electricidad__info {
-        font-size: 12px;
-        font-family: "Open Sans";
-        width: 200px;
-        height: 100px;
-      }
+
+
       .informacionHome {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         width: 100vw;
         height: 100vh;
-      }
-      .informacionHome__asesoramiento {
-        background-color: grey;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .informacionHomeGris {
-        background-color: grey;
-        width: 70vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .asesoramiento__titulo {
-        width: 30vw;
-        font-size: 30px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 15%;
-      }
-      .parrafos {
-        width: 60vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-      }
-      .asesoramiento__parrafo1 {
-        display: inline-flex;
-        width: 30vw;
-        height: 250px;
-        padding-right: 5%;
-      }
-      .asesoramiento__parrafo2 {
-        display: inline-flex;
-        width: 30vw;
-        height: 250px;
-        padding-left: 5%;
+        .informacionHomeGris {
+          background-color: grey;
+          width: 70vw;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          .asesoramiento__titulo {
+            width: 30vw;
+            font-size: 32px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 15%;
+          }
+          .parrafos {
+            width: 60vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            .asesoramiento__parrafo1 {
+              display: inline-flex;
+              width: 30vw;
+              height: 250px;
+              font-family: "Rubik";
+              font-size: 20px;
+              font-weight: 400;
+              padding-right: 5%;
+            }
+            .asesoramiento__parrafo2 {
+              display: inline-flex;
+              width: 30vw;
+              height: 250px;
+              font-family: "Rubik";
+              font-size: 20px;
+              font-weight: 400;
+              padding-left: 5%;
+            }
+          }
+        }
       }
       .informacionHome__banner {
         background-color: black;
@@ -981,35 +882,28 @@ html {
         justify-content: space-around;
         align-items: center;
         align-content: center;
+        .banner__titulo {
+          color: white;
+          width: 300px;
+          height: 70px;
+          font-size: 22px;
+          font-weight: 700;
+          margin-top: 5%;
+        }
+        .banner__boton {
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: large;
+          color: black;
+          width: 150px;
+          height: 50px;
+          margin-top: 5%;
+        }
       }
-      .banner__titulo {
-        color: white;
-        width: 300px;
-        height: 70px;
-        font-size: 22px;
-        margin-top: 5%;
-      }
-    
-      .banner__boton {
-        border: 5px;
-        border-color: #ffb400;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-      }
-      .banner__boton {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: large;
-        color: black;
-        width: 130px;
-        height: 50px;
-      }
+
       .informacionHome__amarillo {
         background-color: #ffb400;
         width: 30vw;
@@ -1018,65 +912,29 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        .eco {
+          width: 400px;
+          height: 33%;
+          .eco__imagen1 {
+            width: 50px;
+            height: 50px;
+            align-self: flex-start;
+          }
+          .eco__titulo1 {
+            font-family: "Rubik";
+            font-size: 22px;
+            font-weight: 700;
+          }
+          .eco__parrafo1 {
+            font-size: 15px;
+            width: 370px;
+            height: 90px;
+          }
+        }
       }
-    
-      .eco {
-        width: 370px;
-        height: 25%;
-      }
-      .eco__imagen1 {
-        width: 50px;
-        height: 50px;
-        align-self: flex-start;
-      }
-      .eco__titulo1 {
-        font-family: "Rubik";
-      }
-      .eco__parrafo1 {
-        font-size: 15px;
-        width: 370px;
-        height: 90px;
-      }
-      .newest {
-        width: 370px;
-        height: 25%;
-      }
-      .newest__imagen2 {
-        width: 50px;
-        height: 50px;
-        align-self: flex-start;
-      }
-      .newest__titulo2 {
-        font-family: "Rubik";
-        font-size: 22px;
-        width: 350px;
-        height: 30px;
-      }
-      .newest__parrafo2 {
-        font-size: 15px;
-        width: 370px;
-        height: 150px;
-      }
-      .high {
-        width: 370px;
-        height: 25%;
-        background-color: #ffb400;
-      }
-      .high__titulo3 {
-        font-family: "Rubik";
-        font-size: 22px;
-        width: 370px;
-        height: 50px;
-      }
-      .high__parrafo3 {
-        font-size: 15px;
-        width: 350px;
-        height: 150px;
-      }
-    
       .fold2 {
         display: flex;
-        background: url(../image/imagen_fold_inicio.jpg);
+        background: url(../image/imagen_fold_inicio.webp);
         flex-direction: column;
         background-attachment: contain;
         background-size: cover;
@@ -1085,27 +943,30 @@ html {
         justify-content: center;
         padding-bottom: 30px;
         width: 100vw;
-        height: 100vh;
-      }
-      .fold2__titulo2 {
-        font-family: "Rubik";
-        font-weight: 700;
-        font-size: 48px;
-      }
-      .fold2__subtitulo {
-        font-family: "Rubik";
-        font-weight: 400;
-        font-size: 22px;
-      }
-      .fold2__boton {
-        background-color: #ffb400;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: large;
-        width: 13rem;
-        height: 3rem;
+        height: 80vh;
+        .fold__titulo2 {
+          font-family: "Rubik";
+          width: 80vw;
+          height: 10vh;
+          font-weight: 700;
+          font-size: 45px;
+        }
+        
+        .fold2__subtitulo {
+          font-family: "Rubik";
+          font-weight: 400;
+          font-size: 22px;
+        }
+        .fold2__boton {
+          background-color: #ffb400;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: large;
+          width: 13rem;
+          height: 3rem;
+        }
       }
       .experiencia {
         background-color: lightslategrey;
@@ -1169,7 +1030,7 @@ html {
         align-items: center;
       }
       .card1__info {
-        font-size: 22px;
+        font-size: 16px;
         width: 20vw;
         height: 20vh;
         justify-content: center;
@@ -1200,7 +1061,7 @@ html {
         align-items: center;
       }
       .card2__info {
-        font-size: 22px;
+        font-size: 16px;
         width: 20vw;
         height: 20vh;
       }
@@ -1230,7 +1091,7 @@ html {
         align-items: center;
       }
       .card3__info {
-        font-size: 22px;
+        font-size: 16px;
         width: 20vw;
         height: 20vh;
       }

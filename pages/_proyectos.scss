@@ -22,10 +22,32 @@
   }
   
   
-  /* ------------PAGINA PROYECTOS FINAL--------------- */
+  /* ------------PAGINA PROYECTOS FINAL MOBILE--------------- */
 
+
+/* ------------PAGINA PROYECTOS INICIO--------------- */
 @media screen and (min-width: 992px){
-        /* ------------PAGINA PROYECTOS INICIO--------------- */
-    /* USA BOOTSTRAP UNICAMENTE NO HAY ESTILO */
-    /* ------------PAGINA PROYECTOS FIN--------------- */
+  .tituloBarrios {
+    width: 100vw;
+    height: 5vh;
+    font-family: "Rubik";
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+  .cajatitulo {
+    background-color: antiquewhite;
+    width: 97vw;
+    height: 15vh;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 }
+    /* ------------PAGINA PROYECTOS FIN--------------- */
