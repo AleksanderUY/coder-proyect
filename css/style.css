@@ -8408,36 +8408,33 @@ a {
   color: black;
   width: 100vw;
   height: 10vh; }
+  .main__header nav {
+    width: 60vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .main__header nav ul {
+      width: 60vw;
+      height: 5vh;
+      display: inline-flex;
+      flex-wrap: wrap; }
+      .main__header nav ul li {
+        background-color: white;
+        margin-right: 5px;
+        font-family: "Poppins";
+        font-size: 12px;
+        font-weight: 700;
+        display: inline-flex; }
 
-.main__header__logo {
+.logo {
   background-image: url(../image/logoHeader.jpg);
   border-radius: 15px 15px;
   width: 135px;
   height: 38px;
   display: inline-flex;
   margin-left: 1%; }
-
-.main__header nav {
-  width: 60vw;
-  height: 6vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.main__header ul {
-  width: 60vw;
-  height: 5vh;
-  display: inline-flex;
-  flex-wrap: wrap; }
-
-.main__header ul li {
-  background-color: white;
-  margin-right: 5px;
-  font-family: "Poppins";
-  font-size: 12px;
-  font-weight: 700;
-  display: inline-flex; }
 
 .principal {
   display: flex;
@@ -9035,48 +9032,49 @@ a {
 @media screen and (min-width: 992px) {
   a {
     text-decoration: none;
-    color: black; }
+    color: black;
+    margin-top: 0; }
   /*------------- principio del header ----------------------*/
   .main__header {
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: black;
     width: 100vw;
     height: 50px; }
-  .main__header__logo {
-    background-image: url(../image/logoHeader.jpg);
-    border-radius: 15px 15px;
-    width: 135px;
-    height: 40px;
-    display: inline-flex;
-    margin-left: 10%; }
-  .main__header nav {
-    background-color: white;
-    width: 550px;
-    height: 30px;
-    margin-right: 5%; }
-  .main__header ul {
-    width: 550px;
-    height: 30px;
-    margin: 0;
-    display: inline-flex; }
-  .main__header ul li {
-    background-color: white;
-    margin-right: 5px;
-    font-family: "Poppins";
-    font-weight: 700;
-    display: inline-flex; }
-  .main__header ul li a {
-    background-color: white;
-    margin-right: 5px;
-    width: 80px;
-    height: 25px;
-    font-family: "Poppins";
-    font-weight: 700;
-    display: inline-flex; }
+    .main__header nav {
+      background-color: white;
+      width: 550px;
+      height: 30px;
+      margin-right: 5%; }
+      .main__header nav ul {
+        width: 550px;
+        height: 30px;
+        margin: 0;
+        display: inline-flex; }
+        .main__header nav ul li {
+          background-color: white;
+          margin-right: 5px;
+          font-family: "Poppins";
+          font-weight: 700;
+          display: inline-flex; }
+          .main__header nav ul li a {
+            background-color: white;
+            margin-right: 5px;
+            width: 80px;
+            height: 25px;
+            font-family: "Poppins";
+            font-weight: 700;
+            display: inline-flex; }
+    .main__header .logo {
+      background-image: url(../image/logoHeader.webp);
+      border-radius: 15px 15px;
+      width: 135px;
+      height: 40px;
+      display: inline-flex;
+      margin-left: 10%; }
   /* -----------------fin del header -----------------------------*/
   /* -----------------inicio del fold -----------------------------*/
   .principal {
@@ -9089,7 +9087,7 @@ a {
     height: 90vh; }
   .fold {
     display: flex;
-    background: url(../image/imagen_fold_inicio3.jpg);
+    background: url(../image/imagen_fold_inicio3.webp);
     flex-direction: column;
     background-attachment: contain;
     background-size: cover;
@@ -9125,7 +9123,7 @@ a {
     color: white;
     font-size: large;
     width: 13rem;
-    height: 2rem; }
+    height: 3rem; }
   /* -----------------fin del fold principal -----------------------------*/
   .serviciosHome {
     display: grid;
@@ -9137,8 +9135,7 @@ a {
     height: 80vh;
     background-color: #f9f4f4;
     color: black; }
-  .serviciosHome__obrasEnYeso,
-  a {
+  .serviciosHome__obrasEnYeso {
     width: 400px;
     height: 150px;
     display: flex;
@@ -9148,7 +9145,7 @@ a {
     background-color: white; }
   .serviciosHome__obrasEnYeso:hover {
     transform: scale(1.1, 1.1);
-    transition: all 1.5s; }
+    transition: all 2s; }
   .serviciosdata {
     margin: 0;
     width: 300px;
@@ -9382,7 +9379,7 @@ a {
     height: 150px; }
   .fold2 {
     display: flex;
-    background: url(../image/imagen_fold_inicio.jpg);
+    background: url(../image/imagen_fold_inicio.webp);
     flex-direction: column;
     background-attachment: contain;
     background-size: cover;
@@ -9462,7 +9459,7 @@ a {
     justify-content: center;
     align-items: center; }
   .card1__info {
-    font-size: 22px;
+    font-size: 16px;
     width: 20vw;
     height: 20vh;
     justify-content: center; }
@@ -9488,7 +9485,7 @@ a {
     justify-content: center;
     align-items: center; }
   .card2__info {
-    font-size: 22px;
+    font-size: 16px;
     width: 20vw;
     height: 20vh; }
   .card2__nombre {
@@ -9513,7 +9510,7 @@ a {
     justify-content: center;
     align-items: center; }
   .card3__info {
-    font-size: 22px;
+    font-size: 16px;
     width: 20vw;
     height: 20vh; }
   .card3__nombre {
@@ -9920,12 +9917,30 @@ a {
   width: 100vw;
   height: 80vh; }
 
-/* ------------PAGINA PROYECTOS FINAL--------------- */
+/* ------------PAGINA PROYECTOS FINAL MOBILE--------------- */
+/* ------------PAGINA PROYECTOS INICIO--------------- */
 @media screen and (min-width: 992px) {
-  /* ------------PAGINA PROYECTOS INICIO--------------- */
-  /* USA BOOTSTRAP UNICAMENTE NO HAY ESTILO */
-  /* ------------PAGINA PROYECTOS FIN--------------- */ }
+  .tituloBarrios {
+    width: 100vw;
+    height: 5vh;
+    font-family: "Rubik";
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center; }
+  .cajatitulo {
+    background-color: antiquewhite;
+    width: 97vw;
+    height: 15vh;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 
+/* ------------PAGINA PROYECTOS FIN--------------- */
 /* ------------PAGINA SERVICIOS INICIO--------------- */
 .mainServicios {
   width: 100vw;
