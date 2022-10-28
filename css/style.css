@@ -8403,17 +8403,17 @@ a {
   background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   color: black;
   width: 100vw;
   height: 10vh; }
   .main__header nav {
-    width: 60vw;
+    width: 15vw;
     height: 6vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center; }
     .main__header nav ul {
       width: 60vw;
@@ -9180,7 +9180,7 @@ a {
       justify-content: space-between; }
       .informacionHome .informacionHomeGris .asesoramiento__titulo {
         width: 30vw;
-        font-size: 32px;
+        font-size: 27px;
         font-weight: 700;
         display: inline-flex;
         align-items: center;
@@ -9272,7 +9272,7 @@ a {
     height: 80vh; }
     .fold2 .fold__titulo2 {
       font-family: "Rubik";
-      width: 80vw;
+      width: 90vw;
       height: 10vh;
       font-weight: 700;
       font-size: 45px; }
@@ -9310,7 +9310,11 @@ a {
     font-family: "Rubik";
     text-align: center;
     justify-content: center;
-    font-size: 30px; }
+    font-size: 36px;
+    font-weight: 700;
+    width: 80vw;
+    height: 10vh;
+    margin-top: 5%; }
   .experiencias {
     display: grid;
     background-color: lightslategrey;
