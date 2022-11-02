@@ -1,10 +1,10 @@
 
 // Include any default variable overrides here (though functions won't be available)
-$bs-primary: blue !default;
-$font-family-sans-serif: "Rubik";
 
+@import "./node_modules/bootstrap/scss/bootstrap";
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./components/global.scss";
+@import "./components/navbar.scss";
 
 @import "./pages/index";
 @import "./pages/nosotros";

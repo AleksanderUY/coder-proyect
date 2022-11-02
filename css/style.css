@@ -48,7 +48,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: Rubik;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -8381,6 +8381,13 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+* {
+  box-sizing: border-box; }
+
+header {
+  width: 100vw;
+  height: 60vh; }
+
 html {
   overflow-x: hidden;
   font-family: "Poppins", "Open+Sans", "Rubik"; }
@@ -8394,6 +8401,8 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden; }
+  body p {
+    margin: 0; }
 
 a {
   text-decoration: none;
@@ -8402,31 +8411,36 @@ a {
 .main__header {
   background-color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+  justify-content: space-between;
   align-items: center;
   color: black;
   width: 100vw;
   height: 10vh; }
+  .main__header .container-fluid, .main__header .container-sm, .main__header .container-md, .main__header .container-lg, .main__header .container-xl, .main__header .container-xxl {
+    margin-left: 0; }
   .main__header nav {
-    width: 15vw;
-    height: 6vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center; }
-    .main__header nav ul {
-      width: 60vw;
-      height: 5vh;
-      display: inline-flex;
-      flex-wrap: wrap; }
-      .main__header nav ul li {
-        background-color: white;
-        margin-right: 5px;
-        font-family: "Poppins";
-        font-size: 12px;
-        font-weight: 700;
-        display: inline-flex; }
+    width: 100vw;
+    height: 10vh; }
+  .main__header navbar {
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 0;
+    border: 5px; }
+  .main__header ul {
+    margin-top: 10%;
+    background-color: white; }
+    .main__header ul li {
+      background-color: white;
+      font-family: "Rubik";
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1%; }
 
 .logo {
   background-image: url(../image/logoHeader.jpg);
@@ -8435,6 +8449,65 @@ a {
   height: 38px;
   display: inline-flex;
   margin-left: 1%; }
+
+@media screen and (min-width: 992px) {
+  .main__header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    width: 100vw;
+    height: 7vh; }
+    .main__header .container-fluid, .main__header .container-sm, .main__header .container-md, .main__header .container-lg, .main__header .container-xl, .main__header .container-xxl {
+      width: 100vw;
+      height: 5vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    .main__header nav {
+      background-color: white;
+      width: 70vw;
+      height: 5vh;
+      margin-right: 15%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .main__header nav ul {
+        width: 70vw;
+        height: 5vh;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .main__header nav ul li {
+          background-color: white;
+          font-family: "Poppins";
+          font-weight: 700;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 6vw;
+          height: 5vh;
+          margin-left: 5%; }
+          .main__header nav ul li a {
+            background-color: white;
+            margin-right: 5px;
+            width: 6vw;
+            height: 5vh;
+            font-family: "Poppins";
+            font-weight: 700;
+            display: inline-flex; }
+    .main__header .logo {
+      background-image: url(../image/logoHeader.webp);
+      border-radius: 15px 15px;
+      width: 135px;
+      height: 40px;
+      display: inline-flex;
+      margin-left: 10%; } }
 
 .principal {
   display: flex;
@@ -9035,46 +9108,6 @@ a {
     color: black;
     margin-top: 0; }
   /*------------- principio del header ----------------------*/
-  .main__header {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: black;
-    width: 100vw;
-    height: 50px; }
-    .main__header nav {
-      background-color: white;
-      width: 550px;
-      height: 30px;
-      margin-right: 5%; }
-      .main__header nav ul {
-        width: 550px;
-        height: 30px;
-        margin: 0;
-        display: inline-flex; }
-        .main__header nav ul li {
-          background-color: white;
-          margin-right: 5px;
-          font-family: "Poppins";
-          font-weight: 700;
-          display: inline-flex; }
-          .main__header nav ul li a {
-            background-color: white;
-            margin-right: 5px;
-            width: 80px;
-            height: 25px;
-            font-family: "Poppins";
-            font-weight: 700;
-            display: inline-flex; }
-    .main__header .logo {
-      background-image: url(../image/logoHeader.webp);
-      border-radius: 15px 15px;
-      width: 135px;
-      height: 40px;
-      display: inline-flex;
-      margin-left: 10%; }
   /* -----------------fin del header -----------------------------*/
   /* -----------------inicio del fold -----------------------------*/
   .principal {
@@ -9759,7 +9792,7 @@ a {
     height: 80vh;
     display: flex; }
   .caracteristicas__only {
-    background-color: #ffb400;
+    background-color: olivedrab;
     width: 30vw;
     height: 100vh;
     display: flex;
@@ -9807,6 +9840,39 @@ a {
 /* ------------PAGINA PROYECTOS FINAL MOBILE--------------- */
 /* ------------PAGINA PROYECTOS INICIO--------------- */
 @media screen and (min-width: 992px) {
+  .fold_proyectos {
+    background-image: url(/image/imagen_fold_proyectos.jpg);
+    background-attachment: contain;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+    .fold_proyectos .fondo_letras {
+      background-color: black;
+      opacity: 0.7; }
+      .fold_proyectos .fondo_letras h1, .fold_proyectos .fondo_letras .h1 {
+        display: inline-flex;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 10vh;
+        margin-left: 1%;
+        font-family: "Rubik";
+        color: white;
+        font-weight: 700;
+        font-size: 64px;
+        opacity: initial; }
+      .fold_proyectos .fondo_letras p {
+        font-family: "Rubik";
+        display: inline-flex;
+        margin-left: 1%;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        width: 100vw;
+        height: 10vh; }
   .tituloBarrios {
     width: 100vw;
     height: 5vh;
@@ -9819,13 +9885,19 @@ a {
     align-items: center;
     align-content: center; }
   .cajatitulo {
-    background-color: antiquewhite;
-    width: 97vw;
+    background-color: white;
+    background: linear-gradient(to right, grey, white);
+    width: 100vw;
     height: 15vh;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     display: flex;
     justify-content: center;
     align-items: center; } }
+
+.card {
+  margin-top: 3%; }
+  .card a {
+    font-weight: 500; }
 
 /* ------------PAGINA PROYECTOS FIN--------------- */
 /* ------------PAGINA SERVICIOS INICIO--------------- */
@@ -10089,7 +10161,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/image/imagen_fold_servicios.jpg); }
+    background-image: url(/image/imagen_fold_servicios.jpg);
+    background-attachment: contain;
+    background-size: cover; }
   .servicios__titulo {
     font-family: "Rubik";
     width: 40vw;

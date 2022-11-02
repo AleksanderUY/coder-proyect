@@ -1,64 +1,4 @@
-html {
-    overflow-x: hidden;
-    font-family: "Poppins", "Open+Sans", "Rubik";
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: darkgrey;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-  }
-.main__header {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: black;
-    width: 100vw;
-    height: 10vh;
-    nav {
-      width: 15vw;
-      height: 6vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center; 
-      ul {
-        width: 60vw;
-        height: 5vh;
-        display: inline-flex;
-        flex-wrap: wrap; 
-        li {
-          background-color: white;
-          margin-right: 5px;
-          font-family: "Poppins";
-          font-size: 12px;
-          font-weight: 700;
-          display: inline-flex; }
-        }
-    }
-  }
-  
-  .logo {
-    background-image: url(../image/logoHeader.jpg);
-    border-radius: 15px 15px;
-    width: 135px;
-    height: 38px;
-    display: inline-flex;
-    margin-left: 1%; }
-  
-
-  
-  .principal {
+.principal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,13 +73,8 @@ html {
     align-items: center; }
   
   .serviciosHome__obrasEnYeso {
-    width: 90vw;
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
+    @include caja;
+}
   
   .obrasEnYeso__titulo h2, .obrasEnYeso__titulo .h2 {
     font-size: large;
@@ -666,56 +601,7 @@ html {
       }
       /*------------- principio del header ----------------------*/
     
-      .main__header {
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        color: black;
-        width: 100vw;
-        height: 50px;
-        nav {
-          background-color: white;
-          width: 550px;
-          height: 30px;
-          margin-right: 5%;
-          ul {
-            width: 550px;
-            height: 30px;
-            margin: 0;
-            display: inline-flex;
 
-            li {
-              background-color: white;
-              margin-right: 5px;
-              font-family: "Poppins";
-              font-weight: 700;
-              display: inline-flex;
-
-              a {
-                background-color: white;
-                margin-right: 5px;
-                width: 80px;
-                height: 25px;
-                font-family: "Poppins";
-                font-weight: 700;
-                display: inline-flex;
-
-              }
-            }
-        }
-
-        }
-        .logo {
-          background-image: url(../image/logoHeader.webp);
-          border-radius: 15px 15px;
-          width: 135px;
-          height: 40px;
-          display: inline-flex;
-          margin-left: 10%;
-        }
-      }
       /* -----------------fin del header -----------------------------*/
       /* -----------------inicio del fold -----------------------------*/
       .principal {
