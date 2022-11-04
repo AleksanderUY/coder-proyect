@@ -1,5 +1,5 @@
 $titulo-fuente: "Rubik";
-$subtitulo-fuente: "Rubik";
+$subtitulo-fuente: "Open Sans";
 $texto-fuente: "Rubik";
 
 @mixin titulo {}
@@ -16,7 +16,19 @@ $texto-fuente: "Rubik";
     background-color: white; 
 }
 
-
+@mixin boton {
+  border: 15px;
+  font-size: large;
+  background-color: #ffb400;
+  border-color: #ffb400;
+  font-family: "Rubik";
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px; 
+}
 
 * {
     box-sizing: border-box;

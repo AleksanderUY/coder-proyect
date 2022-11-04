@@ -5,54 +5,51 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
-    height: 60vh; }
-  
-  .fold {
-    display: flex;
-    background: url(../image/imagen_fold_inicio3.jpg);
-    flex-direction: column;
-    background-size: cover;
-    align-items: center;
-    padding-bottom: 5vh;
-    width: 100vw;
-    height: 60vh; }
-  
-  .fold__titulo {
-    font-family: "Rubik";
-    font-weight: 700;
-    font-size: 30px;
-    width: 100vw;
-    height: 20vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-  
-  .fold__subtitulo {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: larger;
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; }
-  
-  .fold__boton {
-    border: 15px;
-    font-size: large;
-    background-color: #ffb400;
-    border-color: #ffb400;
-    font-family: "Rubik";
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 30px; }
-  
+    height: 60vh;
+    .fold {
+      display: flex;
+      background: url(../image/imagen_fold_inicio3.jpg);
+      flex-direction: column;
+      background-size: cover;
+      align-items: center;
+      padding-bottom: 5vh;
+      width: 100vw;
+      height: 60vh; 
+      margin-top: 7vh;
+      .fold__titulo {
+        font-family: "Rubik";
+        font-weight: 700;
+        font-size: 30px;
+        width: 100vw;
+        height: 20vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .fold__subtitulo {
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: larger;
+          width: 100vw;
+          height: 10vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center; }
+          .fold__boton {
+            border: 15px;
+            font-size: large;
+            background-color: #ffb400;
+            border-color: #ffb400;
+            font-family: "Rubik";
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 30px; }
+          } }
   .serviciosHome {
     display: grid;
     grid-template-columns: 1fr;
@@ -61,172 +58,59 @@
     justify-items: center;
     width: 100vw;
     height: 200vh;
-    background-color: #f9f4f4;
-    color: black; }
+    background-color: #beb9b9;
+    color: black;  
+    img {
+      width: 70vw;
+      height: 7vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10%;
+    }
+    .serviciosdata {
+      width: 90vw;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      .h2 {
+        font-size: large;
+        width: 40vw;
+        font-family: "Rubik"; }
+        .obrasEnYeso__imagen {
+          width: 50px;
+          height: 50px; }
+        } }
   
-  .serviciosdata {
-    width: 90vw;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
+
   
   .serviciosHome__obrasEnYeso {
     @include caja;
 }
-  
-  .obrasEnYeso__titulo h2, .obrasEnYeso__titulo .h2 {
-    font-size: large;
-    width: 40vw;
-    font-family: "Rubik"; }
-  
-  .obrasEnYeso__imagen {
-    width: 50px;
-    height: 50px; }
-  
-  .obrasEnYeso__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    width: 50vw;
-    height: 10vh;
-    padding-left: 10%; }
-  
-  .serviciosHome__mantenimiento {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .mantenimiento__titulo h2, .mantenimiento__titulo .h2 {
-    font-size: large;
-    width: 40vw;
-    font-family: "Rubik"; }
-  
-  .mantenimiento__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    width: 50vw;
-    height: 10vh;
-    padding-left: 10%; }
-  
-  .serviciosHome__demoliciones {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .demoliciones__titulo {
-    font-size: 15px;
-    font-family: "Rubik"; }
-  
-  .demoliciones__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    padding-left: 10%;
-    width: 50vw;
-    height: 10vh; }
-  
-  .serviciosHome__albanileria {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .albanileria__titulo {
-    font-size: 15px;
-    font-family: "Rubik"; }
-  
-  .albanileria__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    width: 50vw;
-    height: 10vh;
-    padding-left: 10%; }
-  
-  .serviciosHome__pintura {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .pintura__titulo {
-    font-size: 15px;
-    font-family: "Rubik"; }
-  
-  .pintura__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    width: 50vw;
-    height: 10vh;
-    padding-left: 10%; }
-  
-  .serviciosHome__electricidad {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .electricidad__titulo {
-    font-size: 15px;
-    font-family: "Rubik"; }
-  
-  .electricidad__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    width: 50vw;
-    height: 10vh;
-    padding-left: 10%; }
-  
   .informacionHome__asesoramiento {
     width: 70vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; }
-  
-  .asesoramiento__titulo {
-    font-size: 20px;
-    width: 100vw;
-    height: 10vh;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1%; }
-  
-  .parrafos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 70vh;
-    width: 100vw; }
-  
-  .asesoramiento__parrafo1 {
-    width: 349px;
-    height: 50vh; }
-  
-  .asesoramiento__parrafo2 {
-    width: 349px;
-    height: 50vh; }
-  
-  .informacionHome__amarillo {
+    justify-content: space-between;
+    .parrafos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70vh;
+        width: 100vw; }
+        .asesoramiento__parrafo1 {
+          width: 349px;
+          height: 50vh;
+          text-align: center; } 
+        .asesoramiento__parrafo2 {
+            width: 349px;
+            height: 50vh; }}
+.informacionHome__amarillo {
     background-color: #ffb400;
     width: 100vw;
     height: 80vh;
@@ -255,48 +139,6 @@
     font-size: 15px;
     width: 370px;
     height: 20vh; }
-  
-  .newest {
-    width: 100vw;
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; }
-  
-  .newest__imagen2 {
-    width: 50px;
-    height: 50px;
-    align-self: flex-start; }
-  
-  .newest__titulo2 {
-    font-family: "Rubik";
-    font-size: large; }
-  
-  .newest__parrafo2 {
-    font-size: 15px;
-    width: 370px;
-    height: 20vh; }
-  
-  .high {
-    background-color: #ffb400;
-    width: 100vw;
-    height: 25vh; }
-  
-  .high__imagen3 {
-    width: 50px;
-    height: 50px;
-    align-self: flex-start; }
-  
-  .high__titulo3 {
-    font-family: "Rubik";
-    font-size: large; }
-  
-  .high__parrafo3 {
-    font-size: 15px;
-    width: 100vw;
-    height: 20vh; }
-  
   .informacionHome__banner {
     background-color: black;
     width: 100vw;
@@ -304,27 +146,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center; 
+    .banner__titulo {
+      color: white;
+      text-align: center;
+      width: 300px;
+      height: 70px;
+      font-size: 18px; }
+      .banner__boton {
+        border: 15px;
+        background-color: white;
+        border-color: #ffb400;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 15px;
+        margin-bottom: 5%; }}
   
-  .banner__titulo {
-    color: white;
-    text-align: center;
-    width: 300px;
-    height: 70px;
-    font-size: 18px; }
-  
-  .banner__boton {
-    border: 15px;
-    background-color: white;
-    border-color: #ffb400;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 15px;
-    margin-bottom: 5%; }
-  
+
   .fold2 {
     display: flex;
     background: url(../image/imagen_fold_inicio.jpg);
@@ -599,10 +440,6 @@
         color: black;
         margin-top: 0;
       }
-      /*------------- principio del header ----------------------*/
-    
-
-      /* -----------------fin del header -----------------------------*/
       /* -----------------inicio del fold -----------------------------*/
       .principal {
         display: flex;
@@ -625,6 +462,7 @@
         padding-bottom: 30px;
         width: 100vw;
         height: 100vh;
+        margin-top: 7vh;
         .fold__titulo {
           display: inline-flex;
           width: 95vw;
