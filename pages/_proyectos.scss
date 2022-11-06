@@ -1,5 +1,5 @@
 /* ------------PAGINA PROYECTOS INICIO--------------- */
-  
+
 .principalProyectos {
     background-image: url(./image/image/fold_proyectos.jpg);
     display: flex;
@@ -19,6 +19,7 @@
     background-size: cover;
     width: 100vw;
     height: 80vh;
+    margin-top: 7vh;
   }
   
   
@@ -27,6 +28,43 @@
 
 /* ------------PAGINA PROYECTOS INICIO--------------- */
 @media screen and (min-width: 992px){
+  .fold_proyectos {
+    background-image: url(/image/imagen_fold_proyectos.jpg);
+    background-attachment: contain;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    .fondo_letras {
+      background-color: black;
+      opacity: 0.7;
+      h1 {
+        display: inline-flex;
+        justify-content: flex-start;
+            width: 100vw;
+            height: 10vh;
+            margin-left: 1%;
+            font-family: "Rubik";
+            color: white;
+            font-weight: 700;
+            font-size: 64px;
+            opacity:initial;
+      }
+      p {
+        font-family: "Rubik";
+        display: inline-flex;
+        margin-left: 1%;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        width: 100vw;
+        height: 10vh;
+      }
+    }
+  }
   .tituloBarrios {
     width: 100vw;
     height: 5vh;
@@ -38,16 +76,23 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+
   }
   .cajatitulo {
-    background-color: antiquewhite;
-    width: 97vw;
+    background-color: white;
+    background: linear-gradient(to right, grey, white);
+    width: 100vw;
     height: 15vh;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
-
+  }
+}
+.card {
+  margin-top: 3%;
+  a {
+    font-weight: 500;
   }
 }
     /* ------------PAGINA PROYECTOS FIN--------------- */

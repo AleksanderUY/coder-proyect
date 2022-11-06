@@ -1,119 +1,116 @@
-html {
-    overflow-x: hidden;
-    font-family: "Poppins", "Open+Sans", "Rubik";
-  }
-  body {
+.principal {
+  @media screen and (min-width: 992px){
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
-    background-color: darkgrey;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-  }
-.main__header {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
     width: 100vw;
-    height: 10vh;
-    nav {
-      width: 60vw;
-      height: 6vh;
+    height: 100vh;
+  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 60vh;
+    .fold {
+      @media screen and (min-width: 992px){
+        display: flex;
+        background: url(../image/imagen_fold_inicio3.webp);
+        flex-direction: column;
+        background-attachment: contain;
+        background-size: cover;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        width: 100vw;
+        height: 100vh;
+        margin-top: 7vh;
+      }
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; 
-      ul {
-        width: 60vw;
-        height: 5vh;
-        display: inline-flex;
-        flex-wrap: wrap; 
-        li {
-          background-color: white;
-          margin-right: 5px;
-          font-family: "Poppins";
-          font-size: 12px;
-          font-weight: 700;
-          display: inline-flex; }
-        }
+      background: url(../image/imagen_fold_inicio3.jpg);
+      flex-direction: column;
+      background-size: cover;
+      align-items: center;
+      padding-bottom: 5vh;
+      width: 100vw;
+      height: 60vh; 
+      margin-top: 7vh;
     }
-  }
-  
-  .logo {
-    background-image: url(../image/logoHeader.jpg);
-    border-radius: 15px 15px;
-    width: 135px;
-    height: 38px;
-    display: inline-flex;
-    margin-left: 1%; }
-  
-
-  
-  .principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 60vh; }
-  
-  .fold {
-    display: flex;
-    background: url(../image/imagen_fold_inicio3.jpg);
-    flex-direction: column;
-    background-size: cover;
-    align-items: center;
-    padding-bottom: 5vh;
-    width: 100vw;
-    height: 60vh; }
-  
-  .fold__titulo {
-    font-family: "Rubik";
-    font-weight: 700;
-    font-size: 30px;
-    width: 100vw;
-    height: 20vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-  
-  .fold__subtitulo {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: larger;
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; }
-  
-  .fold__boton {
-    border: 15px;
-    font-size: large;
-    background-color: #ffb400;
-    border-color: #ffb400;
-    font-family: "Rubik";
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 30px; }
-  
+      .fold__titulo {
+        @media screen and (min-width: 992px){
+          display: inline-flex;
+          width: 95vw;
+          font-family: "Rubik";
+          font-weight: 700;
+          font-size: 64px;
+        }
+        font-family: "Rubik";
+        font-weight: 700;
+        font-size: 30px;
+        width: 100vw;
+        height: 20vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .fold__subtitulo {
+          @media screen and (min-width: 992px){
+            font-family: "Rubik";
+            font-weight: 400;
+            font-size: 20px;
+            width: 80vw;
+            height: 15vh;
+          }
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-style: up;
+          font-size: larger;
+          width: 100vw;
+          height: 10vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center; }
+          .fold__boton {
+            @media screen and (min-width: 992px){
+              background-color: #ffb400;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-size: large;
+              width: 13rem;
+              height: 3rem;
+            }
+            border: 15px;
+            font-size: large;
+            background-color: #ffb400;
+            border-color: #ffb400;
+            font-family: "Rubik";
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 30px; }
+          } 
   .serviciosHome {
+    @media screen and (min-width: 992px){
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(249, 244, 244);
+      color: black;
+    }
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -121,177 +118,181 @@ html {
     justify-items: center;
     width: 100vw;
     height: 200vh;
-    background-color: #f9f4f4;
-    color: black; }
-  
-  .serviciosdata {
-    width: 90vw;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-  
+    background-color: #beb9b9;
+    color: black;  
+    img {
+      @media screen and (min-width: 992px){}
+      width: 70vw;
+      height: 7vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10%;
+    }
+    .serviciosdata {
+      @media screen and (min-width: 992px){
+        margin: 0;
+        width: 400px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      width: 90vw;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      h2 {
+        @media screen and (min-width: 992px){}
+        font-size: 20px;
+        font-weight: 700;
+        width: 50vw;
+        height: 5vh;
+        font-family: "Rubik";
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+       }
+       p {
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+      .obrasEnYeso__imagen {
+          @media screen and (min-width: 992px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+          }
+          width: 50px;
+          height: 50px; }
+        } }
   .serviciosHome__obrasEnYeso {
-    width: 90vw;
-    height: 25vh;
+    @media screen and (min-width: 992px){          
+      width: 400px;
+      height: 250px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: flex-start;
+      background-color: white;
+      box-shadow: 10px 10px 5px grey;}
+    @include caja;
+}
+.informacionHome {
+  @media screen and (min-width: 992px){
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .obrasEnYeso__titulo h2, .obrasEnYeso__titulo .h2 {
-    font-size: large;
-    width: 40vw;
-    font-family: "Rubik"; }
-  
-  .obrasEnYeso__imagen {
-    width: 50px;
-    height: 50px; }
-  
-  .obrasEnYeso__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    width: 50vw;
-    height: 10vh;
-    padding-left: 10%; }
-  
-  .serviciosHome__mantenimiento {
-    width: 90vw;
-    height: 20vh;
+    flex-direction: row-reverse;
+
+  }
+  display: flex;
+  flex-direction: column;}
+.informacionHomeGris {
+  @media screen and (min-width: 992px){
+    background-color: grey;
+    width: 70vw;
+    height: 100vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .mantenimiento__titulo h2, .mantenimiento__titulo .h2 {
-    font-size: large;
-    width: 40vw;
-    font-family: "Rubik"; }
-  
-  .mantenimiento__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    width: 50vw;
-    height: 10vh;
-    padding-left: 10%; }
-  
-  .serviciosHome__demoliciones {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .demoliciones__titulo {
-    font-size: 15px;
-    font-family: "Rubik"; }
-  
-  .demoliciones__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    padding-left: 10%;
-    width: 50vw;
-    height: 10vh; }
-  
-  .serviciosHome__albanileria {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .albanileria__titulo {
-    font-size: 15px;
-    font-family: "Rubik"; }
-  
-  .albanileria__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    width: 50vw;
-    height: 10vh;
-    padding-left: 10%; }
-  
-  .serviciosHome__pintura {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .pintura__titulo {
-    font-size: 15px;
-    font-family: "Rubik"; }
-  
-  .pintura__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    width: 50vw;
-    height: 10vh;
-    padding-left: 10%; }
-  
-  .serviciosHome__electricidad {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white; }
-  
-  .electricidad__titulo {
-    font-size: 15px;
-    font-family: "Rubik"; }
-  
-  .electricidad__info {
-    font-size: 1rem;
-    font-family: "Open Sans";
-    width: 50vw;
-    height: 10vh;
-    padding-left: 10%; }
-  
+    align-items: center;
+    justify-content: space-between;
+  }
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-family: $texto-fuente;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 5%;
+
+  }
+}
   .informacionHome__asesoramiento {
     width: 70vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; }
-  
-  .asesoramiento__titulo {
-    font-size: 20px;
-    width: 100vw;
-    height: 10vh;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1%; }
-  
-  .parrafos {
+    justify-content: space-between;
+  }
+    .parrafos {
+      @media screen and (min-width: 992px){
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 60vh;
+        width: 100vw; }
+        .asesoramiento__parrafo1 {
+          @media screen and (min-width: 992px){
+            display: inline-flex;
+            width: 30vw;
+            height: 250px;
+            font-family: "Rubik";
+            font-size: 20px;
+            font-weight: 400;
+            padding-right: 5%;
+          }
+          width: 349px;
+          height: 30vh;
+          font-family: $texto-fuente;
+          font-weight: 400;
+          font-size: larger;
+          height: 50vh;
+          text-align: center;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; } 
+        .asesoramiento__parrafo2 {
+          @media screen and (min-width: 992px){
+            display: inline-flex;
+            width: 30vw;
+            height: 250px;
+            font-family: "Rubik";
+            font-size: 20px;
+            font-weight: 400;
+            padding-left: 5%;
+          }
+          width: 349px;
+          height: 30vh;
+          font-family: $texto-fuente;
+          font-size: larger;
+          font-weight: 400;
+          height: 50vh;
+          text-align: center;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+.informacionHome__amarillo {
+  @media screen and (min-width: 992px){
+    background-color: #ffb400;
+    width: 30vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 70vh;
-    width: 100vw; }
-  
-  .asesoramiento__parrafo1 {
-    width: 349px;
-    height: 50vh; }
-  
-  .asesoramiento__parrafo2 {
-    width: 349px;
-    height: 50vh; }
-  
-  .informacionHome__amarillo {
+    justify-content: space-around;
+  }
     background-color: #ffb400;
     width: 100vw;
     height: 80vh;
@@ -301,6 +302,10 @@ html {
     justify-content: flex-start; }
   
   .eco {
+    @media screen and (min-width: 992px){
+      width: 400px;
+      height: 33%;
+    }
     width: 100vw;
     height: 25vh;
     flex-direction: column;
@@ -308,61 +313,44 @@ html {
     justify-content: center; }
   
   .eco__imagen1 {
+    @media screen and (min-width: 992px){
+      width: 50px;
+      height: 50px;
+      align-self: flex-start;
+    }
     width: 50px;
     height: 50px;
     align-self: flex-start; }
   
   .eco__titulo1 {
+    @media screen and (min-width: 992px){
+      font-family: "Rubik";
+      font-size: 22px;
+      font-weight: 700;
+    }
     font-family: "Rubik";
     font-size: large; }
   
   .eco__parrafo1 {
+    @media screen and (min-width: 992px){
+      font-size: 15px;
+      width: 370px;
+      height: 90px;
+    }
     font-size: 15px;
     width: 370px;
     height: 20vh; }
-  
-  .newest {
-    width: 100vw;
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; }
-  
-  .newest__imagen2 {
-    width: 50px;
-    height: 50px;
-    align-self: flex-start; }
-  
-  .newest__titulo2 {
-    font-family: "Rubik";
-    font-size: large; }
-  
-  .newest__parrafo2 {
-    font-size: 15px;
-    width: 370px;
-    height: 20vh; }
-  
-  .high {
-    background-color: #ffb400;
-    width: 100vw;
-    height: 25vh; }
-  
-  .high__imagen3 {
-    width: 50px;
-    height: 50px;
-    align-self: flex-start; }
-  
-  .high__titulo3 {
-    font-family: "Rubik";
-    font-size: large; }
-  
-  .high__parrafo3 {
-    font-size: 15px;
-    width: 100vw;
-    height: 20vh; }
-  
   .informacionHome__banner {
+    @media screen and (min-width: 992px){
+      background-color: black;
+      width: 70vw;
+      height: 15vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+    }
     background-color: black;
     width: 100vw;
     height: 20vh;
@@ -370,27 +358,61 @@ html {
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
+    .banner__titulo {
+      @media screen and (min-width: 992px){
+        color: white;
+        width: 500px;
+        height: 70px;
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 5%;
+      }
+      color: white;
+      text-align: center;
+      width: 80vw;
+      height: 100px;
+      font-family: $texto-fuente;
+      font-weight: 700;
+      font-size: 25px;
+      padding: 5%;
+      margin-top: 10%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 5%;}
+      .banner__boton {
+        @media screen and (min-width: 992px){
+          background-color: white;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 7px 25px;
+        }
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 7px 25px;}
   
-  .banner__titulo {
-    color: white;
-    text-align: center;
-    width: 300px;
-    height: 70px;
-    font-size: 18px; }
-  
-  .banner__boton {
-    border: 15px;
-    background-color: white;
-    border-color: #ffb400;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 15px;
-    margin-bottom: 5%; }
-  
+
   .fold2 {
+    @media screen and (min-width: 992px){
+      display: flex;
+      background: url(../image/imagen_fold_inicio.webp);
+      flex-direction: column;
+      background-attachment: contain;
+      background-size: cover;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding-bottom: 30px;
+      width: 100vw;
+      height: 80vh;
+    }
     display: flex;
     background: url(../image/imagen_fold_inicio.jpg);
     flex-direction: column;
@@ -403,18 +425,48 @@ html {
     width: 100vw;
     height: 50vh; }
   
+    .fold__titulo2 {
+      font-family: "Rubik";
+      width: 90vw;
+      height: 10vh;
+      font-weight: 700;
+      font-size: 45px;
+    }
+    .fold2__subtitulo {
+      font-family: "Rubik";
+      font-weight: 400;
+      font-size: 22px;
+    }
   .experiencia {
+    @media screen and (min-width: 992px){
+      background-color: lightslategrey;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100vw;
+      height: 100vh;
+    }
     background-color: lightslategrey;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
-    height: 100vh; }
+    height: 110vh; }
   
   .experiencia__valoraciones {
+    @media screen and (min-width: 992px){
+      width: 100vw;
+      height: 110vh;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
     background-color: lightslategrey;
     width: 100vw;
-    height: 105vh;
+    height: 120vh;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -423,6 +475,17 @@ html {
     align-items: center; }
   
   .valoraciones__titulo {
+    @media screen and (min-width: 992px){
+      display: inline-flex;
+      font-family: "Rubik";
+      text-align: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 700;
+      width: 80vw;
+      height: 10vh;
+      margin-top: 5%;
+    }
     background-color: lightslategrey;
     width: 100vw;
     font-family: "Rubik";
@@ -431,225 +494,104 @@ html {
     margin-top: 15%; }
   
   .experiencias {
+    @media screen and (min-width: 992px){
+      display: grid;
+      background-color: lightslategrey;
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      gap: 3%;
+    }
     display: grid;
     justify-items: center;
     background-color: lightslategrey;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     align-content: center;
-    gap: 5px; }
-  
-  .experiencia__card1 {
-    background-color: white;
-    width: 90vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-  
-  .card1__imagen {
-    margin-left: 5%; }
-  
-  .card1__info {
-    font-size: 12px;
-    width: 80vw;
-    height: 5vh;
-    margin-left: 5%; }
-  
-  .card1__nombre {
-    font-family: "Rubik", "bold";
-    font-weight: 700;
-    align-self: flex-start;
-    font-size: 20px;
-    margin-left: 5%; }
-  
-  .experiencia__card2 {
-    background-color: white;
-    width: 90vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-  
-  .card2__imagen {
-    margin-left: 5%; }
-  
-  .card2__info {
-    font-size: 12px;
-    width: 80vw;
-    height: 5vh;
-    margin-left: 5%; }
-  
-  .card2__nombre {
-    font-family: "Rubik", "bold";
-    font-weight: 700;
-    align-self: flex-start;
-    font-size: 20px;
-    margin-left: 5%; }
-  
+    gap: 5%;
+    margin-bottom: 5%; }
+    .experiencia__card3:hover {
+      transform: scale(1.2, 1.2);
+      box-shadow: none;
+    }
+
   .experiencia__card3 {
+    @media screen and (min-width: 992px){
+      background-color: white;
+      width: 25vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 10px 10px 5px #535151;
+    }
     background-color: white;
     width: 90vw;
     height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    box-shadow: 10px 10px 5px #535151; }
   
   .card3__imagen {
-    margin-left: 5%; }
-  
-  .card3__info {
-    font-size: 12px;
-    width: 80vw;
-    height: 5vh;
-    margin-left: 5%; }
-  
-  .card3__nombre {
-    font-family: "Rubik", "bold";
-    font-weight: 700;
-    align-self: flex-start;
-    font-size: 20px;
-    margin-left: 5%; }
-  
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100vw;
-    height: 90vh; }
-  
-  .informacion {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 90vw;
-    height: 100vh; }
-  
-  .footer__formulario {
-    background-color: #ffb400;
-    display: flex;
-    margin-top: 10%;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 50vh; }
-  
-  .formulario__titulo {
-    font-weight: 700;
-    font-size: 20px;
-    width: auto; }
-  
-  .formulario__caja {
-    width: 90vw;
-    height: 40vh;
-    display: flex; }
-  
-  .nombreMail {
+    @media screen and (min-width: 992px){
+      width: 10vw;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     width: 30vw;
     height: 10vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  
-  .caja__nombre {
-    width: 40vw;
-    height: 5vh; }
-  
-  .caja__email {
-    width: 47vw;
-    height: 5vh; }
-  
-  .caja__comentario {
-    width: 90vw;
-    height: 15vh; }
-  
-  .caja__boton {
-    background-color: white;
-    border: 0;
-    width: 30vw;
-    height: 40px; }
-  
-  .footer__redes {
-    background-color: black;
-    width: 100vw;
-    height: 15vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-  
-  .iconoDeRedes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
-    height: 130px; }
-  
-  .iconoDeRedes_facebook a {
-    width: 30px;
-    height: 30px; }
-  
-  .iconoDeRedes_twitter a {
-    width: 30px;
-    height: 30px; }
-  
-  .iconoDeRedes_linkedin a {
-    width: 30px;
-    height: 30px; }
-  
-  .footer__info {
-    background-color: grey;
-    width: 100vw;
-    height: 1vh;
-    display: flex;
-    flex-direction: column; }
-  
-  .informacion {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 50vh; }
-  
-  .info__ubicacion {
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; }
-  
-  .datos {
-    width: 40vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start; }
-  
-  .info__telefono {
-    width: 200px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start; }
+    margin-left: 5%; }
   
-  .info__correo {
-    width: 200px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; }
+  .card3__info {
+    @media screen and (min-width: 992px){
+      font-size: 16px;
+      font-family: $texto-fuente;
+      font-weight: 400;
+      width: 20vw;
+      height: 20vh;
+    }
+    font-family: $texto-fuente;
+    width: 30vw;
+    height: 10vh;
+    font-weight: 400;
+    font-size: 16px;
+    width: 80vw;
+    height: 20vh;
+    margin-left: 5%; }
+  
+  .card3__nombre {
+    @media screen and (min-width: 992px){
+      font-family: "Rubik";
+      font-weight: 700;
+      font-size: 24px;
+      width: 30vw;
+      height: 10vh;
+      align-self: flex-start;
+      margin-left: 10%;
+      margin-top: 0;
+    }
+    font-family: "Rubik", "bold";
+    font-weight: 700;
+    width: 30vw;
+    height: 10vh;
+    align-self: flex-start;
+    font-size: 20px;
+    margin-top: 35px;
+    margin-left: 5%;}
+  
+
 
 
 
@@ -659,147 +601,15 @@ html {
 
 @media screen and (min-width: 992px){
 
-  a {
-        text-decoration: none;
-        color: black;
-        margin-top: 0;
-      }
-      /*------------- principio del header ----------------------*/
-    
-      .main__header {
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        color: black;
-        width: 100vw;
-        height: 50px;
-        nav {
-          background-color: white;
-          width: 550px;
-          height: 30px;
-          margin-right: 5%;
-          ul {
-            width: 550px;
-            height: 30px;
-            margin: 0;
-            display: inline-flex;
-
-            li {
-              background-color: white;
-              margin-right: 5px;
-              font-family: "Poppins";
-              font-weight: 700;
-              display: inline-flex;
-
-              a {
-                background-color: white;
-                margin-right: 5px;
-                width: 80px;
-                height: 25px;
-                font-family: "Poppins";
-                font-weight: 700;
-                display: inline-flex;
-
-              }
-            }
-        }
-
-        }
-        .logo {
-          background-image: url(../image/logoHeader.webp);
-          border-radius: 15px 15px;
-          width: 135px;
-          height: 40px;
-          display: inline-flex;
-          margin-left: 10%;
-        }
-      }
-      /* -----------------fin del header -----------------------------*/
+  
       /* -----------------inicio del fold -----------------------------*/
-      .principal {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: 90vh;
-      }
-      .fold {
-        display: flex;
-        background: url(../image/imagen_fold_inicio3.webp);
-        flex-direction: column;
-        background-attachment: contain;
-        background-size: cover;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        padding-bottom: 30px;
-        width: 100vw;
-        height: 100vh;
-        .fold__titulo {
-          display: inline-flex;
-          width: 95vw;
-          font-family: "Rubik";
-          font-weight: 700;
-          font-size: 64px;
-        }
-        .fold__subtitulo {
-          font-family: "Rubik";
-          font-weight: 400;
-          font-size: 20px;
-          width: 80vw;
-          height: 15vh;
-        }
-        .fold__boton {
-          background-color: #ffb400;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          font-size: large;
-          width: 13rem;
-          height: 3rem;
-          
-        }
-      }
+
 
       /* -----------------fin del fold principal -----------------------------*/
       .serviciosHome {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        width: 100vw;
-        height: 80vh;
-        background-color: rgb(249, 244, 244);
-        color: black;
-        .serviciosdata {
-          margin: 0;
-          width: 400px;
-          height: 150px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          
-        }
         .serviciosHome__obrasEnYeso {
-          width: 400px;
-          height: 150px;
-          display: flex;
-          justify-content: space-between;
-          flex-direction: row;
-          align-items: flex-start;
-          background-color: white;
-          box-shadow: 10px 10px 5px lightblue;
-          .serviciosHome__obrasEnYeso:hover {
-            transform: scale(1.1, 1.1);
-            transition: all 2s;
-          }
+
+
           h2 {
             font-family: "Rubik";
             font-weight: 700;
@@ -810,440 +620,6 @@ html {
 
           }
         }
-        .obras__imagen {
-          width: 100px;
-          height: 100px;
-        }
-        .obrasEnYeso__info {
-          font-size: 13px;
-          font-family: "Open Sans";
-          width: 300px;
-          height: 180px;
-        }
-      }
 
-
-      .informacionHome {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
-        .informacionHomeGris {
-          background-color: grey;
-          width: 70vw;
-          height: 100vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
-          .asesoramiento__titulo {
-            width: 30vw;
-            font-size: 32px;
-            font-weight: 700;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 15%;
-          }
-          .parrafos {
-            width: 60vw;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            .asesoramiento__parrafo1 {
-              display: inline-flex;
-              width: 30vw;
-              height: 250px;
-              font-family: "Rubik";
-              font-size: 20px;
-              font-weight: 400;
-              padding-right: 5%;
-            }
-            .asesoramiento__parrafo2 {
-              display: inline-flex;
-              width: 30vw;
-              height: 250px;
-              font-family: "Rubik";
-              font-size: 20px;
-              font-weight: 400;
-              padding-left: 5%;
-            }
-          }
-        }
-      }
-      .informacionHome__banner {
-        background-color: black;
-        width: 70vw;
-        height: 15vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
-        .banner__titulo {
-          color: white;
-          width: 300px;
-          height: 70px;
-          font-size: 22px;
-          font-weight: 700;
-          margin-top: 5%;
-        }
-        .banner__boton {
-          background-color: white;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          font-size: large;
-          color: black;
-          width: 150px;
-          height: 50px;
-          margin-top: 5%;
-        }
-      }
-
-      .informacionHome__amarillo {
-        background-color: #ffb400;
-        width: 30vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        .eco {
-          width: 400px;
-          height: 33%;
-          .eco__imagen1 {
-            width: 50px;
-            height: 50px;
-            align-self: flex-start;
-          }
-          .eco__titulo1 {
-            font-family: "Rubik";
-            font-size: 22px;
-            font-weight: 700;
-          }
-          .eco__parrafo1 {
-            font-size: 15px;
-            width: 370px;
-            height: 90px;
-          }
-        }
-      }
-      .fold2 {
-        display: flex;
-        background: url(../image/imagen_fold_inicio.webp);
-        flex-direction: column;
-        background-attachment: contain;
-        background-size: cover;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        padding-bottom: 30px;
-        width: 100vw;
-        height: 80vh;
-        .fold__titulo2 {
-          font-family: "Rubik";
-          width: 80vw;
-          height: 10vh;
-          font-weight: 700;
-          font-size: 45px;
-        }
-        
-        .fold2__subtitulo {
-          font-family: "Rubik";
-          font-weight: 400;
-          font-size: 22px;
-        }
-        .fold2__boton {
-          background-color: #ffb400;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          font-size: large;
-          width: 13rem;
-          height: 3rem;
-        }
-      }
-      .experiencia {
-        background-color: lightslategrey;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100vw;
-        height: 100vh;
-      }
-      .experiencia__valoraciones {
-        width: 100vw;
-        height: 100vh;
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-      }
-      .valoraciones__titulo {
-        display: inline-flex;
-        font-family: "Rubik";
-        text-align: center;
-        justify-content: center;
-        font-size: 30px;
-      }
-      .experiencias {
-        display: grid;
-        background-color: lightslategrey;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
-        gap: 2%;
-      }
-      .experiencia__card1 {
-        background-color: white;
-        width: 25vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-      }
-      .experiencia__card1:hover {
-        transform: scale(1.2, 1.2);
-      }
-      .experiencia__card2:hover {
-        transform: scale(1.2, 1.2);
-      }
-      .experiencia__card3:hover {
-        transform: scale(1.2, 1.2);
-      }
-      .card1__imagen {
-        font-size: 22px;
-        width: 10vw;
-        height: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .card1__info {
-        font-size: 16px;
-        width: 20vw;
-        height: 20vh;
-        justify-content: center;
-      }
-      .card1__nombre {
-        font-family: "Rubik", "bold";
-        font-weight: 700;
-        align-self: flex-start;
-        font-size: 24px;
-        margin-left: 10%;
-      }
-    
-      .experiencia__card2 {
-        background-color: white;
-        width: 25vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-      }
-      .card2__imagen {
-        font-size: 22px;
-        width: 10vw;
-        height: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .card2__info {
-        font-size: 16px;
-        width: 20vw;
-        height: 20vh;
-      }
-      .card2__nombre {
-        font-family: "Rubik", "bold";
-        font-weight: 700;
-        align-self: flex-start;
-        font-size: 24px;
-        margin-left: 10%;
-      }
-    
-      .experiencia__card3 {
-        background-color: white;
-        width: 25vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-      }
-      .card3__imagen {
-        font-size: 22px;
-        width: 10vw;
-        height: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .card3__info {
-        font-size: 16px;
-        width: 20vw;
-        height: 20vh;
-      }
-      .card3__nombre {
-        font-family: "Rubik", "bold";
-        font-weight: 700;
-        font-size: 24px;
-        align-self: flex-start;
-        margin-left: 10%;
-      }
-    
-      .footer {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: center;
-        width: 100vw;
-        height: 60vh;
-      }
-      .informacion {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 100vw;
-        height: 60vh;
-      }
-      .footer__formulario {
-        background-color: #ffb400;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 50vw;
-        height: 60vh;
-        margin: 0;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 70vw;
-        height: 40vh;
-      }
-      .formulario__titulo {
-        font-weight: 700;
-        font-size: 36px;
-        width: 50vw;
-        height: 10vh;
-      }
-      .formulario__caja {
-        width: 50vw;
-        height: 60vh;
-      }
-      .nombreMail {
-        display: flex;
-        width: 49vw;
-        height: 10vh;
-        flex-direction: row;
-        justify-content: flex-start;
-      }
-      .caja__nombre {
-        width: 20vw;
-        height: 5vh;
-      }
-      .caja__email {
-        width: 30vw;
-        height: 5vh;
-      }
-      .caja__comentario {
-        width: 49vw;
-        height: 15vh;
-      }
-      .caja__boton {
-        color: black;
-        background-color: white;
-        border: 0;
-        width: 100px;
-        height: 40px;
-        align-self: flex-start;
-        margin-left: 1%;
-        margin-top: 2%;
-      }
-    
-      .footer__redes {
-        background-color: black;
-        width: 50vw;
-        height: 200px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-      .iconoDeRedes {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 300px;
-        height: 130px;
-      }
-      .iconoDeRedes_facebook {
-        width: 30px;
-        height: 30px;
-      }
-      .iconoDeRedes_twitter {
-        width: 30px;
-        height: 30px;
-      }
-      .iconoDeRedes_linkedin {
-        width: 30px;
-        height: 30px;
-      }
-      .footer__info {
-        background-color: grey;
-        width: 50vw;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-      }
-      .info__ubicacion {
-        width: 450px;
-        height: 60px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-      }
-      .datos {
-        width: 40vw;
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        margin-left: 15%;
-      }
-      .info__telefono {
-        width: 200px;
-        height: 60px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-      }
-      .info__correo {
-        width: 200px;
-        height: 60px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
       }
     }

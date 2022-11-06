@@ -1,0 +1,69 @@
+$titulo-fuente: "Rubik";
+$subtitulo-fuente: "Open Sans";
+$texto-fuente: "Rubik";
+
+@mixin titulo {}
+@mixin subtitulo {}
+@mixin texto {}
+
+@mixin caja {
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white; 
+    box-shadow: 10px 10px 5px grey;
+}
+
+@mixin boton {
+  border: 15px;
+  font-size: large;
+  background-color: #ffb400;
+  border-color: #ffb400;
+  font-family: "Rubik";
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px; 
+}
+
+* {
+    box-sizing: border-box;
+  }
+  header {
+    width: 100vw;
+    height: 60vh;
+  }
+  html {
+      overflow-x: hidden;
+      font-family: "Poppins", "Open+Sans", "Rubik";
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: darkgrey;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+      p {
+        margin: 0;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      margin-top: 0;
+      @media screen and (min-width: 992px) {
+      background-color: #ffb400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-size: large;}
+    }

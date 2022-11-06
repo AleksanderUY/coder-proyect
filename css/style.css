@@ -48,7 +48,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: Rubik;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -8381,6 +8381,13 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+* {
+  box-sizing: border-box; }
+
+header {
+  width: 100vw;
+  height: 60vh; }
+
 html {
   overflow-x: hidden;
   font-family: "Poppins", "Open+Sans", "Rubik"; }
@@ -8394,39 +8401,110 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden; }
+  body p {
+    margin: 0; }
 
 a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  margin-top: 0; }
+  @media screen and (min-width: 992px) {
+    a {
+      background-color: #ffb400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-size: large; } }
 
 .main__header {
   background-color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  position: fixed;
+  z-index: 1;
+  justify-content: space-between;
   align-items: center;
   color: black;
   width: 100vw;
   height: 10vh; }
+  @media screen and (min-width: 992px) {
+    .main__header {
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      color: black;
+      width: 100vw;
+      height: 7vh; } }
+  .main__header .container-fluid, .main__header .container-sm, .main__header .container-md, .main__header .container-lg, .main__header .container-xl, .main__header .container-xxl {
+    margin-left: 0; }
+    @media screen and (min-width: 992px) {
+      .main__header .container-fluid, .main__header .container-sm, .main__header .container-md, .main__header .container-lg, .main__header .container-xl, .main__header .container-xxl {
+        width: 100vw;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; } }
   .main__header nav {
-    width: 60vw;
-    height: 6vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .main__header nav ul {
-      width: 60vw;
-      height: 5vh;
-      display: inline-flex;
-      flex-wrap: wrap; }
-      .main__header nav ul li {
+    width: 100vw;
+    height: 10vh; }
+    @media screen and (min-width: 992px) {
+      .main__header nav {
         background-color: white;
-        margin-right: 5px;
-        font-family: "Poppins";
-        font-size: 12px;
-        font-weight: 700;
-        display: inline-flex; }
+        width: 70vw;
+        height: 5vh;
+        margin-right: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; } }
+  .main__header navbar {
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 0;
+    border: 5px; }
+  .main__header ul {
+    margin-top: 10%;
+    background-color: white; }
+    @media screen and (min-width: 992px) {
+      .main__header ul {
+        width: 70vw;
+        height: 5vh;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; } }
+    .main__header ul li {
+      background-color: white;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1%; }
+      @media screen and (min-width: 992px) {
+        .main__header ul li {
+          background-color: white;
+          font-family: "Poppins";
+          font-weight: 700;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 4vw;
+          height: 5vh;
+          margin-left: 5%; } }
+    .main__header ul a {
+      background-color: white;
+      margin-right: 5px;
+      width: 6vw;
+      height: 5vh;
+      font-family: "Poppins";
+      font-weight: 700;
+      display: inline-flex; }
 
 .logo {
   background-image: url(../image/logoHeader.jpg);
@@ -8435,464 +8513,14 @@ a {
   height: 38px;
   display: inline-flex;
   margin-left: 1%; }
-
-.principal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: 60vh; }
-
-.fold {
-  display: flex;
-  background: url(../image/imagen_fold_inicio3.jpg);
-  flex-direction: column;
-  background-size: cover;
-  align-items: center;
-  padding-bottom: 5vh;
-  width: 100vw;
-  height: 60vh; }
-
-.fold__titulo {
-  font-family: "Rubik";
-  font-weight: 700;
-  font-size: 30px;
-  width: 100vw;
-  height: 20vh;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-
-.fold__subtitulo {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: larger;
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center; }
-
-.fold__boton {
-  border: 15px;
-  font-size: large;
-  background-color: #ffb400;
-  border-color: #ffb400;
-  font-family: "Rubik";
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 30px; }
-
-.serviciosHome {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  width: 100vw;
-  height: 200vh;
-  background-color: #f9f4f4;
-  color: black; }
-
-.serviciosdata {
-  width: 90vw;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.serviciosHome__obrasEnYeso {
-  width: 90vw;
-  height: 25vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: white; }
-
-.obrasEnYeso__titulo h2, .obrasEnYeso__titulo .h2, .obrasEnYeso__titulo .h2 {
-  font-size: large;
-  width: 40vw;
-  font-family: "Rubik"; }
-
-.obrasEnYeso__imagen {
-  width: 50px;
-  height: 50px; }
-
-.obrasEnYeso__info {
-  font-size: 1rem;
-  font-family: "Open Sans";
-  width: 50vw;
-  height: 10vh;
-  padding-left: 10%; }
-
-.serviciosHome__mantenimiento {
-  width: 90vw;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: white; }
-
-.mantenimiento__titulo h2, .mantenimiento__titulo .h2, .mantenimiento__titulo .h2 {
-  font-size: large;
-  width: 40vw;
-  font-family: "Rubik"; }
-
-.mantenimiento__info {
-  font-size: 1rem;
-  font-family: "Open Sans";
-  width: 50vw;
-  height: 10vh;
-  padding-left: 10%; }
-
-.serviciosHome__demoliciones {
-  width: 90vw;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: white; }
-
-.demoliciones__titulo {
-  font-size: 15px;
-  font-family: "Rubik"; }
-
-.demoliciones__info {
-  font-size: 1rem;
-  font-family: "Open Sans";
-  padding-left: 10%;
-  width: 50vw;
-  height: 10vh; }
-
-.serviciosHome__albanileria {
-  width: 90vw;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: white; }
-
-.albanileria__titulo {
-  font-size: 15px;
-  font-family: "Rubik"; }
-
-.albanileria__info {
-  font-size: 1rem;
-  font-family: "Open Sans";
-  width: 50vw;
-  height: 10vh;
-  padding-left: 10%; }
-
-.serviciosHome__pintura {
-  width: 90vw;
-  height: 20vh;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: white; }
-
-.pintura__titulo {
-  font-size: 15px;
-  font-family: "Rubik"; }
-
-.pintura__info {
-  font-size: 1rem;
-  font-family: "Open Sans";
-  width: 50vw;
-  height: 10vh;
-  padding-left: 10%; }
-
-.serviciosHome__electricidad {
-  width: 90vw;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: white; }
-
-.electricidad__titulo {
-  font-size: 15px;
-  font-family: "Rubik"; }
-
-.electricidad__info {
-  font-size: 1rem;
-  font-family: "Open Sans";
-  width: 50vw;
-  height: 10vh;
-  padding-left: 10%; }
-
-.informacionHome__asesoramiento {
-  width: 70vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
-
-.asesoramiento__titulo {
-  font-size: 20px;
-  width: 100vw;
-  height: 10vh;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1%; }
-
-.parrafos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 70vh;
-  width: 100vw; }
-
-.asesoramiento__parrafo1 {
-  width: 349px;
-  height: 50vh; }
-
-.asesoramiento__parrafo2 {
-  width: 349px;
-  height: 50vh; }
-
-.informacionHome__amarillo {
-  background-color: #ffb400;
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; }
-
-.eco {
-  width: 100vw;
-  height: 25vh;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center; }
-
-.eco__imagen1 {
-  width: 50px;
-  height: 50px;
-  align-self: flex-start; }
-
-.eco__titulo1 {
-  font-family: "Rubik";
-  font-size: large; }
-
-.eco__parrafo1 {
-  font-size: 15px;
-  width: 370px;
-  height: 20vh; }
-
-.newest {
-  width: 100vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center; }
-
-.newest__imagen2 {
-  width: 50px;
-  height: 50px;
-  align-self: flex-start; }
-
-.newest__titulo2 {
-  font-family: "Rubik";
-  font-size: large; }
-
-.newest__parrafo2 {
-  font-size: 15px;
-  width: 370px;
-  height: 20vh; }
-
-.high {
-  background-color: #ffb400;
-  width: 100vw;
-  height: 25vh; }
-
-.high__imagen3 {
-  width: 50px;
-  height: 50px;
-  align-self: flex-start; }
-
-.high__titulo3 {
-  font-family: "Rubik";
-  font-size: large; }
-
-.high__parrafo3 {
-  font-size: 15px;
-  width: 100vw;
-  height: 20vh; }
-
-.informacionHome__banner {
-  background-color: black;
-  width: 100vw;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
-
-.banner__titulo {
-  color: white;
-  text-align: center;
-  width: 300px;
-  height: 70px;
-  font-size: 18px; }
-
-.banner__boton {
-  border: 15px;
-  background-color: white;
-  border-color: #ffb400;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 15px;
-  margin-bottom: 5%; }
-
-.fold2 {
-  display: flex;
-  background: url(../image/imagen_fold_inicio.jpg);
-  flex-direction: column;
-  background-attachment: contain;
-  background-size: cover;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  padding-bottom: 30px;
-  width: 100vw;
-  height: 50vh; }
-
-.experiencia {
-  background-color: lightslategrey;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100vw;
-  height: 100vh; }
-
-.experiencia__valoraciones {
-  background-color: lightslategrey;
-  width: 100vw;
-  height: 105vh;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center; }
-
-.valoraciones__titulo {
-  background-color: lightslategrey;
-  width: 100vw;
-  font-family: "Rubik";
-  height: 10vh;
-  text-align: center;
-  margin-top: 15%; }
-
-.experiencias {
-  display: grid;
-  justify-items: center;
-  background-color: lightslategrey;
-  width: 100vw;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  align-content: center;
-  gap: 5px; }
-
-.experiencia__card1 {
-  background-color: white;
-  width: 90vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around; }
-
-.card1__imagen {
-  margin-left: 5%; }
-
-.card1__info {
-  font-size: 12px;
-  width: 80vw;
-  height: 5vh;
-  margin-left: 5%; }
-
-.card1__nombre {
-  font-family: "Rubik", "bold";
-  font-weight: 700;
-  align-self: flex-start;
-  font-size: 20px;
-  margin-left: 5%; }
-
-.experiencia__card2 {
-  background-color: white;
-  width: 90vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around; }
-
-.card2__imagen {
-  margin-left: 5%; }
-
-.card2__info {
-  font-size: 12px;
-  width: 80vw;
-  height: 5vh;
-  margin-left: 5%; }
-
-.card2__nombre {
-  font-family: "Rubik", "bold";
-  font-weight: 700;
-  align-self: flex-start;
-  font-size: 20px;
-  margin-left: 5%; }
-
-.experiencia__card3 {
-  background-color: white;
-  width: 90vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around; }
-
-.card3__imagen {
-  margin-left: 5%; }
-
-.card3__info {
-  font-size: 12px;
-  width: 80vw;
-  height: 5vh;
-  margin-left: 5%; }
-
-.card3__nombre {
-  font-family: "Rubik", "bold";
-  font-weight: 700;
-  align-self: flex-start;
-  font-size: 20px;
-  margin-left: 5%; }
+  @media screen and (min-width: 992px) {
+    .logo {
+      background-image: url(../image/logoHeader.webp);
+      border-radius: 15px 15px;
+      width: 135px;
+      height: 40px;
+      display: inline-flex;
+      margin-left: 10%; } }
 
 .footer {
   display: flex;
@@ -8901,6 +8529,14 @@ a {
   justify-content: flex-start;
   width: 100vw;
   height: 90vh; }
+  @media screen and (min-width: 992px) {
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100vw;
+      height: 60vh; } }
 
 .informacion {
   display: flex;
@@ -8914,21 +8550,41 @@ a {
 .footer__formulario {
   background-color: #ffb400;
   display: flex;
-  margin-top: 10%;
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 50vh; }
+  height: 100vh; }
+  @media screen and (min-width: 992px) {
+    .footer__formulario {
+      background-color: #ffb400;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+      height: 60vh;
+      margin: 0; } }
 
 .formulario__titulo {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
+  padding: 5%;
   width: auto; }
+  @media screen and (min-width: 992px) {
+    .formulario__titulo {
+      font-weight: 700;
+      font-size: 36px;
+      width: 50vw;
+      height: 10vh; } }
 
 .formulario__caja {
   width: 90vw;
   height: 40vh;
   display: flex; }
+  @media screen and (min-width: 992px) {
+    .formulario__caja {
+      width: 50vw;
+      height: 60vh; } }
 
 .nombreMail {
   width: 30vw;
@@ -8936,24 +8592,54 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  @media screen and (min-width: 992px) {
+    .nombreMail {
+      display: flex;
+      width: 49vw;
+      height: 10vh;
+      flex-direction: row;
+      justify-content: flex-start; } }
 
 .caja__nombre {
   width: 40vw;
   height: 5vh; }
+  @media screen and (min-width: 992px) {
+    .caja__nombre {
+      width: 20vw;
+      height: 5vh; } }
 
 .caja__email {
   width: 47vw;
   height: 5vh; }
+  @media screen and (min-width: 992px) {
+    .caja__email {
+      width: 30vw;
+      height: 5vh; } }
 
 .caja__comentario {
   width: 90vw;
-  height: 15vh; }
+  height: 30vh; }
+  @media screen and (min-width: 992px) {
+    .caja__comentario {
+      width: 49vw;
+      height: 30vh; } }
 
 .caja__boton {
   background-color: white;
   border: 0;
   width: 30vw;
   height: 40px; }
+  @media screen and (min-width: 992px) {
+    .caja__boton {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: large;
+      color: black;
+      width: 150px;
+      height: 50px; } }
 
 .footer__redes {
   background-color: black;
@@ -8963,6 +8649,15 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center; }
+  @media screen and (min-width: 992px) {
+    .footer__redes {
+      background-color: black;
+      width: 50vw;
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; } }
 
 .iconoDeRedes {
   display: flex;
@@ -8971,6 +8666,14 @@ a {
   justify-content: space-between;
   width: 300px;
   height: 130px; }
+  @media screen and (min-width: 992px) {
+    .iconoDeRedes {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 300px;
+      height: 130px; } }
 
 .iconoDeRedes_facebook a {
   width: 30px;
@@ -8985,17 +8688,31 @@ a {
   height: 30px; }
 
 .footer__info {
-  background-color: grey;
+  background-color: darkgrey;
   width: 100vw;
   height: 1vh;
   display: flex;
   flex-direction: column; }
+  @media screen and (min-width: 992px) {
+    .footer__info {
+      background-color: darkgrey;
+      width: 50vw;
+      height: 500px;
+      display: flex;
+      flex-direction: column; } }
 
 .informacion {
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 50vh; }
+  @media screen and (min-width: 992px) {
+    .informacion {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100vw;
+      height: 60vh; } }
 
 .info__ubicacion {
   width: 100vw;
@@ -9004,6 +8721,14 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start; }
+  @media screen and (min-width: 992px) {
+    .info__ubicacion {
+      width: 450px;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start; } }
 
 .datos {
   width: 40vw;
@@ -9012,6 +8737,15 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; }
+  @media screen and (min-width: 992px) {
+    .datos {
+      width: 40vw;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-left: 15%; } }
 
 .info__telefono {
   width: 200px;
@@ -9020,6 +8754,14 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start; }
+  @media screen and (min-width: 992px) {
+    .info__telefono {
+      width: 200px;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start; } }
 
 .info__correo {
   width: 200px;
@@ -9028,501 +8770,623 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start; }
-
-@media screen and (min-width: 992px) {
-  a {
-    text-decoration: none;
-    color: black;
-    margin-top: 0; }
-  /*------------- principio del header ----------------------*/
-  .main__header {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: black;
-    width: 100vw;
-    height: 50px; }
-    .main__header nav {
-      background-color: white;
-      width: 550px;
-      height: 30px;
-      margin-right: 5%; }
-      .main__header nav ul {
-        width: 550px;
-        height: 30px;
-        margin: 0;
-        display: inline-flex; }
-        .main__header nav ul li {
-          background-color: white;
-          margin-right: 5px;
-          font-family: "Poppins";
-          font-weight: 700;
-          display: inline-flex; }
-          .main__header nav ul li a {
-            background-color: white;
-            margin-right: 5px;
-            width: 80px;
-            height: 25px;
-            font-family: "Poppins";
-            font-weight: 700;
-            display: inline-flex; }
-    .main__header .logo {
-      background-image: url(../image/logoHeader.webp);
-      border-radius: 15px 15px;
-      width: 135px;
-      height: 40px;
-      display: inline-flex;
-      margin-left: 10%; }
-  /* -----------------fin del header -----------------------------*/
-  /* -----------------inicio del fold -----------------------------*/
-  .principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 90vh; }
-  .fold {
-    display: flex;
-    background: url(../image/imagen_fold_inicio3.webp);
-    flex-direction: column;
-    background-attachment: contain;
-    background-size: cover;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 30px;
-    width: 100vw;
-    height: 100vh; }
-    .fold .fold__titulo {
-      display: inline-flex;
-      width: 95vw;
-      font-family: "Rubik";
-      font-weight: 700;
-      font-size: 64px; }
-    .fold .fold__subtitulo {
-      font-family: "Rubik";
-      font-weight: 400;
-      font-size: 20px;
-      width: 80vw;
-      height: 15vh; }
-    .fold .fold__boton {
-      background-color: #ffb400;
+  @media screen and (min-width: 992px) {
+    .info__correo {
+      width: 200px;
+      height: 60px;
       display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start; } }
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 60vh; }
+  @media screen and (min-width: 992px) {
+    .principal {
+      display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: white;
-      font-size: large;
-      width: 13rem;
-      height: 3rem; }
-  /* -----------------fin del fold principal -----------------------------*/
-  .serviciosHome {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 100vh; } }
+  .principal .fold {
+    display: flex;
+    background: url(../image/imagen_fold_inicio3.jpg);
+    flex-direction: column;
+    background-size: cover;
     align-items: center;
-    justify-items: center;
+    padding-bottom: 5vh;
     width: 100vw;
-    height: 80vh;
-    background-color: #f9f4f4;
-    color: black; }
-    .serviciosHome .serviciosdata {
-      margin: 0;
-      width: 400px;
-      height: 150px;
+    height: 60vh;
+    margin-top: 7vh; }
+    @media screen and (min-width: 992px) {
+      .principal .fold {
+        display: flex;
+        background: url(../image/imagen_fold_inicio3.webp);
+        flex-direction: column;
+        background-attachment: contain;
+        background-size: cover;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        width: 100vw;
+        height: 100vh;
+        margin-top: 7vh; } }
+  .principal .fold__titulo {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 30px;
+    width: 100vw;
+    height: 20vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    @media screen and (min-width: 992px) {
+      .principal .fold__titulo {
+        display: inline-flex;
+        width: 95vw;
+        font-family: "Rubik";
+        font-weight: 700;
+        font-size: 64px; } }
+  .principal .fold__subtitulo {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: up;
+    font-size: larger;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    @media screen and (min-width: 992px) {
+      .principal .fold__subtitulo {
+        font-family: "Rubik";
+        font-weight: 400;
+        font-size: 20px;
+        width: 80vw;
+        height: 15vh; } }
+  .principal .fold__boton {
+    border: 15px;
+    font-size: large;
+    background-color: #ffb400;
+    border-color: #ffb400;
+    font-family: "Rubik";
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px; }
+    @media screen and (min-width: 992px) {
+      .principal .fold__boton {
+        background-color: #ffb400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: large;
+        width: 13rem;
+        height: 3rem; } }
+
+.serviciosHome {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100vw;
+  height: 200vh;
+  background-color: #beb9b9;
+  color: black; }
+  @media screen and (min-width: 992px) {
+    .serviciosHome {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: #f9f4f4;
+      color: black; } }
+  .serviciosHome img {
+    width: 70vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%; }
+  .serviciosHome .serviciosdata {
+    width: 90vw;
+    height: 40vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (min-width: 992px) {
+      .serviciosHome .serviciosdata {
+        margin: 0;
+        width: 400px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    .serviciosHome .serviciosdata h2, .serviciosHome .serviciosdata .h2 {
+      font-size: 20px;
+      font-weight: 700;
+      width: 50vw;
+      height: 5vh;
+      font-family: "Rubik";
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    .serviciosHome .serviciosdata p {
+      padding: 2%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-    .serviciosHome .serviciosHome__obrasEnYeso {
+    .serviciosHome .serviciosdata .obrasEnYeso__imagen {
+      width: 50px;
+      height: 50px; }
+      @media screen and (min-width: 992px) {
+        .serviciosHome .serviciosdata .obrasEnYeso__imagen {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100px;
+          height: 100px; } }
+
+.serviciosHome__obrasEnYeso {
+  width: 90vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  box-shadow: 10px 10px 5px grey; }
+  @media screen and (min-width: 992px) {
+    .serviciosHome__obrasEnYeso {
       width: 400px;
-      height: 150px;
+      height: 250px;
       display: flex;
       justify-content: space-between;
       flex-direction: row;
       align-items: flex-start;
       background-color: white;
-      box-shadow: 10px 10px 5px lightblue; }
-      .serviciosHome .serviciosHome__obrasEnYeso .serviciosHome__obrasEnYeso:hover {
-        transform: scale(1.1, 1.1);
-        transition: all 2s; }
-      .serviciosHome .serviciosHome__obrasEnYeso h2, .serviciosHome .serviciosHome__obrasEnYeso .h2 {
-        font-family: "Rubik";
-        font-weight: 700;
-        font-size: 20px;
-        width: 250px;
-        height: 70px;
-        margin-top: 5px; }
-    .serviciosHome .obras__imagen {
-      width: 100px;
-      height: 100px; }
-    .serviciosHome .obrasEnYeso__info {
-      font-size: 13px;
-      font-family: "Open Sans";
-      width: 300px;
-      height: 180px; }
-  .informacionHome {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh; }
-    .informacionHome .informacionHomeGris {
+      box-shadow: 10px 10px 5px grey; } }
+
+.informacionHome {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 992px) {
+    .informacionHome {
+      display: flex;
+      flex-direction: row-reverse; } }
+
+.informacionHomeGris {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (min-width: 992px) {
+    .informacionHomeGris {
       background-color: grey;
       width: 70vw;
       height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between; }
-      .informacionHome .informacionHomeGris .asesoramiento__titulo {
-        width: 30vw;
-        font-size: 32px;
-        font-weight: 700;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 15%; }
-      .informacionHome .informacionHomeGris .parrafos {
-        width: 60vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around; }
-        .informacionHome .informacionHomeGris .parrafos .asesoramiento__parrafo1 {
-          display: inline-flex;
-          width: 30vw;
-          height: 250px;
-          font-family: "Rubik";
-          font-size: 20px;
-          font-weight: 400;
-          padding-right: 5%; }
-        .informacionHome .informacionHomeGris .parrafos .asesoramiento__parrafo2 {
-          display: inline-flex;
-          width: 30vw;
-          height: 250px;
-          font-family: "Rubik";
-          font-size: 20px;
-          font-weight: 400;
-          padding-left: 5%; }
-  .informacionHome__banner {
-    background-color: black;
-    width: 70vw;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center; }
-    .informacionHome__banner .banner__titulo {
+      justify-content: space-between; } }
+  .informacionHomeGris h2, .informacionHomeGris .h2 {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 30px;
+    padding: 5%; }
+
+.informacionHome__asesoramiento {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.parrafos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60vh;
+  width: 100vw; }
+  @media screen and (min-width: 992px) {
+    .parrafos {
+      width: 60vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; } }
+
+.asesoramiento__parrafo1 {
+  width: 349px;
+  height: 30vh;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: larger;
+  height: 50vh;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (min-width: 992px) {
+    .asesoramiento__parrafo1 {
+      display: inline-flex;
+      width: 30vw;
+      height: 250px;
+      font-family: "Rubik";
+      font-size: 20px;
+      font-weight: 400;
+      padding-right: 5%; } }
+
+.asesoramiento__parrafo2 {
+  width: 349px;
+  height: 30vh;
+  font-family: "Rubik";
+  font-size: larger;
+  font-weight: 400;
+  height: 50vh;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (min-width: 992px) {
+    .asesoramiento__parrafo2 {
+      display: inline-flex;
+      width: 30vw;
+      height: 250px;
+      font-family: "Rubik";
+      font-size: 20px;
+      font-weight: 400;
+      padding-left: 5%; } }
+
+.informacionHome__amarillo {
+  background-color: #ffb400;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+  @media screen and (min-width: 992px) {
+    .informacionHome__amarillo {
+      background-color: #ffb400;
+      width: 30vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; } }
+
+.eco {
+  width: 100vw;
+  height: 25vh;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; }
+  @media screen and (min-width: 992px) {
+    .eco {
+      width: 400px;
+      height: 33%; } }
+
+.eco__imagen1 {
+  width: 50px;
+  height: 50px;
+  align-self: flex-start; }
+  @media screen and (min-width: 992px) {
+    .eco__imagen1 {
+      width: 50px;
+      height: 50px;
+      align-self: flex-start; } }
+
+.eco__titulo1 {
+  font-family: "Rubik";
+  font-size: large; }
+  @media screen and (min-width: 992px) {
+    .eco__titulo1 {
+      font-family: "Rubik";
+      font-size: 22px;
+      font-weight: 700; } }
+
+.eco__parrafo1 {
+  font-size: 15px;
+  width: 370px;
+  height: 20vh; }
+  @media screen and (min-width: 992px) {
+    .eco__parrafo1 {
+      font-size: 15px;
+      width: 370px;
+      height: 90px; } }
+
+.informacionHome__banner {
+  background-color: black;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  @media screen and (min-width: 992px) {
+    .informacionHome__banner {
+      background-color: black;
+      width: 70vw;
+      height: 15vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center; } }
+
+.banner__titulo {
+  color: white;
+  text-align: center;
+  width: 80vw;
+  height: 100px;
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 25px;
+  padding: 5%;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%; }
+  @media screen and (min-width: 992px) {
+    .banner__titulo {
       color: white;
-      width: 300px;
+      width: 500px;
       height: 70px;
       font-size: 22px;
       font-weight: 700;
-      margin-top: 5%; }
-    .informacionHome__banner .banner__boton {
+      margin-top: 5%; } }
+
+.banner__boton {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 25px; }
+  @media screen and (min-width: 992px) {
+    .banner__boton {
       background-color: white;
+      color: black;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: large;
-      color: black;
-      width: 150px;
-      height: 50px;
-      margin-top: 5%; }
-  .informacionHome__amarillo {
-    background-color: #ffb400;
-    width: 30vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-    .informacionHome__amarillo .eco {
-      width: 400px;
-      height: 33%; }
-      .informacionHome__amarillo .eco .eco__imagen1 {
-        width: 50px;
-        height: 50px;
-        align-self: flex-start; }
-      .informacionHome__amarillo .eco .eco__titulo1 {
-        font-family: "Rubik";
-        font-size: 22px;
-        font-weight: 700; }
-      .informacionHome__amarillo .eco .eco__parrafo1 {
-        font-size: 15px;
-        width: 370px;
-        height: 90px; }
-  .fold2 {
-    display: flex;
-    background: url(../image/imagen_fold_inicio.webp);
-    flex-direction: column;
-    background-attachment: contain;
-    background-size: cover;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 30px;
-    width: 100vw;
-    height: 80vh; }
-    .fold2 .fold__titulo2 {
+      padding: 7px 25px; } }
+
+.fold2 {
+  display: flex;
+  background: url(../image/imagen_fold_inicio.jpg);
+  flex-direction: column;
+  background-attachment: contain;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 100vw;
+  height: 50vh; }
+  @media screen and (min-width: 992px) {
+    .fold2 {
+      display: flex;
+      background: url(../image/imagen_fold_inicio.webp);
+      flex-direction: column;
+      background-attachment: contain;
+      background-size: cover;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding-bottom: 30px;
+      width: 100vw;
+      height: 80vh; } }
+
+.fold__titulo2 {
+  font-family: "Rubik";
+  width: 90vw;
+  height: 10vh;
+  font-weight: 700;
+  font-size: 45px; }
+
+.fold2__subtitulo {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 22px; }
+
+.experiencia {
+  background-color: lightslategrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 110vh; }
+  @media screen and (min-width: 992px) {
+    .experiencia {
+      background-color: lightslategrey;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100vw;
+      height: 100vh; } }
+
+.experiencia__valoraciones {
+  background-color: lightslategrey;
+  width: 100vw;
+  height: 120vh;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (min-width: 992px) {
+    .experiencia__valoraciones {
+      width: 100vw;
+      height: 110vh;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center; } }
+
+.valoraciones__titulo {
+  background-color: lightslategrey;
+  width: 100vw;
+  font-family: "Rubik";
+  height: 10vh;
+  text-align: center;
+  margin-top: 15%; }
+  @media screen and (min-width: 992px) {
+    .valoraciones__titulo {
+      display: inline-flex;
       font-family: "Rubik";
+      text-align: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 700;
       width: 80vw;
       height: 10vh;
-      font-weight: 700;
-      font-size: 45px; }
-    .fold2 .fold2__subtitulo {
+      margin-top: 5%; } }
+
+.experiencias {
+  display: grid;
+  justify-items: center;
+  background-color: lightslategrey;
+  width: 100vw;
+  height: 150vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-content: center;
+  gap: 5%;
+  margin-bottom: 5%; }
+  @media screen and (min-width: 992px) {
+    .experiencias {
+      display: grid;
+      background-color: lightslategrey;
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      gap: 3%; } }
+
+.experiencia__card3:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: none; }
+
+.experiencia__card3 {
+  background-color: white;
+  width: 90vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 10px 10px 5px #535151; }
+  @media screen and (min-width: 992px) {
+    .experiencia__card3 {
+      background-color: white;
+      width: 25vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 10px 10px 5px #535151; } }
+
+.card3__imagen {
+  width: 30vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%; }
+  @media screen and (min-width: 992px) {
+    .card3__imagen {
+      width: 10vw;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+.card3__info {
+  font-family: "Rubik";
+  width: 30vw;
+  height: 10vh;
+  font-weight: 400;
+  font-size: 16px;
+  width: 80vw;
+  height: 20vh;
+  margin-left: 5%; }
+  @media screen and (min-width: 992px) {
+    .card3__info {
+      font-size: 16px;
       font-family: "Rubik";
       font-weight: 400;
-      font-size: 22px; }
-    .fold2 .fold2__boton {
-      background-color: #ffb400;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: large;
-      width: 13rem;
-      height: 3rem; }
-  .experiencia {
-    background-color: lightslategrey;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100vw;
-    height: 100vh; }
-  .experiencia__valoraciones {
-    width: 100vw;
-    height: 100vh;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center; }
-  .valoraciones__titulo {
-    display: inline-flex;
+      width: 20vw;
+      height: 20vh; } }
+
+.card3__nombre {
+  font-family: "Rubik", "bold";
+  font-weight: 700;
+  width: 30vw;
+  height: 10vh;
+  align-self: flex-start;
+  font-size: 20px;
+  margin-top: 35px;
+  margin-left: 5%; }
+  @media screen and (min-width: 992px) {
+    .card3__nombre {
+      font-family: "Rubik";
+      font-weight: 700;
+      font-size: 24px;
+      width: 30vw;
+      height: 10vh;
+      align-self: flex-start;
+      margin-left: 10%;
+      margin-top: 0; } }
+
+@media screen and (min-width: 992px) {
+  /* -----------------inicio del fold -----------------------------*/
+  /* -----------------fin del fold principal -----------------------------*/
+  .serviciosHome .serviciosHome__obrasEnYeso h2, .serviciosHome .serviciosHome__obrasEnYeso .h2 {
     font-family: "Rubik";
-    text-align: center;
-    justify-content: center;
-    font-size: 30px; }
-  .experiencias {
-    display: grid;
-    background-color: lightslategrey;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    gap: 2%; }
-  .experiencia__card1 {
-    background-color: white;
-    width: 25vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly; }
-  .experiencia__card1:hover {
-    transform: scale(1.2, 1.2); }
-  .experiencia__card2:hover {
-    transform: scale(1.2, 1.2); }
-  .experiencia__card3:hover {
-    transform: scale(1.2, 1.2); }
-  .card1__imagen {
-    font-size: 22px;
-    width: 10vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .card1__info {
-    font-size: 16px;
-    width: 20vw;
-    height: 20vh;
-    justify-content: center; }
-  .card1__nombre {
-    font-family: "Rubik", "bold";
     font-weight: 700;
-    align-self: flex-start;
-    font-size: 24px;
-    margin-left: 10%; }
-  .experiencia__card2 {
-    background-color: white;
-    width: 25vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-  .card2__imagen {
-    font-size: 22px;
-    width: 10vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .card2__info {
-    font-size: 16px;
-    width: 20vw;
-    height: 20vh; }
-  .card2__nombre {
-    font-family: "Rubik", "bold";
-    font-weight: 700;
-    align-self: flex-start;
-    font-size: 24px;
-    margin-left: 10%; }
-  .experiencia__card3 {
-    background-color: white;
-    width: 25vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-  .card3__imagen {
-    font-size: 22px;
-    width: 10vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .card3__info {
-    font-size: 16px;
-    width: 20vw;
-    height: 20vh; }
-  .card3__nombre {
-    font-family: "Rubik", "bold";
-    font-weight: 700;
-    font-size: 24px;
-    align-self: flex-start;
-    margin-left: 10%; }
-  .footer {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    width: 100vw;
-    height: 60vh; }
-  .informacion {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100vw;
-    height: 60vh; }
-  .footer__formulario {
-    background-color: #ffb400;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    height: 60vh;
-    margin: 0; }
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 70vw;
-    height: 40vh; }
-  .formulario__titulo {
-    font-weight: 700;
-    font-size: 36px;
-    width: 50vw;
-    height: 10vh; }
-  .formulario__caja {
-    width: 50vw;
-    height: 60vh; }
-  .nombreMail {
-    display: flex;
-    width: 49vw;
-    height: 10vh;
-    flex-direction: row;
-    justify-content: flex-start; }
-  .caja__nombre {
-    width: 20vw;
-    height: 5vh; }
-  .caja__email {
-    width: 30vw;
-    height: 5vh; }
-  .caja__comentario {
-    width: 49vw;
-    height: 15vh; }
-  .caja__boton {
-    color: black;
-    background-color: white;
-    border: 0;
-    width: 100px;
-    height: 40px;
-    align-self: flex-start;
-    margin-left: 1%;
-    margin-top: 2%; }
-  .footer__redes {
-    background-color: black;
-    width: 50vw;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-  .iconoDeRedes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
-    height: 130px; }
-  .iconoDeRedes_facebook {
-    width: 30px;
-    height: 30px; }
-  .iconoDeRedes_twitter {
-    width: 30px;
-    height: 30px; }
-  .iconoDeRedes_linkedin {
-    width: 30px;
-    height: 30px; }
-  .footer__info {
-    background-color: grey;
-    width: 50vw;
-    height: 500px;
-    display: flex;
-    flex-direction: column; }
-  .info__ubicacion {
-    width: 450px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; }
-  .datos {
-    width: 40vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-left: 15%; }
-  .info__telefono {
-    width: 200px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; }
-  .info__correo {
-    width: 200px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; } }
+    font-size: 20px;
+    width: 250px;
+    height: 70px;
+    margin-top: 5px; } }
 
 /* ------------PAGINA NOSOTROS INICIO--------------- */
 .principalNosotros {
@@ -9694,7 +9558,8 @@ a {
     background: url(../image/imagen_fold_inicio3.jpg);
     background-size: cover;
     width: 100vw;
-    height: 100vh; }
+    height: 100vh;
+    margin-top: 7vh; }
   .fold__nosotros__titulo {
     display: flex;
     font-family: "Rubik";
@@ -9755,7 +9620,7 @@ a {
     height: 80vh;
     display: flex; }
   .caracteristicas__only {
-    background-color: #ffb400;
+    background-color: olivedrab;
     width: 30vw;
     height: 100vh;
     display: flex;
@@ -9798,11 +9663,45 @@ a {
   background: url(../image/imagen_fold_inicio3.jpg);
   background-size: cover;
   width: 100vw;
-  height: 80vh; }
+  height: 80vh;
+  margin-top: 7vh; }
 
 /* ------------PAGINA PROYECTOS FINAL MOBILE--------------- */
 /* ------------PAGINA PROYECTOS INICIO--------------- */
 @media screen and (min-width: 992px) {
+  .fold_proyectos {
+    background-image: url(/image/imagen_fold_proyectos.jpg);
+    background-attachment: contain;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+    .fold_proyectos .fondo_letras {
+      background-color: black;
+      opacity: 0.7; }
+      .fold_proyectos .fondo_letras h1, .fold_proyectos .fondo_letras .h1 {
+        display: inline-flex;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 10vh;
+        margin-left: 1%;
+        font-family: "Rubik";
+        color: white;
+        font-weight: 700;
+        font-size: 64px;
+        opacity: initial; }
+      .fold_proyectos .fondo_letras p {
+        font-family: "Rubik";
+        display: inline-flex;
+        margin-left: 1%;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        width: 100vw;
+        height: 10vh; }
   .tituloBarrios {
     width: 100vw;
     height: 5vh;
@@ -9815,13 +9714,19 @@ a {
     align-items: center;
     align-content: center; }
   .cajatitulo {
-    background-color: antiquewhite;
-    width: 97vw;
+    background-color: white;
+    background: linear-gradient(to right, grey, white);
+    width: 100vw;
     height: 15vh;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     display: flex;
     justify-content: center;
     align-items: center; } }
+
+.card {
+  margin-top: 3%; }
+  .card a {
+    font-weight: 500; }
 
 /* ------------PAGINA PROYECTOS FIN--------------- */
 /* ------------PAGINA SERVICIOS INICIO--------------- */
@@ -9844,7 +9749,8 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url(./image/image/imagen_fold_servicios.jpg); }
+  background-image: url(./image/image/imagen_fold_servicios.jpg);
+  margin-top: 7vh; }
 
 .servicios__titulo {
   font-family: "Rubik";
@@ -10085,7 +9991,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/image/imagen_fold_servicios.jpg); }
+    background-image: url(/image/imagen_fold_servicios.jpg);
+    background-attachment: contain;
+    background-size: cover; }
   .servicios__titulo {
     font-family: "Rubik";
     width: 40vw;
@@ -10300,7 +10208,8 @@ a {
   background: url(../image/imagen_fold_inicio3.jpg);
   background-size: cover;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  margin-top: 7vh; }
 
 .foldContactoSubtitulo {
   font-family: "Rubik";

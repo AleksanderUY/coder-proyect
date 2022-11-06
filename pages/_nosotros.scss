@@ -183,6 +183,7 @@
         background-size: cover;
         width: 100vw;
         height: 100vh;
+        margin-top: 7vh;
       }
     
       .fold__nosotros__titulo {
@@ -255,13 +256,17 @@
         display: flex;
       }
       .caracteristicas__only {
-        background-color: #ffb400;
+        background-color: olivedrab;
         width: 30vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        .eco2 {}
+        .eco2__imagen1{}
+        .eco2__titulo1{}
+        .eco2__parrafo1{}
       }
     
       .caracteristicas__banner {
