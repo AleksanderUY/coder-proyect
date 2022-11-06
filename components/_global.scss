@@ -8,12 +8,13 @@ $texto-fuente: "Rubik";
 
 @mixin caja {
     width: 90vw;
-    height: 25vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
     background-color: white; 
+    box-shadow: 10px 10px 5px grey;
 }
 
 @mixin boton {
@@ -57,4 +58,12 @@ $texto-fuente: "Rubik";
     a {
       text-decoration: none;
       color: black;
+      margin-top: 0;
+      @media screen and (min-width: 992px) {
+      background-color: #ffb400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-size: large;}
     }

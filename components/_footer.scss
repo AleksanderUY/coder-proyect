@@ -1,0 +1,258 @@
+.footer {
+    @media screen and (min-width: 992px){
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100vw;
+      height: 60vh;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 90vh; }
+  
+  .informacion {
+    @media screen and (min-width: 992px){}
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 100vh; }
+  
+  .footer__formulario {
+    @media screen and (min-width: 992px){
+      background-color: #ffb400;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+      height: 60vh;
+      margin: 0;
+    }
+    background-color: #ffb400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+     }
+  
+  .formulario__titulo {
+    @media screen and (min-width: 992px){
+      font-weight: 700;
+      font-size: 36px;
+      width: 50vw;
+      height: 10vh;
+    }
+    font-weight: 700;
+    font-size: 30px;
+    padding: 5%;
+    width: auto; }
+  
+  .formulario__caja {
+    @media screen and (min-width: 992px){
+      width: 50vw;
+      height: 60vh;
+    }
+    width: 90vw;
+    height: 40vh;
+    display: flex; }
+  
+  .nombreMail {
+    @media screen and (min-width: 992px){
+      display: flex;
+      width: 49vw;
+      height: 10vh;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  
+  .caja__nombre {
+    @media screen and (min-width: 992px){
+      width: 20vw;
+      height: 5vh;
+    }
+    width: 40vw;
+    height: 5vh; }
+  
+  .caja__email {
+    @media screen and (min-width: 992px){
+      width: 30vw;
+      height: 5vh;
+    }
+    width: 47vw;
+    height: 5vh; }
+  
+  .caja__comentario {
+    @media screen and (min-width: 992px){
+      width: 49vw;
+      height: 30vh;
+    }
+    width: 90vw;
+    height: 30vh; }
+  
+  .caja__boton {
+    @media screen and (min-width: 992px){
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: large;
+      color: black;
+      width: 150px;
+      height: 50px;
+    }
+    background-color: white;
+    border: 0;
+    width: 30vw;
+    height: 40px; }
+  
+  .footer__redes {
+    @media screen and (min-width: 992px){
+      background-color: black;
+      width: 50vw;
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    background-color: black;
+    width: 100vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  
+  .iconoDeRedes {
+    @media screen and (min-width: 992px){
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 300px;
+      height: 130px;
+    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 130px; }
+  
+  .iconoDeRedes_facebook a {
+    width: 30px;
+    height: 30px; }
+  
+  .iconoDeRedes_twitter a {
+    width: 30px;
+    height: 30px; }
+  
+  .iconoDeRedes_linkedin a {
+    width: 30px;
+    height: 30px; }
+  
+  .footer__info {
+    @media screen and (min-width: 992px){
+      background-color: darkgrey;
+      width: 50vw;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+    }
+    background-color: darkgrey;
+    width: 100vw;
+    height: 1vh;
+    display: flex;
+    flex-direction: column; }
+  
+  .informacion {
+    @media screen and (min-width: 992px){
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100vw;
+      height: 60vh;
+    }
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vh; }
+  
+  .info__ubicacion {
+    @media screen and (min-width: 992px){
+      width: 450px;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; }
+  
+  .datos {
+    @media screen and (min-width: 992px){
+      width: 40vw;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-left: 15%;
+    }
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  
+  .info__telefono {
+    @media screen and (min-width: 992px){
+      width: 200px;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; }
+  
+  .info__correo {
+    @media screen and (min-width: 992px){
+      width: 200px;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; }

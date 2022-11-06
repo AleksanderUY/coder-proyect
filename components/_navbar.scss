@@ -1,4 +1,14 @@
 .main__header {
+  @media screen and (min-width: 992px){
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    width: 100vw;
+    height: 7vh;
+  }
     background-color: white;
     display: flex;
     position: fixed;
@@ -10,35 +20,90 @@
     height: 10vh;
     
     .container-fluid {
+      @media screen and (min-width: 992px){
+        width: 100vw;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
       margin-left: 0;
     }
     nav {
+      @media screen and (min-width: 992px){
+        background-color: white;
+        width: 70vw;
+        height: 5vh;
+        margin-right: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
         width: 100vw;
         height: 10vh;
     }
     navbar {
+      @media screen and (min-width: 992px){}
       background-color: white;
       margin-top: 5%;
       margin-left: 0;
       border: 5px;
     }
     ul {
+      @media screen and (min-width: 992px){
+        width: 70vw;
+        height: 5vh;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
       margin-top: 10%;
       background-color: white;
       li {
+        @media screen and (min-width: 992px){
+          background-color: white;
+          font-family: "Poppins";
+          font-weight: 700;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 4vw;
+          height: 5vh;
+          margin-left: 5%;
+        }
         background-color: white;
         font-family: $subtitulo-fuente;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 600;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 1%;      }
+        a {
+          background-color: white;
+          margin-right: 5px;
+          width: 6vw;
+          height: 5vh;
+          font-family: "Poppins";
+          font-weight: 700;
+          display: inline-flex;
+        }
     }
   }
 
   .logo {
+    @media screen and (min-width: 992px){
+      background-image: url(../image/logoHeader.webp);
+      border-radius: 15px 15px;
+      width: 135px;
+      height: 40px;
+      display: inline-flex;
+      margin-left: 10%;
+    }
     background-image: url(../image/logoHeader.jpg);
     border-radius: 15px 15px;
     width: 135px;
@@ -48,69 +113,23 @@
 
 @media screen and (min-width: 992px) {
         .main__header {
-            background-color: white;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            color: black;
-            width: 100vw;
-            height: 7vh;
+
             .container-fluid {
-                width: 100vw;
-                height: 5vh;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+
             }
             nav {
-              background-color: white;
-              width: 70vw;
-              height: 5vh;
-              margin-right: 15%;
-              display: flex;
-              flex-direction: row;
-              justify-content: space-around;
-              align-items: center;
+
               ul {
-                width: 70vw;
-                height: 5vh;
-                margin: 0;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
+
                 li {
-                  background-color: white;
-                  font-family: "Poppins";
-                  font-weight: 700;
-                  display: inline-flex;
-                  justify-content: center;
-                  align-items: center;
-                  width: 6vw;
-                  height: 5vh;
-                  margin-left: 5%;
-                  a {
-                    background-color: white;
-                    margin-right: 5px;
-                    width: 6vw;
-                    height: 5vh;
-                    font-family: "Poppins";
-                    font-weight: 700;
-                    display: inline-flex;
-    
-                  }
+
+ 
                 }
             }
     
             }
             .logo {
-              background-image: url(../image/logoHeader.webp);
-              border-radius: 15px 15px;
-              width: 135px;
-              height: 40px;
-              display: inline-flex;
-              margin-left: 10%;
+
             }
           }
     }
