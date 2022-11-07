@@ -1,59 +1,44 @@
-
-  /* ------------PAGINA SERVICIOS INICIO--------------- */
-  
-  .mainServicios {
+.foldServicios {
+  @media screen and (min-width: 992px){
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    background-image: url(../image/imagen_fold_servicios.jpg);
+    background-attachment: contain;
+    background-size: cover;
   }
-  
-  .bloqueFoldServicios {
-    width: 70vw;
-    height: 100vh;
-  }
-  
-  .foldServicios {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-image: url(./image/image/imagen_fold_servicios.jpg);
+    background-image: url(../image/image/imagen_fold_servicios.jpg);
     margin-top: 7vh;
   }
   .servicios__titulo {
+    @media screen and (min-width: 992px){}
     font-family: "Rubik";
-    color: black;
+    color: white;
     width: 80vw;
     height: 20vh;
     font-weight: 700;
     font-size: 45px;
   }
   .servicios__subtitulo {
+    @media screen and (min-width: 992px){}
     font-family: "Rubik";
-    color: black;
+    color: white;
     font-weight: 400;
     font-size: 20px;
     width: 80vw;
     height: 20vh;
   }
-  .servicios__boton{
-    background-color: #ffb400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: large;
-    width: 15rem;
-    height: 3rem;
-  }
-  
-  
   .serviciosTarjetas {
+    @media screen and (min-width: 992px){}
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,6 +47,7 @@
     height: 300vh;
   }
   .informacionHome__asesoramiento1 {
+    @media screen and (min-width: 992px){}
     width: 100vw;
     background-color: #ffb400;
     height: 100vh;
@@ -72,6 +58,7 @@
   }
   
   .asesoramientoServiciosTitulo{
+    @media screen and (min-width: 992px){}
     font-size: 2rem;
     font-family: "Rubik";
     display: flex;
@@ -79,12 +66,14 @@
     justify-content: center;
   }
   .parrafosservicios {
+    @media screen and (min-width: 992px){}
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
   .informacionHome__asesoramiento2 {
+    @media screen and (min-width: 992px){}
     background-color: cadetblue;
     width: 100vw;
     height: 100vh;
@@ -93,14 +82,8 @@
     align-items: center;
     justify-content: space-between;
   }
-  
-  .asesoramientoServiciosTitulo{
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .informacionHome__asesoramiento3 {
+    @media screen and (min-width: 992px){}
     background-color: aliceblue;
     width: 100vw;
     height: 100vh;
@@ -110,17 +93,8 @@
     justify-content: space-between;
   
   }
-  
-  .asesoramiento__parrafo1{
-    width: 90vw;
-    height: 30vh;
-  }
-  .asesoramiento__parrafo2 {
-    width: 90vw;
-    height: 30vh;
-  }
-  
   .proyectosfinalizados {
+    @media screen and (min-width: 992px){}
     background-color: lightslategrey;
     display: flex;
     flex-direction: column;
@@ -130,6 +104,7 @@
     align-items: center;
   }
   .proyectosEncurso{
+    @media screen and (min-width: 992px){}
     width: 100vw;
     height: 200vh;
     font-size: 1rem;
@@ -139,9 +114,11 @@
     align-items: center;
   }
   .proyectosEncurso__titulo {
+    @media screen and (min-width: 992px){}
     text-align: center;
   }
   .enCurso {
+    @media screen and (min-width: 992px){}
     display: grid;
     background-color: lightslategrey;
     width: 90vw;
@@ -152,6 +129,7 @@
     gap: 5%;
   }
   .enCurso__tarjeta1 {
+    @media screen and (min-width: 992px){}
     background-color: white;
     width: 90vw;
     height: 50vh;
@@ -163,13 +141,8 @@
   .enCurso__tarjeta1:hover {
     transform: scale(1.2, 1.2);
   }
-  .enCurso__tarjeta2:hover {
-    transform: scale(1.2, 1.2);
-  }
-  .enCurso__tarjeta3:hover {
-    transform: scale(1.2, 1.2);
-  }
   .tarjeta1__imagen {
+    @media screen and (min-width: 992px){}
     width: 90vw;
     height: 20vh;
     display: flex;
@@ -177,117 +150,29 @@
     align-items: center;
   }
   .tarjeta1__info {
+    @media screen and (min-width: 992px){}
     font-family: "Rubik";
     font-size: 22px;
     width: 70vw;
     height: 20vh;
   }
   .tarjeta1__nombre {
+    @media screen and (min-width: 992px){}
     font-family: "Rubik", "bold";
     font-weight: 700;
     align-self: flex-start;
     font-size: 24px;
     margin-left: 10%;
   }
-  
-  .enCurso__tarjeta2 {
-    background-color: white;
-    width: 90vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .tarjeta2__imagen {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .tarjeta2__info {
-    font-family: "Rubik";
-    font-size: 22px;
-    width: 70vw;
-    height: 20vh;
-  }
-  .tarjeta2__nombre {
-    font-family: "Rubik", "bold";
-    font-weight: 700;
-    align-self: flex-start;
-    font-size: 24px;
-    margin-left: 10%;
-  }
-  
-  .enCurso__tarjeta3 {
-    background-color: white;
-    width: 90vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .tarjeta3__imagen {
-    width: 90vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .tarjeta3__info {
-    font-family: "Rubik";
-    font-size: 22px;
-    width: 70vw;
-    height: 20vh;
-  }
-  .tarjeta3__nombre {
-    font-family: "Rubik", "bold";
-    font-weight: 700;
-    font-size: 24px;
-    align-self: flex-start;
-    margin-left: 10%;
-  }
-  /* ------------PAGINA SERVICIOS FINAL--------------- */
 
 @media screen and (min-width: 992px){
        /* ------------PAGINA SERVICIOS INICIO--------------- */
-  
-       .mainServicios {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-      }
-      
-      .bloqueFoldServicios {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 5%;
-      }
+
       .foldServicios {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url(/image/imagen_fold_servicios.jpg);
-        background-attachment: contain;
-        background-size: cover;
+
       }
       .servicios__titulo {
-        font-family: "Rubik";
-        width: 40vw;
-        height: 20vh;
-        font-weight: 700;
-        font-size: 45px;
+
       }
       .servicios__subtitulo {
         font-family: "Rubik";
@@ -307,10 +192,7 @@
         height: 3rem;
       }
     
-      .serviciosYeso {
-        width: 345px;
-        height: 101px;
-      }
+
       .serviciosTarjetas {
         display: flex;
         flex-direction: column;
@@ -337,6 +219,8 @@
         justify-content: center;
       }
       .parrafosservicios {
+        width: 70vw;
+        height: 40vh;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -378,16 +262,22 @@
         justify-content: center;
       }
       
-      .asesoramiento__parrafo1 {
-        width: 349px;
-        height: 30vh;
+      .asesoramiento__servicios__parrafo1 {
+        width: 35vw;
+        height: 40vh;
+        font-family: $subtitulo-fuente;
+        font-size: 20px;
+        font-weight: 400;
       }
-      .asesoramiento__parrafo2 {
-        width: 349px;
-        height: 30vh;
+      .asesoramiento__servicios__parrafo2 {
+        width: 35vw;
+        height: 40vh;
+        font-family: $subtitulo-fuente;
+        font-weight: 400;
+        font-size: 20px;
       }
       
-      .proyectosfinalizados {
+      .equipo__trabajo {
         background-color: lightslategrey;
         display: flex;
         flex-direction: column;
@@ -419,23 +309,20 @@
         grid-template-rows: 1fr;
         align-content: center;
         gap: 5%;
+        margin-bottom: 5%;
       }
       .enCurso__tarjeta1 {
         background-color: white;
-        width: 25vw;
-        height: 50vh;
+        width: 30vw;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        margin-top: 10%;
+
       }
       .enCurso__tarjeta1:hover {
-        transform: scale(1.2, 1.2);
-      }
-      .enCurso__tarjeta2:hover {
-        transform: scale(1.2, 1.2);
-      }
-      .enCurso__tarjeta3:hover {
         transform: scale(1.2, 1.2);
       }
       .tarjeta1__imagen {
@@ -459,64 +346,5 @@
         margin-left: 10%;
       }
       
-      .enCurso__tarjeta2 {
-        background-color: white;
-        width: 25vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-      }
-      .tarjeta2__imagen {
-        font-size: 22px;
-        width: 25vw;
-        height: 30vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .tarjeta2__info {
-        font-size: 22px;
-        width: 20vw;
-        height: 20vh;
-      }
-      .tarjeta2__nombre {
-        font-family: "Rubik", "bold";
-        font-weight: 700;
-        align-self: flex-start;
-        font-size: 24px;
-        margin-left: 10%;
-      }
-      
-      .enCurso__tarjeta3 {
-        background-color: white;
-        width: 25vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-      }
-      .tarjeta3__imagen {
-        font-size: 22px;
-        width: 25vw;
-        height: 30vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .tarjeta3__info {
-        font-size: 22px;
-        width: 20vw;
-        height: 20vh;
-      }
-      .tarjeta3__nombre {
-        font-family: "Rubik", "bold";
-        font-weight: 700;
-        font-size: 24px;
-        align-self: flex-start;
-        margin-left: 10%;
-      }
       /* ------------PAGINA SERVICIOS FIN--------------- */
 }

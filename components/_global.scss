@@ -1,10 +1,9 @@
 $titulo-fuente: "Rubik";
 $subtitulo-fuente: "Open Sans";
 $texto-fuente: "Rubik";
+$color-primario: lightslategrey;
+$color-secundario: #ffb400;
 
-@mixin titulo {}
-@mixin subtitulo {}
-@mixin texto {}
 
 @mixin caja {
     width: 90vw;
@@ -17,6 +16,28 @@ $texto-fuente: "Rubik";
     box-shadow: 10px 10px 5px grey;
 }
 
+.fold__boton {
+  @media screen and (min-width: 992px){
+    background-color: #ffb400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: large;
+    width: 13rem;
+    height: 3rem;
+  }
+  border: 15px;
+  font-size: large;
+  background-color: #ffb400;
+  border-color: #ffb400;
+  font-family: "Rubik";
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px; }
 @mixin boton {
   border: 15px;
   font-size: large;

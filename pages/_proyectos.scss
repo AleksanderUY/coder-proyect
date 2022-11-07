@@ -1,35 +1,22 @@
 /* ------------PAGINA PROYECTOS INICIO--------------- */
 
-.principalProyectos {
-    background-image: url(./image/image/fold_proyectos.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 80vh;
-  }
-  .foldProyectos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background: url(../image/imagen_fold_inicio3.jpg);
-    background-size: cover;
-    width: 100vw;
-    height: 80vh;
-    margin-top: 7vh;
-  }
-  
-  
-  /* ------------PAGINA PROYECTOS FINAL MOBILE--------------- */
-
-
-/* ------------PAGINA PROYECTOS INICIO--------------- */
-@media screen and (min-width: 992px){
   .fold_proyectos {
-    background-image: url(/image/imagen_fold_proyectos.jpg);
+    @media screen and (min-width: 992px){
+      background-image: url(../image/imagen_fold_proyectos.jpg);
+      background-attachment: contain;
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      .fondo_letras {
+        background-color: black;
+        opacity: 0.7;
+      }
+    }
+    background-image: url(../image/imagen_fold_proyectos.jpg);
     background-attachment: contain;
     background-size: cover;
     width: 100vw;
@@ -38,61 +25,86 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    .fondo_letras {
-      background-color: black;
-      opacity: 0.7;
-      h1 {
-        display: inline-flex;
-        justify-content: flex-start;
-            width: 100vw;
-            height: 10vh;
-            margin-left: 1%;
-            font-family: "Rubik";
-            color: white;
-            font-weight: 700;
-            font-size: 64px;
-            opacity:initial;
-      }
-      p {
-        font-family: "Rubik";
-        display: inline-flex;
-        margin-left: 1%;
-        color: white;
-        font-weight: 400;
-        font-size: 20px;
-        width: 100vw;
-        height: 10vh;
-      }
+    h1 {
+      @media screen and (min-width: 992px){}
+      display: inline-flex;
+      justify-content: flex-start;
+          width: 100vw;
+          height: 10vh;
+          margin-left: 1%;
+          font-family: "Rubik";
+          color: white;
+          font-weight: 700;
+          font-size: 64px;
+          opacity:initial;
     }
-  }
-  .tituloBarrios {
-    width: 100vw;
-    height: 5vh;
-    font-family: "Rubik";
-    font-size: 35px;
-    font-weight: 700;
+    p {
+      @media screen and (min-width: 992px){}
+      font-family: $subtitulo-fuente;
+      display: inline-flex;
+      margin-left: 5%;
+      color: white;
+      font-weight: 400;
+      font-size: 20px;
+      width: 100vw;
+      height: 10vh;
+    }
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-
-  }
-  .cajatitulo {
-    background-color: white;
-    background: linear-gradient(to right, grey, white);
-    width: 100vw;
-    height: 15vh;
-    margin-bottom: 2%;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    background: url(../image/imagen_fold_proyectos.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 7vh;
   }
-}
 .card {
   margin-top: 3%;
-  a {
-    font-weight: 500;
-  }
+  
 }
-    /* ------------PAGINA PROYECTOS FIN--------------- */
+a {
+  font-weight: 500;
+}
+.cajatitulo {
+  background-color: white;
+  background: linear-gradient(to right, grey, white);
+  width: 100vw;
+  height: 15vh;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo_barrios {
+  @media screen and (min-width: 992px){
+width: 100vw;
+height: 10vh;
+padding: 5%;
+margin-top: 5%;
+background-color: white;
+font-family: $titulo-fuente;
+font-size: 35px;
+font-weight: 700;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+text-align: center;
+}
+width: 100vw;
+height: 10vh;
+padding: 5%;
+margin-top: 5%;
+background-color: white;
+font-family: $titulo-fuente;
+font-size: 20px;
+font-weight: 700;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+text-align: center;}
