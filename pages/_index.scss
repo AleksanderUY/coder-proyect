@@ -44,11 +44,45 @@
     @include titulo;
    }
         .fold__subtitulo {
-        @include subtitulo;
-}
+          @media screen and (min-width: 992px){
+            font-family: "Rubik";
+            font-weight: 400;
+            font-size: 20px;
+            width: 80vw;
+            height: 15vh;
+          }
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-style: up;
+          font-size: larger;
+          width: 100vw;
+          height: 10vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center; }
           .fold__boton {
-            @include boton1;
-}       
+            @media screen and (min-width: 992px){
+              background-color: #ffb400;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-size: large;
+              width: 13rem;
+              height: 3rem;
+            }
+            border: 15px;
+            font-size: large;
+            background-color: #ffb400;
+            border-color: #ffb400;
+            font-family: "Rubik";
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 30px; }
           } 
   .serviciosHome {
     @media screen and (min-width: 992px){
