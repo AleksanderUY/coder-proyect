@@ -14,7 +14,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     .fold {
       @media screen and (min-width: 992px){
         display: flex;
@@ -37,67 +37,18 @@
       align-items: center;
       padding-bottom: 5vh;
       width: 100vw;
-      height: 60vh; 
-      margin-top: 7vh;
+      height: 80vh; 
+      margin-top: 10vh;
     }
-      .fold__titulo {
-        @media screen and (min-width: 992px){
-          display: inline-flex;
-          width: 95vw;
-          font-family: "Rubik";
-          font-weight: 700;
-          font-size: 64px;
-        }
-        font-family: "Rubik";
-        font-weight: 700;
-        font-size: 30px;
-        width: 100vw;
-        height: 20vh;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center; }
+   .fold__titulo {
+    @include titulo;
+   }
         .fold__subtitulo {
-          @media screen and (min-width: 992px){
-            font-family: "Rubik";
-            font-weight: 400;
-            font-size: 20px;
-            width: 80vw;
-            height: 15vh;
-          }
-          font-family: "Open Sans";
-          font-weight: 400;
-          font-style: up;
-          font-size: larger;
-          width: 100vw;
-          height: 10vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          text-align: center; }
+        @include subtitulo;
+}
           .fold__boton {
-            @media screen and (min-width: 992px){
-              background-color: #ffb400;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: white;
-              font-size: large;
-              width: 13rem;
-              height: 3rem;
-            }
-            border: 15px;
-            font-size: large;
-            background-color: #ffb400;
-            border-color: #ffb400;
-            font-family: "Rubik";
-            color: black;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 30px; }
+            @include boton1;
+}       
           } 
   .serviciosHome {
     @media screen and (min-width: 992px){
@@ -197,206 +148,35 @@
   }
   display: flex;
   flex-direction: column;}
-.informacionHomeGris {
-  @media screen and (min-width: 992px){
+  .informacionHomeGris{
+    @include infogris;
     background-color: grey;
-    width: 70vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
   }
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  h2 {
-    font-family: $texto-fuente;
-    font-weight: 700;
-    font-size: 30px;
-    padding: 5%;
+  .asesoramiento__titulo{
+    @include titulo;
+    color: black;
 
   }
-}
-  .informacionHome__asesoramiento {
-    width: 70vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  .parrafos{
+    @include parrafos;
   }
-    .parrafos {
-      @media screen and (min-width: 992px){
-        width: 60vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-      }
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 60vh;
-        width: 100vw; }
-        .asesoramiento__parrafo1 {
-          @media screen and (min-width: 992px){
-            display: inline-flex;
-            width: 30vw;
-            height: 250px;
-            font-family: "Rubik";
-            font-size: 20px;
-            font-weight: 400;
-            padding-right: 5%;
-          }
-          width: 349px;
-          height: 30vh;
-          font-family: $texto-fuente;
-          font-weight: 400;
-          font-size: larger;
-          height: 50vh;
-          text-align: center;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center; } 
-        .asesoramiento__parrafo2 {
-          @media screen and (min-width: 992px){
-            display: inline-flex;
-            width: 30vw;
-            height: 250px;
-            font-family: "Rubik";
-            font-size: 20px;
-            font-weight: 400;
-            padding-left: 5%;
-          }
-          width: 349px;
-          height: 30vh;
-          font-family: $texto-fuente;
-          font-size: larger;
-          font-weight: 400;
-          height: 50vh;
-          text-align: center;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center; }
-.informacionHome__amarillo {
-  @media screen and (min-width: 992px){
-    background-color: #ffb400;
-    width: 30vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  .asesoramiento__parrafo1{
+    @include parrafo1;
   }
-    background-color: #ffb400;
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; }
-  
-  .eco {
-    @media screen and (min-width: 992px){
-      width: 400px;
-      height: 33%;
-    }
-    width: 100vw;
-    height: 25vh;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; }
-  
-  .eco__imagen1 {
-    @media screen and (min-width: 992px){
-      width: 50px;
-      height: 50px;
-      align-self: flex-start;
-    }
-    width: 50px;
-    height: 50px;
-    align-self: flex-start; }
-  
-  .eco__titulo1 {
-    @media screen and (min-width: 992px){
-      font-family: "Rubik";
-      font-size: 22px;
-      font-weight: 700;
-    }
-    font-family: "Rubik";
-    font-size: large; }
-  
-  .eco__parrafo1 {
-    @media screen and (min-width: 992px){
-      font-size: 15px;
-      width: 370px;
-      height: 90px;
-    }
-    font-size: 15px;
-    width: 370px;
-    height: 20vh; }
-  .informacionHome__banner {
-    @media screen and (min-width: 992px){
-      background-color: black;
-      width: 70vw;
-      height: 15vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      align-content: center;
-    }
-    background-color: black;
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-    .banner__titulo {
-      @media screen and (min-width: 992px){
-        color: white;
-        width: 500px;
-        height: 70px;
-        font-size: 22px;
-        font-weight: 700;
-        margin-top: 5%;
-      }
-      color: white;
-      text-align: center;
-      width: 80vw;
-      height: 100px;
-      font-family: $texto-fuente;
-      font-weight: 700;
-      font-size: 25px;
-      padding: 5%;
-      margin-top: 10%; 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 5%;}
-      .banner__boton {
-        @media screen and (min-width: 992px){
-          background-color: white;
-          color: black;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 7px 25px;
-        }
-        background-color: white;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 7px 25px;}
+  .asesoramiento__parrafo2{
+    @include parrafo2;
+  }
+  .informacionHome__banner{
+    @include banner;
+  }
+  .banner__titulo{
+    @include titulo2;
+  }
+  .banner__boton {
+    @include boton2;
+  }
+
+
   
 
   .fold2 {
@@ -426,16 +206,13 @@
     height: 50vh; }
   
     .fold__titulo2 {
-      font-family: "Rubik";
-      width: 90vw;
-      height: 10vh;
-      font-weight: 700;
-      font-size: 45px;
+@include titulo;
     }
     .fold2__subtitulo {
-      font-family: "Rubik";
-      font-weight: 400;
-      font-size: 22px;
+@include subtitulo;
+    }
+    .fold2__boton {
+      @include boton1;
     }
   .experiencia {
     @media screen and (min-width: 992px){

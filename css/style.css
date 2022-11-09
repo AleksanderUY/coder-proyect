@@ -8390,7 +8390,7 @@ header {
 
 html {
   overflow-x: hidden;
-  font-family: "Poppins", "Open+Sans", "Rubik"; }
+  font-family: "Poppins", "Open Sans", "Rubik"; }
 
 body {
   display: flex;
@@ -8416,6 +8416,73 @@ a {
       justify-content: center;
       color: black;
       font-size: large; } }
+
+.informacionHome__asesoramiento {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.informacionHome__amarillo {
+  background-color: #ffb400;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+  @media screen and (min-width: 992px) {
+    .informacionHome__amarillo {
+      background-color: #ffb400;
+      width: 30vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; } }
+
+.eco {
+  width: 100vw;
+  height: 25vh;
+  margin-top: 10%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; }
+  @media screen and (min-width: 992px) {
+    .eco {
+      width: 400px;
+      height: 33%; } }
+
+.eco__imagen1 {
+  width: 50px;
+  height: 50px;
+  align-self: flex-start; }
+  @media screen and (min-width: 992px) {
+    .eco__imagen1 {
+      width: 50px;
+      height: 50px;
+      align-self: flex-start; } }
+
+.eco__titulo1 {
+  font-family: "Rubik";
+  font-size: large; }
+  @media screen and (min-width: 992px) {
+    .eco__titulo1 {
+      font-family: "Rubik";
+      font-size: 22px;
+      font-weight: 700; } }
+
+.eco__parrafo1 {
+  font-size: 15px;
+  width: 370px;
+  height: 20vh; }
+  @media screen and (min-width: 992px) {
+    .eco__parrafo1 {
+      font-size: 15px;
+      width: 370px;
+      height: 90px; } }
 
 .main__header {
   background-color: white;
@@ -8466,7 +8533,7 @@ a {
     margin-left: 0;
     border: 5px; }
   .main__header ul {
-    margin-top: 10%;
+    margin-top: 3vh;
     background-color: white; }
     @media screen and (min-width: 992px) {
       .main__header ul {
@@ -8498,13 +8565,16 @@ a {
           height: 5vh;
           margin-left: 5%; } }
     .main__header ul a {
-      background-color: white;
-      margin-right: 5px;
-      width: 6vw;
-      height: 5vh;
-      font-family: "Poppins";
-      font-weight: 700;
-      display: inline-flex; }
+      margin: 0; }
+      @media screen and (min-width: 992px) {
+        .main__header ul a {
+          background-color: white;
+          margin-right: 5px;
+          width: 6vw;
+          height: 5vh;
+          font-family: "Poppins";
+          font-weight: 700;
+          display: inline-flex; } }
 
 .logo {
   background-image: url(../image/logoHeader.jpg);
@@ -8786,7 +8856,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   width: 100vw;
-  height: 60vh; }
+  height: 80vh; }
   @media screen and (min-width: 992px) {
     .principal {
       display: flex;
@@ -8804,8 +8874,8 @@ a {
     align-items: center;
     padding-bottom: 5vh;
     width: 100vw;
-    height: 60vh;
-    margin-top: 7vh; }
+    height: 80vh;
+    margin-top: 10vh; }
     @media screen and (min-width: 992px) {
       .principal .fold {
         display: flex;
@@ -8823,10 +8893,10 @@ a {
   .principal .fold__titulo {
     font-family: "Rubik";
     font-weight: 700;
-    font-size: 30px;
+    font-size: 36px;
     width: 100vw;
     height: 20vh;
-    margin: 0;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8837,7 +8907,8 @@ a {
         width: 95vw;
         font-family: "Rubik";
         font-weight: 700;
-        font-size: 64px; } }
+        font-size: 64px;
+        margin-top: 10%; } }
   .principal .fold__subtitulo {
     font-family: "Open Sans";
     font-weight: 400;
@@ -8845,17 +8916,19 @@ a {
     font-size: larger;
     width: 100vw;
     height: 10vh;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center; }
     @media screen and (min-width: 992px) {
       .principal .fold__subtitulo {
-        font-family: "Rubik";
+        font-family: "Open Sans";
         font-weight: 400;
         font-size: 20px;
         width: 80vw;
-        height: 15vh; } }
+        height: 15vh;
+        margin-top: 0; } }
   .principal .fold__boton {
     border: 15px;
     font-size: large;
@@ -8867,7 +8940,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 30px; }
+    padding: 10px 40px;
+    margin-top: 5%; }
     @media screen and (min-width: 992px) {
       .principal .fold__boton {
         background-color: #ffb400;
@@ -8982,14 +9056,14 @@ a {
 
 .informacionHomeGris {
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey; }
   @media screen and (min-width: 992px) {
     .informacionHomeGris {
-      background-color: grey;
       width: 70vw;
       height: 100vh;
       display: flex;
@@ -9002,13 +9076,26 @@ a {
     font-size: 30px;
     padding: 5%; }
 
-.informacionHome__asesoramiento {
-  width: 70vw;
-  height: 100vh;
+.asesoramiento__titulo {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 36px;
+  width: 100vw;
+  height: 20vh;
+  margin-top: 10%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between; }
+  text-align: center;
+  color: black; }
+  @media screen and (min-width: 992px) {
+    .asesoramiento__titulo {
+      display: inline-flex;
+      width: 95vw;
+      font-family: "Rubik";
+      font-weight: 700;
+      font-size: 64px;
+      margin-top: 10%; } }
 
 .parrafos {
   display: flex;
@@ -9027,7 +9114,7 @@ a {
 
 .asesoramiento__parrafo1 {
   width: 349px;
-  height: 30vh;
+  height: 40vh;
   font-family: "Rubik";
   font-weight: 400;
   font-size: larger;
@@ -9048,11 +9135,13 @@ a {
 
 .asesoramiento__parrafo2 {
   width: 349px;
-  height: 30vh;
+  height: 40vh;
   font-family: "Rubik";
   font-size: larger;
   font-weight: 400;
   height: 50vh;
+  margin-top: 15%;
+  padding-bottom: 20%;
   text-align: center;
   flex-direction: row;
   justify-content: center;
@@ -9067,68 +9156,10 @@ a {
       font-weight: 400;
       padding-left: 5%; } }
 
-.informacionHome__amarillo {
-  background-color: #ffb400;
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; }
-  @media screen and (min-width: 992px) {
-    .informacionHome__amarillo {
-      background-color: #ffb400;
-      width: 30vw;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around; } }
-
-.eco {
-  width: 100vw;
-  height: 25vh;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center; }
-  @media screen and (min-width: 992px) {
-    .eco {
-      width: 400px;
-      height: 33%; } }
-
-.eco__imagen1 {
-  width: 50px;
-  height: 50px;
-  align-self: flex-start; }
-  @media screen and (min-width: 992px) {
-    .eco__imagen1 {
-      width: 50px;
-      height: 50px;
-      align-self: flex-start; } }
-
-.eco__titulo1 {
-  font-family: "Rubik";
-  font-size: large; }
-  @media screen and (min-width: 992px) {
-    .eco__titulo1 {
-      font-family: "Rubik";
-      font-size: 22px;
-      font-weight: 700; } }
-
-.eco__parrafo1 {
-  font-size: 15px;
-  width: 370px;
-  height: 20vh; }
-  @media screen and (min-width: 992px) {
-    .eco__parrafo1 {
-      font-size: 15px;
-      width: 370px;
-      height: 90px; } }
-
 .informacionHome__banner {
   background-color: black;
   width: 100vw;
-  height: 20vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -9147,7 +9178,7 @@ a {
 .banner__titulo {
   color: white;
   text-align: center;
-  width: 80vw;
+  width: 100vw;
   height: 100px;
   font-family: "Rubik";
   font-weight: 700;
@@ -9174,7 +9205,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 7px 25px; }
+  padding: 7px 25px;
+  margin-bottom: 5%; }
   @media screen and (min-width: 992px) {
     .banner__boton {
       background-color: white;
@@ -9213,15 +9245,68 @@ a {
 
 .fold__titulo2 {
   font-family: "Rubik";
-  width: 90vw;
-  height: 10vh;
   font-weight: 700;
-  font-size: 45px; }
+  font-size: 36px;
+  width: 100vw;
+  height: 20vh;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  @media screen and (min-width: 992px) {
+    .fold__titulo2 {
+      display: inline-flex;
+      width: 95vw;
+      font-family: "Rubik";
+      font-weight: 700;
+      font-size: 64px;
+      margin-top: 10%; } }
 
 .fold2__subtitulo {
-  font-family: "Rubik";
+  font-family: "Open Sans";
   font-weight: 400;
-  font-size: 22px; }
+  font-style: up;
+  font-size: larger;
+  width: 100vw;
+  height: 10vh;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  @media screen and (min-width: 992px) {
+    .fold2__subtitulo {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 20px;
+      width: 80vw;
+      height: 15vh;
+      margin-top: 0; } }
+
+.fold2__boton {
+  border: 15px;
+  font-size: large;
+  background-color: #ffb400;
+  border-color: #ffb400;
+  font-family: "Rubik";
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  margin-top: 5%; }
+  @media screen and (min-width: 992px) {
+    .fold2__boton {
+      background-color: #ffb400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: large;
+      width: 13rem;
+      height: 3rem; } }
 
 .experiencia {
   background-color: lightslategrey;
