@@ -4,8 +4,8 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-image: url(../image/imagen_fold_servicios.jpg);
     background-attachment: contain;
     background-size: cover;
@@ -19,8 +19,15 @@
     background-image: url(../image/image/imagen_fold_servicios.jpg);
     margin-top: 7vh;
   }
-  .servicios__titulo {
-    @media screen and (min-width: 992px){}
+  .foldservicios__titulo {
+    @include titulo;
+    @media screen and (min-width: 992px){
+      align-content: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 2%;
+    }
     font-family: "Rubik";
     color: white;
     width: 80vw;
@@ -28,14 +35,27 @@
     font-weight: 700;
     font-size: 45px;
   }
-  .servicios__subtitulo {
-    @media screen and (min-width: 992px){}
-    font-family: "Rubik";
+  .foldservicios__subtitulo {
+    @include subtitulo;
+    @media screen and (min-width: 992px){
+      align-content: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 2%;
+      color: white;
+      
+    }
+
     color: white;
-    font-weight: 400;
-    font-size: 20px;
-    width: 80vw;
-    height: 20vh;
+
+  }
+  .foldservicios__boton{
+    @media screen and (min-width: 992px){
+      margin-left: 2%;
+      margin-bottom: 20%;
+    }
+    @include boton1;
   }
   .serviciosTarjetas {
     @media screen and (min-width: 992px){}

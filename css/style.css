@@ -8381,29 +8381,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.fold__boton {
-  border: 15px;
-  font-size: large;
-  background-color: #ffb400;
-  border-color: #ffb400;
-  font-family: "Rubik";
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 30px; }
-  @media screen and (min-width: 992px) {
-    .fold__boton {
-      background-color: #ffb400;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: large;
-      width: 13rem;
-      height: 3rem; } }
-
 * {
   box-sizing: border-box; }
 
@@ -8588,6 +8565,13 @@ a {
           height: 5vh;
           margin-left: 5%; } }
     .main__header ul a {
+      background-color: white;
+      margin-right: 5px;
+      width: 6vw;
+      height: 5vh;
+      font-family: "Poppins";
+      font-weight: 700;
+      display: inline-flex;
       margin: 0; }
       @media screen and (min-width: 992px) {
         .main__header ul a {
@@ -8939,14 +8923,13 @@ a {
     font-size: larger;
     width: 100vw;
     height: 10vh;
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center; }
     @media screen and (min-width: 992px) {
       .principal .fold__subtitulo {
-        font-family: "Open Sans";
+        font-family: "Rubik";
         font-weight: 400;
         font-size: 20px;
         width: 80vw;
@@ -9321,13 +9304,7 @@ a {
   @media screen and (min-width: 992px) {
     .fold2__boton {
       background-color: #ffb400;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: large;
-      width: 13rem;
-      height: 3rem; } }
+      display: flex; } }
 
 .experiencia {
   background-color: lightslategrey;
@@ -9792,6 +9769,110 @@ a {
   height: 150px; }
 
 /* ------------PAGINA NOSOTROS FIN--------------- */
+@media screen and (min-width: 992px) {
+  /* ------------PAGINA NOSOTROS INICIO--------------- */
+  .principalNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh; }
+  .fold__nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background: url(../image/imagen_fold_inicio3.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 7vh; }
+  .fold__nosotros__titulo {
+    display: flex;
+    font-family: "Rubik";
+    width: 60vw;
+    height: 10vh;
+    font-weight: 700;
+    font-size: 60px; }
+  .fold__nosotros__subtitulo {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 18px;
+    width: 50vw;
+    height: 10vh; }
+  .fold__nosotros__boton {
+    background-color: #ffb400;
+    color: white;
+    width: 12vw;
+    height: 6vh;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 2%; }
+  .nosotros__historia1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .parrafosNosotros {
+    background-color: bisque;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly; }
+  .nosotros__historia__parrafo1 {
+    width: 40vw;
+    height: 10vh; }
+  .nosotros__historia__parrafo2 {
+    width: 40vw;
+    height: 10vh; }
+  /* amarilla---------------------------------------------- */
+  .caracteristicas {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+  .caracteristicas__imagen {
+    width: 70vw;
+    height: 80vh;
+    display: flex; }
+  .caracteristicas__only {
+    background-color: olivedrab;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .caracteristicas__banner {
+    width: 70vw;
+    height: 20vh; }
+  .caracteristicas__banner__cajaAmarilla {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .caracteristicas__banner__cajaNegra {
+    background-color: grey;
+    display: flex;
+    width: 35vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; } }
+
 /* ------------PAGINA PROYECTOS INICIO--------------- */
 .fold_proyectos {
   background-image: url(../image/imagen_fold_proyectos.jpg);
@@ -9910,27 +9991,96 @@ a {
       height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
       background-image: url(../image/imagen_fold_servicios.jpg);
       background-attachment: contain;
       background-size: cover; } }
 
-.servicios__titulo {
+.foldservicios__titulo {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 36px;
+  width: 100vw;
+  height: 20vh;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-family: "Rubik";
   color: white;
   width: 80vw;
   height: 20vh;
   font-weight: 700;
   font-size: 45px; }
+  @media screen and (min-width: 992px) {
+    .foldservicios__titulo {
+      display: inline-flex;
+      width: 95vw;
+      font-family: "Rubik";
+      font-weight: 700;
+      font-size: 64px;
+      margin-top: 10%; } }
+  @media screen and (min-width: 992px) {
+    .foldservicios__titulo {
+      align-content: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 2%; } }
 
-.servicios__subtitulo {
-  font-family: "Rubik";
-  color: white;
+.foldservicios__subtitulo {
+  font-family: "Open Sans";
   font-weight: 400;
-  font-size: 20px;
-  width: 80vw;
-  height: 20vh; }
+  font-style: up;
+  font-size: larger;
+  width: 100vw;
+  height: 10vh;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white; }
+  @media screen and (min-width: 992px) {
+    .foldservicios__subtitulo {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 20px;
+      width: 80vw;
+      height: 15vh;
+      margin-top: 0; } }
+  @media screen and (min-width: 992px) {
+    .foldservicios__subtitulo {
+      align-content: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 2%;
+      color: white; } }
+
+.foldservicios__boton {
+  border: 15px;
+  font-size: large;
+  background-color: #ffb400;
+  border-color: #ffb400;
+  font-family: "Rubik";
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  margin-top: 5%; }
+  @media screen and (min-width: 992px) {
+    .foldservicios__boton {
+      margin-left: 2%;
+      margin-bottom: 20%; } }
+  @media screen and (min-width: 992px) {
+    .foldservicios__boton {
+      background-color: #ffb400;
+      display: flex; } }
 
 .serviciosTarjetas {
   display: flex;

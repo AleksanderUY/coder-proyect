@@ -1,11 +1,70 @@
 $titulo-fuente: "Rubik";
 $subtitulo-fuente: "Open Sans";
 $texto-fuente: "Rubik";
+$link-fuente: "Poppins";
+$color-primario:#ffb400;
+$color-secundario:white;
+$color-oscuro:black;
 
-@mixin titulo {}
-@mixin subtitulo {}
+@mixin titulo {
+    @media screen and (min-width: 992px){
+      display: inline-flex;
+      width: 95vw;
+      font-family: $titulo-fuente;
+      font-weight: 700;
+      font-size: 64px;
+      margin-top: 10%;
+    }
+    font-family: $titulo-fuente;
+    font-weight: 700;
+    font-size: 36px;
+    width: 100vw;
+    height: 20vh;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+
+@mixin subtitulo {
+  @media screen and (min-width: 992px){
+    font-family: $subtitulo-fuente;
+    font-weight: 400;
+    font-size: 20px;
+    width: 80vw;
+    height: 15vh;
+    margin-top: 0;
+  }
+  font-family: $subtitulo-fuente;
+  font-weight: 400;
+  font-style: up;
+  font-size: larger;
+  width: 100vw;
+  height: 10vh;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+}
 @mixin texto {}
-
+@mixin boton1 {
+  @media screen and (min-width: 992px){
+    background-color: #ffb400;
+    display: flex;}
+  border: 15px;
+  font-size: large;
+  background-color: $color-primario;
+  border-color: $color-primario;
+  font-family: $texto-fuente;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  margin-top: 5%;
+}
 @mixin caja {
     width: 90vw;
     height: 30vh;
@@ -17,28 +76,6 @@ $texto-fuente: "Rubik";
     box-shadow: 10px 10px 5px grey;
 }
 
-.fold__boton {
-  @media screen and (min-width: 992px){
-    background-color: #ffb400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: large;
-    width: 13rem;
-    height: 3rem;
-  }
-  border: 15px;
-  font-size: large;
-  background-color: #ffb400;
-  border-color: #ffb400;
-  font-family: "Rubik";
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 30px; }
 @mixin boton {
   border: 15px;
   font-size: large;
@@ -52,7 +89,6 @@ $texto-fuente: "Rubik";
   align-items: center;
   padding: 10px 30px; 
 }
-
 * {
     box-sizing: border-box;
   }
