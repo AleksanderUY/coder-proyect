@@ -8400,6 +8400,7 @@ body {
   background-color: darkgrey;
   padding: 0;
   margin: 0;
+  width: 100vw;
   overflow-x: hidden; }
   body p {
     margin: 0; }
@@ -8503,7 +8504,7 @@ a {
       align-items: center;
       color: black;
       width: 100vw;
-      height: 7vh; } }
+      height: 10vh; } }
   .main__header .container-fluid, .main__header .container-sm, .main__header .container-md, .main__header .container-lg, .main__header .container-xl, .main__header .container-xxl {
     margin-left: 0; }
     @media screen and (min-width: 992px) {
@@ -8533,6 +8534,9 @@ a {
     margin-left: 0;
     border: 5px; }
   .main__header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 3vh;
     background-color: white; }
     @media screen and (min-width: 992px) {
@@ -8548,11 +8552,14 @@ a {
       font-family: "Open Sans";
       font-size: 16px;
       font-weight: 600;
+      width: 80vw;
+      height: 5vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 1%; }
+      margin-top: 1%;
+      margin: 0; }
       @media screen and (min-width: 992px) {
         .main__header ul li {
           background-color: white;
@@ -8564,24 +8571,25 @@ a {
           width: 4vw;
           height: 5vh;
           margin-left: 5%; } }
-    .main__header ul a {
-      background-color: white;
-      margin-right: 5px;
-      width: 6vw;
-      height: 5vh;
-      font-family: "Poppins";
-      font-weight: 700;
-      display: inline-flex;
-      margin: 0; }
-      @media screen and (min-width: 992px) {
-        .main__header ul a {
-          background-color: white;
-          margin-right: 5px;
-          width: 6vw;
-          height: 5vh;
-          font-family: "Poppins";
-          font-weight: 700;
-          display: inline-flex; } }
+      .main__header ul li a {
+        background-color: white;
+        margin-right: 5px;
+        width: 80vw;
+        height: 5vh;
+        font-family: "Poppins";
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media screen and (min-width: 992px) {
+          .main__header ul li a {
+            background-color: white;
+            margin-right: 5px;
+            width: 6vw;
+            height: 5vh;
+            font-family: "Poppins";
+            font-weight: 700;
+            display: flex; } }
 
 .logo {
   background-image: url(../image/logoHeader.jpg);
@@ -8964,7 +8972,7 @@ a {
   align-items: center;
   justify-items: center;
   width: 100vw;
-  height: 200vh;
+  height: 240vh;
   background-color: #beb9b9;
   color: black; }
   @media screen and (min-width: 992px) {
@@ -8972,21 +8980,30 @@ a {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+      gap: 3%;
       align-items: center;
       justify-items: center;
       width: 100vw;
-      height: 100vh;
+      height: 120vh;
+      padding-bottom: 5%;
+      padding-top: 5%;
       background-color: #f9f4f4;
       color: black; } }
   .serviciosHome img {
-    width: 70vw;
-    height: 7vh;
+    width: 20vw;
+    height: 8vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-left: 10%; }
+    align-items: center; }
+    @media screen and (min-width: 992px) {
+      .serviciosHome img {
+        width: 10vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
   .serviciosHome .serviciosdata {
-    width: 90vw;
+    width: 80vw;
     height: 40vh;
     margin: 0;
     display: flex;
@@ -8996,16 +9013,16 @@ a {
     @media screen and (min-width: 992px) {
       .serviciosHome .serviciosdata {
         margin: 0;
-        width: 400px;
-        height: 250px;
+        width: 250px;
+        height: 200px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center; } }
     .serviciosHome .serviciosdata h2, .serviciosHome .serviciosdata .h2 {
       font-size: 20px;
       font-weight: 700;
-      width: 50vw;
+      width: 80vw;
       height: 5vh;
       font-family: "Rubik";
       display: flex;
@@ -9032,23 +9049,35 @@ a {
 
 .serviciosHome__obrasEnYeso {
   width: 90vw;
-  height: 30vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
   background-color: white;
-  box-shadow: 10px 10px 5px grey; }
+  box-shadow: 10px 10px 5px grey;
+  padding: 5%; }
   @media screen and (min-width: 992px) {
     .serviciosHome__obrasEnYeso {
       width: 400px;
       height: 250px;
       display: flex;
       justify-content: space-between;
-      flex-direction: row;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
       background-color: white;
       box-shadow: 10px 10px 5px grey; } }
+  @media screen and (min-width: 992px) {
+    .serviciosHome__obrasEnYeso {
+      width: 30vw;
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: white;
+      box-shadow: 10px 10px 5px grey;
+      padding: 5%; } }
 
 .informacionHome {
   display: flex;
@@ -9056,11 +9085,13 @@ a {
   @media screen and (min-width: 992px) {
     .informacionHome {
       display: flex;
+      width: 100vw;
+      height: 100vh;
       flex-direction: row-reverse; } }
 
 .informacionHomeGris {
   width: 100vw;
-  height: 150vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9074,11 +9105,20 @@ a {
       flex-direction: column;
       align-items: center;
       justify-content: space-between; } }
-  .informacionHomeGris h2, .informacionHomeGris .h2 {
+  .informacionHomeGris .asesoramiento__titulo {
     font-family: "Rubik";
     font-weight: 700;
     font-size: 30px;
-    padding: 5%; }
+    padding: 5%;
+    width: 60vw;
+    height: 10vh; }
+    @media screen and (min-width: 992px) {
+      .informacionHomeGris .asesoramiento__titulo {
+        font-family: "Rubik";
+        font-weight: 700;
+        font-size: 30px;
+        width: 60vw;
+        height: 10vh; } }
 
 .asesoramiento__titulo {
   font-family: "Rubik";
@@ -9105,65 +9145,64 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  height: 60vh;
+  justify-content: space-around;
+  height: 65vh;
   width: 100vw; }
   @media screen and (min-width: 992px) {
     .parrafos {
       width: 60vw;
+      height: 40vh;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-around; } }
+      justify-content: space-between; } }
 
 .asesoramiento__parrafo1 {
-  width: 349px;
-  height: 40vh;
+  width: 95vw;
+  height: 30vh;
   font-family: "Rubik";
   font-weight: 400;
   font-size: larger;
-  height: 50vh;
   text-align: center;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
   @media screen and (min-width: 992px) {
     .asesoramiento__parrafo1 {
-      display: inline-flex;
-      width: 30vw;
-      height: 250px;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      width: 50vw;
+      height: 40vh;
       font-family: "Rubik";
       font-size: 20px;
-      font-weight: 400;
-      padding-right: 5%; } }
+      font-weight: 400; } }
 
 .asesoramiento__parrafo2 {
-  width: 349px;
-  height: 40vh;
+  width: 95vw;
+  height: 30vh;
   font-family: "Rubik";
   font-size: larger;
   font-weight: 400;
-  height: 50vh;
-  margin-top: 15%;
-  padding-bottom: 20%;
   text-align: center;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
   @media screen and (min-width: 992px) {
     .asesoramiento__parrafo2 {
-      display: inline-flex;
-      width: 30vw;
-      height: 250px;
+      display: flex;
+      width: 50vw;
+      height: 40vh;
       font-family: "Rubik";
       font-size: 20px;
       font-weight: 400;
-      padding-left: 5%; } }
+      padding: 0;
+      margin: 0; } }
 
 .informacionHome__banner {
   background-color: black;
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -9172,7 +9211,7 @@ a {
     .informacionHome__banner {
       background-color: black;
       width: 70vw;
-      height: 15vh;
+      height: 20vh;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -9219,7 +9258,8 @@ a {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 7px 25px; } }
+      padding: 7px 25px;
+      margin-top: 5%; } }
 
 .fold2 {
   display: flex;
@@ -9325,7 +9365,7 @@ a {
 .experiencia__valoraciones {
   background-color: lightslategrey;
   width: 100vw;
-  height: 120vh;
+  height: 150vh;
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -9371,8 +9411,8 @@ a {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   align-content: center;
-  gap: 5%;
-  margin-bottom: 5%; }
+  gap: 4%;
+  padding-bottom: 5%; }
   @media screen and (min-width: 992px) {
     .experiencias {
       display: grid;
@@ -9391,7 +9431,7 @@ a {
 .experiencia__card3 {
   background-color: white;
   width: 90vw;
-  height: 30vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
