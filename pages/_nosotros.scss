@@ -1,4 +1,4 @@
-/* ------------PAGINA NOSOTROS INICIO--------------- */
+
 .principalNosotros {
   @media screen and (min-width: 992px){
     display: flex;
@@ -43,7 +43,7 @@
   .fold__nosotros__titulo {
     @media screen and (min-width: 992px){
       display: flex;
-      font-family: "Rubik";
+      font-family: $titulo-fuente;
       color: white;
       width: 60vw;
       height: 10vh;
@@ -78,21 +78,15 @@
   }
   .fold__nosotros__boton {
     @media screen and (min-width: 992px){
-      background-color: #ffb400;
-      color: white;
-      width: 12vw;
-      height: 6vh;
-      font-size: medium;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-self: flex-start;
-      margin-left: 2%;
-      margin-bottom: 10%;
+    @include boton1;
+    margin-top: 0;
+    color: white;
+    width: 15vw;
+    height: 7vh;
     }
     background-color: #ffb400;
     color: white;
-    width: 30vw;
+    width: 40vw;
     height: 6vh;
     font-size: medium;
     display: flex;
@@ -106,10 +100,14 @@
       font-family: $titulo-fuente;
       font-size: 33px;
       font-weight: 700;
+      padding: 5%;
+      background-color: white;
     }
     font-family: $titulo-fuente;
     font-size: 22px;
     font-weight: 700;
+    padding: 5%;
+    background-color: white;
   }
   .nosotros__historia1 {
     @media screen and (min-width: 992px){
@@ -150,7 +148,7 @@
   .nosotros__historia__parrafo1 {
     @media screen and (min-width: 992px){
       width: 40vw;
-      height: 10vh;
+      height: 30vh;
       font-family: $titulo-fuente;
       font-size: 18px;
       font-weight: 400;
@@ -167,7 +165,7 @@
   .nosotros__historia__parrafo2 {
     @media screen and (min-width: 992px){
       width: 40vw;
-      height: 10vh;
+      height: 30vh;
       font-family: $titulo-fuente;
       font-size: 18px;
       font-weight: 400;
@@ -258,7 +256,7 @@
   }
   .caracteristicas__banner__cajaNegra {
     @media screen and (min-width: 992px){
-      background-color: grey;
+      background-color: white;
       display: flex;
       width: 35vw;
       flex-direction: column;
@@ -273,165 +271,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
-
-  .the__titulo2 h2 {
-    font-family: $titulo-fuente;
-    font-size: 22px;
-    width: 350px;
-    height: 30px;
-  }
-  .the__parrafo2 {
-
-    font-size: 15px;
-    width: 370px;
-    height: 150px;
-  }
-  .quality {
-
-    width: 370px;
-    height: 25%;
-  }
-  .quality__titulo3{
-    font-family: "Rubik";
-    font-size: 22px;
-    width: 370px;
-    height: 50px;
-  }
-  .quality__parrafo3 {
-    font-size: 15px;
-    width: 350px;
-    height: 150px;
-  }
-  /* ------------PAGINA NOSOTROS FIN--------------- */
-
-
-@media screen and (min-width: 992px){
-       /* ------------PAGINA NOSOTROS INICIO--------------- */
-  
-       .principalNosotros {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: 100vh;
-      }
-    
-      .fold__nosotros {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        background: url(../image/imagen_fold_inicio3.jpg);
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-        margin-top: 7vh;
-      }
-    
-      .fold__nosotros__titulo {
-        display: flex;
-        font-family: "Rubik";
-        width: 60vw;
-        height: 10vh;
-        font-weight: 700;
-        font-size: 60px;
-      }
-      .fold__nosotros__subtitulo {
-        font-family: "Rubik";
-        font-weight: 400;
-        font-size: 18px;
-        width: 50vw;
-        height: 10vh;
-      }
-      .fold__nosotros__boton {
-        background-color: #ffb400;
-        color: white;
-        width: 12vw;
-        height: 6vh;
-        font-size: medium;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: flex-start;
-        margin-left: 2%;
-      }
-      .nosotros__historia1 {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      .parrafosNosotros {
-        background-color: bisque;
-        width: 100vw;
-        height: 60vh;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-evenly;
-      }
-      .nosotros__historia__parrafo1 {
-        width: 40vw;
-        height: 10vh;
-      }
-      .nosotros__historia__parrafo2 {
-        width: 40vw;
-        height: 10vh;
-      }
-      /* amarilla---------------------------------------------- */
-    
-      .caracteristicas {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-      }
-      .caracteristicas__imagen {
-        width: 70vw;
-        height: 80vh;
-        display: flex;
-      }
-      .caracteristicas__only {
-        background-color: olivedrab;
-        width: 30vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .eco2 {}
-        .eco2__imagen1{}
-        .eco2__titulo1{}
-        .eco2__parrafo1{}
-      }
-    
-      .caracteristicas__banner {
-        width: 70vw;
-        height: 20vh;
-      }
-      .caracteristicas__banner__cajaAmarilla {
-        width: 35vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      .caracteristicas__banner__cajaNegra {
-        background-color: grey;
-        display: flex;
-        width: 35vw;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    
-}
