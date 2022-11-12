@@ -1,6 +1,5 @@
 @mixin infogris {
     @media screen and (min-width: 992px){
-
       width: 70vw;
       height: 100vh;
       display: flex;
@@ -9,17 +8,26 @@
       justify-content: space-between;
     }
     width: 100vw;
-    height: 150vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    h2 {
+
+    .asesoramiento__titulo {
+      @media screen and (min-width: 992px) {
+        font-family: $texto-fuente;
+        font-weight: 700;
+        font-size: 30px;
+        width: 60vw;
+        height: 10vh;
+      }
       font-family: $texto-fuente;
       font-weight: 700;
       font-size: 30px;
       padding: 5%;
-  
+      width: 60vw;
+      height: 10vh;
     }
   }
     .informacionHome__asesoramiento {
@@ -33,55 +41,54 @@
       @mixin parrafos {
         @media screen and (min-width: 992px){
           width: 60vw;
+          height: 40vh;
           display: flex;
           flex-direction: row;
           align-items: center;
-          justify-content: space-around;
+          justify-content: space-between;
         }
           display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content: space-evenly;
-          height: 60vh;
+          justify-content: space-around;
+          height: 65vh;
           width: 100vw; }
           @mixin parrafo1 {
             @media screen and (min-width: 992px){
-              display: inline-flex;
-              width: 30vw;
-              height: 250px;
+              display: flex;
+              padding: 0;
+              margin: 0;
+              width: 50vw;
+              height: 40vh;
               font-family: "Rubik";
               font-size: 20px;
               font-weight: 400;
-              padding-right: 5%;
             }
-            width: 349px;
-            height: 40vh;
+            width: 95vw;
+            height: 30vh;
             font-family: $texto-fuente;
             font-weight: 400;
             font-size: larger;
-            height: 50vh;
             text-align: center;
             flex-direction: row;
             justify-content: center;
             align-items: center; } 
           @mixin parrafo2 {
             @media screen and (min-width: 992px){
-              display: inline-flex;
-              width: 30vw;
-              height: 250px;
-              font-family: "Rubik";
+              display: flex;
+              width: 50vw;
+              height: 40vh;
+              font-family: $texto-fuente;
               font-size: 20px;
               font-weight: 400;
-              padding-left: 5%;
+              padding: 0;
+              margin: 0;
             }
-            width: 349px;
-            height: 40vh;
+            width: 95vw;
+            height: 30vh;
             font-family: $texto-fuente;
             font-size: larger;
             font-weight: 400;
-            height: 50vh;
-            margin-top: 15%;
-            padding-bottom: 20%;
             text-align: center;
             flex-direction: row;
             justify-content: center;
@@ -90,7 +97,7 @@
                 @media screen and (min-width: 992px){
                   background-color: black;
                   width: 70vw;
-                  height: 15vh;
+                  height: 20vh;
                   display: flex;
                   flex-direction: row;
                   justify-content: space-around;
@@ -99,7 +106,7 @@
                 }
                 background-color: black;
                 width: 100vw;
-                height: 30vh;
+                height: 25vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -135,6 +142,7 @@
                       justify-content: center;
                       align-items: center;
                       padding: 7px 25px;
+                      margin-top: 5%;
                     }
                     background-color: white;
                     color: black;

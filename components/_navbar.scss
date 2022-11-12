@@ -7,7 +7,7 @@
     align-items: center;
     color: black;
     width: 100vw;
-    height: 7vh;
+    height: 10vh;
   }
     background-color: white;
     display: flex;
@@ -60,6 +60,9 @@
         justify-content: flex-end;
         align-items: center;
       }
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-top: 3vh;
       background-color: white;
       li {
@@ -78,19 +81,23 @@
         font-family: $subtitulo-fuente;
         font-size: 16px;
         font-weight: 600;
+        width: 80vw;
+        height: 5vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 1%;      }
+        margin-top: 1%; 
         a {
           background-color: white;
           margin-right: 5px;
-          width: 6vw;
+          width: 80vw;
           height: 5vh;
           font-family: "Poppins";
           font-weight: 700;
-          display: inline-flex;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           @media screen and (min-width: 992px) {
             background-color: white;
             margin-right: 5px;
@@ -98,8 +105,9 @@
             height: 5vh;
             font-family: $link-fuente;
             font-weight: 700;
-            display: inline-flex;
-          }
+            display: flex;
+          }     }
+
           margin: 0;
 
         }
