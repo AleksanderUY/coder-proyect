@@ -10035,6 +10035,14 @@ a {
   align-items: center;
   width: 100vw;
   height: 300vh; }
+  @media screen and (min-width: 992px) {
+    .serviciosTarjetas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 200vh; } }
 
 .informacionHome__asesoramiento1 {
   width: 100vw;
@@ -10044,6 +10052,16 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  @media screen and (min-width: 992px) {
+    .informacionHome__asesoramiento1 {
+      width: 70vw;
+      background-color: #ffb400;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 28%; } }
 
 .asesoramientoServiciosTitulo {
   font-size: 2rem;
@@ -10051,12 +10069,26 @@ a {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media screen and (min-width: 992px) {
+    .asesoramientoServiciosTitulo {
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
 
 .parrafosservicios {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around; }
+  @media screen and (min-width: 992px) {
+    .parrafosservicios {
+      width: 70vw;
+      height: 40vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; } }
 
 .informacionHome__asesoramiento2 {
   background-color: cadetblue;
@@ -10066,6 +10098,16 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  @media screen and (min-width: 992px) {
+    .informacionHome__asesoramiento2 {
+      background-color: cadetblue;
+      width: 70vw;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 28%; } }
 
 .informacionHome__asesoramiento3 {
   background-color: aliceblue;
@@ -10075,15 +10117,43 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  @media screen and (min-width: 992px) {
+    .informacionHome__asesoramiento3 {
+      background-color: aliceblue;
+      width: 70vw;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 28%; } }
 
-.proyectosfinalizados {
+.asesoramiento__servicios__parrafo1 {
+  width: 35vw;
+  height: 40vh;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400; }
+
+.asesoramiento__servicios__parrafo2 {
+  width: 35vw;
+  height: 40vh;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 20px; }
+
+.equipo__trabajo {
   background-color: lightslategrey;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 100vw;
-  height: 200vh;
-  align-items: center; }
+  height: 200vh; }
+  @media screen and (min-width: 992px) {
+    .equipo__trabajo {
+      width: 100vw;
+      height: 120vh; } }
 
 .proyectosEncurso {
   width: 100vw;
@@ -10093,19 +10163,45 @@ a {
   align-content: center;
   justify-content: center;
   align-items: center; }
+  @media screen and (min-width: 992px) {
+    .proyectosEncurso {
+      width: 100vw;
+      height: 15vh;
+      font-size: 1rem;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center; } }
 
 .proyectosEncurso__titulo {
   text-align: center; }
+  @media screen and (min-width: 992px) {
+    .proyectosEncurso__titulo {
+      font-family: "Rubik";
+      text-align: center;
+      width: 80vw;
+      height: 20vh; } }
 
 .enCurso {
   display: grid;
   background-color: lightslategrey;
   width: 90vw;
-  height: 200vh;
+  height: 150vh;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   align-content: center;
-  gap: 5%; }
+  gap: 3%; }
+  @media screen and (min-width: 992px) {
+    .enCurso {
+      display: grid;
+      background-color: lightslategrey;
+      width: 100vw;
+      height: 120vh;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      align-content: center;
+      gap: 5%;
+      margin-bottom: 5%; } }
 
 .enCurso__tarjeta1 {
   background-color: white;
@@ -10115,9 +10211,18 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-around; }
-
-.enCurso__tarjeta1:hover {
-  transform: scale(1.2, 1.2); }
+  @media screen and (min-width: 992px) {
+    .enCurso__tarjeta1 {
+      background-color: white;
+      width: 30vw;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 10%; }
+      .enCurso__tarjeta1 .enCurso__tarjeta1:hover {
+        transform: scale(1.2, 1.2); } }
 
 .tarjeta1__imagen {
   width: 90vw;
@@ -10125,12 +10230,25 @@ a {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (min-width: 992px) {
+    .tarjeta1__imagen {
+      width: 25vw;
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
 
 .tarjeta1__info {
   font-family: "Rubik";
   font-size: 22px;
   width: 70vw;
   height: 20vh; }
+  @media screen and (min-width: 992px) {
+    .tarjeta1__info {
+      font-size: 22px;
+      width: 20vw;
+      height: 20vh;
+      justify-content: center; } }
 
 .tarjeta1__nombre {
   font-family: "Rubik", "bold";
@@ -10138,151 +10256,13 @@ a {
   align-self: flex-start;
   font-size: 24px;
   margin-left: 10%; }
-
-@media screen and (min-width: 992px) {
-  /* ------------PAGINA SERVICIOS INICIO--------------- */
-  .servicios__subtitulo {
-    font-family: "Rubik";
-    font-weight: 400;
-    font-size: 20px;
-    width: 40vw;
-    height: 10vh; }
-  .servicios__boton {
-    background-color: #ffb400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: large;
-    width: 15rem;
-    height: 3rem; }
-  .serviciosTarjetas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 200vh; }
-  .informacionHome__asesoramiento1 {
-    width: 70vw;
-    background-color: #ffb400;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 28%; }
-  .asesoramientoServiciosTitulo {
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .parrafosservicios {
-    width: 70vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around; }
-  .informacionHome__asesoramiento2 {
-    background-color: cadetblue;
-    width: 70vw;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 28%; }
-  .asesoramiento__titulo h2, .asesoramiento__titulo .h2 {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .informacionHome__asesoramiento3 {
-    background-color: aliceblue;
-    width: 70vw;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 28%; }
-  .asesoramiento__titulo h2, .asesoramiento__titulo .h2 {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .asesoramiento__servicios__parrafo1 {
-    width: 35vw;
-    height: 40vh;
-    font-family: "Open Sans";
-    font-size: 20px;
-    font-weight: 400; }
-  .asesoramiento__servicios__parrafo2 {
-    width: 35vw;
-    height: 40vh;
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 20px; }
-  .equipo__trabajo {
-    background-color: lightslategrey;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100vw;
-    height: 100vh; }
-  .proyectosEncurso {
-    width: 100vw;
-    height: 15vh;
-    font-size: 1rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center; }
-  .proyectosEncurso__titulo {
-    font-family: "Rubik";
-    text-align: center;
-    width: 80vw;
-    height: 20vh; }
-  .enCurso {
-    display: grid;
-    background-color: lightslategrey;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-content: center;
-    gap: 5%;
-    margin-bottom: 5%; }
-  .enCurso__tarjeta1 {
-    background-color: white;
-    width: 30vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 10%; }
-  .enCurso__tarjeta1:hover {
-    transform: scale(1.2, 1.2); }
-  .tarjeta1__imagen {
-    width: 25vw;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .tarjeta1__info {
-    font-size: 22px;
-    width: 20vw;
-    height: 20vh;
-    justify-content: center; }
-  .tarjeta1__nombre {
-    font-family: "Rubik", "bold";
-    font-weight: 700;
-    align-self: flex-start;
-    font-size: 24px;
-    margin-left: 10%; }
-  /* ------------PAGINA SERVICIOS FIN--------------- */ }
+  @media screen and (min-width: 992px) {
+    .tarjeta1__nombre {
+      font-family: "Rubik", "bold";
+      font-weight: 700;
+      align-self: flex-start;
+      font-size: 24px;
+      margin-left: 10%; } }
 
 /* ------------PAGINA CONTACTO INICIO--------------- */
 .principalContacto {
