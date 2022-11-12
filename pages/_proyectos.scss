@@ -1,6 +1,4 @@
-/* ------------PAGINA PROYECTOS INICIO--------------- */
-
-  .fold_proyectos {
+.fold_proyectos {
     @media screen and (min-width: 992px){
       background-image: url(../image/imagen_fold_proyectos.jpg);
       background-attachment: contain;
@@ -11,10 +9,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
-      .fondo_letras {
-        background-color: black;
-        opacity: 0.7;
-      }
+
     }
     background-image: url(../image/imagen_fold_proyectos.jpg);
     background-attachment: contain;
@@ -23,31 +18,41 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    h1 {
-      @media screen and (min-width: 992px){}
-      display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .foldproyectos__titulo {
+      @media screen and (min-width: 992px){
+        width: 100vw;
+        height: 10vh;
+      }
+      display: flex;
       justify-content: flex-start;
-          width: 100vw;
-          height: 10vh;
-          margin-left: 1%;
-          font-family: "Rubik";
+          width: 95vw;
+          height: 25vh;
+          margin-left: 2%;
+          font-family: $titulo-fuente;
           color: white;
-          font-weight: 700;
-          font-size: 64px;
+          font-size: 62px;
           opacity:initial;
     }
-    p {
-      @media screen and (min-width: 992px){}
+    .foldProyecto__subtitulo {
+      @media screen and (min-width: 992px){
+        width: 100vw;
+        height: 10vh;
+      }
       font-family: $subtitulo-fuente;
-      display: inline-flex;
-      margin-left: 5%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: 2%;
       color: white;
       font-weight: 400;
       font-size: 20px;
       width: 100vw;
-      height: 10vh;
+      height: 20vh;
     }
 
     display: flex;
@@ -59,6 +64,22 @@
     width: 100vw;
     height: 80vh;
     margin-top: 7vh;
+  }
+  .fondo_letras {
+    @media screen and (min-width: 992px) {
+      background-color: black;
+      opacity: 0.7;
+      width: 100vw;
+      height: 30vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
+    opacity: 0.7;
   }
 .card {
   margin-top: 3%;
