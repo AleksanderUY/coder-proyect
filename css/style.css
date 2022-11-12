@@ -9795,7 +9795,6 @@ a {
       align-items: center;
       justify-content: center; } }
 
-/* ------------PAGINA PROYECTOS INICIO--------------- */
 .fold_proyectos {
   background-image: url(../image/imagen_fold_proyectos.jpg);
   background-attachment: contain;
@@ -9804,8 +9803,8 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9825,30 +9824,55 @@ a {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-end; }
-      .fold_proyectos .fondo_letras {
-        background-color: black;
-        opacity: 0.7; } }
-  .fold_proyectos h1, .fold_proyectos .h1 {
-    display: inline-flex;
+      align-items: flex-end; } }
+  .fold_proyectos .foldproyectos__titulo {
+    display: flex;
     justify-content: flex-start;
-    width: 100vw;
-    height: 10vh;
-    margin-left: 1%;
+    width: 95vw;
+    height: 25vh;
+    margin-left: 2%;
     font-family: "Rubik";
     color: white;
-    font-weight: 700;
-    font-size: 64px;
+    font-size: 62px;
     opacity: initial; }
-  .fold_proyectos p {
+    @media screen and (min-width: 992px) {
+      .fold_proyectos .foldproyectos__titulo {
+        width: 100vw;
+        height: 10vh; } }
+  .fold_proyectos .foldProyecto__subtitulo {
     font-family: "Open Sans";
-    display: inline-flex;
-    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 2%;
     color: white;
     font-weight: 400;
     font-size: 20px;
     width: 100vw;
-    height: 10vh; }
+    height: 20vh; }
+    @media screen and (min-width: 992px) {
+      .fold_proyectos .foldProyecto__subtitulo {
+        width: 100vw;
+        height: 10vh; } }
+
+.fondo_letras {
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+  opacity: 0.7; }
+  @media screen and (min-width: 992px) {
+    .fondo_letras {
+      background-color: black;
+      opacity: 0.7;
+      width: 100vw;
+      height: 30vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column; } }
 
 .card {
   margin-top: 3%; }
