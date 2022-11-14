@@ -60,7 +60,7 @@
               margin: 0;
               width: 50vw;
               height: 40vh;
-              font-family: "Rubik";
+              font-family: $texto-fuente;
               font-size: 20px;
               font-weight: 400;
             }
@@ -95,7 +95,7 @@
             align-items: center; }
             @mixin banner {
                 @media screen and (min-width: 992px){
-                  background-color: black;
+                  background-color: $color-oscuro;
                   width: 70vw;
                   height: 20vh;
                   display: flex;
@@ -104,7 +104,7 @@
                   align-items: center;
                   align-content: center;
                 }
-                background-color: black;
+                background-color: $color-oscuro;
                 width: 100vw;
                 height: 25vh;
                 display: flex;
@@ -113,14 +113,14 @@
                 align-items: center; }
                 @mixin titulo2 {
                   @media screen and (min-width: 992px){
-                    color: white;
+                    color: $color-secundario;
                     width: 500px;
                     height: 70px;
                     font-size: 22px;
                     font-weight: 700;
                     margin-top: 5%;
                   }
-                  color: white;
+                  color: $color-secundario;
                   text-align: center;
                   width: 100vw;
                   height: 100px;
@@ -135,8 +135,8 @@
                   margin-bottom: 5%;}
                   @mixin boton2 {
                     @media screen and (min-width: 992px){
-                      background-color: white;
-                      color: black;
+                      background-color: $color-secundario;
+                      color: $color-oscuro;
                       display: flex;
                       flex-direction: column;
                       justify-content: center;
@@ -144,8 +144,8 @@
                       padding: 7px 25px;
                       margin-top: 5%;
                     }
-                    background-color: white;
-                    color: black;
+                    background-color: $color-secundario;
+                    color: $color-oscuro;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -156,7 +156,7 @@
 
                     .informacionHome__amarillo {
                         @media screen and (min-width: 992px){
-                          background-color: #ffb400;
+                          background-color: $color-primario;
                           width: 30vw;
                           height: 100vh;
                           display: flex;
@@ -164,7 +164,7 @@
                           align-items: center;
                           justify-content: space-around;
                         }
-                          background-color: #ffb400;
+                          background-color: $color-primario;
                           width: 100vw;
                           height: 100vh;
                           display: flex;
@@ -176,10 +176,12 @@
                           @media screen and (min-width: 992px){
                             width: 400px;
                             height: 33%;
+                            padding-left: 3%;
                           }
                           width: 100vw;
                           height: 25vh;
                           margin-top: 10%;
+                          padding-left: 3%;
                           flex-direction: column;
                           align-items: flex-start;
                           justify-content: center; }
@@ -196,12 +198,14 @@
                         
                         .eco__titulo1 {
                           @media screen and (min-width: 992px){
-                            font-family: "Rubik";
+                            font-family: $titulo-fuente;
                             font-size: 22px;
                             font-weight: 700;
                           }
-                          font-family: "Rubik";
-                          font-size: large; }
+                          font-family: $titulo-fuente;
+                          font-size: large;
+                          font-size: 22px;
+                          font-weight: 700; }
                         
                         .eco__parrafo1 {
                           @media screen and (min-width: 992px){

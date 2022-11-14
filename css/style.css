@@ -8448,13 +8448,15 @@ a {
   width: 100vw;
   height: 25vh;
   margin-top: 10%;
+  padding-left: 3%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
   @media screen and (min-width: 992px) {
     .eco {
       width: 400px;
-      height: 33%; } }
+      height: 33%;
+      padding-left: 3%; } }
 
 .eco__imagen1 {
   width: 50px;
@@ -8468,7 +8470,9 @@ a {
 
 .eco__titulo1 {
   font-family: "Rubik";
-  font-size: large; }
+  font-size: large;
+  font-size: 22px;
+  font-weight: 700; }
   @media screen and (min-width: 992px) {
     .eco__titulo1 {
       font-family: "Rubik";
@@ -9013,7 +9017,7 @@ a {
     @media screen and (min-width: 992px) {
       .serviciosHome .serviciosdata {
         margin: 0;
-        width: 250px;
+        width: 350px;
         height: 200px;
         display: flex;
         flex-direction: row;
@@ -9347,7 +9351,7 @@ a {
       display: flex; } }
 
 .experiencia {
-  background-color: lightslategrey;
+  background-color: #778899;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9355,7 +9359,7 @@ a {
   height: 110vh; }
   @media screen and (min-width: 992px) {
     .experiencia {
-      background-color: lightslategrey;
+      background-color: #778899;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -9363,7 +9367,7 @@ a {
       height: 100vh; } }
 
 .experiencia__valoraciones {
-  background-color: lightslategrey;
+  background-color: #778899;
   width: 100vw;
   height: 150vh;
   font-size: 20px;
@@ -9384,7 +9388,7 @@ a {
       align-items: center; } }
 
 .valoraciones__titulo {
-  background-color: lightslategrey;
+  background-color: #778899;
   width: 100vw;
   font-family: "Rubik";
   height: 10vh;
@@ -9405,7 +9409,7 @@ a {
 .experiencias {
   display: grid;
   justify-items: center;
-  background-color: lightslategrey;
+  background-color: #778899;
   width: 100vw;
   height: 150vh;
   grid-template-columns: 1fr;
@@ -9416,7 +9420,7 @@ a {
   @media screen and (min-width: 992px) {
     .experiencias {
       display: grid;
-      background-color: lightslategrey;
+      background-color: #778899;
       width: 100vw;
       height: 100vh;
       grid-template-columns: 1fr 1fr 1fr;
@@ -9481,7 +9485,7 @@ a {
       height: 20vh; } }
 
 .card3__nombre {
-  font-family: "Rubik", "bold";
+  font-family: "Rubik";
   font-weight: 700;
   width: 30vw;
   height: 10vh;
@@ -9499,17 +9503,6 @@ a {
       align-self: flex-start;
       margin-left: 10%;
       margin-top: 0; } }
-
-@media screen and (min-width: 992px) {
-  /* -----------------inicio del fold -----------------------------*/
-  /* -----------------fin del fold principal -----------------------------*/
-  .serviciosHome .serviciosHome__obrasEnYeso h2, .serviciosHome .serviciosHome__obrasEnYeso .h2 {
-    font-family: "Rubik";
-    font-weight: 700;
-    font-size: 20px;
-    width: 250px;
-    height: 70px;
-    margin-top: 5px; } }
 
 .principalNosotros {
   display: flex;
@@ -9833,12 +9826,14 @@ a {
     margin-left: 2%;
     font-family: "Rubik";
     color: white;
-    font-size: 62px;
+    font-size: 58px;
+    font-weight: 700;
     opacity: initial; }
     @media screen and (min-width: 992px) {
       .fold_proyectos .foldproyectos__titulo {
         width: 100vw;
-        height: 10vh; } }
+        height: 10vh;
+        font-weight: 700; } }
   .fold_proyectos .foldProyecto__subtitulo {
     font-family: "Open Sans";
     display: flex;
@@ -9856,7 +9851,10 @@ a {
     @media screen and (min-width: 992px) {
       .fold_proyectos .foldProyecto__subtitulo {
         width: 100vw;
-        height: 10vh; } }
+        height: 10vh;
+        justify-content: center;
+        align-items: flex-start;
+        font-weight: 400; } }
 
 .fondo_letras {
   width: 100vw;
@@ -9876,6 +9874,9 @@ a {
 
 .card {
   margin-top: 3%; }
+
+.card-text {
+  margin-bottom: 5%; }
 
 a {
   font-weight: 500; }
@@ -10043,7 +10044,7 @@ a {
       justify-content: center;
       align-items: center;
       width: 100vw;
-      height: 220vh; } }
+      height: 300vh; } }
 
 .informacionHome__asesoramiento1 {
   width: 100vw;
@@ -10057,7 +10058,7 @@ a {
     .informacionHome__asesoramiento1 {
       width: 70vw;
       background-color: #ffb400;
-      height: 70vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -10072,31 +10073,11 @@ a {
   justify-content: center; }
   @media screen and (min-width: 992px) {
     .titulo__servicios {
-      color: white;
-      text-align: center;
-      width: 100vw;
-      height: 100px;
+      width: 50vw;
+      height: 10vh;
+      color: black;
       font-family: "Rubik";
-      font-weight: 700;
-      font-size: 25px;
-      padding: 5%;
-      margin-top: 10%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 5%;
-      font-size: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center; } }
-  @media screen and (min-width: 992px) and (min-width: 992px) {
-    .titulo__servicios {
-      color: white;
-      width: 500px;
-      height: 70px;
-      font-size: 22px;
-      font-weight: 700;
-      margin-top: 5%; } }
+      font-weight: 700; } }
 
 .parrafosservicios {
   width: 90vw;
@@ -10126,7 +10107,7 @@ a {
     .informacionHome__asesoramiento2 {
       background-color: cadetblue;
       width: 70vw;
-      height: 70vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -10145,7 +10126,7 @@ a {
     .informacionHome__asesoramiento3 {
       background-color: aliceblue;
       width: 70vw;
-      height: 70vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -10217,7 +10198,7 @@ a {
       align-content: center; } }
 
 .equipo__trabajo {
-  background-color: lightslategrey;
+  background-color: #778899;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -10261,7 +10242,7 @@ a {
 
 .enCurso {
   display: grid;
-  background-color: lightslategrey;
+  background-color: #778899;
   width: 90vw;
   height: 150vh;
   grid-template-columns: 1fr;
@@ -10271,7 +10252,7 @@ a {
   @media screen and (min-width: 992px) {
     .enCurso {
       display: grid;
-      background-color: lightslategrey;
+      background-color: #778899;
       width: 100vw;
       height: 120vh;
       grid-template-columns: 1fr 1fr 1fr;
@@ -10328,14 +10309,14 @@ a {
       justify-content: center; } }
 
 .tarjeta1__nombre {
-  font-family: "Rubik", "bold";
+  font-family: "Rubik";
   font-weight: 700;
   align-self: flex-start;
   font-size: 24px;
   margin-left: 10%; }
   @media screen and (min-width: 992px) {
     .tarjeta1__nombre {
-      font-family: "Rubik", "bold";
+      font-family: "Rubik";
       font-weight: 700;
       align-self: flex-start;
       font-size: 24px;
@@ -10533,41 +10514,47 @@ a {
       flex-direction: row;
       justify-content: space-between; } }
 
-@media screen and (min-width: 992px) {
-  .pregunta {
-    display: flex;
-    font-family: "Rubik";
-    font-weight: 400;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 40vw;
-    margin: 10px 0;
-    background-color: white; } }
+.pregunta {
+  display: flex;
+  font-family: "Rubik";
+  font-weight: 400;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90vw;
+  margin: 10px 0;
+  background-color: white; }
+  @media screen and (min-width: 992px) {
+    .pregunta {
+      display: flex;
+      font-family: "Rubik";
+      font-weight: 400;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 40vw;
+      margin: 10px 0;
+      background-color: white; } }
 
 .tituloPreguntas {
   font-family: "Rubik";
-  font-weight: 700;
-  font-size: 36px;
-  width: 100vw;
-  height: 20vh;
-  margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: white;
-  font-size: 25px; }
+  font-size: 25px;
+  font-weight: 700; }
   @media screen and (min-width: 992px) {
     .tituloPreguntas {
-      display: inline-flex;
-      width: 95vw;
       font-family: "Rubik";
+      width: 45vw;
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      font-size: 25px;
       font-weight: 700;
-      font-size: 64px;
-      margin-top: 10%; } }
+      padding: 5%; } }
 
 .preguntasBloque {
   width: 100vw;
@@ -10581,19 +10568,10 @@ a {
   @media screen and (min-width: 992px) {
     .preguntasBloque {
       width: 50vw;
-      height: 100vh; } }
+      height: 100vh;
+      margin-top: 0; } }
 
 summary {
-  font-family: "Rubik";
-  font-weight: 700;
-  font-size: 36px;
-  width: 100vw;
-  height: 20vh;
-  margin-top: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-size: 16px;
   font-weight: 700;
   display: flex;
@@ -10606,19 +10584,47 @@ summary {
   border-color: black; }
   @media screen and (min-width: 992px) {
     summary {
-      display: inline-flex;
-      width: 95vw;
-      font-family: "Rubik";
+      font-size: 18px;
       font-weight: 700;
-      font-size: 64px;
-      margin-top: 10%; } }
-  @media screen and (min-width: 992px) {
-    summary {
-      font-size: 22px;
-      font-weight: 700;
+      width: 40vw;
+      height: 10vh;
       display: flex;
       justify-content: center;
       align-items: center; } }
+
+.titulo__respuesta {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 6vh;
+  background-color: white;
+  border: 5px;
+  border-color: black; }
+  @media screen and (min-width: 992px) {
+    .titulo__respuesta {
+      font-size: 15px;
+      font-weight: 700;
+      width: 40vw;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+.respuesta {
+  background-color: white;
+  width: 90vw;
+  height: 20vh;
+  padding-bottom: 15%; }
+  @media screen and (min-width: 992px) {
+    .respuesta {
+      background-color: white;
+      width: 40vw;
+      height: 20vh;
+      padding: 2%;
+      padding-bottom: 25%; } }
 
 .bloqueImagen {
   width: 50vw;

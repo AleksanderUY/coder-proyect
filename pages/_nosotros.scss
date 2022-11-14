@@ -80,12 +80,12 @@
     @media screen and (min-width: 992px){
     @include boton1;
     margin-top: 0;
-    color: white;
+    color: $color-secundario;
     width: 15vw;
     height: 7vh;
     }
-    background-color: #ffb400;
-    color: white;
+    background-color: $color-primario;
+    color: $color-secundario;
     width: 40vw;
     height: 6vh;
     font-size: medium;
@@ -101,13 +101,13 @@
       font-size: 33px;
       font-weight: 700;
       padding: 5%;
-      background-color: white;
+      background-color: $color-secundario;
     }
     font-family: $titulo-fuente;
     font-size: 22px;
     font-weight: 700;
     padding: 5%;
-    background-color: white;
+    background-color: $color-secundario;
   }
   .nosotros__historia1 {
     @media screen and (min-width: 992px){
@@ -247,8 +247,8 @@
     }
     width: 50vw;
     height: 20vh;
-    background-color: black;
-    color: white;
+    background-color: $color-oscuro;
+    color: $color-secundario;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,15 +256,15 @@
   }
   .caracteristicas__banner__cajaNegra {
     @media screen and (min-width: 992px){
-      background-color: white;
+      background-color: $color-secundario;
       display: flex;
       width: 35vw;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    background-color: white;
-    color: black;
+    background-color: $color-secundario;
+    color: $color-oscuro;
     display: flex;
     width: 50vw;
     height: 20vh;
