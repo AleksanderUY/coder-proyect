@@ -12,7 +12,9 @@
     @media screen and (min-width: 992px){
       width: 100vw;
       height: 80vh;
-      background: url(../image/fold__contacto.jpg);
+      background: url(../image/fold__contacto.webp);
+      background-attachment: contain;
+      background-size: cover;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -24,7 +26,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    background: url(../image/fold__contacto.jpg);
+    background: url(../image/fold__contacto.webp);
+    background-attachment: contain;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -86,73 +89,8 @@
     margin-left: 2%;
     margin-bottom: 10%;
   }
-  
-  .fold__info {
-    @media screen and (min-width: 992px){}
-    background-color: $color-primario;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .fold__info__contacto {
-    @media screen and (min-width: 992px){}
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .tituloInfo {
-    @media screen and (min-width: 992px){}
-    width: 40vw;
-    height: 20vh;
-    display: flex;
-    justify-content: flex-start;
-    font-family: $texto-fuente;
-    font-weight: 700;
-    font-size: 24px;
-    color: $color-oscuro;
-    margin-left: 10%;
-  }
-  .datosContacto {
-    @media screen and (min-width: 992px){}
-    width: 40vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-left: 15%;
-  }
-  .info__ubicacion__contacto {
-    @media screen and (min-width: 992px){}
-    width: 450px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .info__telefono__contacto {
-    @media screen and (min-width: 992px){}
-    width: 200px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .info__correo__contacto {
-    @media screen and (min-width: 992px){}
-    width: 200px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
+
   .mapaGoogle {
-    @media screen and (min-width: 992px){}
     width: 100vw;
     height: 70vh;
     border-color: $color-oscuro;
@@ -283,7 +221,7 @@
     background-color: $color-secundario;
     width: 90vw;
     height: 20vh;
-    padding-bottom: 15%;
+    padding-bottom: 25%;
     
   }
   .bloqueImagen {

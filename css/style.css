@@ -8664,7 +8664,11 @@ a {
       font-weight: 700;
       font-size: 36px;
       width: 50vw;
-      height: 10vh; } }
+      height: 10vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; } }
 
 .formulario__caja {
   width: 90vw;
@@ -8673,7 +8677,8 @@ a {
   @media screen and (min-width: 992px) {
     .formulario__caja {
       width: 50vw;
-      height: 60vh; } }
+      height: 60vh;
+      margin-left: 2%; } }
 
 .nombreMail {
   width: 30vw;
@@ -8809,7 +8814,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-left: 10%; }
   @media screen and (min-width: 992px) {
     .info__ubicacion {
       width: 450px;
@@ -8817,7 +8823,11 @@ a {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      margin-left: 0; } }
+
+.ingresos {
+  margin-left: 2%; }
 
 .datos {
   width: 40vw;
@@ -8842,7 +8852,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-left: 10%; }
   @media screen and (min-width: 992px) {
     .info__telefono {
       width: 200px;
@@ -8850,7 +8861,8 @@ a {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      margin-left: 0; } }
 
 .info__correo {
   width: 200px;
@@ -8858,7 +8870,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-left: 10%; }
   @media screen and (min-width: 992px) {
     .info__correo {
       width: 200px;
@@ -8866,7 +8879,8 @@ a {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      margin-left: 0; } }
 
 .principal {
   display: flex;
@@ -9930,7 +9944,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(../image/image/imagen_fold_servicios.jpg);
+  background-image: url(../image/imagen_fold_servicios.webp);
   margin-top: 7vh; }
   @media screen and (min-width: 992px) {
     .foldServicios {
@@ -9940,7 +9954,7 @@ a {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      background-image: url(../image/imagen_fold_servicios.jpg);
+      background-image: url(../image/imagen_fold_servicios.webp);
       background-attachment: contain;
       background-size: cover; } }
 
@@ -10063,7 +10077,7 @@ a {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      margin-left: 28%; } }
+      margin-left: 30%; } }
 
 .titulo__servicios {
   font-size: 2rem;
@@ -10112,7 +10126,7 @@ a {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      margin-right: 28%; } }
+      margin-right: 30%; } }
 
 .informacionHome__asesoramiento3 {
   background-color: aliceblue;
@@ -10131,7 +10145,7 @@ a {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      margin-left: 28%; } }
+      margin-left: 30%; } }
 
 .asesoramiento__servicios__parrafo1 {
   width: 90vw;
@@ -10336,7 +10350,8 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  background: url(../image/fold__contacto.jpg);
+  background: url(../image/fold__contacto.webp);
+  background-attachment: contain;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -10345,7 +10360,9 @@ a {
     .foldContacto {
       width: 100vw;
       height: 80vh;
-      background: url(../image/fold__contacto.jpg);
+      background: url(../image/fold__contacto.webp);
+      background-attachment: contain;
+      background-size: cover;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -10434,63 +10451,6 @@ a {
       align-items: center;
       align-self: flex-start;
       margin-left: 2%; } }
-
-.fold__info {
-  background-color: #ffb400;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column; }
-
-.fold__info__contacto {
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column; }
-
-.tituloInfo {
-  width: 40vw;
-  height: 20vh;
-  display: flex;
-  justify-content: flex-start;
-  font-family: "Rubik";
-  font-weight: 700;
-  font-size: 24px;
-  color: black;
-  margin-left: 10%; }
-
-.datosContacto {
-  width: 40vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-left: 15%; }
-
-.info__ubicacion__contacto {
-  width: 450px;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start; }
-
-.info__telefono__contacto {
-  width: 200px;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start; }
-
-.info__correo__contacto {
-  width: 200px;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start; }
 
 .mapaGoogle {
   width: 100vw;
@@ -10617,7 +10577,7 @@ summary {
   background-color: white;
   width: 90vw;
   height: 20vh;
-  padding-bottom: 15%; }
+  padding-bottom: 25%; }
   @media screen and (min-width: 992px) {
     .respuesta {
       background-color: white;
