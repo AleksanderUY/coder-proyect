@@ -1,3 +1,5 @@
+   /*---------------- Inicio de sección Fold Servicios---------------- */
+
 .foldServicios {
   @media screen and (min-width: 992px){
     width: 100vw;
@@ -57,6 +59,9 @@
     }
     @include boton1;
   }
+     /*---------------- Final de sección Fold Servicios---------------- */
+
+        /*---------------- Inicio de sección Tarjetas Servicios---------------- */
   .serviciosTarjetas {
     @media screen and (min-width: 992px){
       display: flex;
@@ -210,6 +215,9 @@
     @include banner;
     height: 20vh;
   }
+          /*---------------- Final de sección Tarjetas Servicios---------------- */
+
+          /*---------------- Inicio de sección Equipo de trabajo---------------- */
   .equipo__trabajo {
     @media screen and (min-width: 992px){
       width: 100vw;
@@ -338,3 +346,4 @@
     font-size: 24px;
     margin-left: 10%;
   }
+  /*---------------- Inicio de sección Equipo de trabajo---------------- */

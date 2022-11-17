@@ -1,4 +1,4 @@
-
+  /*---------------- Inicio de fold---------------- */
 .principalNosotros {
   @media screen and (min-width: 992px){
     display: flex;
@@ -24,17 +24,17 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: flex-start;
-      background: url(../image/fold_nosotros.jpg);
+      background: url(../image/fold_nosotros.webp);
       background-size: cover;
       width: 100vw;
       height: 100vh;
-      margin-top: 7vh;
+      margin-top: 10vh;
     }
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url(../image/fold_nosotros.jpg);
+    background: url(../image/fold_nosotros.webp);
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -44,7 +44,7 @@
     @media screen and (min-width: 992px){
       display: flex;
       font-family: $titulo-fuente;
-      color: white;
+      color: $color-secundario;
       width: 60vw;
       height: 10vh;
       font-weight: 700;
@@ -53,16 +53,17 @@
     }
     display: flex;
     font-family: $titulo-fuente;
-    color: white;
-    width: 80vw;
+    color: $color-secundario;
+    width: 90vw;
     height: 20vh;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 45px;
+    margin-left: 2%;
   }
   .fold__nosotros__subtitulo {
     @media screen and (min-width: 992px){
       font-family: $subtitulo-fuente;
-      color: white;
+      color: $color-secundario;
       font-weight: 400;
       font-size: 18px;
       width: 90vw;
@@ -70,11 +71,12 @@
       margin-left: 2%;
     }
     font-family: $subtitulo-fuente;
-    color: white;
+    color: $color-secundario;
     font-weight: 400;
     font-size: 18px;
     width: 90vw;
     height: 20vh;
+    margin-left: 2%;
   }
   .fold__nosotros__boton {
     @media screen and (min-width: 992px){
@@ -95,6 +97,9 @@
     align-self: flex-start;
     margin-left: 2%;
   }
+  /*---------------- final de fold---------------- */
+
+  /*---------------- Inicio de sección Historia---------------- */
   .nosotros__historia__titulo {
     @media screen and (min-width: 992px){
       font-family: $titulo-fuente;
@@ -179,7 +184,9 @@
     justify-content: center;
     align-items: center;
   }
-  /* amarilla---------------------------------------------- */
+    /*---------------- Final de sección Historia---------------- */
+    
+    /*---------------- Inicio de sección caracteristicas---------------- */ 
   
   .caracteristicas {
     @media screen and (min-width: 992px){
@@ -273,3 +280,4 @@
     justify-content: center;
     text-align: center;
   }
+    /*---------------- Final de sección caracteristicas---------------- */ 

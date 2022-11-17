@@ -1,6 +1,7 @@
+   /*---------------- Inicio de sección Fold Proyectos---------------- */
 .fold_proyectos {
     @media screen and (min-width: 992px){
-      background-image: url(../image/imagen_fold_proyectos.jpg);
+      background-image: url(../image/imagen_fold_proyectos.webp);
       background-attachment: contain;
       background-size: cover;
       width: 100vw;
@@ -9,9 +10,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
-
     }
-    background-image: url(../image/imagen_fold_proyectos.jpg);
+    background-image: url(../image/imagen_fold_proyectos.webp);
     background-attachment: contain;
     background-size: cover;
     width: 100vw;
@@ -55,7 +55,7 @@
       justify-content: flex-end;
       align-items: center;
       margin-left: 2%;
-      color: white;
+      color: $color-secundario;
       font-weight: 400;
       font-size: 20px;
       width: 100vw;
@@ -66,7 +66,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url(../image/imagen_fold_proyectos.jpg);
     background-size: cover;
     width: 100vw;
     height: 80vh;
@@ -88,6 +87,9 @@
     background-color: $color-oscuro;
     opacity: 0.7;
   }
+     /*---------------- Final de sección Fold Proyectos---------------- */
+
+    /*---------------- Inicio de sección Barrios Proyectos---------------- */
 .card {
   margin-top: 3%;
   
@@ -99,7 +101,7 @@ a {
   font-weight: 500;
 }
 .cajatitulo {
-  background-color: white;
+  background-color: $color-secundario;
   background: linear-gradient(to right, grey, white);
   width: 100vw;
   height: 15vh;
@@ -139,3 +141,4 @@ justify-content: center;
 align-items: center;
 align-content: center;
 text-align: center;}
+    /*---------------- Final de sección Barrios Proyectos---------------- */
