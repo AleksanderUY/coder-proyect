@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
    * Bootstrap  v5.2.1 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -8882,6 +8883,7 @@ a {
       justify-content: flex-start;
       margin-left: 0; } }
 
+/*---------------- Inicio de fold---------------- */
 .principal {
   display: flex;
   flex-direction: column;
@@ -8955,7 +8957,7 @@ a {
     text-align: center; }
     @media screen and (min-width: 992px) {
       .principal .fold__subtitulo {
-        font-family: "Rubik";
+        font-family: "Open Sans";
         font-weight: 400;
         font-size: 20px;
         width: 80vw;
@@ -8983,6 +8985,8 @@ a {
         width: 13rem;
         height: 3rem; } }
 
+/*---------------- final de fold---------------- */
+/*---------------- Inicio de sección Servicios---------------- */
 .serviciosHome {
   display: grid;
   grid-template-columns: 1fr;
@@ -9097,6 +9101,8 @@ a {
       box-shadow: 10px 10px 5px grey;
       padding: 5%; } }
 
+/*---------------- Final de sección Servicios---------------- */
+/*---------------- Inicio de sección Información---------------- */
 .informacionHome {
   display: flex;
   flex-direction: column; }
@@ -9279,9 +9285,11 @@ a {
       padding: 7px 25px;
       margin-top: 5%; } }
 
+/*---------------- Final de sección Información---------------- */
+/*---------------- Inicio de sección Fold2---------------- */
 .fold2 {
   display: flex;
-  background: url(../image/imagen_fold_inicio.jpg);
+  background: url(../image/imagen_fold_inicio.webp);
   flex-direction: column;
   background-attachment: contain;
   background-size: cover;
@@ -9364,6 +9372,8 @@ a {
       background-color: #ffb400;
       display: flex; } }
 
+/*---------------- Final de sección Fold2---------------- */
+/*---------------- Inicio de sección Experiencia---------------- */
 .experiencia {
   background-color: #778899;
   display: flex;
@@ -9405,19 +9415,27 @@ a {
   background-color: #778899;
   width: 100vw;
   font-family: "Rubik";
+  background-color: white;
   height: 10vh;
+  font-weight: 700;
+  display: flex;
   text-align: center;
-  margin-top: 15%; }
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  margin-bottom: 5%; }
   @media screen and (min-width: 992px) {
     .valoraciones__titulo {
       display: inline-flex;
       font-family: "Rubik";
       text-align: center;
       justify-content: center;
-      font-size: 36px;
+      background-color: white;
+      font-size: 40px;
       font-weight: 700;
-      width: 80vw;
+      width: 95vw;
       height: 10vh;
+      padding: 3%;
       margin-top: 5%; } }
 
 .experiencias {
@@ -9440,11 +9458,10 @@ a {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
       align-items: center;
-      gap: 3%; } }
-
-.experiencia__card3:hover {
-  transform: scale(1.2, 1.2);
-  box-shadow: none; }
+      gap: 3%; }
+      .experiencias .experiencia__card3:hover {
+        transform: scale(1.2, 1.2);
+        box-shadow: none; } }
 
 .experiencia__card3 {
   background-color: white;
@@ -9518,6 +9535,8 @@ a {
       margin-left: 10%;
       margin-top: 0; } }
 
+/*---------------- Inicio de sección Experiencia---------------- */
+/*---------------- Inicio de fold---------------- */
 .principalNosotros {
   display: flex;
   flex-direction: column;
@@ -9541,7 +9560,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url(../image/fold_nosotros.jpg);
+  background: url(../image/fold_nosotros.webp);
   background-size: cover;
   width: 100vw;
   height: 100vh; }
@@ -9551,20 +9570,21 @@ a {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: flex-start;
-      background: url(../image/fold_nosotros.jpg);
+      background: url(../image/fold_nosotros.webp);
       background-size: cover;
       width: 100vw;
       height: 100vh;
-      margin-top: 7vh; } }
+      margin-top: 10vh; } }
 
 .fold__nosotros__titulo {
   display: flex;
   font-family: "Rubik";
   color: white;
-  width: 80vw;
+  width: 90vw;
   height: 20vh;
   font-weight: 700;
-  font-size: 35px; }
+  font-size: 45px;
+  margin-left: 2%; }
   @media screen and (min-width: 992px) {
     .fold__nosotros__titulo {
       display: flex;
@@ -9582,7 +9602,8 @@ a {
   font-weight: 400;
   font-size: 18px;
   width: 90vw;
-  height: 20vh; }
+  height: 20vh;
+  margin-left: 2%; }
   @media screen and (min-width: 992px) {
     .fold__nosotros__subtitulo {
       font-family: "Open Sans";
@@ -9627,6 +9648,8 @@ a {
       background-color: #ffb400;
       display: flex; } }
 
+/*---------------- final de fold---------------- */
+/*---------------- Inicio de sección Historia---------------- */
 .nosotros__historia__titulo {
   font-family: "Rubik";
   font-size: 22px;
@@ -9711,7 +9734,8 @@ a {
       font-size: 18px;
       font-weight: 400; } }
 
-/* amarilla---------------------------------------------- */
+/*---------------- Final de sección Historia---------------- */
+/*---------------- Inicio de sección caracteristicas---------------- */
 .caracteristicas {
   width: 100vw;
   height: 120vh;
@@ -9802,8 +9826,10 @@ a {
       align-items: center;
       justify-content: center; } }
 
+/*---------------- Final de sección caracteristicas---------------- */
+/*---------------- Inicio de sección Fold Proyectos---------------- */
 .fold_proyectos {
-  background-image: url(../image/imagen_fold_proyectos.jpg);
+  background-image: url(../image/imagen_fold_proyectos.webp);
   background-attachment: contain;
   background-size: cover;
   width: 100vw;
@@ -9816,14 +9842,13 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url(../image/imagen_fold_proyectos.jpg);
   background-size: cover;
   width: 100vw;
   height: 80vh;
   margin-top: 7vh; }
   @media screen and (min-width: 992px) {
     .fold_proyectos {
-      background-image: url(../image/imagen_fold_proyectos.jpg);
+      background-image: url(../image/imagen_fold_proyectos.webp);
       background-attachment: contain;
       background-size: cover;
       width: 100vw;
@@ -9886,6 +9911,8 @@ a {
       align-items: center;
       flex-direction: column; } }
 
+/*---------------- Final de sección Fold Proyectos---------------- */
+/*---------------- Inicio de sección Barrios Proyectos---------------- */
 .card {
   margin-top: 3%; }
 
@@ -9937,6 +9964,8 @@ a {
       align-content: center;
       text-align: center; } }
 
+/*---------------- Final de sección Barrios Proyectos---------------- */
+/*---------------- Inicio de sección Fold Servicios---------------- */
 .foldServicios {
   width: 100vw;
   height: 100vh;
@@ -10044,6 +10073,8 @@ a {
       background-color: #ffb400;
       display: flex; } }
 
+/*---------------- Final de sección Fold Servicios---------------- */
+/*---------------- Inicio de sección Tarjetas Servicios---------------- */
 .serviciosTarjetas {
   display: flex;
   flex-direction: column;
@@ -10211,6 +10242,8 @@ a {
       align-items: center;
       align-content: center; } }
 
+/*---------------- Final de sección Tarjetas Servicios---------------- */
+/*---------------- Inicio de sección Equipo de trabajo---------------- */
 .equipo__trabajo {
   background-color: #778899;
   display: flex;
@@ -10336,6 +10369,8 @@ a {
       font-size: 24px;
       margin-left: 10%; } }
 
+/*---------------- Inicio de sección Equipo de trabajo---------------- */
+/*---------------- Inicio de sección Fold Contacto---------------- */
 .principalContacto {
   display: flex;
   flex-direction: column;
@@ -10452,6 +10487,8 @@ a {
       align-self: flex-start;
       margin-left: 2%; } }
 
+/*---------------- Final de sección Fold Contacto---------------- */
+/*---------------- Inicio de sección Mapa---------------- */
 .mapaGoogle {
   width: 100vw;
   height: 70vh;
@@ -10461,6 +10498,8 @@ a {
   justify-content: center;
   align-items: center; }
 
+/*---------------- Final de sección Mapa---------------- */
+/*---------------- Inicio de sección Preguntas---------------- */
 .preguntas {
   width: 100vw;
   height: 100vh;
@@ -10577,6 +10616,7 @@ summary {
   background-color: white;
   width: 90vw;
   height: 20vh;
+  padding: 2%;
   padding-bottom: 25%; }
   @media screen and (min-width: 992px) {
     .respuesta {
@@ -10597,6 +10637,7 @@ summary {
       height: 100vh;
       display: flex; } }
 
+/*---------------- Final de sección Preguntas---------------- */
 /* ------------PAGINA INDEX FIN--------------- */
 /* ------------PAGINA PROYECTOS INICIO--------------- */
 /* ------------PAGINA PROYECTOS FIN--------------- */

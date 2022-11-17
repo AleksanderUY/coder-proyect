@@ -1,3 +1,5 @@
+
+   /*---------------- Inicio de fold---------------- */
 .principal {
   @media screen and (min-width: 992px){
     display: flex;
@@ -45,7 +47,7 @@
    }
         .fold__subtitulo {
           @media screen and (min-width: 992px){
-            font-family: "Rubik";
+            font-family: $subtitulo-fuente;
             font-weight: 400;
             font-size: 20px;
             width: 80vw;
@@ -63,20 +65,20 @@
           text-align: center; }
           .fold__boton {
             @media screen and (min-width: 992px){
-              background-color: #ffb400;
+              background-color: $color-primario;
               display: flex;
               align-items: center;
               justify-content: center;
-              color: white;
+              color: $color-secundario;
               font-size: large;
               width: 13rem;
               height: 3rem;
             }
             border: 15px;
             font-size: large;
-            background-color: #ffb400;
-            border-color: #ffb400;
-            font-family: "Rubik";
+            background-color: $color-primario;
+            border-color: $color-primario;
+            font-family: $texto-fuente;
             color: black;
             display: flex;
             flex-direction: column;
@@ -84,6 +86,11 @@
             align-items: center;
             padding: 10px 30px; }
           } 
+
+          
+ /*---------------- final de fold---------------- */
+
+  /*---------------- Inicio de sección Servicios---------------- */
   .serviciosHome {
     @media screen and (min-width: 992px){
       display: grid;
@@ -97,7 +104,7 @@
       padding-bottom: 5%;
       padding-top: 5%;
       background-color: rgb(249, 244, 244);
-      color: black;
+      color: $color-oscuro;
     }
     display: grid;
     grid-template-columns: 1fr;
@@ -107,7 +114,7 @@
     width: 100vw;
     height: 240vh;
     background-color: #beb9b9;
-    color: black;  
+    color: $color-oscuro;  
     img {
       @media screen and (min-width: 992px){
         width: 10vw;
@@ -180,10 +187,13 @@
       justify-content: space-between;
       flex-direction: column;
       align-items: center;
-      background-color: white;
+      background-color: $color-secundario;
       box-shadow: 10px 10px 5px grey;}
     @include caja;
 }
+  /*---------------- Final de sección Servicios---------------- */
+
+    /*---------------- Inicio de sección Información---------------- */
 .informacionHome {
   @media screen and (min-width: 992px){
     display: flex;
@@ -220,10 +230,9 @@
   .banner__boton {
     @include boton2;
   }
+    /*---------------- Final de sección Información---------------- */
 
-
-  
-
+        /*---------------- Inicio de sección Fold2---------------- */
   .fold2 {
     @media screen and (min-width: 992px){
       display: flex;
@@ -240,7 +249,7 @@
       
     }
     display: flex;
-    background: url(../image/imagen_fold_inicio.jpg);
+    background: url(../image/imagen_fold_inicio.webp);
     flex-direction: column;
     background-attachment: contain;
     background-size: cover;
@@ -260,6 +269,10 @@
     .fold2__boton {
       @include boton1;
     }
+       /*---------------- Final de sección Fold2---------------- */
+
+       /*---------------- Inicio de sección Experiencia---------------- */
+
   .experiencia {
     @media screen and (min-width: 992px){
       background-color: $color-fondo;
@@ -303,18 +316,26 @@
       font-family: $titulo-fuente;
       text-align: center;
       justify-content: center;
-      font-size: 36px;
+      background-color: $color-secundario;
+      font-size: 40px;
       font-weight: 700;
-      width: 80vw;
+      width: 95vw;
       height: 10vh;
+      padding: 3%;
       margin-top: 5%;
     }
     background-color: $color-fondo;
     width: 100vw;
     font-family: $titulo-fuente;
+    background-color: $color-secundario;
     height: 10vh;
+    font-weight: 700;
+    display: flex;
     text-align: center;
-    margin-top: 15%; }
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 5%; }
   
   .experiencias {
     @media screen and (min-width: 992px){
@@ -326,6 +347,10 @@
       grid-template-rows: 1fr;
       align-items: center;
       gap: 3%;
+      .experiencia__card3:hover {
+        transform: scale(1.2, 1.2);
+        box-shadow: none;
+      }
 
     }
     display: grid;
@@ -338,10 +363,7 @@
     align-content: center;
     gap: 4%;
     padding-bottom: 5%; }
-    .experiencia__card3:hover {
-      transform: scale(1.2, 1.2);
-      box-shadow: none;
-    }
+
 
   .experiencia__card3 {
     @media screen and (min-width: 992px){
@@ -415,4 +437,4 @@
     font-size: 20px;
     margin-top: 35px;
     margin-left: 5%;}
-  
+   /*---------------- Inicio de sección Experiencia---------------- */
