@@ -10473,69 +10473,66 @@ a {
       align-items: flex-start;
       align-content: flex-start;
       flex-wrap: nowrap; } }
-
-.principal__contacto__fold__titulo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-family: "Rubik";
-  color: white;
-  width: 90vw;
-  height: 20vh;
-  font-weight: 700;
-  font-size: 45px;
-  margin-left: 2%; }
-  @media screen and (min-width: 992px) {
-    .principal__contacto__fold__titulo {
-      display: flex;
-      font-family: "Rubik";
-      color: white;
-      width: 60vw;
-      height: 30vh;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      font-weight: 700;
-      font-size: 60px;
-      margin-left: 2%; } }
-
-.principal__contacto__fold__subtitulo {
-  color: white;
-  margin-left: 2%;
-  width: 90vw;
-  height: 20vh;
-  font-size: 22px;
-  font-weight: 400; }
-  @media screen and (min-width: 992px) {
-    .principal__contacto__fold__subtitulo {
-      font-family: "Open Sans";
-      color: white;
-      font-weight: 400;
-      font-size: 18px;
-      width: 60vw;
-      height: 20vh;
-      margin-left: 2%; } }
-
-.principal__contacto__fold__boton {
-  background-color: #ffb400;
-  color: white;
-  width: 60vw;
-  height: 6vh;
-  font-size: medium;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: flex-start;
-  margin-left: 2%;
-  margin-bottom: 10%; }
-  @media screen and (min-width: 992px) {
-    .principal__contacto__fold__boton {
-      width: 20vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-self: flex-start;
-      margin-left: 2%; } }
+  .principal__contacto__fold .principal__contacto__fold__titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Rubik";
+    color: white;
+    width: 90vw;
+    height: 20vh;
+    font-weight: 700;
+    font-size: 45px;
+    margin-left: 2%; }
+    @media screen and (min-width: 992px) {
+      .principal__contacto__fold .principal__contacto__fold__titulo {
+        display: flex;
+        font-family: "Rubik";
+        color: white;
+        width: 60vw;
+        height: 30vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 700;
+        font-size: 60px;
+        margin-left: 2%; } }
+  .principal__contacto__fold .principal__contacto__fold__subtitulo {
+    color: white;
+    margin-left: 2%;
+    width: 90vw;
+    height: 20vh;
+    font-size: 22px;
+    font-weight: 400; }
+    @media screen and (min-width: 992px) {
+      .principal__contacto__fold .principal__contacto__fold__subtitulo {
+        font-family: "Open Sans";
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+        width: 60vw;
+        height: 20vh;
+        margin-left: 2%; } }
+  .principal__contacto__fold .principal__contacto__fold__boton {
+    background-color: #ffb400;
+    color: white;
+    width: 60vw;
+    height: 6vh;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 2%;
+    margin-bottom: 10%; }
+    @media screen and (min-width: 992px) {
+      .principal__contacto__fold .principal__contacto__fold__boton {
+        width: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        margin-left: 2%; } }
 
 /*---------------- Final de sección Fold Contacto---------------- */
 /*---------------- Inicio de sección Mapa---------------- */
@@ -10564,67 +10561,16 @@ a {
       display: flex;
       flex-direction: row;
       justify-content: space-between; } }
-
-.accordion {
-  width: 90vw;
-  height: 50vh; }
-  @media screen and (min-width: 992px) {
-    .accordion {
-      width: 45vw;
-      height: 90vh; } }
-
-.accordion-button {
-  width: 90vw;
-  height: 10vh; }
-  @media screen and (min-width: 992px) {
-    .accordion-button {
-      width: 45vw;
-      height: 11vh; } }
-
-.preguntas__bloque__caja {
-  display: flex;
-  font-family: "Rubik";
-  font-weight: 400;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 90vw;
-  margin: 10px 0;
-  background-color: white; }
-  @media screen and (min-width: 992px) {
-    .preguntas__bloque__caja {
-      display: flex;
-      font-family: "Rubik";
-      font-weight: 400;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 40vw;
-      margin: 10px 0;
-      background-color: white; } }
-
-.preguntas__bloque__titulo {
-  font-family: "Rubik";
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 5%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  background-color: white;
-  font-size: 25px;
-  font-weight: 700; }
-  @media screen and (min-width: 992px) {
-    .preguntas__bloque__titulo {
-      font-family: "Rubik";
-      width: 45vw;
-      height: 15vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: white;
-      font-size: 25px;
-      font-weight: 700;
-      padding: 5%; } }
+  .preguntas .preguntas__imagen {
+    width: 50vw;
+    background: url(../image/preguntasimg.svg);
+    background-size: cover;
+    display: none; }
+    @media screen and (min-width: 992px) {
+      .preguntas .preguntas__imagen {
+        width: 50vw;
+        height: 100vh;
+        display: flex; } }
 
 .preguntas__bloque {
   width: 100vw;
@@ -10640,73 +10586,37 @@ a {
       width: 50vw;
       height: 90vh;
       margin-top: 0; } }
-
-.preguntas__bloque__caja__desplegada {
-  font-size: 16px;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90vw;
-  height: 6vh;
-  background-color: white;
-  border: 5px;
-  border-color: black; }
-  @media screen and (min-width: 992px) {
-    .preguntas__bloque__caja__desplegada {
-      font-size: 18px;
-      font-weight: 700;
-      width: 40vw;
-      height: 10vh;
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
-
-.preguntas__bloque__caja__titulo {
-  font-size: 16px;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90vw;
-  height: 6vh;
-  background-color: white;
-  border: 5px;
-  border-color: black; }
-  @media screen and (min-width: 992px) {
-    .preguntas__bloque__caja__titulo {
-      font-size: 15px;
-      font-weight: 700;
-      width: 40vw;
-      height: 5vh;
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
-
-.preguntas__bloque__caja__respuesta {
-  background-color: white;
-  width: 90vw;
-  height: 20vh;
-  padding: 2%;
-  padding-bottom: 25%; }
-  @media screen and (min-width: 992px) {
-    .preguntas__bloque__caja__respuesta {
-      background-color: white;
-      width: 40vw;
-      height: 20vh;
-      padding: 2%;
-      padding-bottom: 25%; } }
-
-.preguntas__imagen {
-  width: 50vw;
-  background: url(../image/preguntasimg.svg);
-  background-size: cover;
-  display: none; }
-  @media screen and (min-width: 992px) {
-    .preguntas__imagen {
-      width: 50vw;
-      height: 100vh;
-      display: flex; } }
+  .preguntas__bloque .preguntas__bloque__titulo {
+    font-family: "Rubik";
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    font-size: 25px;
+    font-weight: 700; }
+    @media screen and (min-width: 992px) {
+      .preguntas__bloque .preguntas__bloque__titulo {
+        font-family: "Rubik";
+        width: 50vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        font-size: 25px;
+        font-weight: 700;
+        padding: 5%; } }
+  .preguntas__bloque .accordion-button {
+    width: 100vw;
+    height: 10vh; }
+    @media screen and (min-width: 992px) {
+      .preguntas__bloque .accordion-button {
+        width: 50vw;
+        height: 11vh; } }
 
 /*---------------- Final de sección Preguntas---------------- */
 /* ------------PAGINA INDEX FIN--------------- */

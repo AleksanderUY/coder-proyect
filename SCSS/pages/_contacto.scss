@@ -1,38 +1,37 @@
-  /*---------------- Inicio de sección Fold Contacto---------------- */
+/*---------------- Inicio de sección Fold Contacto---------------- */
 
-  .principal__contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.principal__contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 80vh;
+}
+.principal__contacto__fold {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: url(../image/fold__contacto.webp);
+  background-attachment: contain;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 7vh;
+  @media screen and (min-width: 992px) {
     width: 100vw;
     height: 80vh;
-  }
-  .principal__contacto__fold {
+    background: url(../image/fold__contacto.webp);
+    background-attachment: contain;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    background: url(../image/fold__contacto.webp);
-    background-attachment: contain;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    margin-top: 7vh;
-    @media screen and (min-width: 992px){
-      width: 100vw;
-      height: 80vh;
-      background: url(../image/fold__contacto.webp);
-      background-attachment: contain;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-start;
-      align-content: flex-start;
-      flex-wrap: nowrap;
-    }
+    align-content: flex-start;
+    flex-wrap: nowrap;
   }
   .principal__contacto__fold__titulo {
     display: flex;
@@ -45,7 +44,7 @@
     font-weight: 700;
     font-size: 45px;
     margin-left: 2%;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       display: flex;
       font-family: $titulo-fuente;
       color: $color-secundario;
@@ -66,7 +65,7 @@
     height: 20vh;
     font-size: 22px;
     font-weight: 400;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       font-family: $subtitulo-fuente;
       color: $color-secundario;
       font-weight: 400;
@@ -76,7 +75,6 @@
       margin-left: 2%;
     }
   }
-  
   .principal__contacto__fold__boton {
     background-color: $color-primario;
     color: $color-secundario;
@@ -89,7 +87,7 @@
     align-self: flex-start;
     margin-left: 2%;
     margin-bottom: 10%;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       width: 20vw;
       display: flex;
       justify-content: center;
@@ -98,182 +96,99 @@
       margin-left: 2%;
     }
   }
-  /*---------------- Final de sección Fold Contacto---------------- */
+}
 
-  /*---------------- Inicio de sección Mapa---------------- */
+/*---------------- Final de sección Fold Contacto---------------- */
 
-  .mapa__google {
-    width: 100vw;
-    height: 70vh;
-    border-color: $color-oscuro;
-    border-width: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-      /*---------------- Final de sección Mapa---------------- */
+/*---------------- Inicio de sección Mapa---------------- */
 
-      /*---------------- Inicio de sección Preguntas---------------- */
-
-  .preguntas {
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    @media screen and (min-width: 992px){
-      width: 100vw;
-      height: 90vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-  .accordion {
-    width: 90vw;
-    height: 50vh;
-
-    @media screen and (min-width: 992px){
-      width: 45vw;
-      height: 90vh;
-    }
-  }
-
-
-  .accordion-button {
-    width: 90vw;
-    height: 10vh;
-    @media screen and (min-width: 992px){
-      width: 45vw;
-      height: 11vh;
-    }
-  }
-  .preguntas__bloque__caja {
-    @media screen and (min-width: 992px){
-      display: flex;
-      font-family: $titulo-fuente;
-      font-weight: 400;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 40vw;
-      margin: 10px 0;
-      background-color: $color-secundario;    }
-      display: flex;
-      font-family: $titulo-fuente;
-      font-weight: 400;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 90vw;
-      margin: 10px 0;
-      background-color: $color-secundario;
-  }
-  .preguntas__bloque__titulo {
-  font-family: $titulo-fuente;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 5%;
+.mapa__google {
+  width: 100vw;
+  height: 70vh;
+  border-color: $color-oscuro;
+  border-width: 5px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*---------------- Final de sección Mapa---------------- */
+
+/*---------------- Inicio de sección Preguntas---------------- */
+
+.preguntas {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  text-align: center;
-  background-color: $color-secundario;
-  font-size: 25px;
-  font-weight: 700;
-  @media screen and (min-width: 992px){
-    font-family: $titulo-fuente;
-    width: 45vw;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-secundario;
-    font-size: 25px;
-    font-weight: 700;
-    padding: 5%;
-  }
-}
-  .preguntas__bloque {
+  @media screen and (min-width: 992px) {
     width: 100vw;
-    height: 100vh;
-    background-color: #eee7e7;
+    height: 90vh;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 2%;
-    @media screen and (min-width: 992px){
-      width: 50vw;
-      height: 90vh;
-      margin-top: 0;
-    }
-  }
-  .preguntas__bloque__caja__desplegada {
-    font-size: 16px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    height: 6vh;
-    background-color: $color-secundario;
-    border: 5px;
-    border-color: $color-oscuro;
-    @media screen and (min-width: 992px){
-      font-size: 18px;
-      font-weight: 700;
-      width: 40vw;
-      height: 10vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  .preguntas__bloque__caja__titulo {
-    font-size: 16px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    height: 6vh;
-    background-color: $color-secundario;
-    border: 5px;
-    border-color: $color-oscuro;
-    @media screen and (min-width: 992px){
-      font-size: 15px;
-      font-weight: 700;
-      width: 40vw;
-      height: 5vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  .preguntas__bloque__caja__respuesta {
-    background-color: $color-secundario;
-    width: 90vw;
-    height: 20vh;
-    padding: 2%;
-    padding-bottom: 25%;
-    @media screen and (min-width: 992px){
-      background-color: $color-secundario;
-      width: 40vw;
-      height: 20vh;
-      padding: 2%;
-      padding-bottom: 25%;
-      
-    }
+    flex-direction: row;
+    justify-content: space-between;
   }
   .preguntas__imagen {
     width: 50vw;
     background: url(../image/preguntasimg.svg);
     background-size: cover;
     display: none;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       width: 50vw;
       height: 100vh;
       display: flex;
     }
   }
-        /*---------------- Final de sección Preguntas---------------- */
+}
+
+.preguntas__bloque {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee7e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2%;
+  @media screen and (min-width: 992px) {
+    width: 50vw;
+    height: 90vh;
+    margin-top: 0;
+  }
+  .preguntas__bloque__titulo {
+    font-family: $titulo-fuente;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: $color-secundario;
+    font-size: 25px;
+    font-weight: 700;
+    @media screen and (min-width: 992px) {
+      font-family: $titulo-fuente;
+      width: 50vw;
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-secundario;
+      font-size: 25px;
+      font-weight: 700;
+      padding: 5%;
+    }
+  }
+  .accordion-button {
+    width: 100vw;
+    height: 10vh;
+    @media screen and (min-width: 992px) {
+      width: 50vw;
+      height: 11vh;
+    }
+  }
+}
+
+/*---------------- Final de sección Preguntas---------------- */
