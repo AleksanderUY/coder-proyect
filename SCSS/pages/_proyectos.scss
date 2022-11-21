@@ -1,5 +1,22 @@
    /*---------------- Inicio de sección Fold Proyectos---------------- */
-   .principal__proyectos
+   .principal__proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10vh;
+    @media screen and (min-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 100vh;
+   }
    .principal__proyectos__fold {
     background-image: url(../image/imagen_fold_proyectos.webp);
     background-attachment: contain;
@@ -21,122 +38,119 @@
       justify-content: center;
       align-items: flex-end;
     }
-    .principal__proyectos__fold__titulo {
-      display: flex;
-      justify-content: flex-start;
-          width: 95vw;
-          height: 25vh;
-          margin-left: 2%;
-          font-family: $titulo-fuente;
-          color: $color-secundario;
-          font-size: 58px;
-          font-weight: 700;
-          opacity:initial;
-          @media screen and (min-width: 992px){
-            width: 100vw;
-            height: 10vh;
-            font-weight: 700;
-          }
-    }
-    .principal__proyectos__fold__subtitulo {
-      font-family: $subtitulo-fuente;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-content: center;
-      justify-content: flex-end;
-      align-items: center;
-      margin-left: 2%;
-      color: $color-secundario;
-      font-weight: 400;
-      font-size: 20px;
+    .principal__proyectos__fold__trasparente {
       width: 100vw;
-      height: 20vh;
-      @media screen and (min-width: 992px){
-        width: 100vw;
-        height: 10vh;
-        justify-content: center;
-        align-items: flex-start;
-        font-weight: 400;
-      }
-    }
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-size: cover;
-    width: 100vw;
-    height: 80vh;
-    margin-top: 7vh;
-  }
-  .principal__proyectos__fold__trasparente {
-    width: 100vw;
-    height: 50vh;
-    background-color: $color-oscuro;
-    opacity: 0.7;
-    @media screen and (min-width: 992px) {
+      height: 50vh;
       background-color: $color-oscuro;
       opacity: 0.7;
-      width: 100vw;
-      height: 30vh;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
+      @media screen and (min-width: 992px) {
+        background-color: $color-oscuro;
+        opacity: 0.7;
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+      }
+      .principal__proyectos__fold__titulo {
+        display: flex;
+        justify-content: flex-start;
+            width: 95vw;
+            height: 25vh;
+            margin-left: 2%;
+            font-family: $titulo-fuente;
+            color: $color-secundario;
+            font-size: 58px;
+            font-weight: 700;
+            opacity:initial;
+            @media screen and (min-width: 992px){
+              width: 100vw;
+              height: 10vh;
+              font-weight: 700;
+            }
+      }
+      .principal__proyectos__fold__subtitulo {
+        font-family: $subtitulo-fuente;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 2%;
+        color: $color-secundario;
+        font-weight: 400;
+        font-size: 20px;
+        width: 100vw;
+        height: 20vh;
+        @media screen and (min-width: 992px){
+          width: 100vw;
+          height: 10vh;
+          justify-content: center;
+          align-items: flex-start;
+          font-weight: 400;
+        }
+    }
+    }
+
+
     }
   }
+
      /*---------------- Final de sección Fold Proyectos---------------- */
 
     /*---------------- Inicio de sección Barrios Proyectos---------------- */
-.card {
-  margin-top: 3%;
+
+    .titulo__barrios {
+      width: 100vw;
+      height: 10vh;
+      padding: 5%;
+      margin-top: 5%;
+      background-color: $color-secundario;
+      font-family: $titulo-fuente;
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      @media screen and (min-width: 992px){
+        width: 100vw;
+        height: 10vh;
+        padding: 5%;
+        margin-top: 5%;
+        background-color: $color-secundario;
+        font-family: $titulo-fuente;
+        font-size: 35px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        }}
   
-}
-.card-text {
-  margin-bottom: 5%;
-}
-a {
-  font-weight: 500;
-}
-.cajatitulo {
-  background-color: $color-secundario;
-  background: linear-gradient(to right, grey, white);
-  width: 100vw;
-  height: 15vh;
-  margin-bottom: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.titulo__barrios {
-width: 100vw;
-height: 10vh;
-padding: 5%;
-margin-top: 5%;
-background-color: $color-secundario;
-font-family: $titulo-fuente;
-font-size: 20px;
-font-weight: 700;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
-text-align: center;
-@media screen and (min-width: 992px){
-  width: 100vw;
-  height: 10vh;
-  padding: 5%;
-  margin-top: 5%;
-  background-color: $color-secundario;
-  font-family: $titulo-fuente;
-  font-size: 35px;
-  font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  }}
+        .container-fluid {
+          
+        @media only screen and (min-width: 576px) and (max-width: 991px){
+
+        }
+
+        .card {
+          margin-top: 3%;
+          .card-text {
+            margin-bottom: 5%;
+          }
+          .btn btn-warning {
+            font-weight: 500;
+          }
+        }
+      }
+
+
+
     /*---------------- Final de sección Barrios Proyectos---------------- */
