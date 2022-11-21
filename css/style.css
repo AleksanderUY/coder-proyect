@@ -8875,84 +8875,83 @@ a {
       justify-content: center;
       flex-wrap: wrap;
       width: 100vw;
-      height: 100vh; }
-      .principal .fold {
-        display: flex;
-        background: url(../image/imagen_fold_inicio3.jpg);
-        flex-direction: column;
-        background-size: cover;
-        align-items: center;
-        padding-bottom: 5vh;
-        width: 100vw;
-        height: 80vh;
-        margin-top: 10vh; } }
-    @media screen and (min-width: 992px) and (min-width: 992px) {
-      .principal .fold {
-        display: flex;
-        background: url(../image/imagen_fold_inicio3.webp);
-        flex-direction: column;
-        background-attachment: contain;
-        background-size: cover;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        padding-bottom: 30px;
-        width: 100vw;
-        height: 100vh;
-        margin-top: 7vh; }
-        .principal .fold .fold__titulo {
-          font-family: "Rubik";
-          font-weight: 700;
-          font-size: 36px;
-          width: 100vw;
-          height: 20vh;
-          margin-top: 10%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center; } }
-    @media screen and (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
-      .principal .fold .fold__titulo {
+      height: 100vh; } }
+
+.fold {
+  display: flex;
+  background: url(../image/imagen_fold_inicio3.jpg);
+  flex-direction: column;
+  background-size: cover;
+  align-items: center;
+  padding-bottom: 5vh;
+  width: 100vw;
+  height: 80vh;
+  margin-top: 10vh; }
+  @media screen and (min-width: 992px) {
+    .fold {
+      display: flex;
+      background: url(../image/imagen_fold_inicio3.webp);
+      flex-direction: column;
+      background-attachment: contain;
+      background-size: cover;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding-bottom: 30px;
+      width: 100vw;
+      height: 100vh;
+      margin-top: 7vh; } }
+  .fold .fold__titulo {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 36px;
+    width: 100vw;
+    height: 20vh;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    @media screen and (min-width: 992px) {
+      .fold .fold__titulo {
         display: inline-flex;
         width: 95vw;
         font-family: "Rubik";
         font-weight: 700;
         font-size: 64px;
         margin-top: 10%; } }
-    @media screen and (min-width: 992px) and (min-width: 992px) {
-        .principal .fold .fold__subtitulo {
-          font-family: "Open Sans";
-          font-weight: 400;
-          font-style: up;
-          font-size: larger;
-          width: 100vw;
-          height: 10vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          text-align: center; } }
-    @media screen and (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
-      .principal .fold .fold__subtitulo {
+  .fold .fold__subtitulo {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: up;
+    font-size: larger;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    @media screen and (min-width: 992px) {
+      .fold .fold__subtitulo {
         font-family: "Open Sans";
         font-weight: 400;
         font-size: 20px;
         width: 80vw;
         height: 15vh; } }
-    @media screen and (min-width: 992px) and (min-width: 992px) {
-        .principal .fold .fold__boton {
-          border: 15px;
-          font-size: large;
-          background-color: #ffb400;
-          border-color: #ffb400;
-          font-family: "Rubik";
-          color: black;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 10px 30px; } }
-    @media screen and (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
-      .principal .fold .fold__boton {
+  .fold .fold__boton {
+    border: 15px;
+    font-size: large;
+    background-color: #ffb400;
+    border-color: #ffb400;
+    font-family: "Rubik";
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px; }
+    @media screen and (min-width: 992px) {
+      .fold .fold__boton {
         background-color: #ffb400;
         display: flex;
         align-items: center;
@@ -8987,37 +8986,38 @@ a {
       padding-bottom: 5%;
       padding-top: 5%;
       background-color: #f9f4f4;
-      color: black; }
-      .servicios__home .servicios__home__obras {
-        width: 90vw;
-        height: 35vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: white;
-        box-shadow: 10px 10px 5px grey;
-        padding: 5%; } }
-    @media screen and (min-width: 992px) and (min-width: 992px) {
-      .servicios__home .servicios__home__obras {
-        width: 420px;
-        height: 270px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-        box-shadow: 10px 10px 5px grey; }
-        .servicios__home .servicios__home__obras .servicios__home__obras__data {
-          width: 80vw;
-          height: 40vh;
-          margin: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center; } }
-    @media screen and (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
-      .servicios__home .servicios__home__obras .servicios__home__obras__data {
+      color: black; } }
+
+.servicios__home__obras {
+  width: 90vw;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  box-shadow: 10px 10px 5px grey;
+  padding: 5%; }
+  @media screen and (min-width: 992px) {
+    .servicios__home__obras {
+      width: 420px;
+      height: 270px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      box-shadow: 10px 10px 5px grey; } }
+  .servicios__home__obras .servicios__home__obras__data {
+    width: 80vw;
+    height: 40vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (min-width: 992px) {
+      .servicios__home__obras .servicios__home__obras__data {
         margin: 0;
         width: 350px;
         height: 200px;
@@ -9025,34 +9025,33 @@ a {
         flex-direction: row;
         justify-content: center;
         align-items: center; } }
-    @media screen and (min-width: 992px) and (min-width: 992px) {
-          .servicios__home .servicios__home__obras .servicios__home__obras__data .servicios__home__obras__data__titulo {
-            font-size: 20px;
-            font-weight: 700;
-            width: 80vw;
-            height: 5vh;
-            font-family: "Rubik";
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center; }
-          .servicios__home .servicios__home__obras .servicios__home__obras__data .servicios__home__obras__data__info {
-            padding: 2%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; }
-          .servicios__home .servicios__home__obras .servicios__home__obras__data .servicios__home__obras__data__imagen {
-            width: 50px;
-            height: 50px; } }
-      @media screen and (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
-        .servicios__home .servicios__home__obras .servicios__home__obras__data .servicios__home__obras__data__imagen {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100px;
-          height: 100px; } }
+  .servicios__home__obras .servicios__home__obras__data__titulo {
+    font-size: 20px;
+    font-weight: 700;
+    width: 80vw;
+    height: 5vh;
+    font-family: "Rubik";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .servicios__home__obras .servicios__home__obras__data__info {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .servicios__home__obras .servicios__home__obras__data__imagen {
+    width: 50px;
+    height: 50px; }
+    @media screen and (min-width: 992px) {
+      .servicios__home__obras .servicios__home__obras__data__imagen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px; } }
 
 /*---------------- Final de sección Servicios---------------- */
 /*---------------- Inicio de sección Información---------------- */
@@ -9764,16 +9763,7 @@ a {
 
 /*---------------- Final de sección caracteristicas---------------- */
 /*---------------- Inicio de sección Fold Proyectos---------------- */
-.principal__proyectos .principal__proyectos__fold {
-  background-image: url(../image/imagen_fold_proyectos.webp);
-  background-attachment: contain;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+.principal__proyectos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9781,93 +9771,92 @@ a {
   background-size: cover;
   width: 100vw;
   height: 80vh;
-  margin-top: 7vh; }
+  margin-top: 10vh; }
   @media screen and (min-width: 992px) {
-    .principal__proyectos .principal__proyectos__fold {
-      background-image: url(../image/imagen_fold_proyectos.webp);
-      background-attachment: contain;
-      background-size: cover;
-      width: 100vw;
-      height: 100vh;
+    .principal__proyectos {
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
-      align-items: flex-end; } }
-  .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__titulo {
-    display: flex;
-    justify-content: flex-start;
-    width: 95vw;
-    height: 25vh;
-    margin-left: 2%;
-    font-family: "Rubik";
-    color: white;
-    font-size: 58px;
-    font-weight: 700;
-    opacity: initial; }
-    @media screen and (min-width: 992px) {
-      .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__titulo {
-        width: 100vw;
-        height: 10vh;
-        font-weight: 700; } }
-  .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__subtitulo {
-    font-family: "Open Sans";
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 100vh; } }
+  .principal__proyectos .principal__proyectos__fold {
+    background-image: url(../image/imagen_fold_proyectos.webp);
+    background-attachment: contain;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: 2%;
-    color: white;
-    font-weight: 400;
-    font-size: 20px;
-    width: 100vw;
-    height: 20vh; }
+    justify-content: flex-start;
+    align-items: flex-start; }
     @media screen and (min-width: 992px) {
-      .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__subtitulo {
+      .principal__proyectos .principal__proyectos__fold {
+        background-image: url(../image/imagen_fold_proyectos.webp);
+        background-attachment: contain;
+        background-size: cover;
         width: 100vw;
-        height: 10vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        font-weight: 400; } }
-
-.principal__proyectos__fold__trasparente {
-  width: 100vw;
-  height: 50vh;
-  background-color: black;
-  opacity: 0.7; }
-  @media screen and (min-width: 992px) {
-    .principal__proyectos__fold__trasparente {
-      background-color: black;
-      opacity: 0.7;
+        align-items: flex-end; } }
+    .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente {
       width: 100vw;
-      height: 30vh;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column; } }
+      height: 50vh;
+      background-color: black;
+      opacity: 0.7; }
+      @media screen and (min-width: 992px) {
+        .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente {
+          background-color: black;
+          opacity: 0.7;
+          width: 100vw;
+          height: 30vh;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column; } }
+      .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente .principal__proyectos__fold__titulo {
+        display: flex;
+        justify-content: flex-start;
+        width: 95vw;
+        height: 25vh;
+        margin-left: 2%;
+        font-family: "Rubik";
+        color: white;
+        font-size: 58px;
+        font-weight: 700;
+        opacity: initial; }
+        @media screen and (min-width: 992px) {
+          .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente .principal__proyectos__fold__titulo {
+            width: 100vw;
+            height: 10vh;
+            font-weight: 700; } }
+      .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente .principal__proyectos__fold__subtitulo {
+        font-family: "Open Sans";
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 2%;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        width: 100vw;
+        height: 20vh; }
+        @media screen and (min-width: 992px) {
+          .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente .principal__proyectos__fold__subtitulo {
+            width: 100vw;
+            height: 10vh;
+            justify-content: center;
+            align-items: flex-start;
+            font-weight: 400; } }
 
 /*---------------- Final de sección Fold Proyectos---------------- */
 /*---------------- Inicio de sección Barrios Proyectos---------------- */
-.card {
-  margin-top: 3%; }
-
-.card-text {
-  margin-bottom: 5%; }
-
-a {
-  font-weight: 500; }
-
-.cajatitulo {
-  background-color: white;
-  background: linear-gradient(to right, grey, white);
-  width: 100vw;
-  height: 15vh;
-  margin-bottom: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .titulo__barrios {
   width: 100vw;
   height: 10vh;
@@ -9899,6 +9888,13 @@ a {
       align-items: center;
       align-content: center;
       text-align: center; } }
+
+.container-fluid .card, .container-sm .card, .container-md .card, .container-lg .card, .container-xl .card, .container-xxl .card {
+  margin-top: 3%; }
+  .container-fluid .card .card-text, .container-sm .card .card-text, .container-md .card .card-text, .container-lg .card .card-text, .container-xl .card .card-text, .container-xxl .card .card-text {
+    margin-bottom: 5%; }
+  .container-fluid .card .btn btn-warning, .container-sm .card .btn btn-warning, .container-md .card .btn btn-warning, .container-lg .card .btn btn-warning, .container-xl .card .btn btn-warning, .container-xxl .card .btn btn-warning {
+    font-weight: 500; }
 
 /*---------------- Final de sección Barrios Proyectos---------------- */
 /*---------------- Inicio de sección Fold Servicios---------------- */
