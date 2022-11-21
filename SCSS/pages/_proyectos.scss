@@ -1,5 +1,15 @@
    /*---------------- Inicio de sección Fold Proyectos---------------- */
-.fold_proyectos {
+   .principal__proyectos
+   .principal__proyectos__fold {
+    background-image: url(../image/imagen_fold_proyectos.webp);
+    background-attachment: contain;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     @media screen and (min-width: 992px){
       background-image: url(../image/imagen_fold_proyectos.webp);
       background-attachment: contain;
@@ -11,23 +21,7 @@
       justify-content: center;
       align-items: flex-end;
     }
-    background-image: url(../image/imagen_fold_proyectos.webp);
-    background-attachment: contain;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    .foldproyectos__titulo {
-
-      @media screen and (min-width: 992px){
-        width: 100vw;
-        height: 10vh;
-        font-weight: 700;
-
-      }
+    .principal__proyectos__fold__titulo {
       display: flex;
       justify-content: flex-start;
           width: 95vw;
@@ -38,15 +32,13 @@
           font-size: 58px;
           font-weight: 700;
           opacity:initial;
+          @media screen and (min-width: 992px){
+            width: 100vw;
+            height: 10vh;
+            font-weight: 700;
+          }
     }
-    .foldProyecto__subtitulo {
-      @media screen and (min-width: 992px){
-        width: 100vw;
-        height: 10vh;
-        justify-content: center;
-        align-items: flex-start;
-        font-weight: 400;
-      }
+    .principal__proyectos__fold__subtitulo {
       font-family: $subtitulo-fuente;
       display: flex;
       flex-direction: column;
@@ -60,8 +52,14 @@
       font-size: 20px;
       width: 100vw;
       height: 20vh;
+      @media screen and (min-width: 992px){
+        width: 100vw;
+        height: 10vh;
+        justify-content: center;
+        align-items: flex-start;
+        font-weight: 400;
+      }
     }
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +69,11 @@
     height: 80vh;
     margin-top: 7vh;
   }
-  .fondo_letras {
+  .principal__proyectos__fold__trasparente {
+    width: 100vw;
+    height: 50vh;
+    background-color: $color-oscuro;
+    opacity: 0.7;
     @media screen and (min-width: 992px) {
       background-color: $color-oscuro;
       opacity: 0.7;
@@ -82,10 +84,6 @@
       align-items: center;
       flex-direction: column;
     }
-    width: 100vw;
-    height: 50vh;
-    background-color: $color-oscuro;
-    opacity: 0.7;
   }
      /*---------------- Final de sección Fold Proyectos---------------- */
 
@@ -110,23 +108,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.titulo_barrios {
-  @media screen and (min-width: 992px){
-width: 100vw;
-height: 10vh;
-padding: 5%;
-margin-top: 5%;
-background-color: $color-secundario;
-font-family: $titulo-fuente;
-font-size: 35px;
-font-weight: 700;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
-text-align: center;
-}
+.titulo__barrios {
 width: 100vw;
 height: 10vh;
 padding: 5%;
@@ -140,5 +122,21 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 align-content: center;
-text-align: center;}
+text-align: center;
+@media screen and (min-width: 992px){
+  width: 100vw;
+  height: 10vh;
+  padding: 5%;
+  margin-top: 5%;
+  background-color: $color-secundario;
+  font-family: $titulo-fuente;
+  font-size: 35px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  }}
     /*---------------- Final de sección Barrios Proyectos---------------- */

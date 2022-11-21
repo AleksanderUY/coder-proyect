@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+  header {
+    width: 100vw;
+    height: 60vh;
+  }
+  html {
+      overflow-x: hidden;
+      font-family: "Poppins", "Open Sans", "Rubik";
+    }
+    body {
+      background-color: darkgrey;
+      padding: 0;
+      margin: 0;
+      width: 100vw;
+      overflow-x: hidden;
+      p {
+        margin: 0;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      margin-top: 0;
+      @media screen and (min-width: 992px) {
+      background-color: $color-primario;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-size: large;}
+    }

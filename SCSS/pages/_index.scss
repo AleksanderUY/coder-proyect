@@ -1,0 +1,674 @@
+
+   /*---------------- Inicio de fold---------------- */
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 80vh;
+    @media screen and (min-width: 992px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 100vh;
+    }
+    .fold {
+      display: flex;
+      background: url(../image/imagen_fold_inicio3.jpg);
+      flex-direction: column;
+      background-size: cover;
+      align-items: center;
+      padding-bottom: 5vh;
+      width: 100vw;
+      height: 80vh; 
+      margin-top: 10vh;
+      @media screen and (min-width: 992px){
+        display: flex;
+        background: url(../image/imagen_fold_inicio3.webp);
+        flex-direction: column;
+        background-attachment: contain;
+        background-size: cover;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        width: 100vw;
+        height: 100vh;
+        margin-top: 7vh;
+      }
+    }
+   .fold__titulo {
+    font-family: $titulo-fuente;
+    font-weight: 700;
+    font-size: 36px;
+    width: 100vw;
+    height: 20vh;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    @media screen and (min-width: 992px){
+      display: inline-flex;
+      width: 95vw;
+      font-family: $titulo-fuente;
+      font-weight: 700;
+      font-size: 64px;
+      margin-top: 10%;
+    }
+   }
+        .fold__subtitulo {
+          font-family: $subtitulo-fuente;
+          font-weight: 400;
+          font-style: up;
+          font-size: larger;
+          width: 100vw;
+          height: 10vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          @media screen and (min-width: 992px){
+            font-family: $subtitulo-fuente;
+            font-weight: 400;
+            font-size: 20px;
+            width: 80vw;
+            height: 15vh;
+          }
+         }
+          .fold__boton {
+            border: 15px;
+            font-size: large;
+            background-color: $color-primario;
+            border-color: $color-primario;
+            font-family: $texto-fuente;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 30px;
+            @media screen and (min-width: 992px){
+              background-color: $color-primario;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: $color-secundario;
+              font-size: large;
+              width: 13rem;
+              height: 3rem;
+            } }
+          } 
+
+          
+ /*---------------- final de fold---------------- */
+
+  /*---------------- Inicio de sección Servicios---------------- */
+  .servicios__home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    height: 240vh;
+    background-color: #beb9b9;
+    color: $color-oscuro;
+    @media screen and (min-width: 992px){
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 3%;
+      align-items: center;
+      justify-items: center;
+      width: 100vw;
+      height: 120vh;
+      padding-bottom: 5%;
+      padding-top: 5%;
+      background-color: rgb(249, 244, 244);
+      color: $color-oscuro;
+    }  
+    .servicios__home__obras {
+        width: 90vw;
+        height: 35vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white; 
+        box-shadow: 10px 10px 5px grey;
+        padding: 5%;
+        @media screen and (min-width: 992px){          
+          width: 420px;
+          height: 270px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          align-items: center;
+          background-color: $color-secundario;
+          box-shadow: 10px 10px 5px grey;}
+  }
+
+    .servicios__home__obras__data {
+      width: 80vw;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media screen and (min-width: 992px){
+        margin: 0;
+        width: 350px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .servicios__home__obras__data__titulo {
+        font-size: 20px;
+        font-weight: 700;
+        width: 80vw;
+        height: 5vh;
+        font-family: $titulo-fuente;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       }
+       .servicios__home__obras__data__info {
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+      .servicios__home__obras__data__imagen {
+          width: 50px;
+          height: 50px;
+          @media screen and (min-width: 992px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+          } }
+        } }
+
+  /*---------------- Final de sección Servicios---------------- */
+
+    /*---------------- Inicio de sección Información---------------- */
+.informacion__home {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 992px){
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row-reverse;
+  }}
+  .informacion__home__gris{
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width: 992px){
+      width: 70vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .informacion__home__gris__titulo{
+    font-family: $titulo-fuente;
+    font-weight: 700;
+    font-size: 36px;
+    width: 100vw;
+    height: 20vh;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @media screen and (min-width: 992px){
+      display: inline-flex;
+      width: 95vw;
+      font-family: $titulo-fuente;
+      font-weight: 700;
+      font-size: 64px;
+      margin-top: 10%;
+    }
+  }
+  .informacion__home__gris__parrafos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 65vh;
+      width: 100vw; 
+      @media screen and (min-width: 992px){
+        width: 60vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+  }
+  .informacion__home__gris__parrafos__parrafo1{
+    width: 95vw;
+    height: 30vh;
+    font-family: $texto-fuente;
+    font-weight: 400;
+    font-size: larger;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 992px){
+      display: flex;
+      padding: 0;
+      margin: 0;
+      width: 50vw;
+      height: 40vh;
+      font-family: $texto-fuente;
+      font-size: 20px;
+      font-weight: 400;
+    } 
+  }
+  .informacion__home__gris__parrafos__parrafo2{
+    width: 95vw;
+    height: 30vh;
+    font-family: $texto-fuente;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 992px){
+      display: flex;
+      width: 50vw;
+      height: 40vh;
+      font-family: $texto-fuente;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .informacion__home__amarillo {
+      background-color: $color-primario;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      @media screen and (min-width: 992px){
+        background-color: $color-primario;
+        width: 30vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      } }
+    
+    .informacion__home__amarillo__eco {
+      width: 100vw;
+      height: 25vh;
+      margin-top: 10%;
+      padding-left: 3%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      @media screen and (min-width: 992px){
+        width: 400px;
+        height: 33%;
+        padding-left: 3%;
+      } }
+    
+    .informacion__home__amarillo__eco__imagen {
+      width: 50px;
+      height: 50px;
+      align-self: flex-start;
+      @media screen and (min-width: 992px){
+        width: 50px;
+        height: 50px;
+        align-self: flex-start;
+      } }
+    
+    .informacion__home__amarillo__eco__titulo {
+      font-family: $titulo-fuente;
+      font-size: large;
+      font-size: 22px;
+      font-weight: 700;
+      @media screen and (min-width: 992px){
+        font-family: $titulo-fuente;
+        font-size: 22px;
+        font-weight: 700;
+      } }
+    
+    .informacion__home__amarillo__eco__parrafo {
+      font-size: 15px;
+      width: 370px;
+      height: 20vh;
+      @media screen and (min-width: 992px){
+        font-size: 15px;
+        width: 370px;
+        height: 90px;
+      } }
+  .informacion__home__banner{
+    background-color: $color-oscuro;
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (min-width: 992px){
+      background-color: $color-oscuro;
+      width: 70vw;
+      height: 20vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+    }
+  }
+  .informacion__home__banner__titulo{
+    color: $color-secundario;
+    text-align: center;
+    width: 100vw;
+    height: 100px;
+    font-family: $texto-fuente;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 5%;
+    margin-top: 10%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    @media screen and (min-width: 992px){
+      color: $color-secundario;
+      width: 500px;
+      height: 70px;
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 5%;
+    }
+  }
+  .informacion__home__banner__boton {
+    background-color: $color-secundario;
+    color: $color-oscuro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 25px;
+    margin-bottom: 5%;
+    @media screen and (min-width: 992px){
+      background-color: $color-secundario;
+      color: $color-oscuro;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 7px 25px;
+      margin-top: 5%;
+    }
+  }
+    /*---------------- Final de sección Información---------------- */
+
+        /*---------------- Inicio de sección Fold2---------------- */
+  .fold2 {
+    display: flex;
+    background: url(../image/imagen_fold_inicio.webp);
+    flex-direction: column;
+    background-attachment: contain;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    width: 100vw;
+    height: 50vh;
+    @media screen and (min-width: 992px){
+      display: flex;
+      background: url(../image/imagen_fold_inicio.webp);
+      flex-direction: column;
+      background-attachment: contain;
+      background-size: cover;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding-bottom: 30px;
+      width: 100vw;
+      height: 80vh;
+    } }
+  
+    .fold2__titulo {
+      font-family: $titulo-fuente;
+      font-weight: 700;
+      font-size: 36px;
+      width: 100vw;
+      height: 20vh;
+      margin-top: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      @media screen and (min-width: 992px){
+        display: inline-flex;
+        width: 95vw;
+        font-family: $titulo-fuente;
+        font-weight: 700;
+        font-size: 64px;
+        margin-top: 10%;
+      }
+    }
+    .fold2__subtitulo {
+      font-family: $subtitulo-fuente;
+      font-weight: 400;
+      font-style: up;
+      font-size: larger;
+      width: 100vw;
+      height: 10vh;
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      @media screen and (min-width: 992px){
+        font-family: $subtitulo-fuente;
+        font-weight: 400;
+        font-size: 20px;
+        width: 80vw;
+        height: 15vh;
+        margin-top: 0;
+      } 
+    }
+    .fold2__boton {
+      border: 15px;
+      font-size: large;
+      background-color: $color-primario;
+      border-color: $color-primario;
+      font-family: $texto-fuente;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 40px;
+      margin-top: 5%;
+      @media screen and (min-width: 992px){
+        background-color: #ffb400;
+        display: flex;}
+    }
+       /*---------------- Final de sección Fold2---------------- */
+
+       /*---------------- Inicio de sección Experiencia---------------- */
+
+  
+  .experiencia {
+    background-color: $color-fondo;
+    width: 100vw;
+    height: 150vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 992px){
+      width: 100vw;
+      height: 110vh;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    } }
+  
+  .experiencia__titulo {
+    background-color: $color-fondo;
+    width: 100vw;
+    font-family: $titulo-fuente;
+    background-color: $color-secundario;
+    height: 10vh;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    @media screen and (min-width: 992px){
+      display: inline-flex;
+      font-family: $titulo-fuente;
+      text-align: center;
+      justify-content: center;
+      background-color: $color-secundario;
+      font-size: 40px;
+      font-weight: 700;
+      width: 95vw;
+      height: 10vh;
+      padding: 3%;
+      margin-top: 5%;
+    } }
+  
+  .experiencias__valoraciones {
+    display: grid;
+    justify-items: center;
+    background-color: $color-fondo;
+    width: 100vw;
+    height: 150vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-content: center;
+    gap: 4%;
+    padding-bottom: 5%;
+    @media screen and (min-width: 992px){
+      display: grid;
+      background-color: $color-fondo;
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      gap: 3%;
+      .experiencias__valoraciones__card:hover {
+        transform: scale(1.2, 1.2);
+        box-shadow: none;
+      }
+    } }
+
+
+  .experiencias__valoraciones__card {
+    background-color: $color-secundario;
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 10px 10px 5px #535151;
+    @media screen and (min-width: 992px){
+      background-color: $color-secundario;
+      width: 25vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 10px 10px 5px #535151;
+    }
+   }
+  
+  .experiencias__valoraciones__card__imagen {
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    @media screen and (min-width: 992px){
+      width: 10vw;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } }
+  
+  .experiencias__valoraciones__card__info {
+    font-family: $texto-fuente;
+    width: 30vw;
+    height: 10vh;
+    font-weight: 400;
+    font-size: 16px;
+    width: 80vw;
+    height: 20vh;
+    margin-left: 5%;
+    @media screen and (min-width: 992px){
+      font-size: 16px;
+      font-family: $texto-fuente;
+      font-weight: 400;
+      width: 20vw;
+      height: 20vh;
+    } }
+  
+  .experiencias__valoraciones__card__nombre {
+    font-family: $titulo-fuente;
+    font-weight: 700;
+    width: 30vw;
+    height: 10vh;
+    align-self: flex-start;
+    font-size: 20px;
+    margin-top: 35px;
+    margin-left: 5%;
+    @media screen and (min-width: 992px){
+      font-family: $titulo-fuente;
+      font-weight: 700;
+      font-size: 24px;
+      width: 30vw;
+      height: 10vh;
+      align-self: flex-start;
+      margin-left: 10%;
+      margin-top: 0;
+    }}
+   /*---------------- Inicio de sección Experiencia---------------- */

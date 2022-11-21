@@ -1,6 +1,5 @@
   /*---------------- Inicio de fold---------------- */
-.principalNosotros {
-  @media screen and (min-width: 992px){
+.principal__nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,17 +7,26 @@
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
-  }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 100vh;
+    @media screen and (min-width: 992px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 100vh;
+    }
   }
   
-  .fold__nosotros {
+  .principal__nosotros__fold {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(../image/fold_nosotros.webp);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
     @media screen and (min-width: 992px){
       display: flex;
       flex-direction: column;
@@ -30,17 +38,17 @@
       height: 100vh;
       margin-top: 10vh;
     }
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background: url(../image/fold_nosotros.webp);
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
   }
   
-  .fold__nosotros__titulo {
+  .principal__nosotros__fold__titulo {
+    display: flex;
+    font-family: $titulo-fuente;
+    color: $color-secundario;
+    width: 90vw;
+    height: 20vh;
+    font-weight: 700;
+    font-size: 45px;
+    margin-left: 2%;
     @media screen and (min-width: 992px){
       display: flex;
       font-family: $titulo-fuente;
@@ -51,16 +59,15 @@
       font-size: 60px;
       margin-left: 2%;
     }
-    display: flex;
-    font-family: $titulo-fuente;
+  }
+  .principal__nosotros__fold__subtitulo {
+    font-family: $subtitulo-fuente;
     color: $color-secundario;
+    font-weight: 400;
+    font-size: 18px;
     width: 90vw;
     height: 20vh;
-    font-weight: 700;
-    font-size: 45px;
     margin-left: 2%;
-  }
-  .fold__nosotros__subtitulo {
     @media screen and (min-width: 992px){
       font-family: $subtitulo-fuente;
       color: $color-secundario;
@@ -70,22 +77,8 @@
       height: 5vh;
       margin-left: 2%;
     }
-    font-family: $subtitulo-fuente;
-    color: $color-secundario;
-    font-weight: 400;
-    font-size: 18px;
-    width: 90vw;
-    height: 20vh;
-    margin-left: 2%;
   }
-  .fold__nosotros__boton {
-    @media screen and (min-width: 992px){
-    @include boton1;
-    margin-top: 0;
-    color: $color-secundario;
-    width: 15vw;
-    height: 7vh;
-    }
+  .principal__nosotros__fold__boton {
     background-color: $color-primario;
     color: $color-secundario;
     width: 40vw;
@@ -96,11 +89,22 @@
     align-items: center;
     align-self: flex-start;
     margin-left: 2%;
+    @media screen and (min-width: 992px){
+      margin-top: 0;
+      color: $color-secundario;
+      width: 15vw;
+      height: 7vh;
+      }
   }
   /*---------------- final de fold---------------- */
 
   /*---------------- Inicio de sección Historia---------------- */
   .nosotros__historia__titulo {
+    font-family: $titulo-fuente;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 5%;
+    background-color: $color-secundario;
     @media screen and (min-width: 992px){
       font-family: $titulo-fuente;
       font-size: 33px;
@@ -108,13 +112,14 @@
       padding: 5%;
       background-color: $color-secundario;
     }
-    font-family: $titulo-fuente;
-    font-size: 22px;
-    font-weight: 700;
-    padding: 5%;
-    background-color: $color-secundario;
   }
-  .nosotros__historia1 {
+  .nosotros__historia {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     @media screen and (min-width: 992px){
       width: 100vw;
       height: 100vh;
@@ -123,14 +128,16 @@
       align-items: center;
       justify-content: center;
     }
+  }
+  .nosotros__historia__parrafos {
+    background-color: bisque;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-  }
-  .parrafosNosotros {
     @media screen and (min-width: 992px){
       background-color: bisque;
       width: 100vw;
@@ -141,23 +148,8 @@
       align-items: center;
       justify-content: space-evenly;
     }
-    background-color: bisque;
-    width: 100vw;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
   }
-  .nosotros__historia__parrafo1 {
-    @media screen and (min-width: 992px){
-      width: 40vw;
-      height: 30vh;
-      font-family: $titulo-fuente;
-      font-size: 18px;
-      font-weight: 400;
-    }
+  .nosotros__historia__parrafos__texto1 {
     width: 90vw;
     height: 100vh;
     display: flex;
@@ -166,8 +158,6 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-  }
-  .nosotros__historia__parrafo2 {
     @media screen and (min-width: 992px){
       width: 40vw;
       height: 30vh;
@@ -175,6 +165,8 @@
       font-size: 18px;
       font-weight: 400;
     }
+  }
+  .nosotros__historia__parrafos__texto2 {
     width: 90vw;
     height: 100vh;
     display: flex;
@@ -183,12 +175,26 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 992px){
+      width: 40vw;
+      height: 30vh;
+      font-family: $titulo-fuente;
+      font-size: 18px;
+      font-weight: 400;
+    }
   }
     /*---------------- Final de sección Historia---------------- */
     
     /*---------------- Inicio de sección caracteristicas---------------- */ 
   
   .caracteristicas {
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     @media screen and (min-width: 992px){
       width: 100vw;
       height: 100vh;
@@ -198,24 +204,23 @@
       align-items: center;
       justify-content: space-evenly;
     }
-    width: 100vw;
-    height: 120vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
   }
   .caracteristicas__imagen {
+    display: none;
     @media screen and (min-width: 992px){
       width: 70vw;
       height: 80vh;
       display: flex;
     }
-  
-    display: none;
   }
   .caracteristicas__only {
+    background-color: #9bb4dc;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     @media screen and (min-width: 992px){
       background-color: #9bb4dc;
       width: 30vw;
@@ -225,33 +230,19 @@
       align-items: center;
       justify-content: center;
     }
-    background-color: #9bb4dc;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   
   .caracteristicas__banner {
-    @media screen and (min-width: 992px){
-      width: 70vw;
-      height: 20vh;
-    }
     width: 100vw;
     height: 20vh;
     display: flex;
     flex-direction: row;
-  }
-  .caracteristicas__banner__cajaAmarilla {
     @media screen and (min-width: 992px){
-      width: 35vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      width: 70vw;
+      height: 20vh;
     }
+  }
+  .caracteristicas__banner__caja__amarilla {
     width: 50vw;
     height: 20vh;
     background-color: $color-oscuro;
@@ -260,16 +251,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  .caracteristicas__banner__cajaNegra {
     @media screen and (min-width: 992px){
-      background-color: $color-secundario;
-      display: flex;
       width: 35vw;
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
+  }
+
+  .caracteristicas__banner__caja__amarilla__titulo {}
+  .caracteristicas__banner__caja__amarilla__subtitulo{}
+  
+  
+  .caracteristicas__banner__caja__negra {
     background-color: $color-secundario;
     color: $color-oscuro;
     display: flex;
@@ -279,5 +274,15 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    @media screen and (min-width: 992px){
+      background-color: $color-secundario;
+      display: flex;
+      width: 35vw;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
+  .caracteristicas__banner__caja__negra__titulo {}
+  .caracteristicas__banner__caja__negra__subtitulo{}
     /*---------------- Final de sección caracteristicas---------------- */ 

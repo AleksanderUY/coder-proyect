@@ -1,4 +1,10 @@
 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 90vh;
     @media screen and (min-width: 992px){
       display: flex;
       flex-direction: row;
@@ -6,24 +12,16 @@
       justify-content: center;
       width: 100vw;
       height: 60vh;
-    }
+    } }
+  
+  
+  .footer__formulario {
+    background-color: $color-primario;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     width: 100vw;
-    height: 90vh; }
-  
-  .informacion {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 90vw;
-    height: 100vh; }
-  
-  .footer__formulario {
+    height: 100vh;
     @media screen and (min-width: 992px){
       background-color: $color-primario;
       display: flex;
@@ -34,15 +32,13 @@
       height: 60vh;
       margin: 0;
     }
-    background-color: $color-primario;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
      }
   
-  .formulario__titulo {
+  .footer__formulario__titulo {
+    font-weight: 700;
+    font-size: 30px;
+    padding: 5%;
+    width: auto;
     @media screen and (min-width: 992px){
       font-weight: 700;
       font-size: 36px;
@@ -52,61 +48,61 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-    }
-    font-weight: 700;
-    font-size: 30px;
-    padding: 5%;
-    width: auto; }
+    } }
   
-  .formulario__caja {
+  .footer__formulario__caja {
+    width: 90vw;
+    height: 40vh;
+    display: flex;
     @media screen and (min-width: 992px){
       width: 50vw;
       height: 60vh;
       margin-left: 2%;
-    }
-    width: 90vw;
-    height: 40vh;
-    display: flex; }
+    } }
   
-  .nombreMail {
+  .footer__formulario__caja__datos {
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     @media screen and (min-width: 992px){
       display: flex;
       width: 49vw;
       height: 10vh;
       flex-direction: row;
       justify-content: flex-start;
-    }
-    width: 30vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
+    } }
   
-  .caja__nombre {
+  .footer__formulario__caja__datos__nombre {
+    width: 40vw;
+    height: 5vh;
     @media screen and (min-width: 992px){
       width: 20vw;
       height: 5vh;
-    }
-    width: 40vw;
-    height: 5vh; }
+    } }
   
-  .caja__email {
+  .footer__formulario__caja__datos__email {
+    width: 47vw;
+    height: 5vh;
     @media screen and (min-width: 992px){
       width: 30vw;
       height: 5vh;
-    }
-    width: 47vw;
-    height: 5vh; }
+    } }
   
-  .caja__comentario {
+  .footer__formulario__caja__datos__comentario {
+    width: 90vw;
+    height: 30vh;
     @media screen and (min-width: 992px){
       width: 49vw;
       height: 30vh;
-    }
-    width: 90vw;
-    height: 30vh; }
+    } }
   
-  .caja__boton {
+  .footer__formulario__caja__datos__boton {
+    background-color: $color-secundario;
+    border: 0;
+    width: 30vw;
+    height: 40px;
     @media screen and (min-width: 992px){
       background-color: $color-secundario;
       display: flex;
@@ -115,15 +111,19 @@
       align-items: center;
       font-size: large;
       color: $color-oscuro;
-      width: 150px;
-      height: 50px;
-    }
-    background-color: $color-secundario;
-    border: 0;
-    width: 30vw;
-    height: 40px; }
+      width: 100px;
+      height: 30px;
+      margin-left: 1%;
+    } }
   
-  .footer__redes {
+  .footer__informacion__redes {
+    background-color: $color-oscuro;
+    width: 100vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     @media screen and (min-width: 992px){
       background-color: $color-oscuro;
       width: 50vw;
@@ -132,16 +132,15 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-    }
-    background-color: $color-oscuro;
-    width: 100vw;
-    height: 15vw;
+    } }
+  
+  .footer__informacion__redes__iconos {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; }
-  
-  .iconoDeRedes {
+    justify-content: space-between;
+    width: 300px;
+    height: 130px;
     @media screen and (min-width: 992px){
       display: flex;
       flex-direction: row;
@@ -149,54 +148,48 @@
       justify-content: space-between;
       width: 300px;
       height: 130px;
-    }
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
-    height: 130px; }
+    } }
   
-  .iconoDeRedes_facebook a {
+  .footer__informacion__redes__iconos__contenedor {
     width: 30px;
     height: 30px; }
-  
-  .iconoDeRedes_twitter a {
-    width: 30px;
-    height: 30px; }
-  
-  .iconoDeRedes_linkedin a {
-    width: 30px;
-    height: 30px; }
+
   
   .footer__info {
+    background-color: darkgrey;
+    width: 100vw;
+    height: 1vh;
+    display: flex;
+    flex-direction: column;
     @media screen and (min-width: 992px){
       background-color: darkgrey;
       width: 50vw;
       height: 500px;
       display: flex;
       flex-direction: column;
-    }
-    background-color: darkgrey;
-    width: 100vw;
-    height: 1vh;
-    display: flex;
-    flex-direction: column; }
+    } }
   
-  .informacion {
+  .footer__informacion {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vh;
     @media screen and (min-width: 992px){
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       width: 100vw;
       height: 60vh;
-    }
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 50vh; }
+    } }
   
-  .info__ubicacion {
+  .footer__info__datos__ubicacion {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10%;
     @media screen and (min-width: 992px){
       width: 450px;
       height: 60px;
@@ -206,18 +199,17 @@
       justify-content: flex-start;
       margin-left: 0;
     }
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 10%;
   }
-  .ingresos {
+  .footer__info__datos__ubicacion__ingresos {
     margin-left: 2%;
   }
-  .datos {
+  .footer__info__datos {
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     @media screen and (min-width: 992px){
       width: 40vw;
       height: 30vh;
@@ -226,15 +218,16 @@
       justify-content: flex-end;
       align-items: flex-start;
       margin-left: 15%;
-    }
-    width: 40vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; }
+    } }
   
-  .info__telefono {
+  .footer__info__datos__telefono {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10%;
     @media screen and (min-width: 992px){
       width: 200px;
       height: 60px;
@@ -243,16 +236,16 @@
       align-items: center;
       justify-content: flex-start;
       margin-left: 0;
-    }
+    } }
+  
+  .footer__info__datos__correo {
     width: 200px;
     height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 10%; }
-  
-  .info__correo {
+    margin-left: 10%;
     @media screen and (min-width: 992px){
       width: 200px;
       height: 60px;
@@ -261,11 +254,4 @@
       align-items: center;
       justify-content: flex-start;
       margin-left: 0;
-    }
-    width: 200px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 10%; }
+    } }
