@@ -1,173 +1,204 @@
-   /*---------------- Inicio de sección Fold Servicios---------------- */
-.main__servicios
+/*---------------- Inicio de sección Fold Servicios---------------- */
+.main__servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 80vh;
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
 .main__servicios__fold {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(../image/imagen_fold_servicios.webp);
+  margin-top: 10vh;
+  @media screen and (min-width: 992px) {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     background-image: url(../image/imagen_fold_servicios.webp);
-    margin-top: 7vh;
-    @media screen and (min-width: 992px){
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      background-image: url(../image/imagen_fold_servicios.webp);
-      background-attachment: contain;
-      background-size: cover;
-    }
+    background-attachment: contain;
+    background-size: cover;
   }
   .main__servicios__fold__titulo {
+    display: flex;
+    font-family: $titulo-fuente;
     color: $color-secundario;
-    width: 80vw;
-    height: 30vh;
+    width: 90vw;
+    height: 20vh;
     font-weight: 700;
     font-size: 45px;
-    @media screen and (min-width: 992px){
-      align-content: flex-start;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+    margin-left: 2%;
+    margin-top: 5%;
+    @media screen and (min-width: 992px) {
+      display: flex;
+      font-family: $titulo-fuente;
+      color: $color-secundario;
+      width: 60vw;
+      height: 20vh;
+      font-weight: 700;
+      font-size: 60px;
       margin-left: 2%;
     }
   }
   .main__servicios__fold__subtitulo {
-    margin-bottom: 10%;
+    font-family: $subtitulo-fuente;
     color: $color-secundario;
-    @media screen and (min-width: 992px){
-      align-content: flex-start;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin-left: 2%;
+    font-weight: 400;
+    font-size: 18px;
+    width: 90vw;
+    height: 30vh;
+    margin-left: 2%;
+    @media screen and (min-width: 992px) {
+      font-family: $subtitulo-fuente;
       color: $color-secundario;
-      margin-bottom: 0;
-    }
-  }
-  .main__servicios__fold__boton{
-      background-color: $color-primario;
-      color: $color-secundario;
-      width: 40vw;
-      height: 6vh;
-      font-size: medium;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-self: flex-start;
+      font-weight: 400;
+      font-size: 18px;
+      width: 90vw;
+      height: 20vh;
       margin-left: 2%;
-      @media screen and (min-width: 992px){
-        margin-top: 0;
-        color: $color-secundario;
-        width: 15vw;
-        height: 7vh;
-        }
-  }
-     /*---------------- Final de sección Fold Servicios---------------- */
-
-        /*---------------- Inicio de sección Tarjetas Servicios---------------- */
-  .servicios__herramientas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    @media screen and (min-width: 992px){
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      width: 100vw;
-      height: 100vh;
     }
   }
-  .servicios__reforma {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    @media screen and (min-width: 992px){
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-      width: 100vw;
-      height: 100vh;
-    }
-  }
-  .servicios__medida {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    @media screen and (min-width: 992px){
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      width: 100vw;
-      height: 100vh;
-    }
-  }
-  .informacion__servicios__blanco {
-    width: 100vw;
+  .main__servicios__fold__boton {
     background-color: $color-primario;
+    color: $color-secundario;
+    width: 40vw;
+    height: 6vh;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 5%;
+    @media screen and (min-width: 992px) {
+      margin-top: 0;
+      color: $color-secundario;
+      width: 15vw;
+      height: 7vh;
+      margin-left: 2%;
+    }
+  }
+}
+
+/*---------------- Final de sección Fold Servicios---------------- */
+
+/*---------------- Inicio de sección Tarjetas Servicios---------------- */
+.servicios__herramientas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+.servicios__reforma {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+.servicios__medida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+.informacion__servicios__blanco {
+  width: 100vw;
+  background-color: $color-primario;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 992px) {
+    width: 70vw;
+    background-color: white;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    @media screen and (min-width: 992px){
-      width: 70vw;
-      background-color: white;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
   }
-  .informacion__servicios__blanco__titulo{
-    font-size: 2rem;
+}
+.informacion__servicios__blanco__titulo {
+  font-size: 2rem;
+  font-family: $titulo-fuente;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 992px) {
+    width: 50vw;
+    height: 10vh;
+    color: black;
     font-family: $titulo-fuente;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @media screen and (min-width: 992px){
-      width: 50vw;
-      height: 10vh;
-      color: black;
-      font-family: $titulo-fuente;
-      font-weight: 700;
-    }
+    font-weight: 700;
   }
-  .informacion__servicios__blanco__parrafos {
-    width: 90vw;
-    height: 70vh;
+}
+.informacion__servicios__blanco__parrafos {
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (min-width: 992px) {
+    width: 70vw;
+    height: 50vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    @media screen and (min-width: 992px){
-      width: 70vw;
-      height: 50vh;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-    }
   }
   .informacion__servicios__blanco__parrafos__parrafo1 {
     width: 95vw;
-    height: 30vh;
+    height: 10vh;
     font-family: $texto-fuente;
     font-weight: 400;
     font-size: larger;
@@ -175,7 +206,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       display: flex;
       padding: 0;
       margin: 0;
@@ -184,9 +215,9 @@
       font-family: $texto-fuente;
       font-size: 20px;
       font-weight: 400;
-    } 
+    }
   }
-  .informacion__servicios__blanco__parrafos__parrafo2{
+  .informacion__servicios__blanco__parrafos__parrafo2 {
     width: 95vw;
     height: 30vh;
     font-family: $texto-fuente;
@@ -196,7 +227,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       display: flex;
       width: 50vw;
       height: 40vh;
@@ -205,36 +236,35 @@
       font-weight: 400;
       padding: 0;
       margin: 0;
-    } 
+    }
   }
-  
-  
-  .informacion__servicios__azul {
-    width: 100vw;
-    background-color: $color-primario;
+}
+
+.informacion__servicios__azul {
+  width: 100vw;
+  background-color: $color-primario;
+  background-color: #9898e8;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 992px) {
+    width: 70vw;
     height: 100vh;
+    background-color: #9898e8;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    @media screen and (min-width: 992px){
-      width: 70vw;
-      background-color: aquamarine;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
   }
-  
-  .informacion__servicios__azul__titulo{
+  .informacion__servicios__azul__titulo {
     font-size: 2rem;
     font-family: $titulo-fuente;
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       width: 50vw;
       height: 10vh;
       color: black;
@@ -248,8 +278,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;    
-    @media screen and (min-width: 992px){
+    justify-content: space-around;
+    @media screen and (min-width: 992px) {
       width: 70vw;
       height: 50vh;
       display: flex;
@@ -260,7 +290,7 @@
   }
   .informacion__servicios__azul__parrafos__parrafo1 {
     width: 95vw;
-    height: 30vh;
+    height: 10vh;
     font-family: $texto-fuente;
     font-weight: 400;
     font-size: larger;
@@ -268,7 +298,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       display: flex;
       padding: 0;
       margin: 0;
@@ -277,9 +307,9 @@
       font-family: $texto-fuente;
       font-size: 20px;
       font-weight: 400;
-    } 
+    }
   }
-  .informacion__home__azul__parrafos__parrafo2{
+  .informacion__home__azul__parrafos__parrafo2 {
     width: 95vw;
     height: 30vh;
     font-family: $texto-fuente;
@@ -289,7 +319,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       display: flex;
       width: 50vw;
       height: 40vh;
@@ -298,34 +328,34 @@
       font-weight: 400;
       padding: 0;
       margin: 0;
-    } 
+    }
   }
-  .informacion__servicios__verde {
-    width: 100vw;
+}
+
+.informacion__servicios__verde {
+  width: 100vw;
+  background-color: #66cc66;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 992px) {
+    width: 70vw;
     background-color: #66cc66;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    @media screen and (min-width: 992px){
-      width: 70vw;
-      background-color: #66cc66;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
   }
-  
-  .informacion__servicios__verde__titulo{
+  .informacion__servicios__verde__titulo {
     font-size: 2rem;
     font-family: $titulo-fuente;
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       width: 50vw;
       height: 10vh;
       color: black;
@@ -340,7 +370,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       width: 70vw;
       height: 50vh;
       display: flex;
@@ -351,7 +381,7 @@
   }
   .informacion__servicios__verde__parrafos__parrafo1 {
     width: 95vw;
-    height: 30vh;
+    height: 10vh;
     font-family: $texto-fuente;
     font-weight: 400;
     font-size: larger;
@@ -359,7 +389,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       display: flex;
       padding: 0;
       margin: 0;
@@ -368,9 +398,9 @@
       font-family: $texto-fuente;
       font-size: 20px;
       font-weight: 400;
-    } 
+    }
   }
-  .informacion__servicios__verde__parrafos__parrafo2{
+  .informacion__servicios__verde__parrafos__parrafo2 {
     width: 95vw;
     height: 30vh;
     font-family: $texto-fuente;
@@ -380,7 +410,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       display: flex;
       width: 50vw;
       height: 40vh;
@@ -389,27 +419,26 @@
       font-weight: 400;
       padding: 0;
       margin: 0;
-    } 
-  }
-  
-          /*---------------- Final de sección Tarjetas Servicios---------------- */
-
-          /*---------------- Inicio de sección Equipo de trabajo---------------- */
-  .equipo__trabajo {
-    background-color: $color-fondo;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    height: 180vh;
-    align-content: center;
-    padding-bottom: 10%;
-    @media screen and (min-width: 992px){
-      width: 100vw;
-      height: 120vh;
-      padding-bottom: 0;
     }
+  }
+}
+/*---------------- Final de sección Tarjetas Servicios---------------- */
+
+/*---------------- Inicio de sección Equipo de trabajo---------------- */
+.equipo__trabajo {
+  background-color: $color-fondo;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 180vh;
+  align-content: center;
+  padding-bottom: 10%;
+  @media screen and (min-width: 992px) {
+    width: 100vw;
+    height: 120vh;
+    padding-bottom: 0;
   }
   .equipo__trabajo__titulo {
     background-color: $color-fondo;
@@ -424,7 +453,7 @@
     align-items: center;
     margin-top: 15%;
     margin-bottom: 5%;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       display: inline-flex;
       font-family: $titulo-fuente;
       text-align: center;
@@ -436,55 +465,29 @@
       height: 10vh;
       padding: 3%;
       margin-top: 5%;
-    } 
-  }
-  .proyectosEncurso{
-    width: 100vw;
-    height: 200vh;
-    font-size: 1rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    @media screen and (min-width: 992px){
-      width: 100vw;
-      height: 15vh;
-      font-size: 1rem;
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
     }
   }
-  .proyectosEncurso__titulo {
-    text-align: center;
-    @media screen and (min-width: 992px){
-      font-family: $titulo-fuente;
-      text-align: center;
-      width: 80vw;
-      height: 20vh;
-    }
-  }
-  .equipo__trabajo__tarjetas {
+}
+
+.equipo__trabajo__tarjetas {
+  display: grid;
+  background-color: $color-fondo;
+  width: 90vw;
+  height: 150vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-content: center;
+  gap: 3%;
+  @media screen and (min-width: 992px) {
     display: grid;
     background-color: $color-fondo;
-    width: 90vw;
-    height: 150vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    width: 100vw;
+    height: 120vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     align-content: center;
-    gap: 3%;
-    @media screen and (min-width: 992px){
-      display: grid;
-      background-color: $color-fondo;
-      width: 100vw;
-      height: 120vh;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      align-content: center;
-      gap: 5%;
-      margin-bottom: 5%;
-    }
+    gap: 5%;
+    margin-bottom: 5%;
   }
   .equipo__trabajo__tarjetas__caja {
     background-color: $color-secundario;
@@ -494,7 +497,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       background-color: $color-secundario;
       width: 30vw;
       height: 70vh;
@@ -508,14 +511,13 @@
       }
     }
   }
-
   .equipo__trabajo__tarjetas__caja__imagen {
     width: 90vw;
     height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       width: 25vw;
       height: 30vh;
       display: flex;
@@ -528,7 +530,7 @@
     font-size: 22px;
     width: 70vw;
     height: 20vh;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       font-size: 22px;
       width: 20vw;
       height: 20vh;
@@ -541,7 +543,7 @@
     align-self: flex-start;
     font-size: 24px;
     margin-left: 10%;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       font-family: $titulo-fuente;
       font-weight: 700;
       align-self: flex-start;
@@ -549,4 +551,6 @@
       margin-left: 10%;
     }
   }
-  /*---------------- Inicio de sección Equipo de trabajo---------------- */
+}
+
+/*---------------- Inicio de sección Equipo de trabajo---------------- */
