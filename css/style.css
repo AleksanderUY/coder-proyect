@@ -8554,8 +8554,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 100vh;
-  padding-bottom: 15%; }
+  height: 120vh; }
   @media screen and (min-width: 992px) {
     .footer__formulario {
       background-color: #ffb400;
@@ -9110,20 +9109,20 @@ a {
       justify-content: space-around; } }
   .informacion__home__amarillo .informacion__home__amarillo__eco {
     width: 100vw;
-    height: 25vh;
-    margin-top: 10%;
-    padding-left: 3%;
+    height: 33vh;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; }
+    align-items: center;
+    justify-content: flex-start; }
     @media screen and (min-width: 992px) {
       .informacion__home__amarillo .informacion__home__amarillo__eco {
         width: 30vw;
-        height: 33%;
-        padding-left: 3%; } }
+        height: 33vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; } }
     .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__imagen {
-      width: 50px;
-      height: 50px;
+      width: 5vw;
+      height: 5vh;
       align-self: flex-start; }
       @media screen and (min-width: 992px) {
         .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__imagen {
@@ -9134,12 +9133,16 @@ a {
       font-family: "Rubik";
       font-size: large;
       font-size: 22px;
-      font-weight: 700; }
+      font-weight: 700;
+      width: 95vw;
+      height: 5vh; }
       @media screen and (min-width: 992px) {
         .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__titulo {
           font-family: "Rubik";
-          font-size: 22px;
-          font-weight: 700; } }
+          font-size: 20px;
+          font-weight: 700;
+          width: 25vw;
+          height: 5vh; } }
     .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__parrafo {
       font-size: 15px;
       width: 370px;
@@ -9147,7 +9150,7 @@ a {
       @media screen and (min-width: 992px) {
         .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__parrafo {
           font-size: 15px;
-          width: 27vw;
+          width: 30vw;
           height: 15vh; } }
 
 .informacion__home__banner {
@@ -9172,12 +9175,10 @@ a {
     color: white;
     text-align: center;
     width: 100vw;
-    height: 100px;
+    height: 5vh;
     font-family: "Rubik";
     font-weight: 700;
     font-size: 25px;
-    padding: 5%;
-    margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9197,8 +9198,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7px 25px;
-    margin-bottom: 5%; }
+    width: 30vw;
+    height: 5vh; }
     @media screen and (min-width: 992px) {
       .informacion__home__banner .informacion__home__banner__boton {
         background-color: white;
@@ -9207,8 +9208,8 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 7px 25px;
-        margin-top: 5%; } }
+        width: 10vw;
+        height: 5vh; } }
 
 /*---------------- Final de sección Información---------------- */
 /*---------------- Inicio de sección Fold2---------------- */
@@ -9299,7 +9300,7 @@ a {
 .experiencia {
   background-color: #778899;
   width: 100vw;
-  height: 150vh;
+  height: 160vh;
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -9370,7 +9371,7 @@ a {
   .experiencias__valoraciones .experiencias__valoraciones__card {
     background-color: white;
     width: 90vw;
-    height: 35vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9379,7 +9380,7 @@ a {
     @media screen and (min-width: 992px) {
       .experiencias__valoraciones .experiencias__valoraciones__card {
         background-color: white;
-        width: 25vw;
+        width: 30vw;
         height: 50vh;
         display: flex;
         flex-direction: column;
@@ -9414,7 +9415,7 @@ a {
         font-size: 16px;
         font-family: "Rubik";
         font-weight: 400;
-        width: 20vw;
+        width: 28vw;
         height: 20vh; } }
   .experiencias__valoraciones .experiencias__valoraciones__card__nombre {
     font-family: "Rubik";
