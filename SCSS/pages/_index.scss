@@ -342,6 +342,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    @media only screen and (min-width: 576px) and (max-width: 991px){
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
     @media screen and (min-width: 992px) {
       width: 30vw;
       height: 33vh;
@@ -366,21 +373,43 @@
       font-size: 22px;
       font-weight: 700;
       width: 95vw;
-      height: 5vh;
+      height: 7vh;
+      @media only screen and (min-width: 576px) and (max-width: 991px){
+        font-family: $titulo-fuente;
+        font-size: 30px;
+        font-weight: 700;
+        width: 100vw;
+        height: 7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       @media screen and (min-width: 992px) {
         font-family: $titulo-fuente;
         font-size: 20px;
         font-weight: 700;
         width: 25vw;
-        height: 5vh;
+        height: 7vh;
       }
     }
     .informacion__home__amarillo__eco__parrafo {
-      font-size: 15px;
+      font-family: $texto-fuente;
+      font-size: 16px;
       width: 370px;
       height: 20vh;
+      @media only screen and (min-width: 576px) and (max-width: 991px){
+        font-family: $titulo-fuente;
+        font-size: 18px;
+        font-weight: 400;
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       @media screen and (min-width: 992px) {
-        font-size: 15px;
+        font-family: $texto-fuente;
+        font-size: 14px;
         width: 30vw;
         height: 15vh;
       }
@@ -566,6 +595,7 @@
     background-color: $color-fondo;
     width: 100vw;
     font-family: $titulo-fuente;
+    font-size: 20px;
     background-color: $color-secundario;
     height: 10vh;
     font-weight: 700;
@@ -575,6 +605,12 @@
     align-items: center;
     margin-top: 15%;
     margin-bottom: 5%;
+    @media only screen and (min-width: 576px) and (max-width: 991px){
+      width: 100vw;
+      height: 30vh;
+      margin-top: 0;
+      font-size: 35px;
+    }
     @media screen and (min-width: 992px) {
       display: inline-flex;
       font-family: $titulo-fuente;

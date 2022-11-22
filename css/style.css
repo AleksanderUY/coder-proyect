@@ -8554,7 +8554,8 @@ a {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 120vh; }
+  height: 120vh;
+  padding-bottom: 10%; }
   @media screen and (min-width: 992px) {
     .footer__formulario {
       background-color: #ffb400;
@@ -8587,6 +8588,13 @@ a {
   width: 90vw;
   height: 40vh;
   display: flex; }
+  @media only screen and (min-width: 576px) and (max-width: 991px) {
+    .footer__formulario__caja {
+      width: 90vw;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
   @media screen and (min-width: 992px) {
     .footer__formulario__caja {
       width: 45vw;
@@ -9113,6 +9121,13 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; }
+    @media only screen and (min-width: 576px) and (max-width: 991px) {
+      .informacion__home__amarillo .informacion__home__amarillo__eco {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; } }
     @media screen and (min-width: 992px) {
       .informacion__home__amarillo .informacion__home__amarillo__eco {
         width: 30vw;
@@ -9135,21 +9150,43 @@ a {
       font-size: 22px;
       font-weight: 700;
       width: 95vw;
-      height: 5vh; }
+      height: 7vh; }
+      @media only screen and (min-width: 576px) and (max-width: 991px) {
+        .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__titulo {
+          font-family: "Rubik";
+          font-size: 30px;
+          font-weight: 700;
+          width: 100vw;
+          height: 7vh;
+          display: flex;
+          justify-content: center;
+          align-items: center; } }
       @media screen and (min-width: 992px) {
         .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__titulo {
           font-family: "Rubik";
           font-size: 20px;
           font-weight: 700;
           width: 25vw;
-          height: 5vh; } }
+          height: 7vh; } }
     .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__parrafo {
-      font-size: 15px;
+      font-family: "Rubik";
+      font-size: 16px;
       width: 370px;
       height: 20vh; }
+      @media only screen and (min-width: 576px) and (max-width: 991px) {
+        .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__parrafo {
+          font-family: "Rubik";
+          font-size: 18px;
+          font-weight: 400;
+          width: 100vw;
+          height: 15vh;
+          display: flex;
+          justify-content: center;
+          align-items: center; } }
       @media screen and (min-width: 992px) {
         .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__parrafo {
-          font-size: 15px;
+          font-family: "Rubik";
+          font-size: 14px;
           width: 30vw;
           height: 15vh; } }
 
@@ -9321,6 +9358,7 @@ a {
     background-color: #778899;
     width: 100vw;
     font-family: "Rubik";
+    font-size: 20px;
     background-color: white;
     height: 10vh;
     font-weight: 700;
@@ -9330,6 +9368,12 @@ a {
     align-items: center;
     margin-top: 15%;
     margin-bottom: 5%; }
+    @media only screen and (min-width: 576px) and (max-width: 991px) {
+      .experiencia .experiencia__titulo {
+        width: 100vw;
+        height: 30vh;
+        margin-top: 0;
+        font-size: 35px; } }
     @media screen and (min-width: 992px) {
       .experiencia .experiencia__titulo {
         display: inline-flex;
