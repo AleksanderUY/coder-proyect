@@ -338,20 +338,21 @@
   }
   .informacion__home__amarillo__eco {
     width: 100vw;
-    height: 25vh;
-    margin-top: 10%;
-    padding-left: 3%;
+    height: 33vh;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     @media screen and (min-width: 992px) {
       width: 30vw;
-      height: 33%;
-      padding-left: 3%;
+      height: 33vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
     }
     .informacion__home__amarillo__eco__imagen {
-      width: 50px;
-      height: 50px;
+      width: 5vw;
+      height: 5vh;
       align-self: flex-start;
       @media screen and (min-width: 992px) {
         width: 50px;
@@ -364,10 +365,14 @@
       font-size: large;
       font-size: 22px;
       font-weight: 700;
+      width: 95vw;
+      height: 5vh;
       @media screen and (min-width: 992px) {
         font-family: $titulo-fuente;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 700;
+        width: 25vw;
+        height: 5vh;
       }
     }
     .informacion__home__amarillo__eco__parrafo {
@@ -376,7 +381,7 @@
       height: 20vh;
       @media screen and (min-width: 992px) {
         font-size: 15px;
-        width: 27vw;
+        width: 30vw;
         height: 15vh;
       }
     }
@@ -405,12 +410,10 @@
     color: $color-secundario;
     text-align: center;
     width: 100vw;
-    height: 100px;
+    height: 5vh;
     font-family: $texto-fuente;
     font-weight: 700;
     font-size: 25px;
-    padding: 5%;
-    margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -431,8 +434,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7px 25px;
-    margin-bottom: 5%;
+    width: 30vw;
+    height: 5vh;
     @media screen and (min-width: 992px) {
       background-color: $color-secundario;
       color: $color-oscuro;
@@ -440,8 +443,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 7px 25px;
-      margin-top: 5%;
+      width: 10vw;
+      height: 5vh;
     }
   }
 }
@@ -542,7 +545,7 @@
 .experiencia {
   background-color: $color-fondo;
   width: 100vw;
-  height: 150vh;
+  height: 160vh;
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -616,7 +619,7 @@
   .experiencias__valoraciones__card {
     background-color: $color-secundario;
     width: 90vw;
-    height: 35vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -624,7 +627,7 @@
     box-shadow: 10px 10px 5px #535151;
     @media screen and (min-width: 992px) {
       background-color: $color-secundario;
-      width: 25vw;
+      width: 30vw;
       height: 50vh;
       display: flex;
       flex-direction: column;
@@ -661,7 +664,7 @@
       font-size: 16px;
       font-family: $texto-fuente;
       font-weight: 400;
-      width: 20vw;
+      width: 28vw;
       height: 20vh;
     }
   }
