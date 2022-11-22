@@ -8554,7 +8554,8 @@ a {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  padding-bottom: 15%; }
   @media screen and (min-width: 992px) {
     .footer__formulario {
       background-color: #ffb400;
@@ -8564,7 +8565,8 @@ a {
       align-items: center;
       width: 50vw;
       height: 60vh;
-      margin: 0; } }
+      margin: 0;
+      padding-bottom: 0; } }
 
 .footer__formulario__titulo {
   font-weight: 700;
@@ -8575,7 +8577,7 @@ a {
     .footer__formulario__titulo {
       font-weight: 700;
       font-size: 36px;
-      width: 50vw;
+      width: 40vw;
       height: 10vh;
       display: flex;
       flex-direction: row;
@@ -8588,9 +8590,8 @@ a {
   display: flex; }
   @media screen and (min-width: 992px) {
     .footer__formulario__caja {
-      width: 50vw;
-      height: 60vh;
-      margin-left: 2%; } }
+      width: 45vw;
+      height: 60vh; } }
 
 .footer__formulario__caja__datos {
   width: 30vw;
@@ -8601,8 +8602,8 @@ a {
   @media screen and (min-width: 992px) {
     .footer__formulario__caja__datos {
       display: flex;
-      width: 49vw;
-      height: 10vh;
+      width: 45vw;
+      height: 5vh;
       flex-direction: row;
       justify-content: flex-start; } }
 
@@ -8619,7 +8620,7 @@ a {
   height: 5vh; }
   @media screen and (min-width: 992px) {
     .footer__formulario__caja__datos__email {
-      width: 30vw;
+      width: 25vw;
       height: 5vh; } }
 
 .footer__formulario__caja__datos__comentario {
@@ -8627,7 +8628,7 @@ a {
   height: 30vh; }
   @media screen and (min-width: 992px) {
     .footer__formulario__caja__datos__comentario {
-      width: 49vw;
+      width: 45vw;
       height: 30vh; } }
 
 .footer__formulario__caja__datos__boton {
@@ -8644,9 +8645,8 @@ a {
       align-items: center;
       font-size: large;
       color: black;
-      width: 100px;
-      height: 30px;
-      margin-left: 1%; } }
+      width: 10vw;
+      height: 5vh; } }
 
 .footer__informacion__redes {
   background-color: black;
@@ -8710,7 +8710,7 @@ a {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      width: 100vw;
+      width: 50vw;
       height: 60vh; } }
 
 .footer__info__datos__ubicacion {
@@ -8929,8 +8929,8 @@ a {
   padding: 5%; }
   @media screen and (min-width: 992px) {
     .servicios__home__obras {
-      width: 420px;
-      height: 270px;
+      width: 30vw;
+      height: 40vh;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -8948,8 +8948,8 @@ a {
     @media screen and (min-width: 992px) {
       .servicios__home__obras .servicios__home__obras__data {
         margin: 0;
-        width: 350px;
-        height: 200px;
+        width: 28vw;
+        height: 10vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -8964,12 +8964,20 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center; }
+    @media screen and (min-width: 992px) {
+      .servicios__home__obras .servicios__home__obras__data__titulo {
+        width: 28vw;
+        height: 10vh; } }
   .servicios__home__obras .servicios__home__obras__data__info {
     padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media screen and (min-width: 992px) {
+      .servicios__home__obras .servicios__home__obras__data__info {
+        width: 28vw;
+        height: 20vh; } }
   .servicios__home__obras .servicios__home__obras__data__imagen {
     width: 50px;
     height: 50px; }
@@ -8979,8 +8987,8 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100px;
-        height: 100px; } }
+        width: 10vw;
+        height: 10vh; } }
 
 /*---------------- Final de sección Servicios---------------- */
 /*---------------- Inicio de sección Información---------------- */
@@ -9022,10 +9030,10 @@ a {
       @media screen and (min-width: 992px) {
         .informacion__home .informacion__home__gris .informacion__home__gris__titulo {
           display: inline-flex;
-          width: 95vw;
+          width: 40vw;
           font-family: "Rubik";
           font-weight: 700;
-          font-size: 64px;
+          font-size: 40px;
           margin-top: 10%; } }
     .informacion__home .informacion__home__gris .informacion__home__gris__parrafos {
       display: flex;
@@ -9110,7 +9118,7 @@ a {
     justify-content: center; }
     @media screen and (min-width: 992px) {
       .informacion__home__amarillo .informacion__home__amarillo__eco {
-        width: 400px;
+        width: 30vw;
         height: 33%;
         padding-left: 3%; } }
     .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__imagen {
@@ -9139,8 +9147,8 @@ a {
       @media screen and (min-width: 992px) {
         .informacion__home__amarillo .informacion__home__amarillo__eco .informacion__home__amarillo__eco__parrafo {
           font-size: 15px;
-          width: 370px;
-          height: 90px; } }
+          width: 27vw;
+          height: 15vh; } }
 
 .informacion__home__banner {
   background-color: black;
@@ -10535,10 +10543,3 @@ a {
         height: 11vh; } }
 
 /*---------------- Final de sección Preguntas---------------- */
-/* ------------PAGINA INDEX FIN--------------- */
-/* ------------PAGINA PROYECTOS INICIO--------------- */
-/* ------------PAGINA PROYECTOS FIN--------------- */
-/* ------------PAGINA SERVICIOS INICIO--------------- */
-/* ------------PAGINA SERVICIOS FIN--------------- */
-/* ------------PAGINA CONTACTO INICIO--------------- */
-/* ------------PAGINA CONTACTO FIN--------------- */
