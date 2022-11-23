@@ -9725,23 +9725,97 @@ a {
           flex-direction: column;
           align-items: center;
           justify-content: center; } }
-  .caracteristicas .caracteristicas__only {
-    background-color: #9bb4dc;
+  .caracteristicas .informacion__nosotros__azul {
+    background-color: #b1b1e9;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: flex-start; }
     @media screen and (min-width: 992px) {
-      .caracteristicas .caracteristicas__only {
-        background-color: #9bb4dc;
+      .caracteristicas .informacion__nosotros__azul {
+        background-color: #b1b1e9;
         width: 30vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; } }
+        justify-content: space-around; } }
+    .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco {
+      width: 100vw;
+      height: 33vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; }
+      @media only screen and (min-width: 576px) and (max-width: 991px) {
+        .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco {
+          width: 100vw;
+          height: 100vh;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start; } }
+      @media screen and (min-width: 992px) {
+        .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco {
+          width: 30vw;
+          height: 33vh;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start; } }
+      .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco .informacion__nosotros__azul__eco__imagen {
+        width: 5vw;
+        height: 5vh;
+        align-self: flex-start; }
+        @media screen and (min-width: 992px) {
+          .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco .informacion__nosotros__azul__eco__imagen {
+            width: 50px;
+            height: 50px;
+            align-self: flex-start; } }
+      .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco .informacion__nosotros__azul__eco__titulo {
+        font-family: "Rubik";
+        font-size: large;
+        font-size: 22px;
+        font-weight: 700;
+        width: 95vw;
+        height: 7vh; }
+        @media only screen and (min-width: 576px) and (max-width: 991px) {
+          .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco .informacion__nosotros__azul__eco__titulo {
+            font-family: "Rubik";
+            font-size: 30px;
+            font-weight: 700;
+            width: 100vw;
+            height: 7vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; } }
+        @media screen and (min-width: 992px) {
+          .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco .informacion__nosotros__azul__eco__titulo {
+            font-family: "Rubik";
+            font-size: 20px;
+            font-weight: 700;
+            width: 25vw;
+            height: 7vh; } }
+      .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco .informacion__nosotros__azul__eco__parrafo {
+        font-family: "Rubik";
+        font-size: 16px;
+        width: 370px;
+        height: 20vh; }
+        @media only screen and (min-width: 576px) and (max-width: 991px) {
+          .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco .informacion__nosotros__azul__eco__parrafo {
+            font-family: "Rubik";
+            font-size: 18px;
+            font-weight: 400;
+            width: 100vw;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; } }
+        @media screen and (min-width: 992px) {
+          .caracteristicas .informacion__nosotros__azul .informacion__nosotros__azul__eco .informacion__nosotros__azul__eco__parrafo {
+            font-family: "Rubik";
+            font-size: 14px;
+            width: 30vw;
+            height: 15vh; } }
 
 /*---------------- Final de sección caracteristicas---------------- */
 /*---------------- Inicio de sección Fold Proyectos---------------- */
