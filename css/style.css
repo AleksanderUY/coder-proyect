@@ -8437,6 +8437,12 @@ a {
       height: 10vh; } }
   .main__header .container-fluid, .main__header .container-sm, .main__header .container-md, .main__header .container-lg, .main__header .container-xl, .main__header .container-xxl {
     margin-left: 0; }
+    @media only screen and (min-width: 576px) and (max-width: 991px) {
+      .main__header .container-fluid, .main__header .container-sm, .main__header .container-md, .main__header .container-lg, .main__header .container-xl, .main__header .container-xxl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; } }
     @media screen and (min-width: 992px) {
       .main__header .container-fluid, .main__header .container-sm, .main__header .container-md, .main__header .container-lg, .main__header .container-xl, .main__header .container-xxl {
         width: 100vw;
@@ -9860,7 +9866,7 @@ a {
         align-items: flex-end; } }
     .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente {
       width: 100vw;
-      height: 50vh;
+      height: 60vh;
       background-color: black;
       opacity: 0.7; }
       @media screen and (min-width: 992px) {
@@ -9868,7 +9874,7 @@ a {
           background-color: black;
           opacity: 0.7;
           width: 100vw;
-          height: 30vh;
+          height: 40vh;
           display: flex;
           justify-content: flex-start;
           align-items: center;
@@ -9877,17 +9883,27 @@ a {
         display: flex;
         justify-content: flex-start;
         width: 95vw;
-        height: 25vh;
+        height: 35vh;
         margin-left: 2%;
         font-family: "Rubik";
         color: white;
         font-size: 58px;
         font-weight: 700;
         opacity: initial; }
+        @media only screen and (min-width: 576px) and (max-width: 991px) {
+          .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente .principal__proyectos__fold__titulo {
+            width: 100vw;
+            height: 30vh;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            align-content: center; } }
         @media screen and (min-width: 992px) {
           .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente .principal__proyectos__fold__titulo {
             width: 100vw;
-            height: 10vh;
+            height: 20vh;
             font-weight: 700; } }
       .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente .principal__proyectos__fold__subtitulo {
         font-family: "Open Sans";
@@ -9903,6 +9919,16 @@ a {
         font-size: 20px;
         width: 100vw;
         height: 20vh; }
+        @media only screen and (min-width: 576px) and (max-width: 991px) {
+          .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente .principal__proyectos__fold__subtitulo {
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+            align-content: center; } }
         @media screen and (min-width: 992px) {
           .principal__proyectos .principal__proyectos__fold .principal__proyectos__fold__trasparente .principal__proyectos__fold__subtitulo {
             width: 100vw;
@@ -9944,6 +9970,29 @@ a {
       align-items: center;
       align-content: center;
       text-align: center; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; } }
+
+@media screen and (min-width: 992px) {
+  
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    margin-top: 5%;
+    margin-bottom: 5%; } }
 
 .container-fluid .card, .container-sm .card, .container-md .card, .container-lg .card, .container-xl .card, .container-xxl .card {
   margin-top: 3%; }

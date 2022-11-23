@@ -21,6 +21,12 @@
     
     .container-fluid {
       margin-left: 0;
+      @media only screen and (min-width: 576px) and (max-width: 991px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
       @media screen and (min-width: 992px){
         width: 100vw;
         height: 5vh;
