@@ -6,3 +6,15 @@ $color-primario:#ffb400;
 $color-secundario:white;
 $color-oscuro:black;
 $color-fondo: #778899;
+
+$primary: #ffb400;
+$secundary: white;
+$dark: #111010;
+$grey: #778899;
+
+$theme-colors: (
+  "primary": $primary,
+  "secundary": $secundary,
+  "dark": $dark,
+  "grey": $grey
+  );

@@ -16,7 +16,7 @@
   
   
   .footer__formulario {
-    background-color: $color-primario;
+    background-color: $primary;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@
     height: 120vh;
     padding-bottom: 10%;
     @media screen and (min-width: 992px){
-      background-color: $color-primario;
+      background-color: $primary;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -107,24 +107,24 @@
     } }
   
   .footer__formulario__caja__datos__boton {
-    background-color: $color-secundario;
+    background-color: $secundary;
     border: 0;
     width: 30vw;
     height: 40px;
     @media screen and (min-width: 992px){
-      background-color: $color-secundario;
+      background-color: $secundary;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       font-size: large;
-      color: $color-oscuro;
+      color: $dark;
       width: 10vw;
       height: 5vh;
     } }
   
   .footer__informacion__redes {
-    background-color: $color-oscuro;
+    background-color: $dark;
     width: 100vw;
     height: 15vw;
     display: flex;
@@ -132,7 +132,7 @@
     align-items: center;
     justify-content: center;
     @media screen and (min-width: 992px){
-      background-color: $color-oscuro;
+      background-color: $dark;
       width: 50vw;
       height: 200px;
       display: flex;
