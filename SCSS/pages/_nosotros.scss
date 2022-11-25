@@ -39,7 +39,7 @@
       .principal__nosotros__fold__titulo {
         display: flex;
         font-family: $titulo-fuente;
-        color: $color-secundario;
+        color: $secundary;
         width: 90vw;
         height: 20vh;
         font-weight: 700;
@@ -48,7 +48,7 @@
         @media screen and (min-width: 992px){
           display: flex;
           font-family: $titulo-fuente;
-          color: $color-secundario;
+          color: $secundary;
           width: 60vw;
           height: 10vh;
           font-weight: 700;
@@ -58,7 +58,7 @@
       }
       .principal__nosotros__fold__subtitulo {
         font-family: $subtitulo-fuente;
-        color: $color-secundario;
+        color: $secundary;
         font-weight: 400;
         font-size: 18px;
         width: 90vw;
@@ -66,7 +66,7 @@
         margin-left: 2%;
         @media screen and (min-width: 992px){
           font-family: $subtitulo-fuente;
-          color: $color-secundario;
+          color: $secundary;
           font-weight: 400;
           font-size: 18px;
           width: 90vw;
@@ -75,8 +75,8 @@
         }
       }
       .principal__nosotros__fold__boton {
-        background-color: $color-primario;
-        color: $color-secundario;
+        background-color: $primary;
+        color: $secundary;
         width: 40vw;
         height: 6vh;
         font-size: medium;
@@ -87,7 +87,7 @@
         margin-left: 2%;
         @media screen and (min-width: 992px){
           margin-top: 0;
-          color: $color-secundario;
+          color: $secundary;
           width: 15vw;
           height: 7vh;
           }
@@ -118,13 +118,13 @@
       font-size: 22px;
       font-weight: 700;
       padding: 5%;
-      background-color: $color-secundario;
+      background-color: $secundary;
       @media screen and (min-width: 992px){
         font-family: $titulo-fuente;
         font-size: 33px;
         font-weight: 700;
         padding: 5%;
-        background-color: $color-secundario;
+        background-color: $secundary;
       }
     }
     .nosotros__historia__parrafos {
@@ -224,8 +224,8 @@
       .caracteristicas__banner__caja__amarilla {
         width: 50vw;
         height: 20vh;
-        background-color: $color-oscuro;
-        color: $color-secundario;
+        background-color: $dark;
+        color: $secundary;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -239,8 +239,8 @@
         }
       }
       .caracteristicas__banner__caja__negra {
-        background-color: $color-secundario;
-        color: $color-oscuro;
+        background-color: $secundary;
+        color: $dark;
         display: flex;
         width: 50vw;
         height: 20vh;
@@ -249,7 +249,7 @@
         justify-content: center;
         text-align: center;
         @media screen and (min-width: 992px){
-          background-color: $color-secundario;
+          background-color: $secundary;
           display: flex;
           width: 35vw;
           flex-direction: column;

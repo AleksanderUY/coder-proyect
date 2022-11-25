@@ -1,20 +1,20 @@
 .main__header {
-    background-color: $color-secundario;
+    background-color: $secundary;
     display: flex;
     position: fixed;
     z-index: 1;
     justify-content: space-between;
     align-items: center;
-    color: black;
+    color: $dark;
     width: 100vw;
     height: 10vh;
     @media screen and (min-width: 992px){
-      background-color: $color-secundario;
+      background-color: $secundary;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      color: $color-oscuro;
+      color: $dark;
       width: 100vw;
       height: 10vh;
     }
@@ -40,7 +40,7 @@
         width: 100vw;
         height: 10vh;
         @media screen and (min-width: 992px){
-          background-color: $color-secundario;
+          background-color: $secundary;
           width: 70vw;
           height: 5vh;
           margin-right: 15%;
@@ -55,7 +55,7 @@
       justify-content: center;
       align-items: center;
       margin-top: 3vh;
-      background-color: $color-secundario;
+      background-color: $secundary;
       @media screen and (min-width: 992px){
         width: 70vw;
         height: 5vh;
@@ -65,7 +65,7 @@
         align-items: center;
       }
       .nav-item {
-        background-color: $color-secundario;
+        background-color: $secundary;
         font-family: $subtitulo-fuente;
         font-size: 16px;
         font-weight: 600;
@@ -77,7 +77,7 @@
         align-items: center;
         margin-top: 1%;
         @media screen and (min-width: 992px){
-          background-color: $color-secundario;
+          background-color: $secundary;
           font-family: $link-fuente;
           font-weight: 700;
           display: inline-flex;
@@ -88,7 +88,7 @@
           margin-left: 5%;
         } 
         .nav-link {
-          background-color: $color-secundario;
+          background-color: $secundary;
           margin-right: 5px;
           width: 80vw;
           height: 5vh;
@@ -98,7 +98,7 @@
           justify-content: center;
           align-items: center;
           @media screen and (min-width: 992px) {
-            background-color: $color-secundario;
+            background-color: $secundary;
             margin-right: 5px;
             width: 6vw;
             height: 5vh;

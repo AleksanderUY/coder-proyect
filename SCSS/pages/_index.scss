@@ -83,21 +83,21 @@
   .fold__boton {
     border: 15px;
     font-size: large;
-    background-color: $color-primario;
-    border-color: $color-primario;
+    background-color: $primary;
+    border-color: $primary;
     font-family: $texto-fuente;
-    color: black;
+    color: $dark;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px 30px;
     @media screen and (min-width: 992px) {
-      background-color: $color-primario;
+      background-color: $primary;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: $color-secundario;
+      color: $secundary;
       font-size: large;
       width: 13rem;
       height: 3rem;
@@ -117,7 +117,7 @@
   width: 100vw;
   height: 240vh;
   background-color: #beb9b9;
-  color: $color-oscuro;
+  color: $dark;
   @media screen and (min-width: 992px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -130,7 +130,7 @@
     padding-bottom: 5%;
     padding-top: 5%;
     background-color: rgb(249, 244, 244);
-    color: $color-oscuro;
+    color: $dark;
   }
 }
 .servicios__home__obras {
@@ -140,7 +140,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  background-color: white;
+  background-color: $secundary;
   box-shadow: 10px 10px 5px grey;
   padding: 5%;
   @media screen and (min-width: 992px) {
@@ -150,7 +150,7 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    background-color: $color-secundario;
+    background-color: $secundary;
     box-shadow: 10px 10px 5px grey;
   }
   .servicios__home__obras__data {
@@ -320,7 +320,7 @@
 }
 
 .informacion__home__amarillo {
-  background-color: $color-primario;
+  background-color: $primary;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -328,7 +328,7 @@
   align-items: center;
   justify-content: flex-start;
   @media screen and (min-width: 992px) {
-    background-color: $color-primario;
+    background-color: $primary;
     width: 30vw;
     height: 100vh;
     display: flex;
@@ -418,7 +418,7 @@
 }
 
 .informacion__home__banner {
-  background-color: $color-oscuro;
+  background-color: $dark;
   width: 100vw;
   height: 25vh;
   display: flex;
@@ -426,7 +426,7 @@
   justify-content: space-around;
   align-items: center;
   @media screen and (min-width: 992px) {
-    background-color: $color-oscuro;
+    background-color: $dark;
     width: 70vw;
     height: 20vh;
     display: flex;
@@ -436,7 +436,7 @@
     align-content: center;
   }
   .informacion__home__banner__titulo {
-    color: $color-secundario;
+    color: $secundary;
     text-align: center;
     width: 100vw;
     height: 5vh;
@@ -448,7 +448,7 @@
     justify-content: center;
     margin-bottom: 5%;
     @media screen and (min-width: 992px) {
-      color: $color-secundario;
+      color: $secundary;
       width: 500px;
       height: 70px;
       font-size: 22px;
@@ -457,8 +457,8 @@
     }
   }
   .informacion__home__banner__boton {
-    background-color: $color-secundario;
-    color: $color-oscuro;
+    background-color: $secundary;
+    color: $dark;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -466,8 +466,8 @@
     width: 30vw;
     height: 5vh;
     @media screen and (min-width: 992px) {
-      background-color: $color-secundario;
-      color: $color-oscuro;
+      background-color: $secundary;
+      color: $dark;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -550,10 +550,10 @@
   .fold2__boton {
     border: 15px;
     font-size: large;
-    background-color: $color-primario;
-    border-color: $color-primario;
+    background-color: $primary;
+    border-color: $primary;
     font-family: $texto-fuente;
-    color: black;
+    color: $dark;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -561,7 +561,7 @@
     padding: 10px 40px;
     margin-top: 5%;
     @media screen and (min-width: 992px) {
-      background-color: #ffb400;
+      background-color: $primary;
       display: flex;
     }
   }
@@ -572,7 +572,7 @@
 /*---------------- Inicio de sección Experiencia---------------- */
 
 .experiencia {
-  background-color: $color-fondo;
+  background-color: $grey;
   width: 100vw;
   height: 160vh;
   font-size: 20px;
@@ -592,11 +592,11 @@
     align-items: center;
   }
   .experiencia__titulo {
-    background-color: $color-fondo;
+    background-color: $grey;
     width: 100vw;
     font-family: $titulo-fuente;
     font-size: 20px;
-    background-color: $color-secundario;
+    background-color: $secundary;
     height: 10vh;
     font-weight: 700;
     display: flex;
@@ -616,7 +616,7 @@
       font-family: $titulo-fuente;
       text-align: center;
       justify-content: center;
-      background-color: $color-secundario;
+      background-color: $secundary;
       font-size: 40px;
       font-weight: 700;
       width: 95vw;
@@ -630,7 +630,7 @@
 .experiencias__valoraciones {
   display: grid;
   justify-items: center;
-  background-color: $color-fondo;
+  background-color: $grey;
   width: 100vw;
   height: 150vh;
   grid-template-columns: 1fr;
@@ -640,7 +640,7 @@
   padding-bottom: 5%;
   @media screen and (min-width: 992px) {
     display: grid;
-    background-color: $color-fondo;
+    background-color: $grey;
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
@@ -653,7 +653,7 @@
     }
   }
   .experiencias__valoraciones__card {
-    background-color: $color-secundario;
+    background-color: $secundary;
     width: 90vw;
     height: 40vh;
     display: flex;
@@ -662,7 +662,7 @@
     justify-content: space-around;
     box-shadow: 10px 10px 5px #535151;
     @media screen and (min-width: 992px) {
-      background-color: $color-secundario;
+      background-color: $secundary;
       width: 30vw;
       height: 50vh;
       display: flex;

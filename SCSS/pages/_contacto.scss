@@ -38,7 +38,7 @@
     justify-content: flex-start;
     align-items: center;
     font-family: $titulo-fuente;
-    color: $color-secundario;
+    color: $secundary;
     width: 90vw;
     height: 20vh;
     font-weight: 700;
@@ -47,7 +47,7 @@
     @media screen and (min-width: 992px) {
       display: flex;
       font-family: $titulo-fuente;
-      color: $color-secundario;
+      color: $secundary;
       width: 60vw;
       height: 30vh;
       display: flex;
@@ -59,7 +59,7 @@
     }
   }
   .principal__contacto__fold__subtitulo {
-    color: $color-secundario;
+    color: $secundary;
     margin-left: 2%;
     width: 90vw;
     height: 20vh;
@@ -67,7 +67,7 @@
     font-weight: 400;
     @media screen and (min-width: 992px) {
       font-family: $subtitulo-fuente;
-      color: $color-secundario;
+      color: $secundary;
       font-weight: 400;
       font-size: 18px;
       width: 60vw;
@@ -76,8 +76,8 @@
     }
   }
   .principal__contacto__fold__boton {
-    background-color: $color-primario;
-    color: $color-secundario;
+    background-color: $primary;
+    color: $secundary;
     width: 60vw;
     height: 6vh;
     font-size: medium;
@@ -105,7 +105,7 @@
 .mapa__google {
   width: 100vw;
   height: 70vh;
-  border-color: $color-oscuro;
+  border-color: $dark;
   border-width: 5px;
   display: flex;
   justify-content: center;
@@ -165,7 +165,7 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    background-color: $color-secundario;
+    background-color: $secundary;
     font-size: 25px;
     font-weight: 700;
     @media screen and (min-width: 992px) {
@@ -175,7 +175,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $color-secundario;
+      background-color: $secundary;
       font-size: 25px;
       font-weight: 700;
       padding: 5%;

@@ -21,13 +21,13 @@
     }
     a {
       text-decoration: none;
-      color: black;
+      color: $dark;
       margin-top: 0;
       @media screen and (min-width: 992px) {
-      background-color: $color-primario;
+      background-color: $primary;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: black;
+      color: $dark;
       font-size: large;}
     }
